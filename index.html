@@ -468,6 +468,12 @@
     </footer>
 
     <script>
+
+        // Add this temporary placeholder at the top of your script to stop the crash
+function generateSmartNotification(data) {
+    console.warn("Smart notification placeholder triggered. Actual function implementation missing.");
+}
+        
         // Data placeholder for Live Feed Target
         let portalData = [];
 
@@ -520,9 +526,9 @@ try {
     // Extract the components from the new object structure
     portalData = masterPayload.competitions || [];
     const inspiration = masterPayload.dailyInspiration;
-
-    // 1. Run your smart notification alert
-    generateSmartNotification(portalData);
+    
+// 1. Run your smart notification alert
+    // generateSmartNotification(portalData); 👈 COMMENT THIS OUT FOR NOW
 
     // 2. Fill the "We thought you might like these" spotlight box panel
     renderSpotlightBoxes(portalData);
