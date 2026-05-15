@@ -12,7 +12,10 @@ async function discoverOpportunities() {
         1. Find active 2026 international/regional competitions, challenges, or conferences for secondary school students.
         2. Scout the internet for a true, highly inspiring story of an ambitious student (e.g., how someone got into an Ivy League like MIT/Columbia at a young age, won an international Olympiad, or launched a successful tech startup as a teen).
 
-        Return the results STRICTLY as a valid JSON object matching this exact template structure. Do not wrap it in markdown code blocks:
+        CRITICAL: Return your final response ONLY as a clean JSON object matching the template below. 
+        Do NOT wrap it in markdown code blocks (no \`\`\`json tags). Start with { and end with }.
+
+        Template Structure:
         {
           "competitions": [
             {
@@ -43,17 +46,21 @@ async function discoverOpportunities() {
     `;
 
     try {
-        // Updated configuration format to match modern @google/genai specifications
         const response = await ai.models.generateContent({
             model: "gemini-2.5-flash", 
             contents: prompt,
             config: {
-                tools: [{ googleSearch: {} }], 
-                responseMimeType: "application/json"
+                tools: [{ googleSearch: {} }] // Removed responseMimeType to fix the API conflict
             }
         });
 
-        const freshData = response.text;
+        let freshData = response.text.trim();
+        
+        // Safety check: if the model wrapped it in a markdown block anyway, strip it out
+        if (freshData.startsWith("```")) {
+            freshData = freshData.replace(/^```json\s*/i, "").replace(/```$/, "").trim();
+        }
+
         fs.writeFileSync("data.json", freshData, "utf8");
         console.log("Live AI data feed and notepad successfully updated!");
 
@@ -63,5 +70,4 @@ async function discoverOpportunities() {
     }
 }
 
-// ⚠️ CRITICAL FIX: Actually execute the function when GitHub runs the file!
 discoverOpportunities();
