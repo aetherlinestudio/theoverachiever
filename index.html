@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -139,7 +138,7 @@
         .footer-links a {
             text-decoration: none; 
             color: black; 
-            font-size: 1.4rem; 
+            font-size: 1.15rem; 
             opacity: 0.5; 
             transition: 0.3s;
             text-transform: lowercase;
@@ -512,16 +511,31 @@
                 displayAgeText(savedAge);
             }
 
-            // Async load the automated feed system file
-            try {
-                const response = await fetch('data.json');
-                portalData = await response.json();
-                generateSmartNotification(portalData);
-            } catch (error) {
-                console.error("Could not fetch the automated live data feed file:", error);
-                portalData = [];
-            }
+           // Async load the automated feed system file
+try {
+    const response = await fetch('data.json');
+    const masterPayload = await response.json();
+    
+    // Extract the components from the new object structure
+    portalData = masterPayload.competitions || [];
+    const inspiration = masterPayload.dailyInspiration;
 
+    // 1. Run your smart notification alert
+    generateSmartNotification(portalData);
+
+    // 2. Fill the "We thought you might like these" spotlight box panel
+    renderSpotlightBoxes(portalData);
+
+    // 3. Update the digital notepad layout
+    renderDigitalNotepad(inspiration);
+
+    // 4. Continue with your main dashboard feeds
+    renderPortalFeeds(portalData);
+
+} catch (error) {
+    console.error("Could not fetch the automated live data feed file:", error);
+    portalData = [];
+}
             // Trigger visual builders
             renderPortalFeeds();
             
@@ -740,48 +754,57 @@
             `;
         }
 
-function generateSmartNotification(allCompetitions) {
-    const notificationTextElement = document.getElementById('notification-text');
-    if (!notificationTextElement) return;
+        function renderSpotlightBoxes(allCompetitions) {
+    const spotlightTrack = document.getElementById('spotlight-track'); // Replace with your actual spotlight grid container ID
+    if (!spotlightTrack) return;
 
-    // 1. Grab saved filters from local storage (uses your exact storage keys)
+    spotlightTrack.innerHTML = ''; // Clear fallback states
+
     const preferredInterest = localStorage.getItem('portal_interest') || 'logic & coding';
     const userAge = parseInt(localStorage.getItem('portal_age')) || 15;
 
-    // 2. Filter the incoming AI data array for active matches
-    const matches = allCompetitions.filter(item => {
+    // Filter to find the best 2-3 matches matching current filter states
+    const filteredMatches = allCompetitions.filter(item => {
         const ageMatch = userAge >= item.minAge && userAge <= item.maxAge;
         const interestMatch = item.interest && item.interest.toLowerCase() === preferredInterest.toLowerCase();
         return ageMatch && interestMatch;
+    }).slice(0, 3); // Take top 3 curated cards
+
+    // Fallback if filters are blank or too narrow
+    const displays = filteredMatches.length > 0 ? filteredMatches : allCompetitions.slice(0, 3);
+
+    displays.forEach(item => {
+        const box = document.createElement('div');
+        box.className = 'spotlight-card'; // Matches your elite minimalist css box styles
+        box.innerHTML = `
+            <div class="card-tag">${item.interest.toLowerCase()}</div>
+            <h4 class="card-title">${item.title.toLowerCase()}</h4>
+            <p class="card-desc">${item.shortDesc.toLowerCase()}</p>
+            <span class="card-action" onclick="navigateToSpotlight('${item.id}')">explore specs →</span>
+        `;
+        spotlightTrack.appendChild(box);
     });
+}
 
-    // 3. Fallback: if no perfect match, grab anything valid for their age profile
-    const activePool = matches.length > 0 ? matches : allCompetitions.filter(item => userAge >= item.minAge && userAge <= item.maxAge);
+function renderDigitalNotepad(inspiration) {
+    const notepadTitle = document.getElementById('notepad-title'); // Replace with your notepad title ID
+    const notepadBody = document.getElementById('notepad-body');   // Replace with your notepad text area ID
+    
+    if (!notepadBody) return;
 
-    if (activePool.length === 0) {
-        notificationTextElement.innerHTML = `<span>✨ System calibrated. Awaiting the next global data wave.</span>`;
+    if (!inspiration) {
+        notepadBody.innerText = "write your own legacy today...";
         return;
     }
 
-    // 4. Highlight the topmost discovery from the AI's daily crawl
-    const spotlight = activePool[0];
-
-    // 5. Inject a dynamic, clickable link with your minimalist aesthetic
-    notificationTextElement.innerHTML = `
-        <span style="cursor: pointer; text-transform: lowercase; font-weight: 500;" onclick="navigateToSpotlight('${spotlight.id}')">
-            ⚡ you might like this: new ${spotlight.interest} alert — <em>"${spotlight.title.toLowerCase()}"</em>. click to view specs.
-        </span>
+    if (notepadTitle) notepadTitle.innerText = inspiration.title.toLowerCase();
+    
+    notepadBody.innerHTML = `
+        <p style="line-height: 1.6; margin-bottom: 12px;">${inspiration.story}</p>
+        <p style="font-style: italic; color: var(--accent-color); font-weight: 500;">"${inspiration.takeaway.toLowerCase()}"</p>
     `;
 }
-
-// Seamless hash-routing redirect into your detailed spec panel
-function navigateToSpotlight(itemId) {
-    window.location.hash = `#details?id=${itemId}`;
-    if (typeof checkDeepDetailsRoute === 'function') {
-        checkDeepDetailsRoute();
-    }
-}
-        
     </script>
 </body>
 </html>
+
