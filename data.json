@@ -1,0 +1,81 @@
+{
+  "competitions": [
+    {
+      "id": "conrad-challenge-2026-2027",
+      "type": "competition",
+      "title": "Conrad Challenge (2026-2027 Season)",
+      "shortDesc": "An international STEM innovation and entrepreneurship competition for high school students to develop solutions for global challenges.",
+      "fullDetails": "The Conrad Challenge invites students aged 13 to 18 worldwide to form teams and develop innovative solutions in various STEM categories such as Aerospace & Aviation, Cyber-Technology & Security, Energy & Environment, Health & Nutrition, and The Water Challenge. The 2026-2027 season will open for applications in August 2026. Teams progress through multiple stages, including idea development, business model creation, and prototype submission, culminating in an Innovation Summit where finalists present their work to expert judges. Winners, known as Pete Conrad Scholars, receive prestigious awards including all-expenses-paid trips, visits to STEM institutions, networking opportunities, patent support, and academic scholarships.",
+      "category": "STEM, Entrepreneurship",
+      "interest": "innovation & problem-solving",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "August 2026 (Applications Open)",
+      "eventDate": "April 2027 (Innovation Summit, based on prior year)",
+      "location": "Online / Space Center Houston (for finalists)",
+      "prizes": "All-expenses-paid trip, visits to STEM institutions, networking, patent support, academic scholarships, mentorship.",
+      "rounds": "Multiple stages (Activation, Innovation, Summit).",
+      "fee": "Free Entry.",
+      "link": "https://www.conradchallenge.org/"
+    },
+    {
+      "id": "international-youth-competition-2026",
+      "type": "competition",
+      "title": "2026 International Youth Competition",
+      "shortDesc": "A global competition for students to share ideas and perspectives on vital social challenges through visual art, essays, or open submissions.",
+      "fullDetails": "The 2026 International Youth Competition encourages students from primary, middle, and high school, as well as college, to engage with social challenges. The competition theme for this year is “Why Me?”. Submissions are accepted in categories including Visual Art (drawings, illustrations, paintings, photos), Essay (persuasive or creative written works), and an 'Open' category for other ideas. All participants receive a 'Distinguished Achievement' certificate, with awards for 1st, 2nd, and 3rd place in each category and division. Judging is based on message, idea, originality, and delivery.",
+      "category": "Arts, Humanities, Social Sciences",
+      "interest": "social impact & creativity",
+      "minAge": 11,
+      "maxAge": 18,
+      "deadline": "2026-08-30",
+      "eventDate": "End of September 2026 (Winners Announced)",
+      "location": "Online",
+      "prizes": "Distinguished Achievement certificates for all participants; 1st, 2nd, and 3rd place awards in each category/division.",
+      "rounds": "One submission round, followed by judging.",
+      "fee": "Free Entry.",
+      "link": "https://iycomp.org/2026-international-youth-competition/"
+    },
+    {
+      "id": "breakthrough-junior-challenge-2026",
+      "type": "competition",
+      "title": "Breakthrough Junior Challenge 2026",
+      "shortDesc": "An international video competition for students aged 13-18 to explain complex scientific or mathematical concepts in an engaging way.",
+      "fullDetails": "The Breakthrough Junior Challenge invites students worldwide, aged 13 to 18, to create and submit a short, original video (up to two minutes) that explains a challenging scientific or mathematical concept. The goal is to make complex ideas accessible and engaging. Applications for the 2026 challenge opened on May 1, 2026, and will close in September 2026. The competition seeks to inspire creative thinking and scientific communication among young people.",
+      "category": "Academic, STEM",
+      "interest": "science communication & creativity",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "September 2026",
+      "eventDate": "TBD (results typically announced later in the year)",
+      "location": "Online",
+      "prizes": "Scholarships and other recognition (specifics vary annually but are significant).",
+      "rounds": "One video submission round, followed by judging.",
+      "fee": "Free Entry",
+      "link": "https://breakthroughjuniorchallenge.org/"
+    },
+    {
+      "id": "ncss-conference-2026",
+      "type": "conference",
+      "title": "2026 NCSS Student Leadership & Research Conference",
+      "shortDesc": "A conference focusing on student STEM research, leadership development, and entrepreneurship, connecting rigorous research to real-world impact.",
+      "fullDetails": "The 2026 NCSS Student Leadership & Research Conference builds on a tradition of student research while expanding its focus to include leadership development and entrepreneurship in STEM. Students will present original research, engage in STEM leadership sessions, participate in entrepreneurship-focused programming, and interact with active researchers. The conference aims to deepen students' understanding of research, leadership, and entrepreneurship, and their role in shaping the future of STEM.",
+      "category": "Academic, STEM",
+      "interest": "STEM, leadership, entrepreneurship",
+      "minAge": 14,
+      "maxAge": 18,
+      "deadline": "Ongoing (Registration open)",
+      "eventDate": "2026-07-16 to 2026-07-18",
+      "location": "Fulton Science Academy / Tech North Atlanta",
+      "prizes": "Opportunities for discussion, feedback, and professional guidance.",
+      "rounds": "N/A (conference participation)",
+      "fee": "Varies (registration required, specific cost not provided in snippet).",
+      "link": "https://www.ncss.org/conference/"
+    }
+  ],
+  "dailyInspiration": {
+    "title": "The North Dakota Teen Who Conquered the Ivy League and Top STEM Schools",
+    "story": "At just 17, Martin Altenburg from Fargo, North Dakota, achieved an unprecedented feat by gaining admission to all eight Ivy League universities, along with Stanford, MIT, and Caltech. Coming from a low-income family with limited exposure to elite colleges, Martin's ambition was fueled by a desire to 'see the world' and 'make a really big difference.' He excelled academically, scoring a 35 on the ACT and a perfect '5' on every AP exam he took, even taking Calculus II at MIT during a summer program when his high school ran out of advanced math courses. His journey highlights how relentless dedication and a voracious appetite for learning can overcome significant initial disadvantages, proving that background is not a barrier to reaching the highest echelons of academia.",
+    "takeaway": "Ambition, fueled by a thirst for knowledge and a desire for impact, can open doors to the most prestigious institutions, regardless of your starting point."
+  }
+}
