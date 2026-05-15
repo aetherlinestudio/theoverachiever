@@ -1,8 +1,8 @@
-const { GoogleGenAI } = require("@google/genai"); // Official Google AI SDK
+const { GoogleGenAI } = require("@google/genai"); 
 const fs = require("fs");
 
-// Initialize the API with your free key
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+// Initialize the client. It automatically picks up process.env.GEMINI_API_KEY
+const ai = new GoogleGenAI();
 
 async function discoverOpportunities() {
     console.log("AI is surfing the web for new opportunities...");
@@ -14,23 +14,23 @@ async function discoverOpportunities() {
         Focus on categories like academic, sports, conferences, and volunteer projects.
         Focus on interest sectors like languages, logic & coding, and business.
 
-        Return the results STRICTLY as a valid JSON array matching this exact schema template structure. Do not wrap it in markdown code blocks:
+        Return the results STRICTLY as a valid JSON array matching this exact template structure. Do not wrap it in markdown markdown ticks:
         [
           {
             "id": "unique-string-id",
-            "type": "competition" or "opportunity",
+            "type": "competition",
             "title": "Official Name",
             "shortDesc": "One sentence summary.",
             "fullDetails": "Comprehensive paragraphs detailing what it is.",
-            "category": "academic", "sports", "conferences", or "volunteer",
-            "interest": "languages", "logic & coding", or "business",
+            "category": "academic",
+            "interest": "logic & coding",
             "minAge": 13,
             "maxAge": 18,
-            "deadline": "YYYY-MM-DD",
+            "deadline": "2026-12-31",
             "eventDate": "Clear date string",
             "location": "Venue or Online status",
             "prizes": "Awards, certificates, or perks",
-            "rounds": "Number of stages (for competitions only)",
+            "rounds": "Number of stages",
             "fee": "Free Entry or specific cost",
             "link": "Direct registration URL"
           }
@@ -38,25 +38,25 @@ async function discoverOpportunities() {
     `;
 
     try {
-        // Calling Gemini 1.5 Flash with live search tracking enabled
+        // Correct syntax configuration for the official @google/genai SDK
         const response = await ai.models.generateContent({
-            model: "gemini-1.5-flash",
+            model: "gemini-2.5-flash", 
             contents: prompt,
             config: {
-                // This property forces Gemini to use live Google Search results
-                tools: [{ googleSearch: {} }], 
-                responseMimeType: "application/json"
+                tools: [{ googleSearch: {} }], // Enables live web search tracking
+                responseMimeType: "application/json" // Forces output to be flawless JSON
             }
         });
 
         const freshData = response.text;
         
-        // Overwrite your data.json file with the AI's discoveries
+        // Save the file straight into your root directory
         fs.writeFileSync("data.json", freshData, "utf8");
         console.log("Live AI data feed successfully updated!");
 
     } catch (error) {
         console.error("The AI ran into an issue surfing the web:", error);
+        process.exit(1); // Tells GitHub Actions that the script failed
     }
 }
 
