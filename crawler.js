@@ -46,23 +46,78 @@ async function discoverOpportunities() {
     `;
 
     try {
-const response = await ai.models.generateContent({
-            model: "gemini-2.5-flash", // 👈 Upgrading to 2.5 to clear the 2.0 block
+        const response = await ai.models.generateContent({
+            model: "gemini-2.5-flash", 
             contents: prompt,
             config: {
                 tools: [{ googleSearch: {} }] 
             }
         });
 
-        let freshData = response.text.trim();
+        let freshDataText = response.text.trim();
         
-        // Safety check: if the model wrapped it in a markdown block anyway, strip it out
-        if (freshData.startsWith("```")) {
-            freshData = freshData.replace(/^```json\s*/i, "").replace(/```$/, "").trim();
+        // Safety check: strip markdown code wrappers if the model ignores instructions
+        if (freshDataText.startsWith("```")) {
+            freshDataText = freshDataText.replace(/^```json\s*/i, "").replace(/```$/, "").trim();
         }
 
-        fs.writeFileSync("data.json", freshData, "utf8");
-        console.log("Live AI data feed and notepad successfully updated!");
+        // Parse the newly scraped data from Gemini
+        const newScrapedPayload = JSON.parse(freshDataText);
+
+        // 1. Read the existing historical database sitting in your repo
+        let existingDatabase = { competitions: [], dailyInspiration: {} };
+        try {
+            if (fs.existsSync("data.json")) {
+                existingDatabase = JSON.parse(fs.readFileSync("data.json", "utf8"));
+            }
+        } catch (e) {
+            console.log("No existing database found or file was empty. Starting clean archive.");
+        }
+
+        // Get today's live date (YYYY-MM-DD) to compare deadlines
+        const todayStr = new Date().toISOString().split("T")[0];
+
+        let updatedCompetitions = [];
+        let seenIds = new Set();
+
+        // 2. Process existing archive: Keep old items ONLY if their deadline hasn't passed
+        if (existingDatabase.competitions && Array.isArray(existingDatabase.competitions)) {
+            existingDatabase.competitions.forEach(comp => {
+                const deadline = comp.deadline || "";
+                
+                // If it's a standard format deadline and it's older than today, skip it!
+                if (deadline && deadline.length === 10 && deadline < todayStr) {
+                    console.log(`Evicting expired listing: ${comp.title} (Deadline was ${deadline})`);
+                    return; 
+                }
+                
+                updatedCompetitions.push(comp);
+                seenIds.add(comp.id);
+            });
+        }
+
+        // 3. Process new data: Append items ONLY if they are completely unique
+        if (newScrapedPayload.competitions && Array.isArray(newScrapedPayload.competitions)) {
+            newScrapedPayload.competitions.forEach(newComp => {
+                if (!seenIds.has(newComp.id)) {
+                    updatedCompetitions.push(newComp);
+                    seenIds.add(newComp.id);
+                    console.log(`Adding unique new discovery: ${newComp.title}`);
+                } else {
+                    console.log(`Duplicate detected and blocked for: ${newComp.title}`);
+                }
+            });
+        }
+
+        // 4. Assemble the final cumulative payload
+        const finalPayload = {
+            competitions: updatedCompetitions,
+            dailyInspiration: newScrapedPayload.dailyInspiration || existingDatabase.dailyInspiration
+        };
+
+        // 5. Overwrite data.json cleanly formatted
+        fs.writeFileSync("data.json", JSON.stringify(finalPayload, null, 2), "utf8");
+        console.log("Continuous self-cleaning database successfully updated!");
 
     } catch (error) {
         console.error("The AI ran into an issue surfing the web:", error);
