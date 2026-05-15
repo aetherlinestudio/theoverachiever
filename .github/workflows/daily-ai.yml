@@ -9,11 +9,6 @@ jobs:
   surf-and-update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout project files
-        uses: actions/checkout@v4
-
-#  CORRECT
-    steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -27,7 +22,7 @@ jobs:
 
       - name: Run AI Web Crawler Script
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }} # Your free secret API key
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node crawler.js
 
       - name: Commit and Push fresh data.json live
