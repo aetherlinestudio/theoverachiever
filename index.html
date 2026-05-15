@@ -344,25 +344,36 @@
         </ul>
     </nav>
 
-    <div id="home" class="page-content active">
-        <div class="layout-container">
-            <main class="feed-wrapper">
-                <div class="feed-header"><span class="section-label">we thought you might like these</span>
-                    <div class="scroll-controls">
-                        <button class="arrow-btn" onclick="scrollFeed(-1)">←</button>
-                        <button class="arrow-btn" onclick="scrollFeed(1)">→</button>
-                    </div>
+<div id="home" class="page-content active">
+    <div class="layout-container">
+        <main class="feed-wrapper">
+            <div class="feed-header">
+                <span class="section-label">we thought you might like these</span>
+                <div class="scroll-controls">
+                    <button class="arrow-btn" onclick="scrollFeed(-1)">←</button>
+                    <button class="arrow-btn" onclick="scrollFeed(1)">→</button>
                 </div>
+            </div>
 
-                <div class="feed-scroll-track">
-                    <div class="feed-item"></div><div class="feed-item"></div><div class="feed-item"></div>
-                    <div class="feed-item"></div><div class="feed-item"></div><div class="feed-item"></div>
+            <div id="spotlight-track" class="feed-scroll-track">
                 </div>
-            </main>
-            <aside class="notepad-area"><div class="notepad">Focus on the goal. Today is yours to win.</div></aside>
-        </div>
+            
+            <div class="feed-header" style="margin-top: 2rem;">
+                <span class="section-label">all opportunities</span>
+            </div>
+            <div id="portal-feed-track" class="vertical-feed-track">
+                </div>
+        </main>
+        
+        <aside class="notepad-area">
+            <div id="inspiration-notepad" class="notepad">
+                Focus on the goal. Today is yours to win.
+            </div>
+        </aside>
     </div>
+</div>
 
+    
     <div id="competitions" class="page-content">
         <div class="layout-container">
             <main class="feed-wrapper">
@@ -518,7 +529,7 @@ function generateSmartNotification(data) {
                 displayAgeText(savedAge);
             }
 
-           // Async load the automated feed system file
+// Async load the automated feed system file
 try {
     const response = await fetch('data.json');
     const masterPayload = await response.json();
@@ -527,14 +538,18 @@ try {
     portalData = masterPayload.competitions || [];
     const inspiration = masterPayload.dailyInspiration;
     
-// 1. Run your smart notification alert
-    // generateSmartNotification(portalData); 👈 COMMENT THIS OUT FOR NOW
+    // 1. Run your smart notification alert (Skipped for now)
+    // generateSmartNotification(portalData); 
 
     // 2. Fill the "We thought you might like these" spotlight box panel
     renderSpotlightBoxes(portalData);
 
-    // 3. Update the digital notepad layout
+    // 3. Update the digital notepad layout directly right here
     renderDigitalNotepad(inspiration);
+    const notepad = document.getElementById('inspiration-notepad');
+    if (notepad && inspiration) {
+        notepad.innerHTML = `<h3>${inspiration.title}</h3><p>${inspiration.story}</p><br><em>Takeaway: ${inspiration.takeaway}</em>`;
+    }
 
     // 4. Continue with your main dashboard feeds
     renderPortalFeeds(portalData);
@@ -543,6 +558,7 @@ try {
     console.error("Could not fetch the automated live data feed file:", error);
     portalData = [];
 }
+            
             // Trigger visual builders
             renderPortalFeeds();
             
@@ -654,6 +670,30 @@ try {
             renderPortalFeeds();
         }
 
+function renderSpotlightBoxes(data) {
+    // 🌟 Target selection happens safely inside the function
+    const container = document.getElementById('spotlight-track'); 
+    if (!container || !Array.isArray(data)) return;
+    
+    container.innerHTML = ''; // Wipe out those empty placeholder templates!
+    
+    data.forEach(item => {
+        // Build your layout item card template here...
+    });
+}
+
+    function renderPortalFeeds(data) {
+    // 🌟 Target selection happens safely inside the function
+    const container = document.getElementById('portal-feed-track'); 
+    if (!container || !Array.isArray(data)) return;
+    
+    container.innerHTML = ''; // Clear target area
+    
+    data.forEach(item => {
+        // Build your vertical feed list layout items here...
+    });
+}
+        
         // Master UI Processing Block loop
 function renderPortalFeeds(data) {
     if (!Array.isArray(data)) return;
