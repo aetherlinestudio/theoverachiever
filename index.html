@@ -347,6 +347,7 @@
 <div id="home" class="page-content active">
     <div class="layout-container">
         <main class="feed-wrapper">
+            
             <div class="feed-header">
                 <span class="section-label">we thought you might like these</span>
                 <div class="scroll-controls">
@@ -354,20 +355,21 @@
                     <button class="arrow-btn" onclick="scrollFeed(1)">→</button>
                 </div>
             </div>
+            <div id="spotlight-track" class="feed-scroll-track"></div>
 
-            <div id="spotlight-track" class="feed-scroll-track">
-                </div>
-            
-            <div class="feed-header" style="margin-top: 2rem;">
-                <span class="section-label">all opportunities</span>
+            <div class="feed-header" style="margin-top: 3rem;">
+                <span class="section-label">curated opportunities</span>
             </div>
-            <div id="portal-feed-track" class="vertical-feed-track">
-                </div>
+            <div class="filter-wrapper">
+                <button class="filter-trigger-btn">filter ▼</button>
+            </div>
+            <div id="portal-feed-track" class="vertical-feed-track"></div>
+
         </main>
         
         <aside class="notepad-area">
             <div id="inspiration-notepad" class="notepad">
-                Focus on the goal. Today is yours to win.
+                focus on the goal. today is yours to win.
             </div>
         </aside>
     </div>
@@ -529,34 +531,43 @@ function generateSmartNotification(data) {
                 displayAgeText(savedAge);
             }
 
-// Async load the automated feed system file
-try {
-    const response = await fetch('data.json');
-    const masterPayload = await response.json();
-    
-    // Extract the components from the new object structure
-    portalData = masterPayload.competitions || [];
-    const inspiration = masterPayload.dailyInspiration;
-    
-    // 1. Run your smart notification alert (Skipped for now)
-    // generateSmartNotification(portalData); 
+document.addEventListener('DOMContentLoaded', () => {
+    // Run the data initialization setup
+    loadAutomatedPortalFeeds();
+});
 
-    // 2. Fill the "We thought you might like these" spotlight box panel
-    renderSpotlightBoxes(portalData);
+async function loadAutomatedPortalFeeds() {
+    try {
+        const response = await fetch('data.json');
+        const masterPayload = await response.json();
+        
+        // 1. Extract structural components safely
+        const competitions = masterPayload.competitions || [];
+        const inspiration = masterPayload.dailyInspiration;
+        
+        // 2. Build the Spotlight Boxes Feed
+        renderSpotlightBoxes(competitions);
 
-    // 3. Update the digital notepad layout directly right here
-    renderDigitalNotepad(inspiration);
-    const notepad = document.getElementById('inspiration-notepad');
-    if (notepad && inspiration) {
-        notepad.innerHTML = `<h3>${inspiration.title}</h3><p>${inspiration.story}</p><br><em>Takeaway: ${inspiration.takeaway}</em>`;
+        // 3. Build the Main Opportunities Vertical Feed
+        renderPortalFeeds(competitions);
+
+        // 4. Update the Digital Notepad Side Panel
+        if (inspiration) {
+            const notepad = document.getElementById('inspiration-notepad');
+            if (notepad) {
+                notepad.innerHTML = `
+                    <h3 style="margin-top:0; font-family:var(--font-ui);">${inspiration.title}</h3>
+                    <p style="font-size:0.95rem; line-height:1.6; opacity:0.8;">${inspiration.story}</p>
+                    <div style="margin-top:1.5rem; font-style:italic; font-size:0.9rem; opacity:0.6;">
+                        <strong>takeaway:</strong> ${inspiration.takeaway}
+                    </div>
+                `;
+            }
+        }
+
+    } catch (error) {
+        console.error("Could not fetch the automated live data feed file:", error);
     }
-
-    // 4. Continue with your main dashboard feeds
-    renderPortalFeeds(portalData);
-
-} catch (error) {
-    console.error("Could not fetch the automated live data feed file:", error);
-    portalData = [];
 }
             
             // Trigger visual builders
