@@ -1,7 +1,8 @@
 const { GoogleGenAI } = require("@google/genai"); 
 const fs = require("fs");
 
-const ai = new GoogleGenAI();
+// Pass the API key explicitly inside an options object
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY }); 
 
 async function discoverOpportunities() {
     console.log("AI is surfing the web for opportunities and inspiring chronicles...");
@@ -42,6 +43,7 @@ async function discoverOpportunities() {
     `;
 
     try {
+        // Updated configuration format to match modern @google/genai specifications
         const response = await ai.models.generateContent({
             model: "gemini-2.5-flash", 
             contents: prompt,
@@ -61,4 +63,5 @@ async function discoverOpportunities() {
     }
 }
 
+// ⚠️ CRITICAL FIX: Actually execute the function when GitHub runs the file!
 discoverOpportunities();
