@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the overachiever</title>
+    
+    <style>
+        /* --- FONT INTEGRATION --- */
+        @font-face { font-family: 'BostonAngel'; src: url('BostonAngel.woff2') format('woff2'); }
+        @font-face { font-family: 'Parfumerie'; src: url('ParfumerieScript.woff2') format('woff2'); }
+
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --accent-main: #3D3D5C; 
+            --font-logo: 'Parfumerie', cursive; 
+            --font-ui: 'BostonAngel', serif;
+        }
+
+        * { box-sizing: border-box; cursor: none !important; font-family: var(--font-ui), serif; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 3rem 5rem;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* --- LOADING & CURSOR --- */
+        #loading-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #fff; display: flex; justify-content: center; align-items: center; z-index: 50000; transition: opacity 1s ease; }
+        #custom-cursor { width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; position: fixed; pointer-events: none; z-index: 60000; transform: translate(-50%, -50%); mix-blend-mode: difference; background: white; }
+
+        /* --- HEADER --- */
+        header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
+        
+        .brand-logo {
+            display: block;
+            max-height: 80px; 
+            width: auto;      
+            object-fit: contain;
+        }
+
+        .header-right { display: flex; align-items: center; gap: 1.5rem; position: relative; }
+        .greeting { font-family: var(--font-ui); font-size: 1.3rem; }
+
+        .icon-circle {
+            width: 42px; height: 42px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.1);
+            display: flex; align-items: center; justify-content: center;
+            background-color: var(--accent-main); color: white; transition: 0.4s;
+            position: relative;
+        }
+        .icon-circle svg { width: 18px; height: 18px; fill: white; }
+
+        .notif-badge {
+            position: absolute; top: -2px; right: -2px;
+            background: #ff4d4d; color: white; border-radius: 50%;
+            width: 18px; height: 18px; font-size: 10px;
+            display: flex; align-items: center; justify-content: center;
+            font-family: Arial, sans-serif; font-weight: bold;
+            border: 2px solid white;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .brand-logo {
+                max-height: 45px;
+            }
+            header {
+                padding: 0; 
+            }
+        }
+
+        /* --- DROPDOWN MENUS --- */
+        .custom-dropdown {
+            display: none; position: absolute; top: 55px; right: 0;
+            background: white; border: 1px solid #000; padding: 20px;
+            width: 220px; z-index: 1001; font-family: var(--font-ui);
+        }
+        .dropdown-input {
+            width: 100%; border: 1px solid #eee; padding: 8px; margin-bottom: 10px; font-size: 0.8rem;
+        }
+        .atelier-section { border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px; }
+
+        /* --- NAVIGATION --- */
+        nav ul { list-style: none; padding: 0; display: flex; gap: 1rem; margin-bottom: 3rem; border-bottom: 1px solid #f0f0f0; padding-bottom: 1rem; }
+        nav a { text-decoration: none; color: black; font-family: var(--font-ui); text-transform: lowercase; font-size: 1.1rem; transition: 0.3s; }
+        nav a:hover { color: var(--accent-main); }
+        nav a.active-link { border-bottom: 1.5px solid var(--accent-main); color: var(--accent-main); }
+        .nav-sep { opacity: 0.2; }
+
+        /* --- CONTENT --- */
+        .page-content { display: none; width: 100%; animation: fadeIn 0.5s ease; flex: 1; }
+        .page-content.active { display: flex !important; }
+        .layout-container { display: flex !important; gap: 4rem; width: 100%; align-items: flex-start; }
+        .feed-wrapper { flex: 1; min-width: 0; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; } }
+
+        /* --- COMPONENTS --- */
+        .section-label { font-family: var(--font-ui); font-size: 1.2rem; display: block; margin-bottom: 1.5rem; }
+        .feed-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+        .scroll-controls { display: flex; gap: 10px; }
+        .arrow-btn { background: none; border: 1px solid #000; width: 30px; height: 30px; transition: 0.3s; }
+        .arrow-btn:hover { background: var(--text-color); color: #fff; }
+
+        .feed-scroll-track { display: flex; gap: 20px; overflow-x: hidden; scroll-behavior: smooth; padding: 20px 5px; margin-left: -5px; }
+        .feed-item { min-width: calc(33.33% - 14px); height: 450px; border: 1px solid #000; background: #fff; transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .feed-item:hover { transform: translateY(-15px); border-color: var(--accent-main); }
+
+        .notepad-area { width: 320px !important; flex-shrink: 0 !important; }
+        .notepad { border: 1px solid #ddd; padding: 2.5rem; min-height: 400px; background: #fff; box-shadow: 10px 10px 0 var(--accent-main); font-family: var(--font-ui); line-height: 2.2rem; background-image: linear-gradient(#eee 1px, transparent 1px); background-size: 100% 2.2rem; transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .notepad:hover { transform: translateY(-10px) rotate(-1deg); box-shadow: 15px 15px 0 var(--accent-main); }
+        
+        .support-btn { display: inline-block; padding: 0.8rem 1.5rem; border: 1px solid #000; text-decoration: none; color: #000; font-family: var(--font-ui); transition: 0.3s; margin-top: 10px; text-transform: lowercase; }
+        .support-btn:hover { background: #000; color: #fff; }
+
+        /* --- FOOTER --- */
+        .site-footer { 
+            margin-top: 2rem; 
+            padding: 1.5rem 0; 
+            border-top: 1px solid #f0f0f0; 
+        }
+
+        .footer-container { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+
+        .footer-links {
+            display: flex; 
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            text-decoration: none; 
+            color: black; 
+            font-size: 2rem; 
+            opacity: 0.5; 
+            transition: 0.3s;
+            text-transform: lowercase;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        /* Header Logo - Clean and professional */
+        .logo-header {
+            height: 80px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Loading Screen Logo - Big and impactful */
+        .logo-loading {
+            height: 120px; 
+            width: auto;
+            margin-bottom: 1rem;
+            object-fit: contain;
+        }
+
+        /* Footer Logo - Subtle and small */
+        .logo-footer {
+            height: 40px; 
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Mobile scaling for all logos */
+        @media (max-width: 768px) {
+            .logo-loading { height: 80px; }
+            .logo-header { height: 45px; }
+            .logo-footer { height: 30px; }
+        }
+
+        /* --- VERTICAL STACKING LAYOUT --- */
+        .vertical-feed-track {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            width: 100%;
+            padding-bottom: 3rem;
+        }
+
+        .vertical-feed-track .feed-item {
+            width: 100% !important;
+            min-width: 100% !important;
+            height: auto !important;
+            min-height: 220px;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* --- FILTER MENU COMPONENT --- */
+        .filter-wrapper {
+            margin-bottom: 2.5rem;
+            font-family: var(--font-ui);
+        }
+        .filter-trigger-btn {
+            background: none;
+            border: 1px solid #000;
+            padding: 0.6rem 1.2rem;
+            text-transform: lowercase;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+        }
+        .filter-trigger-btn:hover { background: #000; color: #fff; }
+
+        .filter-expanded-panel {
+            display: none;
+            border: 1px solid #000;
+            padding: 1.5rem;
+            margin-top: 10px;
+            background: #fff;
+            animation: fadeIn 0.3s ease;
+        }
+        .filter-group {
+            margin-bottom: 1rem;
+        }
+        .filter-group:last-child { margin-bottom: 0; }
+        .filter-group-title {
+            font-size: 0.75rem;
+            opacity: 0.5;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .filter-tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .filter-tag {
+            background: #f9f9f9;
+            border: 1px solid #eee;
+            padding: 4px 12px;
+            font-size: 0.85rem;
+            transition: 0.3s;
+            text-transform: lowercase;
+        }
+        .filter-tag:hover { border-color: #000; }
+        .filter-tag.tag-active {
+            background: var(--accent-main);
+            color: white;
+            border-color: var(--accent-main);
+        }
+
+        /* --- DETAILED DETAIL LAYOUT VIEW --- */
+        .details-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            width: 100%;
+        }
+        .details-main h1 { font-family: var(--font-ui); font-size: 2.8rem; font-weight: normal; margin: 0 0 1.5rem 0; line-height: 1.1; }
+        .details-main p { font-size: 1.05rem; opacity: 0.75; line-height: 1.8; margin-bottom: 2rem; }
+
+        .meta-spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+        .meta-spec-table td {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 0.95rem;
+        }
+        .meta-label { opacity: 0.4; text-transform: lowercase; width: 35%; }
+        .meta-value { font-weight: normal; text-align: right; }
+    </style>
+</head>
+
+<body>
+
+    <div id="loading-screen">
+        <div id="loading-content" style="text-align: center;">
+            <img src="https://i.ibb.co/Lf6M0gb/the-1.png" alt="the overachiever" class="logo-loading">
+            <br>
+            <span style="font-family: var(--font-ui); opacity: 0.6;">curated ambition.</span>
+        </div>
+    </div>
+
+    <div id="custom-cursor"></div>
+
+    <header>
+        <div class="logo">
+            <img src="https://i.ibb.co/Lf6M0gb/the-1.png" alt="the overachiever" class="brand-logo">
+        </div>
+        <div class="header-right">
+            <span class="greeting">welcome back, <span id="displayName">Overachiever</span>.</span>
+            
+            <div class="icon-circle" onclick="toggleNotifs()">
+                <svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+                <div class="notif-badge" id="notifBadge">1</div>
+            </div>
+
+            <div class="icon-circle profile-pic" id="pfpDisplay" onclick="toggleMenu()" style="background-size: cover; background-position: center;">
+                <span id="pfpInitials">P</span>
+            </div>
+            
+            <div class="custom-dropdown" id="notifMenu">
+                <p id="notifText" style="margin:0; font-size: 0.9rem; line-height: 1.4;">welcome to your new sanctuary, make yourself at home.</p>
+            </div>
+
+            <div class="custom-dropdown" id="customMenu">
+                <span style="font-size: 0.7rem; opacity: 0.5; text-transform: uppercase; letter-spacing: 1px;">identity</span>
+                <input type="text" id="quickName" class="dropdown-input" placeholder="Name" onkeyup="quickUpdate()">
+                <input type="text" id="quickPfp" class="dropdown-input" placeholder="PFP URL" onkeyup="quickUpdate()">
+                
+                <div style="margin-top: 5px; margin-bottom: 10px;">
+                    <span style="font-size: 0.7rem; opacity: 0.5; text-transform: uppercase; letter-spacing: 1px; display:block; margin-bottom: 5px;">Filter Age: <span id="ageDisplay">15</span></span>
+                    <input type="range" id="quickAge" min="12" max="19" value="15" style="width: 100%; accent-color: var(--accent-main);" oninput="updateAgeFilter(this.value)">
+                </div>
+               
+                <div class="atelier-section">
+                    <span style="opacity:0.5; font-size:0.7rem; text-transform: uppercase; letter-spacing: 1px;">atelier</span>
+                    <input type="color" id="accentPicker" onchange="updateAccent(this.value)" style="width: 100%; border:none; height:30px; background:none; cursor: pointer;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">home</a></li> <li class="nav-sep">|</li>
+            <li><a href="#study">study</a></li> <li class="nav-sep">|</li>
+            <li><a href="#resources">resources</a></li> <li class="nav-sep">|</li>
+            <li><a href="#competitions">competitions</a></li> <li class="nav-sep">|</li>
+            <li><a href="#opportunities">opportunities</a></li> <li class="nav-sep">|</li>
+            <li><a href="#ideas">ideas</a></li> <li class="nav-sep">|</li>
+            <li><a href="#focus">focus</a></li> <li class="nav-sep">|</li>
+            <li><a href="#support">support</a></li>
+        </ul>
+    </nav>
+
+    <div id="home" class="page-content active">
+        <div class="layout-container">
+            <main class="feed-wrapper">
+                <div class="feed-header"><span class="section-label">we thought you might like these</span>
+                    <div class="scroll-controls">
+                        <button class="arrow-btn" onclick="scrollFeed(-1)">←</button>
+                        <button class="arrow-btn" onclick="scrollFeed(1)">→</button>
+                    </div>
+                </div>
+
+                <div class="feed-scroll-track">
+                    <div class="feed-item"></div><div class="feed-item"></div><div class="feed-item"></div>
+                    <div class="feed-item"></div><div class="feed-item"></div><div class="feed-item"></div>
+                </div>
+            </main>
+            <aside class="notepad-area"><div class="notepad">Focus on the goal. Today is yours to win.</div></aside>
+        </div>
+    </div>
+
+    <div id="competitions" class="page-content">
+        <div class="layout-container">
+            <main class="feed-wrapper">
+                <span class="section-label">competitions & challenges</span>
+                
+                <div class="filter-wrapper">
+                    <button class="filter-trigger-btn" onclick="toggleFilterPanel('compFilterPanel')">
+                        filter <span style="font-size:0.75rem;">▼</span>
+                    </button>
+                    <div class="filter-expanded-panel" id="compFilterPanel">
+                        <div class="filter-group">
+                            <span class="filter-group-title">category</span>
+                            <div class="filter-tags-container" id="compCatTags">
+                                <button class="filter-tag tag-active" onclick="setFilterTag('competition', 'category', 'all')">all categories</button>
+                                <button class="filter-tag" onclick="setFilterTag('competition', 'category', 'academic')">academic</button>
+                                <button class="filter-tag" onclick="setFilterTag('competition', 'category', 'sports')">sports</button>
+                            </div>
+                        </div>
+                        <div class="filter-group" style="margin-top:15px;">
+                            <span class="filter-group-title">interest focus</span>
+                            <div class="filter-tags-container" id="compIntTags">
+                                <button class="filter-tag tag-active" onclick="setFilterTag('competition', 'interest', 'all')">all interests</button>
+                                <button class="filter-tag" onclick="setFilterTag('competition', 'interest', 'languages')">languages</button>
+                                <button class="filter-tag" onclick="setFilterTag('competition', 'interest', 'logic & coding')">logic & coding</button>
+                                <button class="filter-tag" onclick="setFilterTag('competition', 'interest', 'business')">business</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vertical-feed-track" id="competitionsTrack"></div>
+            </main>
+        </div>
+    </div>
+
+    <div id="opportunities" class="page-content">
+        <div class="layout-container">
+            <main class="feed-wrapper">
+                <span class="section-label">curated opportunities</span>
+                
+                <div class="filter-wrapper">
+                    <button class="filter-trigger-btn" onclick="toggleFilterPanel('oppFilterPanel')">
+                        filter <span style="font-size:0.75rem;">▼</span>
+                    </button>
+                    <div class="filter-expanded-panel" id="oppFilterPanel">
+                        <div class="filter-group">
+                            <span class="filter-group-title">category</span>
+                            <div class="filter-tags-container" id="oppCatTags">
+                                <button class="filter-tag tag-active" onclick="setFilterTag('opportunity', 'category', 'all')">all categories</button>
+                                <button class="filter-tag" onclick="setFilterTag('opportunity', 'category', 'conferences')">conferences</button>
+                                <button class="filter-tag" onclick="setFilterTag('opportunity', 'category', 'volunteer')">volunteer projects</button>
+                            </div>
+                        </div>
+                        <div class="filter-group" style="margin-top:15px;">
+                            <span class="filter-group-title">interest focus</span>
+                            <div class="filter-tags-container" id="oppIntTags">
+                                <button class="filter-tag tag-active" onclick="setFilterTag('opportunity', 'interest', 'all')">all interests</button>
+                                <button class="filter-tag" onclick="setFilterTag('opportunity', 'interest', 'business')">business</button>
+                                <button class="filter-tag" onclick="setFilterTag('opportunity', 'interest', 'logic & coding')">logic & coding</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vertical-feed-track" id="opportunitiesTrack"></div>
+            </main>
+        </div>
+    </div>
+
+    <div id="item-details" class="page-content">
+        <div class="layout-container" style="width:100%;">
+            <div class="details-grid" id="detailsViewTarget"></div>
+        </div>
+    </div>
+
+    <div id="support" class="page-content">
+        <div class="layout-container">
+            <main class="feed-wrapper" style="text-align: center; padding-top: 5vh;">
+                <span class="section-label" style="display: block; margin-bottom: 2rem;">how can we help?</span>
+                <div style="display: flex; gap: 1.5rem; justify-content: center;">
+                    <a href="mailto:tech@site.com" class="support-btn">technical support</a>
+                    <a href="#member-support" class="support-btn">member support</a>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="study" class="page-content"><div class="layout-container"><main class="feed-wrapper"><span class="section-label">study</span></main></div></div>
+    <div id="resources" class="page-content"><div class="layout-container"><main class="feed-wrapper"><span class="section-label">resources</span></main></div></div>
+    <div id="ideas" class="page-content"><div class="layout-container"><main class="feed-wrapper"><span class="section-label">ideas</span></main></div></div>
+    <div id="focus" class="page-content"><div class="layout-container"><main class="feed-wrapper"><span class="section-label">focus</span></main></div></div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div>
+                <img src="https://i.ibb.co/Lf6M0gb/the-1.png" alt="logo" class="logo-footer">
+            </div>
+            <div class="footer-links">
+                <a href="#support">help</a>
+                <a href="https://instagram.com" target="_blank">instagram</a>
+            </div>
+        </div> 
+    </footer>
+
+    <script>
+        // Data placeholder for Live Feed Target
+        let portalData = [];
+
+        // Master Filter Configurations tracking object
+        let activeFilters = {
+            competition: { category: 'all', interest: 'all' },
+            opportunity: { category: 'all', interest: 'all' }
+        };
+
+        // CURSOR
+        const cursor = document.getElementById('custom-cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // UNIFIED ASYNCHRONOUS LOAD LISTENER
+        window.addEventListener('load', async () => {
+            setTimeout(() => {
+                const loader = document.getElementById('loading-screen');
+                if (loader) { loader.style.opacity = '0'; setTimeout(() => { loader.style.display = 'none'; }, 1000); }
+            }, 1000);
+            
+            // Load identity from storage
+            const savedName = localStorage.getItem('oa_name');
+            const savedPfp = localStorage.getItem('oa_pfp');
+            if(savedName) {
+                document.getElementById('displayName').innerText = savedName;
+                document.getElementById('quickName').value = savedName;
+            }
+            if(savedPfp) {
+                document.getElementById('pfpDisplay').style.backgroundImage = `url(${savedPfp})`;
+                document.getElementById('pfpInitials').style.display = 'none';
+                document.getElementById('quickPfp').value = savedPfp;
+            }
+
+            // Restore slider values state profile safely
+            const savedAge = localStorage.getItem('oa_age') || "15";
+            const ageSlider = document.getElementById('quickAge');
+            if (ageSlider) {
+                ageSlider.value = savedAge;
+                displayAgeText(savedAge);
+            }
+
+            // Async load the automated feed system file
+            try {
+                const response = await fetch('data.json');
+                portalData = await response.json();
+            } catch (error) {
+                console.error("Could not fetch the automated live data feed file:", error);
+                portalData = [];
+            }
+
+            // Trigger visual builders
+            renderPortalFeeds();
+            
+            // Deep linking intercept hash evaluation engine triggers
+            window.addEventListener('hashchange', checkDeepDetailsRoute);
+            checkDeepDetailsRoute();
+        });
+
+        function toggleMenu() {
+            document.getElementById('notifMenu').style.display = 'none';
+            const m = document.getElementById('customMenu');
+            m.style.display = (m.style.display === 'block') ? 'none' : 'block';
+        }
+
+        function toggleNotifs() {
+            document.getElementById('customMenu').style.display = 'none';
+            const m = document.getElementById('notifMenu');
+            m.style.display = (m.style.display === 'block') ? 'none' : 'block';
+            if (document.getElementById('notifBadge')) document.getElementById('notifBadge').style.display = 'none';
+        }
+
+        function updateAccent(c) { document.documentElement.style.setProperty('--accent-main', c); }
+
+        function quickUpdate() {
+            const name = document.getElementById('quickName').value;
+            const pfp = document.getElementById('quickPfp').value;
+            
+            if(name) {
+                document.getElementById('displayName').innerText = name;
+                localStorage.setItem('oa_name', name);
+            }
+            if(pfp) {
+                document.getElementById('pfpDisplay').style.backgroundImage = `url(${pfp})`;
+                document.getElementById('pfpInitials').style.display = 'none';
+                localStorage.setItem('oa_pfp', pfp);
+            }
+        }
+
+        function updateContent() {
+            const hash = window.location.hash.substring(1) || 'home';
+            if (hash.startsWith('details?id=')) return; // Pass control safely over to router check
+            
+            document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active'));
+            const activePage = document.getElementById(hash);
+            if (activePage) activePage.classList.add('active');
+            document.querySelectorAll('nav a').forEach(l => {
+                l.classList.remove('active-link');
+                if (l.getAttribute('href') === '#' + hash) l.classList.add('active-link');
+            });
+        }
+        window.addEventListener('hashchange', updateContent);
+        window.onload = updateContent;
+
+        function scrollFeed(direction) {
+            const activeTrack = document.querySelector('.page-content.active .feed-scroll-track');
+            if (activeTrack) activeTrack.scrollBy({ left: 400 * direction, behavior: 'smooth' });
+        }
+
+        window.onclick = (e) => {
+            if (!e.target.closest('.header-right')) {
+                if (document.getElementById('customMenu')) document.getElementById('customMenu').style.display = 'none';
+                if (document.getElementById('notifMenu')) document.getElementById('notifMenu').style.display = 'none';
+            }
+        }
+
+        // Structural filter panel toggling tool logic routines
+        function toggleFilterPanel(panelId) {
+            const p = document.getElementById(panelId);
+            p.style.display = (p.style.display === 'block') ? 'none' : 'block';
+        }
+
+        // Custom string boundary transformer for label sliders
+        function displayAgeText(ageVal) {
+            const display = document.getElementById('ageDisplay');
+            if (!display) return;
+            if (ageVal == "12") {
+                display.innerText = "under 13";
+            } else if (ageVal == "19") {
+                display.innerText = "over 18";
+            } else {
+                display.innerText = ageVal;
+            }
+        }
+
+        // Profile dynamic range tracker changes updater callback
+        function updateAgeFilter(ageVal) {
+            displayAgeText(ageVal);
+            localStorage.setItem('oa_age', ageVal);
+            renderPortalFeeds(); 
+        }
+
+        // Tag value active controller selection managers
+        function setFilterTag(section, layer, value) {
+            activeFilters[section][layer] = value;
+            const containerId = (section === 'competition') 
+                ? (layer === 'category' ? 'compCatTags' : 'compIntTags')
+                : (layer === 'category' ? 'oppCatTags' : 'oppIntTags');
+                
+            const container = document.getElementById(containerId);
+            if(container) {
+                container.querySelectorAll('.filter-tag').forEach(btn => {
+                    if(btn.getAttribute('onclick').includes(`'${value}'`)) {
+                        btn.classList.add('tag-active');
+                    } else {
+                        btn.classList.remove('tag-active');
+                    }
+                });
+            }
+            renderPortalFeeds();
+        }
+
+        // Master UI Processing Block loop
+        function renderPortalFeeds() {
+            const compTrack = document.getElementById('competitionsTrack');
+            const oppTrack = document.getElementById('opportunitiesTrack');
+            
+            if (compTrack) compTrack.innerHTML = '';
+            if (oppTrack) oppTrack.innerHTML = '';
+            
+            const today = new Date().toISOString().split('T')[0];
+            const savedAge = parseInt(localStorage.getItem('oa_age') || "15");
+
+            portalData.forEach(item => {
+                if (today > item.deadline) return;
+                if (savedAge < item.minAge || savedAge > item.maxAge) return;
+
+                const filters = activeFilters[item.type];
+                if (filters.category !== 'all' && item.category !== filters.category) return;
+                if (filters.interest !== 'all' && item.interest !== filters.interest) return;
+
+                const trackElement = (item.type === 'competition') ? compTrack : oppTrack;
+                if (!trackElement) return;
+
+                const readableDeadline = new Date(item.deadline).toLocaleDateString('en-US', {
+                    month: 'short', day: 'numeric', year: 'numeric'
+                });
+
+                const card = document.createElement('div');
+                card.className = 'feed-item';
+                card.style.flexDirection = 'row';
+                card.style.alignItems = 'center';
+                card.style.gap = '3rem';
+
+                card.innerHTML = `
+                    <div style="flex: 1;">
+                        <div style="display:flex; gap:15px; margin-bottom:12px; align-items:center;">
+                            <span style="font-size:0.7rem; opacity:0.4; text-transform:uppercase; letter-spacing:1px;">Due: ${readableDeadline}</span>
+                            <span style="font-size:0.65rem; background:#f0f0f0; padding:2px 8px; text-transform:lowercase; opacity:0.7;">${item.category}</span>
+                        </div>
+                        <h3 style="font-size:1.5rem; font-family:var(--font-ui); font-weight:normal; margin:0 0 10px 0;">${item.title}</h3>
+                        <p style="font-size:0.9rem; opacity:0.6; line-height:1.5; margin:0; max-width:85%;">${item.shortDesc}</p>
+                    </div>
+                    <div style="flex-shrink: 0;">
+                        <a href="#details?id=${item.id}" class="support-btn" style="white-space: nowrap;">see more</a>
+                    </div>
+                `;
+                trackElement.appendChild(card);
+            });
+        }
+
+        // Full router evaluation layer loops logic
+        function checkDeepDetailsRoute() {
+            const hash = window.location.hash;
+            if (hash.startsWith('#details?id=')) {
+                const id = hash.split('=')[1];
+                const item = portalData.find(o => o.id === id);
+                if (item) {
+                    renderComprehensiveDetailsPage(item);
+                    document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active'));
+                    document.getElementById('item-details').classList.add('active');
+                }
+            }
+        }
+
+        // Build exhaustive full specification view maps layouts blocks
+        function renderComprehensiveDetailsPage(item) {
+            const target = document.getElementById('detailsViewTarget');
+            if (!target) return;
+
+            const readableDeadline = new Date(item.deadline).toLocaleDateString('en-US', {
+                month: 'long', day: 'numeric', year: 'numeric'
+            });
+
+            let customTypeSpecRow = item.type === 'competition' 
+                ? `<tr><td class="meta-label">competition rounds</td><td class="meta-value">${item.rounds || 'N/A'}</td></tr>`
+                : ``;
+
+            target.innerHTML = `
+                <div class="details-main">
+                    <div style="margin-bottom: 1rem;">
+                        <a href="#${item.type === 'competition' ? 'competitions' : 'opportunities'}" style="text-decoration:none; color:black; font-size:0.9rem; opacity:0.5;">← back to overview list</a>
+                    </div>
+                    <h1>${item.title}</h1>
+                    <p>${item.fullDetails}</p>
+                    
+                    <a href="${item.link}" target="_blank" class="support-btn" style="padding: 1rem 3rem; font-size:1.1rem;">proceed to formal registration</a>
+                </div>
+                
+                <aside style="border-left: 1px solid #eee; padding-left: 3rem;">
+                    <span style="font-size: 0.75rem; opacity: 0.5; text-transform: uppercase; letter-spacing: 1px; display: block;">comprehensive specifications</span>
+                    <table class="meta-spec-table">
+                        <tbody>
+                            <tr><td class="meta-label">classification structure</td><td class="meta-value">${item.type}</td></tr>
+                            <tr><td class="meta-label">category criteria</td><td class="meta-value">${item.category}</td></tr>
+                            <tr><td class="meta-label">interest target focus</td><td class="meta-value">${item.interest}</td></tr>
+                            <tr><td class="meta-label">eligibility age window</td><td class="meta-value">${item.minAge} — ${item.maxAge} years old</td></tr>
+                            <tr><td class="meta-label">registration due date</td><td class="meta-value" style="color:#ff4d4d;">${readableDeadline}</td></tr>
+                            <tr><td class="meta-label">event execution schedule</td><td class="meta-value">${item.eventDate || 'N/A'}</td></tr>
+                            <tr><td class="meta-label">venue & platform profile</td><td class="meta-value">${item.location || 'N/A'}</td></tr>
+                            ${customTypeSpecRow}
+                            <tr><td class="meta-label">financial entry requirement</td><td class="meta-value">${item.fee || 'Free Entry'}</td></tr>
+                            <tr><td class="meta-label">prizes & return yields</td><td class="meta-value">${item.prizes || 'N/A'}</td></tr>
+                        </tbody>
+                    </table>
+                </aside>
+            `;
+        }
+    </script>
+</body>
+</html>
