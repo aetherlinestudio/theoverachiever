@@ -46,11 +46,11 @@ async function discoverOpportunities() {
     `;
 
     try {
-        const response = await ai.models.generateContent({
-            model: "gemini-2.0-flash", 
+const response = await ai.models.generateContent({
+            model: "gemini-2.5-flash", // 👈 Upgrading to 2.5 to clear the 2.0 block
             contents: prompt,
             config: {
-                tools: [{ googleSearch: {} }] // Removed responseMimeType to fix the API conflict
+                tools: [{ googleSearch: {} }] 
             }
         });
 
