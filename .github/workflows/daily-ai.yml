@@ -1,0 +1,34 @@
+name: Daily AI Web Surfing Feed
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs exactly at midnight UTC every day
+  workflow_dispatch: # Allows you to run it manually anytime from GitHub
+
+jobs:
+  surf-and-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout project files
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js environment
+        uses: actions/uses/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Google AI SDK
+        run: npm install @google/genai
+
+      - name: Run AI Web Crawler Script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }} # Your free secret API key
+        run: node crawler.js
+
+      - name: Commit and Push fresh data.json live
+        run: |
+          git config --global user.name "AI-Agent-Bot"
+          git config --global user.email "bot@overachiever.internal"
+          git add data.json
+          git commit -m "Automated Daily Discovery Update [skip ci]" || exit 0
+          git push
