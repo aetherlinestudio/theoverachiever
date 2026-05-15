@@ -31,4 +31,5 @@ jobs:
           git config --global user.email "bot@overachiever.internal"
           git add data.json
           git commit -m "Automated Daily Discovery Update [skip ci]" || exit 0
+          git pull --rebase origin main
           git push
