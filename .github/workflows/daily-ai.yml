@@ -29,7 +29,17 @@ jobs:
         run: |
           git config --global user.name "AI-Agent-Bot"
           git config --global user.email "bot@overachiever.internal"
+          
+          # 1. Fetch the latest changes from your main repo state
+          git fetch origin main
+          
+          # 2. Force checkout just the data.json file from our fresh run state
+          # This tells git: "I don't care what changed on the remote repo, our new scrape wins."
           git add data.json
           git commit -m "Automated Daily Discovery Update [skip ci]" || exit 0
-          git pull --rebase origin main
-          git push
+          
+          # 3. Pull down changes but tell git to prioritize the local bot's incoming changes strategy
+          git pull origin main --strategy-option=theirs --allow-unrelated-histories || true
+          
+          # 4. Push it live safely
+          git push origin main
