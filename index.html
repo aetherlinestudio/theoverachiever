@@ -655,54 +655,44 @@ try {
         }
 
         // Master UI Processing Block loop
-        function renderPortalFeeds() {
-            const compTrack = document.getElementById('competitionsTrack');
-            const oppTrack = document.getElementById('opportunitiesTrack');
-            
-            if (compTrack) compTrack.innerHTML = '';
-            if (oppTrack) oppTrack.innerHTML = '';
-            
-            const today = new Date().toISOString().split('T')[0];
-            const savedAge = parseInt(localStorage.getItem('oa_age') || "15");
+function renderPortalFeeds(data) {
+    if (!Array.isArray(data)) return;
 
-            portalData.forEach(item => {
-                if (today > item.deadline) return;
-                if (savedAge < item.minAge || savedAge > item.maxAge) return;
+    const feedContainer = document.getElementById('your-feed-container-id'); // Make sure this matches your container ID
+    if (!feedContainer) return;
+    
+    feedContainer.innerHTML = ''; // Clear old content
 
-                const filters = activeFilters[item.type];
-                if (filters.category !== 'all' && item.category !== filters.category) return;
-                if (filters.interest !== 'all' && item.interest !== filters.interest) return;
+    data.forEach(item => {
+        // 🌟 1. Safety Guard: Make sure the item actually exists
+        if (!item) return;
 
-                const trackElement = (item.type === 'competition') ? compTrack : oppTrack;
-                if (!trackElement) return;
+        // 🌟 2. Dynamic Tagging: Fallback to "Opportunity" if type isn't explicitly a competition
+        const displayType = (item.type && item.type.toLowerCase() === 'competition') 
+            ? 'Competition' 
+            : 'Opportunity';
 
-                const readableDeadline = new Date(item.deadline).toLocaleDateString('en-US', {
-                    month: 'short', day: 'numeric', year: 'numeric'
-                });
+        // 🌟 3. Property Fallback: Prevent the 'category' crash if it's missing or named differently
+        const displayCategory = item.category || 'General Academic';
+        const displayDeadline = item.deadline || 'Ongoing';
 
-                const card = document.createElement('div');
-                card.className = 'feed-item';
-                card.style.flexDirection = 'row';
-                card.style.alignItems = 'center';
-                card.style.gap = '3rem';
+        // 🌟 4. Build your dynamic HTML template cards
+        const cardHTML = `
+            <div class="portal-card ${displayType.toLowerCase()}">
+                <span class="badge">${displayType}</span>
+                <span class="category-tag">${displayCategory}</span>
+                <h3>${item.title || 'Untitled Opportunity'}</h3>
+                <p>${item.shortDesc || item.fullDetails || ''}</p>
+                <div class="meta-info">
+                    <strong>Deadline:</strong> ${displayDeadline}
+                </div>
+                <a href="${item.link || '#'}" target="_blank" class="view-btn">Explore</a>
+            </div>
+        `;
 
-                card.innerHTML = `
-                    <div style="flex: 1;">
-                        <div style="display:flex; gap:15px; margin-bottom:12px; align-items:center;">
-                            <span style="font-size:0.7rem; opacity:0.4; text-transform:uppercase; letter-spacing:1px;">Due: ${readableDeadline}</span>
-                            <span style="font-size:0.65rem; background:#f0f0f0; padding:2px 8px; text-transform:lowercase; opacity:0.7;">${item.category}</span>
-                        </div>
-                        <h3 style="font-size:1.5rem; font-family:var(--font-ui); font-weight:normal; margin:0 0 10px 0;">${item.title}</h3>
-                        <p style="font-size:0.9rem; opacity:0.6; line-height:1.5; margin:0; max-width:85%;">${item.shortDesc}</p>
-                    </div>
-                    <div style="flex-shrink: 0;">
-                        <a href="#details?id=${item.id}" class="support-btn" style="white-space: nowrap;">see more</a>
-                    </div>
-                `;
-                trackElement.appendChild(card);
-            });
-        }
-
+        feedContainer.innerHTML += cardHTML;
+    });
+}
         // Full router evaluation layer loops logic
         function checkDeepDetailsRoute() {
             const hash = window.location.hash;
