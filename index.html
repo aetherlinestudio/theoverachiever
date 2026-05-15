@@ -516,6 +516,7 @@
             try {
                 const response = await fetch('data.json');
                 portalData = await response.json();
+                generateSmartNotification(portalData);
             } catch (error) {
                 console.error("Could not fetch the automated live data feed file:", error);
                 portalData = [];
@@ -738,6 +739,49 @@
                 </aside>
             `;
         }
+
+function generateSmartNotification(allCompetitions) {
+    const notificationTextElement = document.getElementById('notification-text');
+    if (!notificationTextElement) return;
+
+    // 1. Grab saved filters from local storage (uses your exact storage keys)
+    const preferredInterest = localStorage.getItem('portal_interest') || 'logic & coding';
+    const userAge = parseInt(localStorage.getItem('portal_age')) || 15;
+
+    // 2. Filter the incoming AI data array for active matches
+    const matches = allCompetitions.filter(item => {
+        const ageMatch = userAge >= item.minAge && userAge <= item.maxAge;
+        const interestMatch = item.interest && item.interest.toLowerCase() === preferredInterest.toLowerCase();
+        return ageMatch && interestMatch;
+    });
+
+    // 3. Fallback: if no perfect match, grab anything valid for their age profile
+    const activePool = matches.length > 0 ? matches : allCompetitions.filter(item => userAge >= item.minAge && userAge <= item.maxAge);
+
+    if (activePool.length === 0) {
+        notificationTextElement.innerHTML = `<span>✨ System calibrated. Awaiting the next global data wave.</span>`;
+        return;
+    }
+
+    // 4. Highlight the topmost discovery from the AI's daily crawl
+    const spotlight = activePool[0];
+
+    // 5. Inject a dynamic, clickable link with your minimalist aesthetic
+    notificationTextElement.innerHTML = `
+        <span style="cursor: pointer; text-transform: lowercase; font-weight: 500;" onclick="navigateToSpotlight('${spotlight.id}')">
+            ⚡ you might like this: new ${spotlight.interest} alert — <em>"${spotlight.title.toLowerCase()}"</em>. click to view specs.
+        </span>
+    `;
+}
+
+// Seamless hash-routing redirect into your detailed spec panel
+function navigateToSpotlight(itemId) {
+    window.location.hash = `#details?id=${itemId}`;
+    if (typeof checkDeepDetailsRoute === 'function') {
+        checkDeepDetailsRoute();
+    }
+}
+        
     </script>
 </body>
 </html>
