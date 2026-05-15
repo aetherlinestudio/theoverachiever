@@ -25,21 +25,29 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node crawler.js
 
+      - name: Run Crawler Script
+        run: |
+          # This runs your existing scraping script 
+          # (We will make sure it handles appending/deduplicating below!)
+          python crawler.js 
+
       - name: Commit and Push fresh data.json live
         run: |
           git config --global user.name "AI-Agent-Bot"
           git config --global user.email "bot@overachiever.internal"
           
-          # 1. Fetch the latest changes from your main repo state
-          git fetch origin main
+          # 1. Stash the newly generated data file safely in memory
+          cp data.json ../data_backup.json
           
-          # 2. Force checkout just the data.json file from our fresh run state
-          # This tells git: "I don't care what changed on the remote repo, our new scrape wins."
+          # 2. Hard reset the local repo git state to clean any stuck rebases
+          git rebase --abort || true
+          git fetch origin main
+          git reset --hard origin/main
+          
+          # 3. Bring back our freshly crawled data file
+          cp ../data_backup.json data.json
+          
+          # 4. Commit and push normally with zero merge-conflict traps
           git add data.json
           git commit -m "Automated Daily Discovery Update [skip ci]" || exit 0
-          
-          # 3. Pull down changes but tell git to prioritize the local bot's incoming changes strategy
-          git pull origin main --strategy-option=theirs --allow-unrelated-histories || true
-          
-          # 4. Push it live safely
           git push origin main
