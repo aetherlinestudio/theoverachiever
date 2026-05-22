@@ -26,6 +26,9 @@ jobs:
         run: node crawler.js
 
       - name: Run Crawler Script
+        env:
+          # 🌟 THE FIX: This injects your secure GitHub Secret into the runner's memory
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           node crawler.js
 
