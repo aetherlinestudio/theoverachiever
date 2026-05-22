@@ -45,14 +45,33 @@ async function discoverOpportunities() {
         }
     `;
 
-    try {
-        const response = await ai.models.generateContent({
-            model: "gemini-2.5-flash", 
-            contents: prompt,
-            config: {
-                tools: [{ googleSearch: {} }] 
+try {
+        let response;
+        let attempts = 0;
+        const maxAttempts = 3;
+        const delay = (ms) => new Promise(res => setTimeout(res, ms));
+
+        while (attempts < maxAttempts) {
+            try {
+                attempts++;
+                response = await ai.models.generateContent({
+                    model: "gemini-2.5-flash", 
+                    contents: prompt,
+                    config: {
+                        tools: [{ googleSearch: {} }] 
+                    }
+                });
+                break; // 🌟 Success! Break out of the retry loop.
+            } catch (aiError) {
+                // If it's a 503 server error and we have attempts left, wait and retry
+                if (aiError.status === 503 && attempts < maxAttempts) {
+                    console.log(`Model is busy (503). Retrying attempt ${attempts}/${maxAttempts} in 5 seconds...`);
+                    await delay(5000);
+                } else {
+                    throw aiError; // Rethrow if it's a different error or we ran out of attempts
+                }
             }
-        });
+        }
 
         let freshDataText = response.text.trim();
         
@@ -123,6 +142,5 @@ async function discoverOpportunities() {
         console.error("The AI ran into an issue surfing the web:", error);
         process.exit(1);
     }
-}
 
 discoverOpportunities();
