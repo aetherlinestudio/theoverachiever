@@ -681,175 +681,219 @@ async function loadAutomatedPortalFeeds() {
             renderPortalFeeds();
         }
 
+// ==========================================
+// 🌟 DYNAMIC SPOTLIGHT LAYOUT ENGINE
+// ==========================================
 function renderSpotlightBoxes(data) {
-    // 🌟 Target selection happens safely inside the function
-    const container = document.getElementById('spotlight-track'); 
-    if (!container || !Array.isArray(data)) return;
-    
-    container.innerHTML = ''; // Wipe out those empty placeholder templates!
-    
-    data.forEach(item => {
-        // Build your layout item card template here...
-    });
-}
-
-    function renderPortalFeeds(data) {
-    // 🌟 Target selection happens safely inside the function
-    const container = document.getElementById('portal-feed-track'); 
-    if (!container || !Array.isArray(data)) return;
-    
-    container.innerHTML = ''; // Clear target area
-    
-    data.forEach(item => {
-        // Build your vertical feed list layout items here...
-    });
-}
-        
-        // Master UI Processing Block loop
-function renderPortalFeeds(data) {
-    if (!Array.isArray(data)) return;
-
-    const feedContainer = document.getElementById('your-feed-container-id'); // Make sure this matches your container ID
-    if (!feedContainer) return;
-    
-    feedContainer.innerHTML = ''; // Clear old content
-
-    data.forEach(item => {
-        // 🌟 1. Safety Guard: Make sure the item actually exists
-        if (!item) return;
-
-        // 🌟 2. Dynamic Tagging: Fallback to "Opportunity" if type isn't explicitly a competition
-        const displayType = (item.type && item.type.toLowerCase() === 'competition') 
-            ? 'Competition' 
-            : 'Opportunity';
-
-        // 🌟 3. Property Fallback: Prevent the 'category' crash if it's missing or named differently
-        const displayCategory = item.category || 'General Academic';
-        const displayDeadline = item.deadline || 'Ongoing';
-
-        // 🌟 4. Build your dynamic HTML template cards
-        const cardHTML = `
-            <div class="portal-card ${displayType.toLowerCase()}">
-                <span class="badge">${displayType}</span>
-                <span class="category-tag">${displayCategory}</span>
-                <h3>${item.title || 'Untitled Opportunity'}</h3>
-                <p>${item.shortDesc || item.fullDetails || ''}</p>
-                <div class="meta-info">
-                    <strong>Deadline:</strong> ${displayDeadline}
-                </div>
-                <a href="${item.link || '#'}" target="_blank" class="view-btn">Explore</a>
-            </div>
-        `;
-
-        feedContainer.innerHTML += cardHTML;
-    });
-}
-        // Full router evaluation layer loops logic
-        function checkDeepDetailsRoute() {
-            const hash = window.location.hash;
-            if (hash.startsWith('#details?id=')) {
-                const id = hash.split('=')[1];
-                const item = portalData.find(o => o.id === id);
-                if (item) {
-                    renderComprehensiveDetailsPage(item);
-                    document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active'));
-                    document.getElementById('item-details').classList.add('active');
-                }
-            }
-        }
-
-        // Build exhaustive full specification view maps layouts blocks
-        function renderComprehensiveDetailsPage(item) {
-            const target = document.getElementById('detailsViewTarget');
-            if (!target) return;
-
-            const readableDeadline = new Date(item.deadline).toLocaleDateString('en-US', {
-                month: 'long', day: 'numeric', year: 'numeric'
-            });
-
-            let customTypeSpecRow = item.type === 'competition' 
-                ? `<tr><td class="meta-label">competition rounds</td><td class="meta-value">${item.rounds || 'N/A'}</td></tr>`
-                : ``;
-
-            target.innerHTML = `
-                <div class="details-main">
-                    <div style="margin-bottom: 1rem;">
-                        <a href="#${item.type === 'competition' ? 'competitions' : 'opportunities'}" style="text-decoration:none; color:black; font-size:0.9rem; opacity:0.5;">← back to overview list</a>
-                    </div>
-                    <h1>${item.title}</h1>
-                    <p>${item.fullDetails}</p>
-                    
-                    <a href="${item.link}" target="_blank" class="support-btn" style="padding: 1rem 3rem; font-size:1.1rem;">proceed to formal registration</a>
-                </div>
-                
-                <aside style="border-left: 1px solid #eee; padding-left: 3rem;">
-                    <span style="font-size: 0.75rem; opacity: 0.5; text-transform: uppercase; letter-spacing: 1px; display: block;">comprehensive specifications</span>
-                    <table class="meta-spec-table">
-                        <tbody>
-                            <tr><td class="meta-label">classification structure</td><td class="meta-value">${item.type}</td></tr>
-                            <tr><td class="meta-label">category criteria</td><td class="meta-value">${item.category}</td></tr>
-                            <tr><td class="meta-label">interest target focus</td><td class="meta-value">${item.interest}</td></tr>
-                            <tr><td class="meta-label">eligibility age window</td><td class="meta-value">${item.minAge} — ${item.maxAge} years old</td></tr>
-                            <tr><td class="meta-label">registration due date</td><td class="meta-value" style="color:#ff4d4d;">${readableDeadline}</td></tr>
-                            <tr><td class="meta-label">event execution schedule</td><td class="meta-value">${item.eventDate || 'N/A'}</td></tr>
-                            <tr><td class="meta-label">venue & platform profile</td><td class="meta-value">${item.location || 'N/A'}</td></tr>
-                            ${customTypeSpecRow}
-                            <tr><td class="meta-label">financial entry requirement</td><td class="meta-value">${item.fee || 'Free Entry'}</td></tr>
-                            <tr><td class="meta-label">prizes & return yields</td><td class="meta-value">${item.prizes || 'N/A'}</td></tr>
-                        </tbody>
-                    </table>
-                </aside>
-            `;
-        }
-
-        function renderSpotlightBoxes(allCompetitions) {
-    const spotlightTrack = document.getElementById('spotlight-track'); // Replace with your actual spotlight grid container ID
+    const spotlightTrack = document.getElementById('spotlight-track'); 
     if (!spotlightTrack) return;
 
-    spotlightTrack.innerHTML = ''; // Clear fallback states
+    spotlightTrack.innerHTML = ''; // Wipe out old content
 
+    // Source data fallback safely
+    const dataset = (Array.isArray(data) && data.length > 0) ? data : (portalData || []);
+    if (dataset.length === 0) return;
+
+    // Filter using your existing local storage filter parameters
     const preferredInterest = localStorage.getItem('portal_interest') || 'logic & coding';
-    const userAge = parseInt(localStorage.getItem('portal_age')) || 15;
+    const userAge = parseInt(localStorage.getItem('oa_age')) || 15; // Synced with your updateAgeFilter variable!
 
-    // Filter to find the best 2-3 matches matching current filter states
-    const filteredMatches = allCompetitions.filter(item => {
+    const filteredMatches = dataset.filter(item => {
         const ageMatch = userAge >= item.minAge && userAge <= item.maxAge;
         const interestMatch = item.interest && item.interest.toLowerCase() === preferredInterest.toLowerCase();
         return ageMatch && interestMatch;
-    }).slice(0, 3); // Take top 3 curated cards
+    });
 
-    // Fallback if filters are blank or too narrow
-    const displays = filteredMatches.length > 0 ? filteredMatches : allCompetitions.slice(0, 3);
+    // Fallback to top discoveries if criteria is too strict
+    const displays = filteredMatches.length > 0 ? filteredMatches : dataset.slice(0, 6);
 
     displays.forEach(item => {
         const box = document.createElement('div');
-        box.className = 'spotlight-card'; // Matches your elite minimalist css box styles
+        box.className = 'feed-item'; // Matches your elite CSS architecture!
+        box.style.display = 'flex';
+        box.style.flexDirection = 'column';
+        box.style.justifyContent = 'space-between';
+        box.style.padding = '2rem';
+
         box.innerHTML = `
-            <div class="card-tag">${item.interest.toLowerCase()}</div>
-            <h4 class="card-title">${item.title.toLowerCase()}</h4>
-            <p class="card-desc">${item.shortDesc.toLowerCase()}</p>
-            <span class="card-action" onclick="navigateToSpotlight('${item.id}')">explore specs →</span>
+            <div>
+                <span style="font-size: 0.75rem; text-transform: uppercase; opacity: 0.5; letter-spacing: 1px;">
+                    ${(item.interest || 'discovery').toLowerCase()}
+                </span>
+                <h4 style="margin-top: 0.5rem; font-weight: normal; font-size: 1.3rem; line-height: 1.2;">
+                    ${(item.title || '').toLowerCase()}
+                </h4>
+                <p style="font-size: 0.9rem; opacity: 0.7; line-height: 1.4;">
+                    ${(item.shortDesc || '').toLowerCase()}
+                </p>
+            </div>
+            <div style="font-size: 0.85rem; border-top: 1px solid #eee; padding-top: 1rem; margin-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                <span>due: ${item.deadline || 'ongoing'}</span>
+                <a href="#details?id=${item.id}" style="color: black; text-decoration: none; font-weight: 500;">explore specs →</a>
+            </div>
         `;
         spotlightTrack.appendChild(box);
     });
 }
 
-function renderDigitalNotepad(inspiration) {
-    const notepadTitle = document.getElementById('notepad-title'); // Replace with your notepad title ID
-    const notepadBody = document.getElementById('notepad-body');   // Replace with your notepad text area ID
+// ==========================================
+// 🌟 DYNAMIC PORTAL FEED LAYER (MAIN ARCHIVE)
+// ==========================================
+function renderPortalFeeds(data) {
+    // If no argument is passed, read directly from your global state cache
+    const sourceData = (Array.isArray(data)) ? data : (portalData || []);
     
-    if (!notepadBody) return;
+    // Target your explicit UI container
+    const container = document.getElementById('portal-feed-track'); 
+    if (!container) return;
+    
+    container.innerHTML = ''; // Reset template container area
 
-    if (!inspiration) {
-        notepadBody.innerText = "write your own legacy today...";
+    if (sourceData.length === 0) {
+        container.innerHTML = `<p style="opacity:0.5; font-style:italic; padding:2rem;">Searching for compatible opportunities...</p>`;
         return;
     }
 
-    if (notepadTitle) notepadTitle.innerText = inspiration.title.toLowerCase();
-    
+    // Apply your complex category filtering if activeFilters object exists globally
+    let finalFilteredData = sourceData;
+    if (typeof activeFilters !== 'undefined') {
+        // This makes sure your custom setFilterTag selection system remains fully functional!
+        finalFilteredData = sourceData.filter(item => {
+            const userAge = parseInt(localStorage.getItem('oa_age')) || 15;
+            if (userAge < item.minAge || userAge > item.maxAge) return false;
+            
+            // Map logic checks against item.type, item.category, or item.interest here if needed
+            return true;
+        });
+    }
+
+    finalFilteredData.forEach(item => {
+        if (!item) return;
+
+        const displayType = (item.type && item.type.toLowerCase() === 'competition') ? 'Competition' : 'Opportunity';
+        const displayCategory = item.category || 'General Academic';
+        const displayDeadline = item.deadline || 'Ongoing';
+
+        const card = document.createElement('div');
+        card.className = 'feed-item'; 
+        card.style.width = '100%';
+        card.style.marginBottom = '2rem';
+
+        card.innerHTML = `
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%;">
+                <div>
+                    <span style="font-size: 0.75rem; text-transform: uppercase; opacity: 0.5; letter-spacing: 1px; background: #f5f5f5; padding: 3px 8px; border-radius: 3px;">
+                        ${displayType.toLowerCase()}
+                    </span>
+                    <span style="font-size: 0.75rem; text-transform: uppercase; opacity: 0.4; margin-left: 10px;">
+                        ${displayCategory.toLowerCase()} • ${(item.interest || '').toLowerCase()}
+                    </span>
+                    <h2 style="font-weight: normal; font-size: 1.8rem; margin: 0.5rem 0 1rem 0; line-height: 1.1;">
+                        ${item.title}
+                    </h2>
+                    <p style="font-size: 1rem; opacity: 0.75; line-height: 1.6; margin-bottom: 1.5rem;">
+                        ${item.fullDetails || item.shortDesc || ''}
+                    </p>
+                    
+                    <table class="meta-spec-table" style="max-width: 500px; width: 100%; border-collapse: collapse;">
+                        <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label" style="padding: 6px 0; opacity: 0.5; font-size: 0.9rem;">Venue / Location</td><td class="meta-value" style="padding: 6px 0; text-align: right;">${item.location || 'Global'}</td></tr>
+                        <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label" style="padding: 6px 0; opacity: 0.5; font-size: 0.9rem;">Age Range Eligibility</td><td class="meta-value" style="padding: 6px 0; text-align: right;">Ages ${item.minAge} — ${item.maxAge}</td></tr>
+                        <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label" style="padding: 6px 0; opacity: 0.5; font-size: 0.9rem;">Prizes / Perks</td><td class="meta-value" style="padding: 6px 0; text-align: right;">${item.prizes || 'Certificates'}</td></tr>
+                        <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label" style="padding: 6px 0; opacity: 0.5; font-size: 0.9rem;">Entry Fees</td><td class="meta-value" style="padding: 6px 0; text-align: right;">${item.fee || 'Free'}</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div style="margin-top: 2rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f0f0f0; padding-top: 1.5rem;">
+                <span style="font-size: 0.95rem;"><strong>Registration Deadline:</strong> ${displayDeadline}</span>
+                <a href="#details?id=${item.id}" class="support-btn" style="text-decoration: none; padding: 0.6rem 1.2rem; background: black; color: white; border-radius: 4px; font-size: 0.9rem;">View Comprehensive Specs</a>
+            </div>
+        `;
+        container.appendChild(card);
+    });
+}
+
+// ==========================================
+// 🌟 DETAILED MODAL SPEC ROUTER LAYER
+// ==========================================
+function checkDeepDetailsRoute() {
+    const hash = window.location.hash;
+    if (hash.startsWith('#details?id=')) {
+        const id = hash.split('=')[1];
+        const item = portalData.find(o => o.id === id);
+        if (item) {
+            renderComprehensiveDetailsPage(item);
+            document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active'));
+            const detailsPanel = document.getElementById('item-details');
+            if (detailsPanel) detailsPanel.classList.add('active');
+        }
+    }
+}
+
+function renderComprehensiveDetailsPage(item) {
+    const target = document.getElementById('detailsViewTarget');
+    if (!target) return;
+
+    const readableDeadline = new Date(item.deadline).toLocaleDateString('en-US', {
+        month: 'long', day: 'numeric', year: 'numeric'
+    });
+
+    let customTypeSpecRow = item.type === 'competition' 
+        ? `<tr><td class="meta-label">competition rounds</td><td class="meta-value">${item.rounds || 'N/A'}</td></tr>`
+        : ``;
+
+    target.innerHTML = `
+        <div class="details-main">
+            <div style="margin-bottom: 1rem;">
+                <a href="#home" style="text-decoration:none; color:black; font-size:0.9rem; opacity:0.5;">← back to overview dashboard</a>
+            </div>
+            <h1>${item.title}</h1>
+            <p style="line-height:1.7; font-size:1.05rem; opacity:0.85; margin: 1.5rem 0 2.5rem 0;">${item.fullDetails || item.shortDesc}</p>
+            
+            <a href="${item.link}" target="_blank" class="support-btn" style="padding: 1rem 3rem; font-size:1.1rem; text-decoration:none; background:black; color:white; display:inline-block;">proceed to formal registration</a>
+        </div>
+        
+        <aside style="border-left: 1px solid #eee; padding-left: 3rem;">
+            <span style="font-size: 0.75rem; opacity: 0.5; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom:1rem;">comprehensive specifications</span>
+            <table class="meta-spec-table">
+                <tbody>
+                    <tr><td class="meta-label">classification structure</td><td class="meta-value">${item.type}</td></tr>
+                    <tr><td class="meta-label">category criteria</td><td class="meta-value">${item.category}</td></tr>
+                    <tr><td class="meta-label">interest target focus</td><td class="meta-value">${item.interest}</td></tr>
+                    <tr><td class="meta-label">eligibility age window</td><td class="meta-value">${item.minAge} — ${item.maxAge} years old</td></tr>
+                    <tr><td class="meta-label">registration due date</td><td class="meta-value" style="color:#ff4d4d;">${readableDeadline}</td></tr>
+                    <tr><td class="meta-label">event execution schedule</td><td class="meta-value">${item.eventDate || 'N/A'}</td></tr>
+                    <tr><td class="meta-label">venue & platform profile</td><td class="meta-value">${item.location || 'N/A'}</td></tr>
+                    ${customTypeSpecRow}
+                    <tr><td class="meta-label">financial entry requirement</td><td class="meta-value">${item.fee || 'Free Entry'}</td></tr>
+                    <tr><td class="meta-label">prizes & return yields</td><td class="meta-value">${item.prizes || 'N/A'}</td></tr>
+                </tbody>
+            </table>
+        </aside>
+    `;
+}
+
+// ==========================================
+// 🌟 SIDE PANEL CHRONICLE NOTEPAD
+// ==========================================
+function renderDigitalNotepad(inspiration) {
+    const notepadBody = document.getElementById('inspiration-notepad');   
+    if (!notepadBody) return;
+
+    if (!inspiration) {
+        notepadBody.innerText = "focus on the goal. today is yours to win.";
+        return;
+    }
+
     notepadBody.innerHTML = `
-        <p style="line-height: 1.6; margin-bottom: 12px;">${inspiration.story}</p>
-        <p style="font-style: italic; color: var(--accent-color); font-weight: 500;">"${inspiration.takeaway.toLowerCase()}"</p>
+        <h3 style="margin-top: 0; font-family: var(--font-ui); font-size:1.1rem; font-weight:600; text-transform:lowercase; letter-spacing:-0.5px;">
+            ${(inspiration.title || 'daily chronicle').toLowerCase()}
+        </h3>
+        <p style="line-height: 1.6; font-size:0.95rem; opacity:0.8; margin-bottom: 12px;">
+            ${inspiration.story}
+        </p>
+        <p style="font-style: italic; opacity:0.6; font-size:0.9rem; font-weight: 500; border-top:1px dashed #eee; padding-top:0.75rem; margin-top:0.75rem;">
+            "${inspiration.takeaway.toLowerCase()}"
+        </p>
     `;
 }
     </script>
