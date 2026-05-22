@@ -48,7 +48,7 @@ async function discoverOpportunities() {
 try {
         let response;
         let attempts = 0;
-        const maxAttempts = 3;
+        const maxAttempts = 5; // 🌟 Increased attempts to ride out the traffic wave
         const delay = (ms) => new Promise(res => setTimeout(res, ms));
 
         while (attempts < maxAttempts) {
@@ -61,14 +61,18 @@ try {
                         tools: [{ googleSearch: {} }] 
                     }
                 });
-                break; // 🌟 Success! Break out of the retry loop.
+                break; // Success! Exit the retry loop.
             } catch (aiError) {
-                // If it's a 503 server error and we have attempts left, wait and retry
-                if (aiError.status === 503 && attempts < maxAttempts) {
-                    console.log(`Model is busy (503). Retrying attempt ${attempts}/${maxAttempts} in 5 seconds...`);
-                    await delay(5000);
+                const errorStr = JSON.stringify(aiError);
+                const is503 = errorStr.includes("503") || (aiError.status === 503);
+                const isUnavailable = errorStr.toLowerCase().includes("unavailable") || errorStr.toLowerCase().includes("high demand");
+
+                // If it's a server demand issue, pause and retry
+                if ((is503 || isUnavailable) && attempts < maxAttempts) {
+                    console.log(`Server under heavy load. Retrying attempt ${attempts}/${maxAttempts} in 7 seconds...`);
+                    await delay(7000); // Wait 7 seconds for the server queue to clear
                 } else {
-                    throw aiError; // Rethrow if it's a different error or we ran out of attempts
+                    throw aiError; // Throw error if it's something else or we hit the limit
                 }
             }
         }
@@ -142,5 +146,4 @@ try {
         console.error("The AI ran into an issue surfing the web:", error);
         process.exit(1);
     }
-
 discoverOpportunities();
