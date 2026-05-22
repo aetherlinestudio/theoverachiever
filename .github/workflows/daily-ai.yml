@@ -27,9 +27,7 @@ jobs:
 
       - name: Run Crawler Script
         run: |
-          # This runs your existing scraping script 
-          # (We will make sure it handles appending/deduplicating below!)
-          python crawler.js 
+          node crawler.js
 
       - name: Commit and Push fresh data.json live
         run: |
