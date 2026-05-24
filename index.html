@@ -322,6 +322,31 @@
                     <span style="font-size: 0.7rem; opacity: 0.5; text-transform: uppercase; letter-spacing: 1px; display:block; margin-bottom: 5px;">Filter Age: <span id="ageDisplay">15</span></span>
                     <input type="range" id="quickAge" min="12" max="19" value="15" style="width: 100%; accent-color: var(--accent-main);" oninput="updateAgeFilter(this.value)">
                 </div>
+
+<div style="margin-top: 2rem;">
+    <label style="font-size: 0.75rem; text-transform: uppercase; opacity: 0.5; letter-spacing: 1px; display: block; margin-bottom: 0.5rem;">
+        academic syllabus framework
+    </label>
+    <select id="quickSyllabus" onchange="updateSyllabusFilter(this.value)" style="width: 100%; background: #fafafa; border: 1px solid #eee; padding: 0.8rem 1rem; font-size: 1rem; color: black; outline: none; border-radius: 0; appearance: none; -webkit-appearance: none;">
+        <option value="cambridge">cambridge (igcse / o-levels / ocr / a-levels)</option>
+        <option value="ib">international baccalaureate (ib diploma)</option>
+        <option value="ap">advanced placement (ap / college board)</option>
+        
+        <option value="french-bac">french baccalauréat (le bac)</option>
+        <option value="german-abitur">german abitur (zeugnis)</option>
+        
+        <option value="spm">malaysian national curriculum (spm / stpm / matrikulasi)</option>
+        <option value="gaokao">chinese national higher curriculum (gaokao / hsk)</option>
+        <option value="cbse">indian central boards (cbse / icse / jee framework)</option>
+        <option value="vce-hsc">australian state certification (vce / hsc / atar)</option>
+        
+        <option value="canadian">canadian provincial standard (ontario ossd / bc)</option>
+        <option value="national">general localized national standard curriculum</option>
+    </select>
+    <p style="font-size: 0.8rem; opacity: 0.4; margin-top: 0.3rem; font-style: italic; text-transform: lowercase;">
+        aligns study modules with your active educational pathway
+    </p>
+</div>
                
                 <div class="atelier-section">
                     <span style="opacity:0.5; font-size:0.7rem; text-transform: uppercase; letter-spacing: 1px;">atelier</span>
