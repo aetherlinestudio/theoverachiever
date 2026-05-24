@@ -7,10 +7,10 @@ const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 async function discoverOpportunities() {
     console.log("AI is surfing the web for opportunities, elite syllabus material, and inspiring chronicles...");
 
-    const prompt = `
+const prompt = `
         Perform live Google Searches to achieve three explicit goals:
         1. Find active 2026 international/regional competitions, challenges, or conferences for secondary school students.
-        2. Find high-quality, free, or open-access academic study resources, official specimen past papers, or curriculum portfolios for major secondary school syllabuses: Cambridge (IGCSE/A-Levels), International Baccalaureate (IB), Advanced Placement (AP/American), and Malaysian National Curriculum (SPM/STPM). Focus on subjects like Mathematics, Computer Science, and English.
+        2. Find high-quality, free, or open-access academic study resources, official specimen past papers, or curriculum portfolios for secondary school students worldwide. Focus heavily on subjects like Mathematics, Computer Science, and English.
         3. Scout the internet for a true, highly inspiring story of an ambitious student (e.g., getting into an Ivy League like MIT/Columbia at a young age, winning an international Olympiad, or launching a tech startup).
 
         CRITICAL: Return your final response ONLY as a clean JSON object matching the template below. 
@@ -42,11 +42,11 @@ async function discoverOpportunities() {
           "studyResources": [
             {
               "id": "syllabus-subject-year-unique",
-              "syllabus": "cambridge", 
-              "subject": "computer science",
-              "type": "specimen paper", 
-              "title": "igcse computer science official practice portfolio",
-              "description": "official study companion workbook outlining computational logic, pseudo-code architecture, and systemic algorithm tracing.",
+              "syllabus": "MUST BE EXACTLY ONE OF THESE STRINGS: cambridge, ib, ap, french-bac, german-abitur, spm, gaokao, cbse, vce-hsc, canadian, or national", 
+              "subject": "computer science, mathematics, or english",
+              "type": "specimen paper, textbook, or revision notes", 
+              "title": "official asset name",
+              "description": "minimalist summary outlining academic modules covered.",
               "link": "https://link-to-free-resource-or-syllabus-guide"
             }
           ],
