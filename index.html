@@ -472,12 +472,11 @@
         </div> 
     </footer>
 
-    <script>
-
+<script>
         // Add this temporary placeholder at the top of your script to stop the crash
-function generateSmartNotification(data) {
-    console.warn("Smart notification placeholder triggered. Actual function implementation missing.");
-}
+        function generateSmartNotification(data) {
+            console.warn("Smart notification placeholder triggered. Actual function implementation missing.");
+        }
         
         // Data placeholder for Live Feed Target
         let portalData = [];
@@ -523,52 +522,39 @@ function generateSmartNotification(data) {
                 displayAgeText(savedAge);
             }
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Run the data initialization setup
-    loadAutomatedPortalFeeds();
-});
+            // Trigger the data load engine cleanly
+            await loadAutomatedPortalFeeds();
+        });
 
-async function loadAutomatedPortalFeeds() {
-    try {
-        const response = await fetch('data.json');
-        const masterPayload = await response.json();
-        
-        // 1. Extract structural components safely
-        const competitions = masterPayload.competitions || [];
-        const inspiration = masterPayload.dailyInspiration;
-        
-        // 2. Build the Spotlight Boxes Feed
-        renderSpotlightBoxes(competitions);
+        async function loadAutomatedPortalFeeds() {
+            try {
+                const response = await fetch('data.json');
+                const masterPayload = await response.json();
+                
+                // 1. Extract structural components safely and cache to global state
+                portalData = masterPayload.competitions || [];
+                const inspiration = masterPayload.dailyInspiration;
+                
+                // 2. Build the Spotlight Boxes Feed on the Home tab
+                renderSpotlightBoxes(portalData);
 
-        // 3. Build the Main Opportunities Vertical Feed
-        renderPortalFeeds(competitions);
+                // 3. Build the Main Opportunities & Competitions Vertical Feeds
+                renderPortalFeeds(portalData);
 
-        // 4. Update the Digital Notepad Side Panel
-        if (inspiration) {
-            const notepad = document.getElementById('inspiration-notepad');
-            if (notepad) {
-                notepad.innerHTML = `
-                    <h3 style="margin-top:0; font-family:var(--font-ui);">${inspiration.title}</h3>
-                    <p style="font-size:0.95rem; line-height:1.6; opacity:0.8;">${inspiration.story}</p>
-                    <div style="margin-top:1.5rem; font-style:italic; font-size:0.9rem; opacity:0.6;">
-                        <strong>takeaway:</strong> ${inspiration.takeaway}
-                    </div>
-                `;
+                // 4. Update the Digital Notepad Side Panel
+                if (inspiration) {
+                    renderDigitalNotepad(inspiration);
+                }
+
+                // Deep linking intercept hash evaluation engine triggers after data is ready
+                checkDeepDetailsRoute();
+
+            } catch (error) {
+                console.error("Could not fetch the automated live data feed file:", error);
+                // Fallback to show empty messages instead of breaking completely
+                renderPortalFeeds([]);
             }
         }
-
-    } catch (error) {
-        console.error("Could not fetch the automated live data feed file:", error);
-    }
-}
-            
-            // Trigger visual builders
-            renderPortalFeeds();
-            
-            // Deep linking intercept hash evaluation engine triggers
-            window.addEventListener('hashchange', checkDeepDetailsRoute);
-            checkDeepDetailsRoute();
-        });
 
         function toggleMenu() {
             document.getElementById('notifMenu').style.display = 'none';
@@ -613,7 +599,10 @@ async function loadAutomatedPortalFeeds() {
             });
         }
         window.addEventListener('hashchange', updateContent);
-        window.onload = updateContent;
+        window.addEventListener('hashchange', () => {
+            // Re-run router if hash changes specifically to details
+            checkDeepDetailsRoute();
+        });
 
         function scrollFeed(direction) {
             const activeTrack = document.querySelector('.page-content.active .feed-scroll-track');
@@ -650,7 +639,7 @@ async function loadAutomatedPortalFeeds() {
         function updateAgeFilter(ageVal) {
             displayAgeText(ageVal);
             localStorage.setItem('oa_age', ageVal);
-            renderPortalFeeds(); 
+            renderPortalFeeds(portalData); 
         }
 
         // Tag value active controller selection managers
@@ -670,224 +659,242 @@ async function loadAutomatedPortalFeeds() {
                     }
                 });
             }
-            renderPortalFeeds();
+            renderPortalFeeds(portalData);
         }
 
-// ==========================================
-// 🌟 DYNAMIC SPOTLIGHT LAYOUT ENGINE
-// ==========================================
-function renderSpotlightBoxes(data) {
-    const spotlightTrack = document.getElementById('spotlight-track'); 
-    if (!spotlightTrack) return;
+        // ==========================================
+        // 🌟 DYNAMIC SPOTLIGHT LAYOUT ENGINE
+        // ==========================================
+        function renderSpotlightBoxes(data) {
+            const spotlightTrack = document.getElementById('spotlight-track'); 
+            if (!spotlightTrack) return;
 
-    spotlightTrack.innerHTML = ''; // Wipe out old content
+            spotlightTrack.innerHTML = ''; // Wipe out old content
+            const dataset = (Array.isArray(data) && data.length > 0) ? data : [];
+            if (dataset.length === 0) return;
 
-    // Source data fallback safely
-    const dataset = (Array.isArray(data) && data.length > 0) ? data : (portalData || []);
-    if (dataset.length === 0) return;
-
-    // Filter using your existing local storage filter parameters
-    const preferredInterest = localStorage.getItem('portal_interest') || 'logic & coding';
-    const userAge = parseInt(localStorage.getItem('oa_age')) || 15; // Synced with your updateAgeFilter variable!
-
-    const filteredMatches = dataset.filter(item => {
-        const ageMatch = userAge >= item.minAge && userAge <= item.maxAge;
-        const interestMatch = item.interest && item.interest.toLowerCase() === preferredInterest.toLowerCase();
-        return ageMatch && interestMatch;
-    });
-
-    // Fallback to top discoveries if criteria is too strict
-    const displays = filteredMatches.length > 0 ? filteredMatches : dataset.slice(0, 6);
-
-    displays.forEach(item => {
-        const box = document.createElement('div');
-        box.className = 'feed-item'; // Matches your elite CSS architecture!
-        box.style.display = 'flex';
-        box.style.flexDirection = 'column';
-        box.style.justifyContent = 'space-between';
-        box.style.padding = '2rem';
-
-        box.innerHTML = `
-            <div>
-                <span style="font-size: 0.75rem; text-transform: uppercase; opacity: 0.5; letter-spacing: 1px;">
-                    ${(item.interest || 'discovery').toLowerCase()}
-                </span>
-                <h4 style="margin-top: 0.5rem; font-weight: normal; font-size: 1.3rem; line-height: 1.2;">
-                    ${(item.title || '').toLowerCase()}
-                </h4>
-                <p style="font-size: 0.9rem; opacity: 0.7; line-height: 1.4;">
-                    ${(item.shortDesc || '').toLowerCase()}
-                </p>
-            </div>
-            <div style="font-size: 0.85rem; border-top: 1px solid #eee; padding-top: 1rem; margin-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
-                <span>due: ${item.deadline || 'ongoing'}</span>
-                <a href="#details?id=${item.id}" style="color: black; text-decoration: none; font-weight: 500;">explore specs →</a>
-            </div>
-        `;
-        spotlightTrack.appendChild(box);
-    });
-}
-
-// ==========================================
-// 🌟 DYNAMIC PORTAL FEED LAYER (MAIN ARCHIVE)
-// ==========================================
-function renderPortalFeeds(data) {
-    // If no argument is passed, read directly from your global state cache
-    const sourceData = (Array.isArray(data)) ? data : (portalData || []);
-    
-    // Target your explicit UI container
-    const container = document.getElementById('portal-feed-track'); 
-    if (!container) return;
-    
-    container.innerHTML = ''; // Reset template container area
-
-    if (sourceData.length === 0) {
-        container.innerHTML = `<p style="opacity:0.5; font-style:italic; padding:2rem;">Searching for compatible opportunities...</p>`;
-        return;
-    }
-
-    // Apply your complex category filtering if activeFilters object exists globally
-    let finalFilteredData = sourceData;
-    if (typeof activeFilters !== 'undefined') {
-        // This makes sure your custom setFilterTag selection system remains fully functional!
-        finalFilteredData = sourceData.filter(item => {
             const userAge = parseInt(localStorage.getItem('oa_age')) || 15;
-            if (userAge < item.minAge || userAge > item.maxAge) return false;
-            
-            // Map logic checks against item.type, item.category, or item.interest here if needed
-            return true;
-        });
-    }
 
-    finalFilteredData.forEach(item => {
-        if (!item) return;
+            // Highlight top matches for the current user's profile eligibility window
+            const filteredMatches = dataset.filter(item => {
+                const min = parseInt(item.minAge) || 0;
+                const max = parseInt(item.maxAge) || 99;
+                return userAge >= min && userAge <= max;
+            });
 
-        const displayType = (item.type && item.type.toLowerCase() === 'competition') ? 'Competition' : 'Opportunity';
-        const displayCategory = item.category || 'General Academic';
-        const displayDeadline = item.deadline || 'Ongoing';
+            const displays = filteredMatches.length > 0 ? filteredMatches.slice(0, 6) : dataset.slice(0, 6);
 
-        const card = document.createElement('div');
-        card.className = 'feed-item'; 
-        card.style.width = '100%';
-        card.style.marginBottom = '2rem';
+            displays.forEach(item => {
+                const box = document.createElement('div');
+                box.className = 'feed-item'; 
+                box.style.display = 'flex';
+                box.style.flexDirection = 'column';
+                box.style.justifyContent = 'space-between';
+                box.style.padding = '2rem';
 
-        card.innerHTML = `
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%;">
-                <div>
-                    <span style="font-size: 0.75rem; text-transform: uppercase; opacity: 0.5; letter-spacing: 1px; background: #f5f5f5; padding: 3px 8px; border-radius: 3px;">
-                        ${displayType.toLowerCase()}
-                    </span>
-                    <span style="font-size: 0.75rem; text-transform: uppercase; opacity: 0.4; margin-left: 10px;">
-                        ${displayCategory.toLowerCase()} • ${(item.interest || '').toLowerCase()}
-                    </span>
-                    <h2 style="font-weight: normal; font-size: 1.8rem; margin: 0.5rem 0 1rem 0; line-height: 1.1;">
-                        ${item.title}
-                    </h2>
-                    <p style="font-size: 1rem; opacity: 0.75; line-height: 1.6; margin-bottom: 1.5rem;">
-                        ${item.fullDetails || item.shortDesc || ''}
-                    </p>
-                    
-                    <table class="meta-spec-table" style="max-width: 500px; width: 100%; border-collapse: collapse;">
-                        <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label" style="padding: 6px 0; opacity: 0.5; font-size: 0.9rem;">Venue / Location</td><td class="meta-value" style="padding: 6px 0; text-align: right;">${item.location || 'Global'}</td></tr>
-                        <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label" style="padding: 6px 0; opacity: 0.5; font-size: 0.9rem;">Age Range Eligibility</td><td class="meta-value" style="padding: 6px 0; text-align: right;">Ages ${item.minAge} — ${item.maxAge}</td></tr>
-                        <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label" style="padding: 6px 0; opacity: 0.5; font-size: 0.9rem;">Prizes / Perks</td><td class="meta-value" style="padding: 6px 0; text-align: right;">${item.prizes || 'Certificates'}</td></tr>
-                        <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label" style="padding: 6px 0; opacity: 0.5; font-size: 0.9rem;">Entry Fees</td><td class="meta-value" style="padding: 6px 0; text-align: right;">${item.fee || 'Free'}</td></tr>
-                    </table>
-                </div>
-            </div>
-            <div style="margin-top: 2rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f0f0f0; padding-top: 1.5rem;">
-                <span style="font-size: 0.95rem;"><strong>Registration Deadline:</strong> ${displayDeadline}</span>
-                <a href="#details?id=${item.id}" class="support-btn" style="text-decoration: none; padding: 0.6rem 1.2rem; background: black; color: white; border-radius: 4px; font-size: 0.9rem;">View Comprehensive Specs</a>
-            </div>
-        `;
-        container.appendChild(card);
-    });
-}
-
-// ==========================================
-// 🌟 DETAILED MODAL SPEC ROUTER LAYER
-// ==========================================
-function checkDeepDetailsRoute() {
-    const hash = window.location.hash;
-    if (hash.startsWith('#details?id=')) {
-        const id = hash.split('=')[1];
-        const item = portalData.find(o => o.id === id);
-        if (item) {
-            renderComprehensiveDetailsPage(item);
-            document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active'));
-            const detailsPanel = document.getElementById('item-details');
-            if (detailsPanel) detailsPanel.classList.add('active');
+                box.innerHTML = `
+                    <div>
+                        <span style="font-size: 0.75rem; text-transform: uppercase; opacity: 0.5; letter-spacing: 1px;">
+                            ${(item.interest || 'discovery').toLowerCase()}
+                        </span>
+                        <h4 style="margin-top: 0.5rem; font-weight: normal; font-size: 1.3rem; line-height: 1.2;">
+                            ${(item.title || '').toLowerCase()}
+                        </h4>
+                        <p style="font-size: 0.9rem; opacity: 0.7; line-height: 1.4;">
+                            ${(item.shortDesc || '').toLowerCase()}
+                        </p>
+                    </div>
+                    <div style="font-size: 0.85rem; border-top: 1px solid #eee; padding-top: 1rem; margin-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                        <span>due: ${(item.deadline || 'ongoing').toLowerCase()}</span>
+                        <a href="#details?id=${item.id}" style="color: black; text-decoration: none; font-weight: 500;">explore specs →</a>
+                    </div>
+                `;
+                spotlightTrack.appendChild(box);
+            });
         }
-    }
-}
 
-function renderComprehensiveDetailsPage(item) {
-    const target = document.getElementById('detailsViewTarget');
-    if (!target) return;
-
-    const readableDeadline = new Date(item.deadline).toLocaleDateString('en-US', {
-        month: 'long', day: 'numeric', year: 'numeric'
-    });
-
-    let customTypeSpecRow = item.type === 'competition' 
-        ? `<tr><td class="meta-label">competition rounds</td><td class="meta-value">${item.rounds || 'N/A'}</td></tr>`
-        : ``;
-
-    target.innerHTML = `
-        <div class="details-main">
-            <div style="margin-bottom: 1rem;">
-                <a href="#home" style="text-decoration:none; color:black; font-size:0.9rem; opacity:0.5;">← back to overview dashboard</a>
-            </div>
-            <h1>${item.title}</h1>
-            <p style="line-height:1.7; font-size:1.05rem; opacity:0.85; margin: 1.5rem 0 2.5rem 0;">${item.fullDetails || item.shortDesc}</p>
+        // ==========================================
+        // 🌟 DYNAMIC PORTAL FEED LAYER (MAIN ARCHIVE)
+        // ==========================================
+        function renderPortalFeeds(data) {
+            const sourceData = (Array.isArray(data)) ? data : [];
             
-            <a href="${item.link}" target="_blank" class="support-btn" style="padding: 1rem 3rem; font-size:1.1rem; text-decoration:none; background:black; color:white; display:inline-block;">proceed to formal registration</a>
-        </div>
-        
-        <aside style="border-left: 1px solid #eee; padding-left: 3rem;">
-            <span style="font-size: 0.75rem; opacity: 0.5; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom:1rem;">comprehensive specifications</span>
-            <table class="meta-spec-table">
-                <tbody>
-                    <tr><td class="meta-label">classification structure</td><td class="meta-value">${item.type}</td></tr>
-                    <tr><td class="meta-label">category criteria</td><td class="meta-value">${item.category}</td></tr>
-                    <tr><td class="meta-label">interest target focus</td><td class="meta-value">${item.interest}</td></tr>
-                    <tr><td class="meta-label">eligibility age window</td><td class="meta-value">${item.minAge} — ${item.maxAge} years old</td></tr>
-                    <tr><td class="meta-label">registration due date</td><td class="meta-value" style="color:#ff4d4d;">${readableDeadline}</td></tr>
-                    <tr><td class="meta-label">event execution schedule</td><td class="meta-value">${item.eventDate || 'N/A'}</td></tr>
-                    <tr><td class="meta-label">venue & platform profile</td><td class="meta-value">${item.location || 'N/A'}</td></tr>
-                    ${customTypeSpecRow}
-                    <tr><td class="meta-label">financial entry requirement</td><td class="meta-value">${item.fee || 'Free Entry'}</td></tr>
-                    <tr><td class="meta-label">prizes & return yields</td><td class="meta-value">${item.prizes || 'N/A'}</td></tr>
-                </tbody>
-            </table>
-        </aside>
-    `;
-}
+            // Extract references to your real secondary HTML list containers
+            const compTrack = document.getElementById('competitionsTrack');
+            const oppTrack = document.getElementById('opportunitiesTrack');
+            
+            if (compTrack) compTrack.innerHTML = '';
+            if (oppTrack) oppTrack.innerHTML = '';
 
-// ==========================================
-// 🌟 SIDE PANEL CHRONICLE NOTEPAD
-// ==========================================
-function renderDigitalNotepad(inspiration) {
-    const notepadBody = document.getElementById('inspiration-notepad');   
-    if (!notepadBody) return;
+            if (sourceData.length === 0) {
+                const searchMsg = `<p style="opacity:0.5; font-style:italic; padding:2rem; text-transform: lowercase;">searching for compatible opportunities...</p>`;
+                if (compTrack) compTrack.innerHTML = searchMsg;
+                if (oppTrack) oppTrack.innerHTML = searchMsg;
+                return;
+            }
 
-    if (!inspiration) {
-        notepadBody.innerText = "focus on the goal. today is yours to win.";
-        return;
-    }
+            const userAge = parseInt(localStorage.getItem('oa_age')) || 15;
 
-    notepadBody.innerHTML = `
-        <h3 style="margin-top: 0; font-family: var(--font-ui); font-size:1.1rem; font-weight:600; text-transform:lowercase; letter-spacing:-0.5px;">
-            ${(inspiration.title || 'daily chronicle').toLowerCase()}
-        </h3>
-        <p style="line-height: 1.6; font-size:0.95rem; opacity:0.8; margin-bottom: 12px;">
-            ${inspiration.story}
-        </p>
-        <p style="font-style: italic; opacity:0.6; font-size:0.9rem; font-weight: 500; border-top:1px dashed #eee; padding-top:0.75rem; margin-top:0.75rem;">
-            "${inspiration.takeaway.toLowerCase()}"
-        </p>
-    `;
-}
+            sourceData.forEach(item => {
+                if (!item) return;
+
+                // 1. Strict Filter Evaluation Architecture
+                const min = parseInt(item.minAge) || 0;
+                const max = parseInt(item.maxAge) || 99;
+                if (userAge < min || userAge > max) return; // Age constraint gatekeeper
+
+                const typeKey = (item.type || 'competition').toLowerCase();
+                
+                // Evaluate custom tag filters based on tab category configuration
+                if (typeKey === 'competition') {
+                    if (activeFilters.competition.category !== 'all' && item.category.toLowerCase() !== activeFilters.competition.category.toLowerCase()) return;
+                    if (activeFilters.competition.interest !== 'all' && item.interest.toLowerCase() !== activeFilters.competition.interest.toLowerCase()) return;
+                } else {
+                    if (activeFilters.opportunity.category !== 'all' && item.category.toLowerCase() !== activeFilters.opportunity.category.toLowerCase()) return;
+                    if (activeFilters.opportunity.interest !== 'all' && item.interest.toLowerCase() !== activeFilters.opportunity.interest.toLowerCase()) return;
+                }
+
+                // 2. Build DOM Card Layout Element
+                const displayType = item.type || 'Opportunity';
+                const displayCategory = item.category || 'General';
+                const displayDeadline = item.deadline || 'Ongoing';
+
+                const card = document.createElement('div');
+                card.className = 'feed-item'; 
+
+                card.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%;">
+                        <div style="width: 100%;">
+                            <span style="font-size: 0.75rem; text-transform: uppercase; opacity: 0.5; letter-spacing: 1px; background: #f5f5f5; padding: 3px 8px; border-radius: 3px;">
+                                ${displayType.toLowerCase()}
+                            </span>
+                            <span style="font-size: 0.75rem; text-transform: uppercase; opacity: 0.4; margin-left: 10px;">
+                                ${displayCategory.toLowerCase()} • ${(item.interest || '').toLowerCase()}
+                            </span>
+                            <h2 style="font-weight: normal; font-size: 1.8rem; margin: 0.5rem 0 1rem 0; line-height: 1.1; text-transform: lowercase;">
+                                ${item.title}
+                            </h2>
+                            <p style="font-size: 1rem; opacity: 0.75; line-height: 1.6; margin-bottom: 1.5rem; text-transform: lowercase;">
+                                ${item.fullDetails || item.shortDesc || ''}
+                            </p>
+                            
+                            <table class="meta-spec-table" style="max-width: 500px; width: 100%; border-collapse: collapse;">
+                                <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label">venue / location</td><td class="meta-value">${item.location || 'Global'}</td></tr>
+                                <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label">age range eligibility</td><td class="meta-value">Ages ${item.minAge} — ${item.maxAge}</td></tr>
+                                <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label">prizes / perks</td><td class="meta-value">${item.prizes || 'Certificates'}</td></tr>
+                                <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label">entry fees</td><td class="meta-value">${item.fee || 'Free'}</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div style="margin-top: 2rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f0f0f0; padding-top: 1.5rem;">
+                        <span style="font-size: 0.95rem; text-transform: lowercase;"><strong>registration deadline:</strong> ${displayDeadline.toLowerCase()}</span>
+                        <a href="#details?id=${item.id}" class="support-btn" style="text-decoration: none; padding: 0.6rem 1.2rem; background: black; color: white;">view comprehensive specs</a>
+                    </div>
+                `;
+
+                // Append card to the proper tab view target cleanly
+                if (typeKey === 'competition' && compTrack) {
+                    compTrack.appendChild(card);
+                } else if (typeKey !== 'competition' && oppTrack) {
+                    oppTrack.appendChild(card);
+                }
+            });
+
+            // Fallback empty text indicators if active filtering leaves a view completely zeroed out
+            const cleanFallback = `<p style="opacity:0.5; font-style:italic; padding:2rem; text-transform: lowercase;">no matching listings found within your specified custom parameters.</p>`;
+            if (compTrack && compTrack.children.length === 0) compTrack.innerHTML = cleanFallback;
+            if (oppTrack && oppTrack.children.length === 0) oppTrack.innerHTML = cleanFallback;
+        }
+
+        // ==========================================
+        // 🌟 DETAILED MODAL SPEC ROUTER LAYER
+        // ==========================================
+        function checkDeepDetailsRoute() {
+            const hash = window.location.hash;
+            if (hash.startsWith('#details?id=')) {
+                const id = hash.split('=')[1];
+                const item = portalData.find(o => String(o.id) === String(id));
+                if (item) {
+                    renderComprehensiveDetailsPage(item);
+                    document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active'));
+                    const detailsPanel = document.getElementById('item-details');
+                    if (detailsPanel) detailsPanel.classList.add('active');
+                }
+            }
+        }
+
+        function renderComprehensiveDetailsPage(item) {
+            const target = document.getElementById('detailsViewTarget');
+            if (!target) return;
+
+            let readableDeadline = item.deadline || 'Ongoing';
+            if (item.deadline && item.deadline.length === 10) {
+                try {
+                    readableDeadline = new Date(item.deadline).toLocaleDateString('en-US', {
+                        month: 'long', day: 'numeric', year: 'numeric'
+                    });
+                } catch(e) {}
+            }
+
+            let customTypeSpecRow = (item.type || '').toLowerCase() === 'competition' 
+                ? `<tr><td class="meta-label">competition rounds</td><td class="meta-value">${item.rounds || 'n/a'}</td></tr>`
+                : ``;
+
+            target.innerHTML = `
+                <div class="details-main">
+                    <div style="margin-bottom: 1rem;">
+                        <a href="#home" style="text-decoration:none; color:black; font-size:0.9rem; opacity:0.5; text-transform: lowercase;">← back to overview dashboard</a>
+                    </div>
+                    <h1 style="text-transform: lowercase;">${item.title}</h1>
+                    <p style="line-height:1.7; font-size:1.05rem; opacity:0.85; margin: 1.5rem 0 2.5rem 0; text-transform: lowercase;">${item.fullDetails || item.shortDesc}</p>
+                    
+                    <a href="${item.link || '#'}" target="_blank" class="support-btn" style="padding: 1rem 3rem; font-size:1.1rem; text-decoration:none; background:black; color:white; display:inline-block;">proceed to formal registration</a>
+                </div>
+                
+                <aside style="border-left: 1px solid #eee; padding-left: 3rem;">
+                    <span style="font-size: 0.75rem; opacity: 0.5; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom:1rem;">comprehensive specifications</span>
+                    <table class="meta-spec-table">
+                        <tbody>
+                            <tr><td class="meta-label">classification structure</td><td class="meta-value">${(item.type || 'n/a').toLowerCase()}</td></tr>
+                            <tr><td class="meta-label">category criteria</td><td class="meta-value">${(item.category || 'general').toLowerCase()}</td></tr>
+                            <tr><td class="meta-label">interest target focus</td><td class="meta-value">${(item.interest || 'general').toLowerCase()}</td></tr>
+                            <tr><td class="meta-label">eligibility age window</td><td class="meta-value">${item.minAge} — ${item.maxAge} years old</td></tr>
+                            <tr><td class="meta-label">registration due date</td><td class="meta-value" style="color:#ff4d4d; text-transform: lowercase;">${readableDeadline.toLowerCase()}</td></tr>
+                            <tr><td class="meta-label">event execution schedule</td><td class="meta-value">${(item.eventDate || 'n/a').toLowerCase()}</td></tr>
+                            <tr><td class="meta-label">venue & platform profile</td><td class="meta-value">${item.location || 'global'}</td></tr>
+                            ${customTypeSpecRow}
+                            <tr><td class="meta-label">financial entry requirement</td><td class="meta-value">${(item.fee || 'free entry').toLowerCase()}</td></tr>
+                            <tr><td class="meta-label">prizes & return yields</td><td class="meta-value">${(item.prizes || 'n/a').toLowerCase()}</td></tr>
+                        </tbody>
+                    </table>
+                </aside>
+            `;
+        }
+
+        // ==========================================
+        // 🌟 SIDE PANEL CHRONICLE NOTEPAD
+        // ==========================================
+        function renderDigitalNotepad(inspiration) {
+            const notepadBody = document.getElementById('inspiration-notepad');   
+            if (!notepadBody) return;
+
+            if (!inspiration) {
+                notepadBody.innerText = "focus on the goal. today is yours to win.";
+                return;
+            }
+
+            notepadBody.innerHTML = `
+                <h3 style="margin-top: 0; font-family: var(--font-ui); font-size:1.1rem; font-weight:600; text-transform:lowercase; letter-spacing:-0.5px;">
+                    ${(inspiration.title || 'daily chronicle').toLowerCase()}
+                </h3>
+                <p style="line-height: 1.6; font-size:0.95rem; opacity:0.8; margin-bottom: 12px; text-transform: lowercase;">
+                    ${inspiration.story}
+                </p>
+                <p style="font-style: italic; opacity:0.6; font-size:0.9rem; font-weight: 500; border-top:1px dashed #eee; padding-top:0.75rem; margin-top:0.75rem; text-transform: lowercase;">
+                    "${inspiration.takeaway}"
+                </p>
+            `;
+        }
     </script>
 </body>
 </html>
