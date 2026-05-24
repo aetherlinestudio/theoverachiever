@@ -120,29 +120,46 @@ const prompt = `
             });
         }
 
-        // 2. Process & Merge Study Resources (The Global Syllabus Warehouse)
+// 2. Process & Merge Study Resources (The Global Syllabus Warehouse)
         let updatedStudyResources = [];
         let seenResourceIds = new Set();
 
-        // Load existing materials so we don't wipe out what we already scavenged!
+        // Load existing materials from disk so we don't wipe out past crawls
         if (existingDatabase.studyResources && Array.isArray(existingDatabase.studyResources)) {
             existingDatabase.studyResources.forEach(res => {
-                updatedStudyResources.push(res);
-                seenResourceIds.add(res.id);
+                if (res && res.id) {
+                    updatedStudyResources.push(res);
+                    seenResourceIds.add(res.id);
+                }
             });
         }
 
-        // Influx new syllabus treasures from the latest crawl run
-        if (newScrapedPayload.studyResources && Array.isArray(newScrapedPayload.studyResources)) {
-            newScrapedPayload.studyResources.forEach(newRes => {
-                if (!seenResourceIds.has(newRes.id)) {
+        // 🌟 AUTOMATED VARIANT RECOVERY MATCH ENGINE
+        // This hunts down 'studyResources', 'study_resources', OR 'studyresources' dynamically
+        let rawStudyArray = null;
+        if (newScrapedPayload.studyResources) rawStudyArray = newScrapedPayload.studyResources;
+        else if (newScrapedPayload.study_resources) rawStudyArray = newScrapedPayload.study_resources;
+        else if (newScrapedPayload.studyresources) rawStudyArray = newScrapedPayload.studyresources;
+
+        // Influx new syllabus treasures safely
+        if (rawStudyArray && Array.isArray(rawStudyArray)) {
+            rawStudyArray.forEach(newRes => {
+                if (!newRes) return;
+                
+                // Fallback generator if the AI skipped making a unique item ID string
+                const resourceId = newRes.id || `res-${newRes.syllabus}-${newRes.subject}-${Math.random().toString(36).substr(2, 5)}`;
+                
+                if (!seenResourceIds.has(resourceId)) {
+                    newRes.id = resourceId; // Assign uniform structural key
                     updatedStudyResources.push(newRes);
-                    seenResourceIds.add(newRes.id);
+                    seenResourceIds.add(resourceId);
                     console.log(`Caching new syllabus resource: [${newRes.syllabus}] - ${newRes.title}`);
                 } else {
                     console.log(`Syllabus resource duplicate blocked for: ${newRes.title}`);
                 }
             });
+        } else {
+            console.log("Warning: The AI payload did not contain a readable study resources array on this pass.");
         }
 
         // 3. Assemble final combined structural array
