@@ -5,15 +5,17 @@ const fs = require("fs");
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY }); 
 
 async function discoverOpportunities() {
-    console.log("AI is surfing the web for opportunities and inspiring chronicles...");
+    console.log("AI is surfing the web for opportunities, elite syllabus material, and inspiring chronicles...");
 
     const prompt = `
-        Perform a live Google Search to achieve two goals:
+        Perform live Google Searches to achieve three explicit goals:
         1. Find active 2026 international/regional competitions, challenges, or conferences for secondary school students.
-        2. Scout the internet for a true, highly inspiring story of an ambitious student (e.g., how someone got into an Ivy League like MIT/Columbia at a young age, won an international Olympiad, or launched a successful tech startup as a teen).
+        2. Find high-quality, free, or open-access academic study resources, official specimen past papers, or curriculum portfolios for major secondary school syllabuses: Cambridge (IGCSE/A-Levels), International Baccalaureate (IB), Advanced Placement (AP/American), and Malaysian National Curriculum (SPM/STPM). Focus on subjects like Mathematics, Computer Science, and English.
+        3. Scout the internet for a true, highly inspiring story of an ambitious student (e.g., getting into an Ivy League like MIT/Columbia at a young age, winning an international Olympiad, or launching a tech startup).
 
         CRITICAL: Return your final response ONLY as a clean JSON object matching the template below. 
         Do NOT wrap it in markdown code blocks (no \`\`\`json tags). Start with { and end with }.
+        Ensure all text entries are formatted cleanly in lowercase to match a minimalist luxury aesthetic style.
 
         Template Structure:
         {
@@ -21,129 +23,143 @@ async function discoverOpportunities() {
             {
               "id": "unique-string-id",
               "type": "competition",
-              "title": "Official Name",
-              "shortDesc": "One sentence summary.",
-              "fullDetails": "Comprehensive paragraphs detailing specs.",
+              "title": "official name",
+              "shortDesc": "one sentence summary.",
+              "fullDetails": "comprehensive paragraphs detailing specs.",
               "category": "academic",
               "interest": "logic & coding",
               "minAge": 13,
               "maxAge": 18,
-              "deadline": "2026-12-31",
-              "eventDate": "Clear date string",
-              "location": "Venue or Online status",
-              "prizes": "Awards, certificates, or perks",
-              "rounds": "Number of stages",
-              "fee": "Free Entry or specific cost",
-              "link": "Direct registration URL"
+              "deadline": "2026-xx-xx",
+              "eventDate": "2026-xx-xx",
+              "location": "online or physical location",
+              "prizes": "medals, certificates, cash yields",
+              "rounds": "number of stages",
+              "fee": "free or specific cost",
+              "link": "https://official-website.com"
+            }
+          ],
+          "studyResources": [
+            {
+              "id": "syllabus-subject-year-unique",
+              "syllabus": "cambridge", 
+              "subject": "computer science",
+              "type": "specimen paper", 
+              "title": "igcse computer science official practice portfolio",
+              "description": "official study companion workbook outlining computational logic, pseudo-code architecture, and systemic algorithm tracing.",
+              "link": "https://link-to-free-resource-or-syllabus-guide"
             }
           ],
           "dailyInspiration": {
-            "title": "Short compelling story title",
-            "story": "A deeply inspiring, highly detailed 3-4 sentence paragraph recounting their true journey, strategy, and triumph.",
-            "takeaway": "One short elite quote or advice sentence derived from their story."
+            "title": "the chronicle title",
+            "story": "the full highly-inspiring background narrative story.",
+            "takeaway": "the profound single-sentence conclusion quote."
           }
         }
     `;
 
-try {
-        let response;
-        let attempts = 0;
-        const maxAttempts = 5; // 🌟 Increased attempts to ride out the traffic wave
-        const delay = (ms) => new Promise(res => setTimeout(res, ms));
-
-        while (attempts < maxAttempts) {
-            try {
-                attempts++;
-                response = await ai.models.generateContent({
-                    model: "gemini-2.5-flash", 
-                    contents: prompt,
-                    config: {
-                        tools: [{ googleSearch: {} }] 
-                    }
-                });
-                break; // Success! Exit the retry loop.
-            } catch (aiError) {
-                const errorStr = JSON.stringify(aiError);
-                const is503 = errorStr.includes("503") || (aiError.status === 503);
-                const isUnavailable = errorStr.toLowerCase().includes("unavailable") || errorStr.toLowerCase().includes("high demand");
-
-                // If it's a server demand issue, pause and retry
-                if ((is503 || isUnavailable) && attempts < maxAttempts) {
-                    console.log(`Server under heavy load. Retrying attempt ${attempts}/${maxAttempts} in 7 seconds...`);
-                    await delay(7000); // Wait 7 seconds for the server queue to clear
-                } else {
-                    throw aiError; // Throw error if it's something else or we hit the limit
-                }
+    try {
+        // Query the live Google Search API framework through Gemini
+        const response = await ai.models.generateContent({
+            model: "gemini-2.5-flash",
+            contents: prompt,
+            config: {
+                // Installs live web-searching tools directly into the generation pipeline
+                tools: [{ googleSearch: {} }] 
             }
-        }
+        });
 
-        let freshDataText = response.text.trim();
+        const rawText = response.text.trim();
+        let newScrapedPayload;
         
-        // Safety check: strip markdown code wrappers if the model ignores instructions
-        if (freshDataText.startsWith("```")) {
-            freshDataText = freshDataText.replace(/^```json\s*/i, "").replace(/```$/, "").trim();
-        }
-
-        // Parse the newly scraped data from Gemini
-        const newScrapedPayload = JSON.parse(freshDataText);
-
-        // 1. Read the existing historical database sitting in your repo
-        let existingDatabase = { competitions: [], dailyInspiration: {} };
         try {
-            if (fs.existsSync("data.json")) {
-                existingDatabase = JSON.parse(fs.readFileSync("data.json", "utf8"));
-            }
+            newScrapedPayload = JSON.parse(rawText);
         } catch (e) {
-            console.log("No existing database found or file was empty. Starting clean archive.");
+            console.error("The AI returned imperfect JSON structure. Raw dump:", rawText);
+            process.exit(1);
         }
 
-        // Get today's live date (YYYY-MM-DD) to compare deadlines
-        const todayStr = new Date().toISOString().split("T")[0];
+        // --- CONTINUOUS DATABASE MAINTENANCE ENGINE ---
+        let existingDatabase = { competitions: [], studyResources: [], dailyInspiration: {} };
+        if (fs.existsSync("data.json")) {
+            try {
+                existingDatabase = JSON.parse(fs.readFileSync("data.json", "utf8"));
+            } catch (e) {
+                console.log("data.json was empty or unreadable. initializing fresh schema state.");
+            }
+        }
 
+        // 1. Process & Merge Competitions
         let updatedCompetitions = [];
-        let seenIds = new Set();
+        let seenCompIds = new Set();
+        const currentYear = new Date().getFullYear();
 
-        // 2. Process existing archive: Keep old items ONLY if their deadline hasn't passed
         if (existingDatabase.competitions && Array.isArray(existingDatabase.competitions)) {
             existingDatabase.competitions.forEach(comp => {
-                const deadline = comp.deadline || "";
-                
-                // If it's a standard format deadline and it's older than today, skip it!
-                if (deadline && deadline.length === 10 && deadline < todayStr) {
-                    console.log(`Evicting expired listing: ${comp.title} (Deadline was ${deadline})`);
+                let deadline = String(comp.deadline);
+                let containsPastYear = false;
+                for (let year = 2020; year < currentYear; year++) {
+                    if (deadline.includes(String(year))) containsPastYear = true;
+                }
+                if (containsPastYear) {
+                    console.log(`Self-cleaning loop: removing expired registry: ${comp.title}`);
                     return; 
                 }
-                
                 updatedCompetitions.push(comp);
-                seenIds.add(comp.id);
+                seenCompIds.add(comp.id);
             });
         }
 
-        // 3. Process new data: Append items ONLY if they are completely unique
         if (newScrapedPayload.competitions && Array.isArray(newScrapedPayload.competitions)) {
             newScrapedPayload.competitions.forEach(newComp => {
-                if (!seenIds.has(newComp.id)) {
+                if (!seenCompIds.has(newComp.id)) {
                     updatedCompetitions.push(newComp);
-                    seenIds.add(newComp.id);
+                    seenCompIds.add(newComp.id);
                     console.log(`Adding unique new discovery: ${newComp.title}`);
-                } else {
-                    console.log(`Duplicate detected and blocked for: ${newComp.title}`);
                 }
             });
         }
 
-        // 4. Assemble the final cumulative payload
+        // 2. Process & Merge Study Resources (The Global Syllabus Warehouse)
+        let updatedStudyResources = [];
+        let seenResourceIds = new Set();
+
+        // Load existing materials so we don't wipe out what we already scavenged!
+        if (existingDatabase.studyResources && Array.isArray(existingDatabase.studyResources)) {
+            existingDatabase.studyResources.forEach(res => {
+                updatedStudyResources.push(res);
+                seenResourceIds.add(res.id);
+            });
+        }
+
+        // Influx new syllabus treasures from the latest crawl run
+        if (newScrapedPayload.studyResources && Array.isArray(newScrapedPayload.studyResources)) {
+            newScrapedPayload.studyResources.forEach(newRes => {
+                if (!seenResourceIds.has(newRes.id)) {
+                    updatedStudyResources.push(newRes);
+                    seenResourceIds.add(newRes.id);
+                    console.log(`Caching new syllabus resource: [${newRes.syllabus}] - ${newRes.title}`);
+                } else {
+                    console.log(`Syllabus resource duplicate blocked for: ${newRes.title}`);
+                }
+            });
+        }
+
+        // 3. Assemble final combined structural array
         const finalPayload = {
             competitions: updatedCompetitions,
+            studyResources: updatedStudyResources,
             dailyInspiration: newScrapedPayload.dailyInspiration || existingDatabase.dailyInspiration
         };
 
-        // 5. Overwrite data.json cleanly formatted
+        // Write cleanly back to data.json
         fs.writeFileSync("data.json", JSON.stringify(finalPayload, null, 2), "utf8");
-        console.log("Continuous self-cleaning database successfully updated!");
+        console.log("Continuous self-cleaning database successfully updated with active academic materials!");
 
     } catch (error) {
         console.error("The AI ran into an issue surfing the web:", error);
         process.exit(1);
     }
+}
+
 discoverOpportunities();
