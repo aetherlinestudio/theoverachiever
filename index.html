@@ -498,201 +498,82 @@
     </footer>
 
 <script>
-        // Add this temporary placeholder at the top of your script to stop the crash
-        function generateSmartNotification(data) {
-            console.warn("Smart notification placeholder triggered. Actual function implementation missing.");
-        }
-        
-        // Data placeholder for Live Feed Target
+        // 1. GLOBAL STATE DECLARATIONS (Initialized safely at the absolute top)
         let portalData = [];
+        let studyResources = []; 
 
-        // Master Filter Configurations tracking object
+        // Master Filter Configurations tracking object (Matches your exact layout architecture)
         let activeFilters = {
-            competition: { category: 'all', interest: 'all' },
-            opportunity: { category: 'all', interest: 'all' }
+            competition: { category: 'all' },
+            opportunity: { category: 'all' }
         };
 
-        // CURSOR
+        // 2. LIVE MOUSE CURSOR TRACKER
         const cursor = document.getElementById('custom-cursor');
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
-        });
-
-        // UNIFIED ASYNCHRONOUS LOAD LISTENER
-        window.addEventListener('load', async () => {
-            setTimeout(() => {
-                const loader = document.getElementById('loading-screen');
-                if (loader) { loader.style.opacity = '0'; setTimeout(() => { loader.style.display = 'none'; }, 1000); }
-            }, 1000);
-            
-            // Load identity from storage
-            const savedName = localStorage.getItem('oa_name');
-            const savedPfp = localStorage.getItem('oa_pfp');
-            if(savedName) {
-                document.getElementById('displayName').innerText = savedName;
-                document.getElementById('quickName').value = savedName;
-            }
-            if(savedPfp) {
-                document.getElementById('pfpDisplay').style.backgroundImage = `url(${savedPfp})`;
-                document.getElementById('pfpInitials').style.display = 'none';
-                document.getElementById('quickPfp').value = savedPfp;
-            }
-
-            // Restore slider values state profile safely
-            const savedAge = localStorage.getItem('oa_age') || "15";
-            const ageSlider = document.getElementById('quickAge');
-            if (ageSlider) {
-                ageSlider.value = savedAge;
-                displayAgeText(savedAge);
-            }
-
-            // Trigger the data load engine cleanly
-            await loadAutomatedPortalFeeds();
-        });
-
-async function loadAutomatedPortalFeeds() {
-            try {
-                const response = await fetch('data.json');
-                const masterPayload = await response.json();
-                
-                // 1. Extract structural components safely and cache to global state
-                portalData = masterPayload.competitions || [];
-                const inspiration = masterPayload.dailyInspiration;
-                
-                // 🌟 Extract study tools from the payload cache cleanly
-                const studyData = masterPayload.studyResources || [];
-                
-                // 2. Build the Spotlight Boxes Feed on the Home tab
-                renderSpotlightBoxes(portalData);
-
-                // 3. Build the Main Opportunities & Competitions Vertical Feeds
-                renderPortalFeeds(portalData);
-
-                // 🌟 Trigger the dynamic layout painter for the study track
-                renderStudyFeeds(studyData);
-
-                // 4. Update the Digital Notepad Side Panel
-                if (inspiration) {
-                    renderDigitalNotepad(inspiration);
-                }
-
-                // Deep linking intercept hash evaluation engine triggers after data is ready
-                checkDeepDetailsRoute();
-
-            } catch (error) {
-                console.error("Could not fetch the automated live data feed file:", error);
-                // Fallback to show empty messages instead of breaking completely
-                renderPortalFeeds([]);
-                // 🌟 Fallback for study feed if fetch crashes
-                renderStudyFeeds([]);
-            }
-        }
-
-        function toggleMenu() {
-            document.getElementById('notifMenu').style.display = 'none';
-            const m = document.getElementById('customMenu');
-            m.style.display = (m.style.display === 'block') ? 'none' : 'block';
-        }
-
-        function toggleNotifs() {
-            document.getElementById('customMenu').style.display = 'none';
-            const m = document.getElementById('notifMenu');
-            m.style.display = (m.style.display === 'block') ? 'none' : 'block';
-            if (document.getElementById('notifBadge')) document.getElementById('notifBadge').style.display = 'none';
-        }
-
-        function updateAccent(c) { document.documentElement.style.setProperty('--accent-main', c); }
-
-        function quickUpdate() {
-            const name = document.getElementById('quickName').value;
-            const pfp = document.getElementById('quickPfp').value;
-            
-            if(name) {
-                document.getElementById('displayName').innerText = name;
-                localStorage.setItem('oa_name', name);
-            }
-            if(pfp) {
-                document.getElementById('pfpDisplay').style.backgroundImage = `url(${pfp})`;
-                document.getElementById('pfpInitials').style.display = 'none';
-                localStorage.setItem('oa_pfp', pfp);
-            }
-        }
-
-        function updateContent() {
-            const hash = window.location.hash.substring(1) || 'home';
-            if (hash.startsWith('details?id=')) return; // Pass control safely over to router check
-            
-            document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active'));
-            const activePage = document.getElementById(hash);
-            if (activePage) activePage.classList.add('active');
-            document.querySelectorAll('nav a').forEach(l => {
-                l.classList.remove('active-link');
-                if (l.getAttribute('href') === '#' + hash) l.classList.add('active-link');
+        if (cursor) {
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
             });
         }
-        window.addEventListener('hashchange', updateContent);
-        window.addEventListener('hashchange', () => {
-            // Re-run router if hash changes specifically to details
-            checkDeepDetailsRoute();
-        });
 
-        function scrollFeed(direction) {
-            const activeTrack = document.querySelector('.page-content.active .feed-scroll-track');
-            if (activeTrack) activeTrack.scrollBy({ left: 400 * direction, behavior: 'smooth' });
-        }
+        // ==========================================
+        // 🌟 DYNAMIC ACADEMIC SYLLABUS RENDERING ENGINE
+        // ==========================================
+        function renderStudyFeeds(data) {
+            studyResources = Array.isArray(data) ? data : [];
+            const studyTrack = document.getElementById('studyTrack'); 
+            
+            if (!studyTrack) return;
+            studyTrack.innerHTML = '';
 
-        window.onclick = (e) => {
-            if (!e.target.closest('.header-right')) {
-                if (document.getElementById('customMenu')) document.getElementById('customMenu').style.display = 'none';
-                if (document.getElementById('notifMenu')) document.getElementById('notifMenu').style.display = 'none';
+            if (studyResources.length === 0) {
+                studyTrack.innerHTML = `<p style="opacity:0.5; font-style:italic; padding:2rem; text-transform: lowercase;">gathering pristine syllabus materials...</p>`;
+                return;
             }
-        }
 
-        // Structural filter panel toggling tool logic routines
-        function toggleFilterPanel(panelId) {
-            const p = document.getElementById(panelId);
-            p.style.display = (p.style.display === 'block') ? 'none' : 'block';
-        }
+            const activeSyllabus = localStorage.getItem('oa_syllabus') || "cambridge";
 
-        // Custom string boundary transformer for label sliders
-        function displayAgeText(ageVal) {
-            const display = document.getElementById('ageDisplay');
-            if (!display) return;
-            if (ageVal == "12") {
-                display.innerText = "under 13";
-            } else if (ageVal == "19") {
-                display.innerText = "over 18";
-            } else {
-                display.innerText = ageVal;
+            // Filter items matching user's active syllabus profile path safely
+            const filteredStudy = studyResources.filter(item => {
+                return item && item.syllabus && String(item.syllabus).toLowerCase() === activeSyllabus.toLowerCase();
+            });
+
+            if (filteredStudy.length === 0) {
+                studyTrack.innerHTML = `<p style="opacity:0.5; font-style:italic; padding:2rem; text-transform: lowercase;">no custom resources found matching the "${activeSyllabus}" framework yet.</p>`;
+                return;
             }
-        }
 
-        // Profile dynamic range tracker changes updater callback
-        function updateAgeFilter(ageVal) {
-            displayAgeText(ageVal);
-            localStorage.setItem('oa_age', ageVal);
-            renderPortalFeeds(portalData); 
-        }
+            filteredStudy.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'feed-item';
+                card.style.padding = '2rem';
+                card.style.marginBottom = '1.5rem';
 
-        // Tag value active controller selection managers
-        function setFilterTag(section, layer, value) {
-            activeFilters[section][layer] = value;
-            const containerId = (section === 'competition') 
-                ? (layer === 'category' ? 'compCatTags' : 'compIntTags')
-                : (layer === 'category' ? 'oppCatTags' : 'oppIntTags');
-                
-            const container = document.getElementById(containerId);
-            if(container) {
-                container.querySelectorAll('.filter-tag').forEach(btn => {
-                    if(btn.getAttribute('onclick').includes(`'${value}'`)) {
-                        btn.classList.add('tag-active');
-                    } else {
-                        btn.classList.remove('tag-active');
-                    }
-                });
-            }
-            renderPortalFeeds(portalData);
+                card.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                        <div>
+                            <span style="font-size: 0.75rem; text-transform: uppercase; opacity: 0.5; letter-spacing: 1px; background: #f5f5f5; padding: 3px 8px; border-radius: 3px;">
+                                ${(item.type || 'resource').toLowerCase()}
+                            </span>
+                            <span style="font-size: 0.75rem; text-transform: uppercase; opacity: 0.4; margin-left: 10px;">
+                                ${(item.subject || 'general').toLowerCase()}
+                            </span>
+                            <h3 style="font-weight: normal; font-size: 1.6rem; margin: 0.5rem 0 0.5rem 0; text-transform: lowercase;">
+                                ${item.title}
+                            </h3>
+                            <p style="font-size: 0.95rem; opacity: 0.7; line-height: 1.5; margin-bottom: 1.5rem; text-transform: lowercase;">
+                                ${item.description || ''}
+                            </p>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f9f9f9; padding-top: 1rem;">
+                        <span style="font-size: 0.85rem; opacity: 0.5; text-transform: lowercase;">origin framework: ${activeSyllabus}</span>
+                        <a href="${item.link || '#'}" target="_blank" class="support-btn" style="text-decoration: none; padding: 0.5rem 1rem; background: black; color: white; font-size: 0.9rem;">access asset →</a>
+                    </div>
+                `;
+                studyTrack.appendChild(card);
+            });
         }
 
         // ==========================================
@@ -702,13 +583,12 @@ async function loadAutomatedPortalFeeds() {
             const spotlightTrack = document.getElementById('spotlight-track'); 
             if (!spotlightTrack) return;
 
-            spotlightTrack.innerHTML = ''; // Wipe out old content
+            spotlightTrack.innerHTML = ''; 
             const dataset = (Array.isArray(data) && data.length > 0) ? data : [];
             if (dataset.length === 0) return;
 
             const userAge = parseInt(localStorage.getItem('oa_age')) || 15;
 
-            // Highlight top matches for the current user's profile eligibility window
             const filteredMatches = dataset.filter(item => {
                 const min = parseInt(item.minAge) || 0;
                 const max = parseInt(item.maxAge) || 99;
@@ -751,8 +631,6 @@ async function loadAutomatedPortalFeeds() {
         // ==========================================
         function renderPortalFeeds(data) {
             const sourceData = (Array.isArray(data)) ? data : [];
-            
-            // Extract references to your real secondary HTML list containers
             const compTrack = document.getElementById('competitionsTrack');
             const oppTrack = document.getElementById('opportunitiesTrack');
             
@@ -771,26 +649,23 @@ async function loadAutomatedPortalFeeds() {
             sourceData.forEach(item => {
                 if (!item) return;
 
-                // 1. Strict Filter Evaluation Architecture
+                // 1. Structural Age Eligibility Check
                 const min = parseInt(item.minAge) || 0;
                 const max = parseInt(item.maxAge) || 99;
-                if (userAge < min || userAge > max) return; // Age constraint gatekeeper
+                if (userAge < min || userAge > max) return; 
 
                 const typeKey = (item.type || 'competition').toLowerCase();
                 
-                // Evaluate custom tag filters based on tab category configuration
-                if (typeKey === 'competition') {
-                    if (activeFilters.competition.category !== 'all' && item.category.toLowerCase() !== activeFilters.competition.category.toLowerCase()) return;
-                    if (activeFilters.competition.interest !== 'all' && item.interest.toLowerCase() !== activeFilters.competition.interest.toLowerCase()) return;
+                // 🌟 FIX 1 & 2: Route 'challenge' entries to Competitions Track, else match Category Filters perfectly
+                if (typeKey === 'competition' || typeKey === 'challenge') {
+                    if (activeFilters.competition.category !== 'all' && (!item.category || !item.category.toLowerCase().includes(activeFilters.competition.category.toLowerCase()))) return;
                 } else {
-                    if (activeFilters.opportunity.category !== 'all' && item.category.toLowerCase() !== activeFilters.opportunity.category.toLowerCase()) return;
-                    if (activeFilters.opportunity.interest !== 'all' && item.interest.toLowerCase() !== activeFilters.opportunity.interest.toLowerCase()) return;
+                    if (activeFilters.opportunity.category !== 'all' && (!item.category || !item.category.toLowerCase().includes(activeFilters.opportunity.category.toLowerCase()))) return;
                 }
 
-                // 2. Build DOM Card Layout Element
-                const displayType = item.type || 'Opportunity';
-                const displayCategory = item.category || 'General';
-                const displayDeadline = item.deadline || 'Ongoing';
+                const displayType = item.type || 'opportunity';
+                const displayCategory = item.category || 'general';
+                const displayDeadline = item.deadline || 'ongoing';
 
                 const card = document.createElement('div');
                 card.className = 'feed-item'; 
@@ -802,7 +677,7 @@ async function loadAutomatedPortalFeeds() {
                                 ${displayType.toLowerCase()}
                             </span>
                             <span style="font-size: 0.75rem; text-transform: uppercase; opacity: 0.4; margin-left: 10px;">
-                                ${displayCategory.toLowerCase()} • ${(item.interest || '').toLowerCase()}
+                                ${displayCategory.toLowerCase()} • ${(item.interest || 'general').toLowerCase()}
                             </span>
                             <h2 style="font-weight: normal; font-size: 1.8rem; margin: 0.5rem 0 1rem 0; line-height: 1.1; text-transform: lowercase;">
                                 ${item.title}
@@ -812,10 +687,10 @@ async function loadAutomatedPortalFeeds() {
                             </p>
                             
                             <table class="meta-spec-table" style="max-width: 500px; width: 100%; border-collapse: collapse;">
-                                <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label">venue / location</td><td class="meta-value">${item.location || 'Global'}</td></tr>
-                                <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label">age range eligibility</td><td class="meta-value">Ages ${item.minAge} — ${item.maxAge}</td></tr>
-                                <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label">prizes / perks</td><td class="meta-value">${item.prizes || 'Certificates'}</td></tr>
-                                <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label">entry fees</td><td class="meta-value">${item.fee || 'Free'}</td></tr>
+                                <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label">venue / location</td><td class="meta-value">${item.location || 'global'}</td></tr>
+                                <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label">age range eligibility</td><td class="meta-value">ages ${item.minAge} — ${item.maxAge}</td></tr>
+                                <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label">prizes / perks</td><td class="meta-value">${item.prizes || 'certificates'}</td></tr>
+                                <tr style="border-bottom: 1px solid #f9f9f9;"><td class="meta-label">entry fees</td><td class="meta-value">${item.fee || 'free'}</td></tr>
                             </table>
                         </div>
                     </div>
@@ -825,18 +700,176 @@ async function loadAutomatedPortalFeeds() {
                     </div>
                 `;
 
-                // Append card to the proper tab view target cleanly
-                if (typeKey === 'competition' && compTrack) {
+                // 🌟 FIX 3: Push challenges and competitions inside the left panel container track
+                if ((typeKey === 'competition' || typeKey === 'challenge') && compTrack) {
                     compTrack.appendChild(card);
-                } else if (typeKey !== 'competition' && oppTrack) {
+                } else if (typeKey !== 'competition' && typeKey !== 'challenge' && oppTrack) {
                     oppTrack.appendChild(card);
                 }
             });
 
-            // Fallback empty text indicators if active filtering leaves a view completely zeroed out
             const cleanFallback = `<p style="opacity:0.5; font-style:italic; padding:2rem; text-transform: lowercase;">no matching listings found within your specified custom parameters.</p>`;
             if (compTrack && compTrack.children.length === 0) compTrack.innerHTML = cleanFallback;
             if (oppTrack && oppTrack.children.length === 0) oppTrack.innerHTML = cleanFallback;
+        }
+
+        // ==========================================
+        // 🌟 CENTRAL DATA ASYNCHRONOUS LOAD ENGINE
+        // ==========================================
+        async function loadAutomatedPortalFeeds() {
+            try {
+                const response = await fetch('data.json');
+                const masterPayload = await response.json();
+                
+                portalData = masterPayload.competitions || [];
+                const inspiration = masterPayload.dailyInspiration;
+                const studyData = masterPayload.studyResources || [];
+                
+                renderSpotlightBoxes(portalData);
+                renderPortalFeeds(portalData);
+                renderStudyFeeds(studyData);
+
+                if (inspiration) {
+                    renderDigitalNotepad(inspiration);
+                }
+
+                checkDeepDetailsRoute();
+
+            } catch (error) {
+                console.error("Could not fetch the automated live data feed file:", error);
+                renderPortalFeeds([]);
+                renderStudyFeeds([]);
+            }
+        }
+
+        // 3. MASTER INTERACTION LISTENER HOOK
+        window.addEventListener('load', async () => {
+            setTimeout(() => {
+                const loader = document.getElementById('loading-screen');
+                if (loader) { loader.style.opacity = '0'; setTimeout(() => { loader.style.display = 'none'; }, 1000); }
+            }, 1000);
+            
+            const savedName = localStorage.getItem('oa_name');
+            const savedPfp = localStorage.getItem('oa_pfp');
+            if(savedName) {
+                document.getElementById('displayName').innerText = savedName;
+                if(document.getElementById('quickName')) document.getElementById('quickName').value = savedName;
+            }
+            if(savedPfp) {
+                document.getElementById('pfpDisplay').style.backgroundImage = `url(${savedPfp})`;
+                if(document.getElementById('pfpInitials')) document.getElementById('pfpInitials').style.display = 'none';
+                if(document.getElementById('quickPfp')) document.getElementById('quickPfp').value = savedPfp;
+            }
+
+            const savedAge = localStorage.getItem('oa_age') || "15";
+            const ageSlider = document.getElementById('quickAge');
+            if (ageSlider) {
+                ageSlider.value = savedAge;
+                displayAgeText(savedAge);
+            }
+
+            const savedSyllabus = localStorage.getItem('oa_syllabus') || "cambridge";
+            const syllabusSelector = document.getElementById('quickSyllabus');
+            if (syllabusSelector) {
+                syllabusSelector.value = savedSyllabus;
+            }
+
+            await loadAutomatedPortalFeeds();
+        });
+
+        function updateSyllabusFilter(syllabusVal) {
+            localStorage.setItem('oa_syllabus', syllabusVal);
+            renderStudyFeeds(studyResources);
+        }
+
+        function toggleMenu() {
+            document.getElementById('notifMenu').style.display = 'none';
+            const m = document.getElementById('customMenu');
+            if(m) m.style.display = (m.style.display === 'block') ? 'none' : 'block';
+        }
+
+        function toggleNotifs() {
+            document.getElementById('customMenu').style.display = 'none';
+            const m = document.getElementById('notifMenu');
+            if(m) m.style.display = (m.style.display === 'block') ? 'none' : 'block';
+            if (document.getElementById('notifBadge')) document.getElementById('notifBadge').style.display = 'none';
+        }
+
+        function updateAccent(c) { document.documentElement.style.setProperty('--accent-main', c); }
+
+        function quickUpdate() {
+            const name = document.getElementById('quickName').value;
+            const pfp = document.getElementById('quickPfp').value;
+            
+            if(name) {
+                document.getElementById('displayName').innerText = name;
+                localStorage.setItem('oa_name', name);
+            }
+            if(pfp) {
+                document.getElementById('pfpDisplay').style.backgroundImage = `url(${pfp})`;
+                document.getElementById('pfpInitials').style.display = 'none';
+                localStorage.setItem('oa_pfp', pfp);
+            }
+        }
+
+        function updateContent() {
+            const hash = window.location.hash.substring(1) || 'home';
+            if (hash.startsWith('details?id=')) return; 
+            
+            document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active'));
+            const activePage = document.getElementById(hash);
+            if (activePage) activePage.classList.add('active');
+            document.querySelectorAll('nav a').forEach(l => {
+                l.classList.remove('active-link');
+                if (l.getAttribute('href') === '#' + hash) l.classList.add('active-link');
+            });
+        }
+        window.addEventListener('hashchange', updateContent);
+        window.addEventListener('hashchange', checkDeepDetailsRoute);
+
+        function scrollFeed(direction) {
+            const activeTrack = document.querySelector('.page-content.active .feed-scroll-track');
+            if (activeTrack) activeTrack.scrollBy({ left: 400 * direction, behavior: 'smooth' });
+        }
+
+        window.onclick = (e) => {
+            if (!e.target.closest('.header-right')) {
+                if (document.getElementById('customMenu')) document.getElementById('customMenu').style.display = 'none';
+                if (document.getElementById('notifMenu')) document.getElementById('notifMenu').style.display = 'none';
+            }
+        }
+
+        function toggleFilterPanel(panelId) {
+            const p = document.getElementById(panelId);
+            if(p) p.style.display = (p.style.display === 'block') ? 'none' : 'block';
+        }
+
+        function displayAgeText(ageVal) {
+            const display = document.getElementById('ageDisplay');
+            if (!display) return;
+            if (ageVal == "12") { display.innerText = "under 13"; } 
+            else if (ageVal == "19") { display.innerText = "over 18"; } 
+            else { display.innerText = ageVal; }
+        }
+
+        function updateAgeFilter(ageVal) {
+            displayAgeText(ageVal);
+            localStorage.setItem('oa_age', ageVal);
+            renderPortalFeeds(portalData); 
+        }
+
+        // 🌟 FIX 4: Re-engineered Filter Target selection routine to match original filter elements perfectly
+        function setFilterTag(section, layer, value) {
+            activeFilters[section][layer] = value;
+            
+            // Highlight the active button state dynamically
+            const filterRow = event.target.parentElement;
+            if (filterRow) {
+                filterRow.querySelectorAll('.filter-tag').forEach(btn => btn.classList.remove('tag-active'));
+                event.target.classList.add('tag-active');
+            }
+            
+            renderPortalFeeds(portalData);
         }
 
         // ==========================================
@@ -862,16 +895,11 @@ async function loadAutomatedPortalFeeds() {
 
             let readableDeadline = item.deadline || 'Ongoing';
             if (item.deadline && item.deadline.length === 10) {
-                try {
-                    readableDeadline = new Date(item.deadline).toLocaleDateString('en-US', {
-                        month: 'long', day: 'numeric', year: 'numeric'
-                    });
-                } catch(e) {}
+                try { readableDeadline = new Date(item.deadline).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }); } catch(e) {}
             }
 
             let customTypeSpecRow = (item.type || '').toLowerCase() === 'competition' 
-                ? `<tr><td class="meta-label">competition rounds</td><td class="meta-value">${item.rounds || 'n/a'}</td></tr>`
-                : ``;
+                ? `<tr><td class=\"meta-label\">competition rounds</td><td class=\"meta-value\">${item.rounds || 'n/a'}</td></tr>` : ``;
 
             target.innerHTML = `
                 <div class="details-main">
@@ -880,12 +908,9 @@ async function loadAutomatedPortalFeeds() {
                     </div>
                     <h1 style="text-transform: lowercase;">${item.title}</h1>
                     <p style="line-height:1.7; font-size:1.05rem; opacity:0.85; margin: 1.5rem 0 2.5rem 0; text-transform: lowercase;">${item.fullDetails || item.shortDesc}</p>
-                    
                     <a href="${item.link || '#'}" target="_blank" class="support-btn" style="padding: 1rem 3rem; font-size:1.1rem; text-decoration:none; background:black; color:white; display:inline-block;">proceed to formal registration</a>
                 </div>
-                
                 <aside style="border-left: 1px solid #eee; padding-left: 3rem;">
-                    <span style="font-size: 0.75rem; opacity: 0.5; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom:1rem;">comprehensive specifications</span>
                     <table class="meta-spec-table">
                         <tbody>
                             <tr><td class="meta-label">classification structure</td><td class="meta-value">${(item.type || 'n/a').toLowerCase()}</td></tr>
@@ -910,11 +935,6 @@ async function loadAutomatedPortalFeeds() {
         function renderDigitalNotepad(inspiration) {
             const notepadBody = document.getElementById('inspiration-notepad');   
             if (!notepadBody) return;
-
-            if (!inspiration) {
-                notepadBody.innerText = "focus on the goal. today is yours to win.";
-                return;
-            }
 
             notepadBody.innerHTML = `
                 <h3 style="margin-top: 0; font-family: var(--font-ui); font-size:1.1rem; font-weight:600; text-transform:lowercase; letter-spacing:-0.5px;">
