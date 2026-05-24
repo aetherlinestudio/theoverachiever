@@ -526,7 +526,7 @@
             await loadAutomatedPortalFeeds();
         });
 
-        async function loadAutomatedPortalFeeds() {
+async function loadAutomatedPortalFeeds() {
             try {
                 const response = await fetch('data.json');
                 const masterPayload = await response.json();
@@ -535,11 +535,17 @@
                 portalData = masterPayload.competitions || [];
                 const inspiration = masterPayload.dailyInspiration;
                 
+                // 🌟 Extract study tools from the payload cache cleanly
+                const studyData = masterPayload.studyResources || [];
+                
                 // 2. Build the Spotlight Boxes Feed on the Home tab
                 renderSpotlightBoxes(portalData);
 
                 // 3. Build the Main Opportunities & Competitions Vertical Feeds
                 renderPortalFeeds(portalData);
+
+                // 🌟 Trigger the dynamic layout painter for the study track
+                renderStudyFeeds(studyData);
 
                 // 4. Update the Digital Notepad Side Panel
                 if (inspiration) {
@@ -553,6 +559,8 @@
                 console.error("Could not fetch the automated live data feed file:", error);
                 // Fallback to show empty messages instead of breaking completely
                 renderPortalFeeds([]);
+                // 🌟 Fallback for study feed if fetch crashes
+                renderStudyFeeds([]);
             }
         }
 
