@@ -253,24 +253,6 @@
       "link": "https://www.imo-official.org/"
     },
     {
-      "id": "vex-robotics-world-championship-2026",
-      "type": "competition",
-      "title": "VEX Robotics World Championship 2026 (High School V5)",
-      "shortDesc": "An international robotics competition where high school teams design, build, and program robots to compete in a specific game.",
-      "fullDetails": "The VEX Robotics World Championship is an annual event that brings together top VEX V5 Robotics Competition teams from around the globe. Teams compete in the 2025-2026 game, 'Push Back,' aiming to be crowned champions. In addition to the main competition, the event features skills challenges, workshops, and exhibitions, fostering engagement with STEM-related content and encouraging teamwork and problem-solving.",
-      "category": "STEM",
-      "interest": "robotics, programming, engineering, mechanical design",
-      "minAge": 13,
-      "maxAge": 18,
-      "deadline": "Qualification for this championship occurred through regional/national events during the 2025-2026 season.",
-      "eventDate": "April 21-24, 2026 (High School VEX V5)",
-      "location": "America's Center, St. Louis, Missouri, USA",
-      "prizes": "Championship titles, trophies, recognition, and networking opportunities with universities and industry.",
-      "rounds": "Regional/national qualifying events, followed by the World Championship.",
-      "fee": "Varies by regional event and team registration; travel and lodging costs apply for the championship.",
-      "link": "https://www.robotevents.com/robot-competitions/vex-robotics-competition/RE-VRC-26-3882.html"
-    },
-    {
       "id": "zero-robotics-2026-high-school",
       "type": "competition",
       "title": "Zero Robotics 2026 High School Tournament: Galactic Greenhouse",
@@ -575,11 +557,166 @@
       "rounds": "N/A",
       "fee": "N/A (not explicitly stated, but implies free entry)",
       "link": "N/A"
+    },
+    {
+      "id": "usaco-2026",
+      "type": "competition",
+      "title": "usa computing olympiad (usaco)",
+      "shortDesc": "a highly prestigious algorithmic programming competition for pre-college students, serving as the primary pathway for international informatics olympiad.",
+      "fullDetails": "usaco is the primary competitive programming pathway in the united states, with four divisions: bronze, silver, gold, and platinum. it is highly recognized by top tech universities like mit and carnegie mellon. contests are fully online and free. progress through divisions is self-paced based on contest performance. contests for the 2026 season run from december 2025 through march 2026. top performers are invited to a summer training camp to select the us team for the international olympiad in informatics (ioi).",
+      "category": "academic",
+      "interest": "computer science & algorithms",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "march 2026 (final contest of the season)",
+      "eventDate": "december 2025 - march 2026 (contests)",
+      "location": "online",
+      "prizes": "recognition, potential qualification for international olympiad in informatics (ioi).",
+      "rounds": "four divisions (bronze, silver, gold, platinum) with multiple contests.",
+      "fee": "free",
+      "link": "https://usaco.org/"
+    },
+    {
+      "id": "hippo-best-in-english-2026",
+      "type": "competition",
+      "title": "hippo 'best in english' international competition",
+      "shortDesc": "a unique online english language competition for non-native speakers worldwide, designed to benchmark english skills.",
+      "fullDetails": "the hippo 'best in english' contest is a prestigious international english language competition for students aged 14-20 worldwide. it aims to promote the importance of english language proficiency and foster global unity. the competition is online and serves to help schools benchmark english skills internationally and motivate students. the best student wins a 2-week trip to canada. the next competition is scheduled for november 26, 2026, from 9:00-14:00 cet, lasting 60 minutes. registration for 2026 is open.",
+      "category": "academic",
+      "interest": "english language",
+      "minAge": 14,
+      "maxAge": 20,
+      "deadline": "check official website for registration closing date (competition is nov 26, 2026)",
+      "eventDate": "2026-11-26",
+      "location": "online",
+      "prizes": "2-week trip to canada for the best student, certificates.",
+      "rounds": "online test (60 minutes)",
+      "fee": "check official website",
+      "link": "https://bestinenglish.org/"
+    }
+  ],
+  "studyResources": [
+    {
+      "id": "ib-math-aa-ai-resources",
+      "syllabus": "ib",
+      "subject": "mathematics",
+      "type": "revision notes, specimen paper, textbook",
+      "title": "free ib maths (aa & ai) videos, resources, and formula booklets",
+      "description": "comprehensive free videos, resources, topic quizzes, mock exams, question banks with detailed mark schemes, video solutions, and formula booklets for ib math analysis & approaches (hl/sl) and applications & interpretation (hl/sl). includes materials tailored for the post-2021 syllabus.",
+      "link": "https://www.ibmaths.com/"
+    },
+    {
+      "id": "cambridge-igcse-cs-0478-0984-papers",
+      "syllabus": "cambridge",
+      "subject": "computer science",
+      "type": "specimen paper, past paper",
+      "title": "cambridge igcse computer science (0478 & 0984) free past papers and resources",
+      "description": "free international gcse computer science past papers, mark schemes, syllabus, specimens, and resource booklets for cambridge igcse 0478 and 0984. includes yearly and topical past papers, some with solved solutions.",
+      "link": "https://papacambridge.com/cie/cambridge-igcse/computer-science-0478/"
+    },
+    {
+      "id": "ap-english-lit-curriculum",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "curriculum portfolio",
+      "title": "ap english literature and composition course overview & syllabus",
+      "description": "official course overview detailing reading, analyzing, and writing about imaginative literature (fiction, poetry, drama) from various periods. focuses on close reading, critical analysis, structure, style, themes, figurative language, imagery, and symbolism. includes writing assignments: expository, analytical, and argumentative essays.",
+      "link": "https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/course-details"
+    },
+    {
+      "id": "cbse-class10-cs-it-syllabus-2026-27",
+      "syllabus": "cbse",
+      "subject": "computer science",
+      "type": "syllabus",
+      "title": "cbse class 10 computer applications and information technology syllabus 2026-27",
+      "description": "official cbse class 10 syllabus for computer applications (code 165) and information technology (code 402) for the 2026-27 session. covers networking, html, cyber ethics, practical tools like libreoffice, and workplace skills. includes details on course structure, chapter-wise weightage, practical components, and exam patterns.",
+      "link": "https://www.selfstudys.com/cbse-class-10-computer-applications-syllabus-2026-27/"
+    },
+    {
+      "id": "openstax-hs-math-textbooks",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "openstax free high school and college math textbooks",
+      "description": "openstax provides free pdf versions of high school and college level mathematics textbooks, including algebra, trigonometry, calculus, and statistics. these open educational resources (oers) are available for download, with some also offering affordable print copies and teacher resources.",
+      "link": "https://openstax.org/subjects/math"
+    },
+    {
+      "id": "gaokao-math-practice-questions",
+      "syllabus": "gaokao",
+      "subject": "mathematics",
+      "type": "specimen paper, practice questions",
+      "title": "gaokao mathematics sample and practice questions",
+      "description": "challenging gaokao mathematics sample questions and practice papers covering algebra, geometry, calculus, statistics, probability, number theory, trigonometry, mathematical logic, linear algebra, and word problems. includes multiple choice, fill-in-the-blanks, short answer, and long answer questions, with some sites offering detailed explanations and strategies.",
+      "link": "https://mathzen.com/gaokao-mathematics-practice"
+    },
+    {
+      "id": "spm-computer-science-past-papers",
+      "syllabus": "spm",
+      "subject": "computer science",
+      "type": "past paper",
+      "title": "spm computer science trial papers and exam questions",
+      "description": "free spm computer science trial papers and past exam questions with answer schemes, providing instructions, exam guidelines, and covering topics in information and communication technology, computer networks, operating systems, programming languages, and more. some resources include video answer guidance.",
+      "link": "https://spmpaper.me/spm-trial-papers/sains-komputer/"
+    },
+    {
+      "id": "vce-math-methods-resources",
+      "syllabus": "vce-hsc",
+      "subject": "mathematics",
+      "type": "trial exams, study site, revision notes",
+      "title": "free vce mathematics methods study site and trial exams",
+      "description": "free vce maths study site with interactive study guides, practice questions at different difficulty levels, explanations, exam tips, and common mistakes for maths methods (specialist maths, general maths coming soon). also offers free trial exams with fully worked solutions.",
+      "link": "https://aceaiedu.com/"
+    },
+    {
+      "id": "german-abitur-english-prep",
+      "syllabus": "german-abitur",
+      "subject": "english",
+      "type": "practice tests, summaries, flashcards",
+      "title": "free ai-powered abitur english preparation tool",
+      "description": "a free ai-powered tool that generates targeted practice tests, summaries, and flashcards for abitur english from uploaded textbooks, lecture notes, or past papers. covers general topics like american dream, modern media, stylistic devices and allows adaptive difficulty matching abitur exam level.",
+      "link": "https://studypdf.com/ai-abitur-preparation"
+    },
+    {
+      "id": "ap-english-lang-frqs-flint",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "ap english language and composition frq practice and grader",
+      "description": "free activity templates designed to help students sharpen reading comprehension and rhetorical analysis skills for the ap english language exam, including multiple-choice questions, free-response question model answer analysis, and essay feedback guides for rhetorical analysis, synthesis, and argument essays.",
+      "link": "https://www.flint.com/blog/ap-english-language-composition-teacher-resources"
+    },
+    {
+      "id": "spm-maths-notes-forms1-5",
+      "syllabus": "spm",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "spm mathematics notes and formulae (forms 1-5)",
+      "description": "comprehensive revision notes and formulas covering spm mathematics curriculum from form 1 to form 5. topics include solid geometry, circle theorems, polygons, algebraic expressions and equations, trigonometry, statistics, and linear equations. includes key formulas, properties, and definitions for quick recall and understanding.",
+      "link": "https://www.scribd.com/document/246479007/Notes-and-Formulae-Mathematics-SPM"
+    },
+    {
+      "id": "cbse-cs-python-class12-textbook",
+      "syllabus": "cbse",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "cbse computer science and python programming with practical: class xii textbook (2020 edition)",
+      "description": "a free open-access textbook for cbse class xii computer science (code no. 083), covering both theory and practical aspects. includes advanced python programming concepts, relational database management system (sql), python-mysql connectivity, computer networks, data visualizations, and cyber ethics. features solved practical assignments and over 250 solved programs.",
+      "link": "https://www.researchgate.net/publication/356501166_CBSE_Computer_Science_Textbook_-_Practical_Programming_in_Python_for_Class_XII"
+    },
+    {
+      "id": "vce-english-2026-studyguide",
+      "syllabus": "vce-hsc",
+      "subject": "english",
+      "type": "study guide",
+      "title": "vce english 2026 text list study guide",
+      "description": "an expert-written study guide to master the vce english 2026 text list for units 3 & 4. provides in-depth analysis of themes, literary techniques, and vcaa examiner tips to excel in sac's and the final exam.",
+      "link": "https://www.cheatforge.com.au/vce-english-2026-text-list-study-guide/"
     }
   ],
   "dailyInspiration": {
-    "title": "From War-Torn Streets to Math Olympiad Glory",
-    "story": "In war-torn Mosul, 16-year-old Rami Qader exhibited extraordinary dedication, studying geometry under a diesel bunker lamp and solving equations on melted cereal boxes when his notebook was gone. He timed each proof to the thin silence between sirens during mortar alarms, and in blackouts, taped theorems inside his family's dented water tank. This unwavering discipline and resilience, transforming every adversity into a learning opportunity, ultimately led him to win the International Math Olympiad.",
-    "takeaway": "Shrink the impossible into tiny sessions and guard each one fiercely; use whatever survives, because progress cares more about repetition than perfect tools."
+    "title": "the 10-year-old math prodigy conquering the world",
+    "story": "lina saka, a 10-year-old primary school student from trabzon, türkiye, achieved global recognition by securing a perfect score of 100% in the mathematics category of the international stem olympiads in march 2026. competing against students from 153 countries and across all grade levels, lina's flawless victory earned her the world championship. her journey began with a passion for mathematics even before primary school, consistently participating in international competitions and building an impressive track record, including ranking first in türkiye in the american math olympiad and earning a silver medal in the fiso olympiad. following her remarkable triumph, lina earned a spot to represent türkiye at the international finals scheduled for july in rome, italy, aiming to continue her pursuit of excellence despite facing financial challenges for travel and accommodation.",
+    "takeaway": "age is no barrier to achieving global excellence through dedication and an unwavering passion for learning."
   }
 }
