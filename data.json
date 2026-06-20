@@ -937,24 +937,6 @@
       "link": "https://www.upu.int/en/activities/competitions/international-letter-writing-competition-for-young-people"
     },
     {
-      "id": "robotics-for-good-youth-challenge-2025-2026",
-      "type": "competition",
-      "title": "robotics for good youth challenge",
-      "shortDesc": "a un-based educational robotics championship where robots provide innovative, practical solutions to real-world problems.",
-      "fullDetails": "the competition promotes the use of open-source software and hardware, allowing participants full freedom in assembling and programming their robots to address global challenges.",
-      "category": "stem",
-      "interest": "robotics & engineering",
-      "minAge": 13,
-      "maxAge": 18,
-      "deadline": "not specified (part of 2025-2026 cycle)",
-      "eventDate": "2026-xx-xx",
-      "location": "global (implied 'un-based')",
-      "prizes": "not specified",
-      "rounds": "not specified",
-      "fee": "not specified",
-      "link": "https://unric.org/en/united-nations-competitions-and-contests/"
-    },
-    {
       "id": "world-youth-science-knowledge-competition-2026",
       "type": "competition",
       "title": "world youth science knowledge competition",
@@ -989,6 +971,96 @@
       "rounds": "one-day event",
       "fee": "not specified, pre-registration required",
       "link": "https://www.pppl.gov/education/build-big-dreams-youth-stem-conference"
+    },
+    {
+      "id": "best-in-english-2026",
+      "type": "competition",
+      "title": "best in english contest 2026",
+      "shortDesc": "a unique online english competition for secondary school students worldwide to benchmark their english skills.",
+      "fullDetails": "best in english is an online english language competition for students aged 14-20 from around the world. it helps schools benchmark english skills internationally and motivates students to improve. the best student wins a 2-week trip to canada. the competition date is november 26, 2026, from 9:00-14:00 cet, and lasts 60 minutes. registration for the 2026 contest is open.",
+      "category": "academic",
+      "interest": "english language",
+      "minAge": 14,
+      "maxAge": 20,
+      "deadline": "check official website for registration deadline (expected late 2026)",
+      "eventDate": "2026-11-26",
+      "location": "online",
+      "prizes": "2-week trip to canada (for best student), certificates",
+      "rounds": "1",
+      "fee": "not specified",
+      "link": "https://bestinenglish.org/"
+    },
+    {
+      "id": "iyrc-summer-2026",
+      "type": "conference",
+      "title": "the international young researchers' conference (iyrc) summer 2026",
+      "shortDesc": "a virtual program for high school students to integrate data and science with patient-centered care.",
+      "fullDetails": "the iyrc offers a virtual four-week medical humanities program where high school students delve into the humanistic aspects of medicine. through synchronous and asynchronous programming, students will integrate data and science with patient-centered care. there's also a virtual 10-week medicine and research summer program where students learn from physicians, researchers, and medical students at columbia university vp&s and ucla. the conference dates are august 2 - 30, 2026, with an application deadline of may 15, 2026.",
+      "category": "academic",
+      "interest": "medicine & research",
+      "minAge": 14,
+      "maxAge": 18,
+      "deadline": "2026-05-15",
+      "eventDate": "2026-08-02 to 2026-08-30",
+      "location": "online",
+      "prizes": "certificates, experience, networking",
+      "rounds": "n/a (program)",
+      "fee": "not specified (check website)",
+      "link": "https://www.iyrc.org/iyrc"
+    },
+    {
+      "id": "asmc-2026",
+      "type": "competition",
+      "title": "asia science mathematics competition (asmc) 2026",
+      "shortDesc": "an international competition for students passionate about science and mathematics.",
+      "fullDetails": "asmc 2026 is designed for outstanding students providing a prestigious international platform to challenge their skills, gain global experience, and compete with participants from various countries. participants can compete at an international level, earn medals, certificates, and special awards, and qualify for a global round. registration is from may 19 – june 11, 2026.",
+      "category": "academic",
+      "interest": "science & mathematics",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2026-06-11",
+      "eventDate": "not specified (registration window is may-june)",
+      "location": "online",
+      "prizes": "medals, certificates, special awards, qualification for global round",
+      "rounds": "multiple (implies national/regional leading to global)",
+      "fee": "not specified",
+      "link": "https://internationalstudentscompetition.org/"
+    },
+    {
+      "id": "iol-2026",
+      "type": "competition",
+      "title": "international linguistics olympiad (iol) 2026",
+      "shortDesc": "an annual international competition challenging secondary school students in language analysis and problem-solving without prior linguistics knowledge.",
+      "fullDetails": "the 23rd international linguistics olympiad will be hosted in bucharest, romania, from july 26th to august 2nd, 2026. the competition encourages creativity, imagination, and logical ability, fostering skills in language analysis and problem-solving. participants are not required to have prior knowledge of linguistics or languages, as even complex problems are designed to be solvable through logical reasoning and innovative thinking. national selections precede the international round, typically by 3-6 months. registrations for the 2026 event opened in january 2026.",
+      "category": "academic",
+      "interest": "logic & linguistics",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2026-01-xx (for registration, national deadlines vary)",
+      "eventDate": "2026-07-26 to 2026-08-02",
+      "location": "bucharest, romania",
+      "prizes": "medals and recognition for linguistic abilities",
+      "rounds": "multiple (national selection, international competition)",
+      "fee": "free (national fees may apply)",
+      "link": "https://iol2026.ro/"
+    },
+    {
+      "id": "isc-new-england-2026",
+      "type": "conference",
+      "title": "international student conference (isc) new england 2026",
+      "shortDesc": "a regional conference for high school students from independent schools in new england to share stories and bond.",
+      "fullDetails": "the 4th international student conference (isc) will be hosted by middlesex school in concord, ma, on february 1, 2026. this conference welcomes high school students, particularly those with international backgrounds or experiences, from independent schools in new england. it provides an opportunity for students to share stories, learn from one another, and connect within a diverse community. the event aims to foster understanding and bonding among participants.",
+      "category": "cultural",
+      "interest": "global perspectives & networking",
+      "minAge": 14,
+      "maxAge": 18,
+      "deadline": "tbd",
+      "eventDate": "2026-02-01",
+      "location": "concord, ma, usa",
+      "prizes": "n/a",
+      "rounds": "single event",
+      "fee": "usd 30 (per student/chaperone)",
+      "link": "https://www.internationalsymposium.org/"
     }
   ],
   "studyResources": [
@@ -1451,11 +1523,182 @@
       "title": "ib diploma sample exam papers - english",
       "description": "examples of past examination papers and marking notes for ib english a: literature paper 1 and paper 2, and ib english b.",
       "link": "https://www.ibo.org/programmes/diploma-programme/assessment-and-exams/sample-exam-papers/"
+    },
+    {
+      "id": "cambridge-maths-0580-past-papers",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "igcse mathematics (0580) past papers and mark schemes",
+      "description": "free access to cambridge igcse mathematics 0580 past papers, mark schemes, syllabus, and specimen papers. includes yearly and topical past papers for core and extended exams, with content updated up to october/november 2025.",
+      "link": "https://www.papacambridge.com/cie/igcse/mathematics-0580/"
+    },
+    {
+      "id": "ib-cs-study-guides-flashcards",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "free ib computer science (sl/hl) resources",
+      "description": "ultimate study guides and flashcards covering system fundamentals, computer organization, networks, computational thinking, problem-solving and programming, databases, modeling and simulation, web science, and object-oriented programming. includes exam-focused plans and high-yield topics.",
+      "link": "https://knowt.com/hub/ib/computer-science"
+    },
+    {
+      "id": "ap-eng-lit-curriculum-resources",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "curriculum portfolio",
+      "title": "free ap english literature and composition teacher resources",
+      "description": "a free year-long syllabus (updated for 2025-2026) for ap english literature and composition featuring 10 units on literary merit. also includes free study guides, practice tests (multiple choice & free response), analytic scoring rubrics, brainstorming sheets, and a list of ap lit open response titles.",
+      "link": "https://litandmore.net/free-resource-library"
+    },
+    {
+      "id": "code.org-cs-curricula",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "curriculum portfolio",
+      "title": "code.org high school computer science curricula",
+      "description": "free year-long curricula for computer science discoveries (grades 6-10), computer science principles (grades 9-12, can be ap course), and computer science a (grades 9-12, ap csa, java). also includes artificial intelligence, maker, and game design curricula.",
+      "link": "https://code.org/curriculum/high-school"
+    },
+    {
+      "id": "ela-activity-sets-hmh",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "free high school english language arts activities",
+      "description": "instructional resources for grades 9-12 covering analysis of short stories, poems, podcasts, arguments. includes downloadable worksheets, videos, and activities for creative writing, memorization, and critical thinking.",
+      "link": "https://www.hmhco.com/blog/free-high-school-english-language-arts-activities"
+    },
+    {
+      "id": "gcse-maths-past-papers",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "gcse maths past papers (uk boards)",
+      "description": "free downloadable gcse maths past papers and marking schemes from various uk examination boards including aqa, edexcel, eduqas, ocr, wjec, and ccea, as well as sqa national 5 maths past papers.",
+      "link": "https://revisionmaths.com/gcse-maths-revision/gcse-maths-past-papers"
+    },
+    {
+      "id": "cambridge-igcse-cs-past-papers",
+      "syllabus": "cambridge",
+      "subject": "computer science",
+      "type": "specimen paper",
+      "title": "cambridge igcse computer science (0478) past papers & marking schemes (2018-2025)",
+      "description": "free downloadable past papers and official marking schemes for cambridge igcse computer science (0478) from 2018 to 2025. ideal for exam practice under timed conditions and identifying weak topics. resources include yearly and topical papers.",
+      "link": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-computer-science-0478/past-papers-examiner-reports-and-specimen-papers/"
+    },
+    {
+      "id": "princeton-cs-programming-purpose",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "computer science - programming with a purpose (princeton university via coursera)",
+      "description": "a free online course from princeton university, designed for beginners. it teaches core computer science concepts using java, covering variables, loops, conditionals, recursion, modular code design, and object-oriented programming. includes coding exercises focused on problem-solving and algorithm thinking.",
+      "link": "https://www.coursera.org/learn/computer-science-programming-with-a-purpose"
+    },
+    {
+      "id": "codeorg-ap-cs-a-curriculum",
+      "syllabus": "ap",
+      "subject": "computer science",
+      "type": "curriculum portfolio",
+      "title": "code.org ap computer science a curriculum",
+      "description": "a free, year-long curriculum for ap computer science a, introducing students to software engineering and object-oriented design using java. it includes lesson plans, videos, slides, assessments, and engaging content through real-world problem-solving and diverse voices.",
+      "link": "https://code.org/curriculum/apcsa"
+    },
+    {
+      "id": "apcsexamprep-cs-a-course",
+      "syllabus": "ap",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "ap computer science a: complete curriculum & exam prep (apcsexamprep.com)",
+      "description": "a full year-long ap csa curriculum and free self-study course, aligned to the college board ced for the may 2027 exam. it provides lesson pages with hands-on coding, mastery scenarios, practice exercises, full practice exams, and an frq archive with solutions.",
+      "link": "https://www.apcsexamprep.com/"
+    },
+    {
+      "id": "khanacademy-math-secondary",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "khan academy mathematics courses (k-12 through early college)",
+      "description": "a comprehensive library of free, world-class math education covering algebra, geometry, precalculus, calculus (ap ab/bc), statistics, multivariable calculus, differential equations, and linear algebra. offers personalized learning, trusted content, and practice exercises.",
+      "link": "https://www.khanacademy.org/math"
+    },
+    {
+      "id": "cbse-class-12-maths-syllabus",
+      "syllabus": "cbse",
+      "subject": "mathematics",
+      "type": "curriculum portfolio",
+      "title": "cbse class 12 maths syllabus 2026-27 & notes",
+      "description": "free pdf download of the updated cbse class 12 mathematics syllabus for 2026-27. outlines key topics and concepts including relations, functions, algebra, calculus, vectors, 3d geometry, linear programming, and probability. includes chapter-wise revision notes and important formulas.",
+      "link": "https://www.vedantu.com/cbse/class-12-maths-notes"
+    },
+    {
+      "id": "ib-math-aa-hl-past-papers",
+      "syllabus": "ib",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "ib math analysis & approaches hl past papers (2012-2021)",
+      "description": "a collection of topical past paper questions with answers for ib mathematics analysis & approaches higher level paper 2, covering functions, roots, quadratics, exponentials, logarithms, graphs, sequences, series, complex numbers, trigonometry, matrices, vectors, statistics, probability, differentiation, integration, and differential equations.",
+      "link": "https://www.scribd.com/document/511995163/IB-Math-AA-HL-Past-Papers-2012-2021"
+    },
+    {
+      "id": "cambridge-a-level-maths-ebooks",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "cambridge international as and a level mathematics (9709) ebooks",
+      "description": "free access to recommended ebooks for cambridge international as and a level mathematics (9709), including pure mathematics and statistics books. provides latest and older versions, notes, and other resources.",
+      "link": "https://papaprecambridge.com/caie/cambridge/as-and-a-level/mathematics-9709/ebooks/"
+    },
+    {
+      "id": "ap-english-lit-study-guide",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "study guide",
+      "title": "ap english literature — free study guide (simple studies)",
+      "description": "an 11-page free study guide covering key topics such as themes in literature, style, key terms, and helpful tips for the ap english literature exam. also includes notes for literary works like the odyssey.",
+      "link": "https://simplestudies.gumroad.com/l/ap-english-literature-study-guide"
+    },
+    {
+      "id": "litandmore-ap-english-resources",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "free ap english literature teacher resources (lit & more)",
+      "description": "a collection of free resources for ap english literature, including a year-long pacing guide, essay brainstorming sheets and templates, poetry collection studies, mla 9th edition formatting handouts, character sketch worksheets, and annotation handouts. also features a list of open response titles.",
+      "link": "https://www.litandmore.com/free-resource-library"
+    },
+    {
+      "id": "khanacademy-grammar-course",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "khan academy grammar course",
+      "description": "a comprehensive online grammar course featuring video lessons and exercises covering punctuation, complex sentences, and more. ideal for independent learners seeking to improve grammar skills.",
+      "link": "https://www.khanacademy.org/humanities/grammar"
+    },
+    {
+      "id": "purdue-owl-grammar",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "textbook",
+      "title": "purdue owl (online writing lab) grammar resources",
+      "description": "an invaluable reference providing extensive resources on grammar rules, examples, and writing tips. a must-have tool for high school students working on essays or projects to look up rules as needed.",
+      "link": "https://owl.purdue.edu/owl/grammar_and_mechanics/grammar_and_mechanics_overview.html"
+    },
+    {
+      "id": "quillorg-grammar-activities",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "quill.org free writing and grammar activities",
+      "description": "an interactive platform offering free writing and grammar activities for middle and high school students. it provides diagnostics to pinpoint areas for improvement and engaging exercises that adapt to student needs, covering basic grammar skills like comma placement and sentence structure.",
+      "link": "https://www.quill.org/grammar"
     }
   ],
   "dailyInspiration": {
-    "title": "the self-taught prodigy: ahaan rungta's path to mit at 15",
-    "story": "ahaan rungta's educational journey began exceptionally early, being homeschooled primarily through mit's free open-courseware (ocw) from the tender age of five. his parents, after moving to florida from india, discovered ocw the same year mit launched its initiative to publish all course materials online for free. ahaan, an avid reader from a young age, essentially acquired his entire elementary and secondary education through these online resources and mitx. by age twelve, his family moved to massachusetts to be closer to mit, a testament to his focused ambition. for his thirteenth birthday, his sole wish was a visit to the institute. his self-directed learning approach saw him tackle linear algebra by watching professor gil strang's video lectures. at just 15, ahaan rungta was admitted to the mit class of 2019, a remarkable achievement that he humbly attributed to the 'gift' of ocw. he continued to use these online resources to supplement his on-campus undergraduate experience, highlighting a lifelong commitment to learning and a deep appreciation for accessible education.",
-    "takeaway": "passionately pursuing knowledge through available resources can open extraordinary doors to even the most elite institutions, regardless of conventional pathways."
+    "title": "the teenage prodigy who dropped out of mit to revolutionize anti-aging biotech",
+    "story": "laura deming's journey is a testament to extraordinary ambition and unconventional learning. homeschooled by her father, john deming, laura was admitted to the massachusetts institute of technology (mit) at the remarkable age of 14, a feat that showcased her prodigious intellect. however, her path diverged even further when, after just two years at mit, she made the bold decision to drop out. this wasn't an act of rebellion, but a calculated move to accept a prestigious $100,000 thiel fellowship. the thiel fellowship supports young individuals who choose to build innovative projects rather than pursue traditional higher education paths. utilizing this fellowship, laura immersed herself in the real world of innovation. by the age of 18, she was already a prominent figure in silicon valley, running a venture capital firm dedicated to backing anti-aging startups. her early entry into deep scientific and entrepreneurial fields at such a young age highlights a relentless drive to impact the future of human health directly, rather than through conventional academic routes.",
+    "takeaway": "true ambition often defies traditional paths, finding its greatest expression in bold decisions and an unwavering commitment to pioneering impact."
   }
 }
