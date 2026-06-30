@@ -1961,6 +1961,96 @@
       "rounds": "2",
       "fee": "not specified",
       "link": "https://www.teeneagle.org/"
+    },
+    {
+      "id": "teamscode-spring-2026",
+      "type": "competition",
+      "title": "teamscode spring 2026 online programming contest",
+      "shortDesc": "a virtual competitive programming contest for middle and high school students to solve algorithmic problems.",
+      "fullDetails": "teams of up to four students have three hours to solve interesting algorithmic problems. the contest features two divisions: novice and advanced. only pre-college participants are eligible for prizes. internet access and phone usage are not allowed during the competition, but pre-written code and online reference guides are permitted.",
+      "category": "academic",
+      "interest": "logic & coding",
+      "minAge": 11,
+      "maxAge": 18,
+      "deadline": "2026-04-26 (submission by 3:00 pm pt)",
+      "eventDate": "2026-04-26",
+      "location": "online",
+      "prizes": "placement awards, raffle prizes",
+      "rounds": "1 (3-hour coding round)",
+      "fee": "free",
+      "link": "https://spring26.teamscode.org"
+    },
+    {
+      "id": "eyp-maastricht-2026",
+      "type": "conference",
+      "title": "european youth parliament (eyp) maastricht 2026",
+      "shortDesc": "a regional session fostering critical thinking, active participation, and dialogue among young people on european challenges.",
+      "fullDetails": "this event brings together around 150 participants, including delegations from various european countries, to engage in constructive dialogue. it aims to encourage meaningful cultural exchange and strengthen ties among european citizens, providing tools for future leaders. participants are required to study academic topic overviews for their committees.",
+      "category": "humanities",
+      "interest": "debate & european affairs",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "not specified",
+      "eventDate": "2026-03-14",
+      "location": "maastricht, netherlands",
+      "prizes": "experience, networking, personal development",
+      "rounds": "committees, general assembly",
+      "fee": "not specified (travel/accommodation costs may apply)",
+      "link": "https://www.eype.org"
+    },
+    {
+      "id": "usa-computing-olympiad-2026",
+      "type": "competition",
+      "title": "usa computing olympiad (usaco)",
+      "shortDesc": "a global programming competition designed to identify and train top talent in algorithmic programming and problem-solving.",
+      "fullDetails": "usaco is a prestigious competition for high school students interested in computer science and programming. it consists of increasingly difficult online exams held typically from january to march. top performers are invited to an intensive summer training camp in may, with the ultimate goal of selecting students to represent the u.s. at the international olympiad in informatics (ioi). it focuses on problem-solving through algorithmic programming.",
+      "category": "academic",
+      "interest": "computer science, programming, algorithms",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2026-01-xx (first contest)",
+      "eventDate": "2026-01-xx to 2026-03-xx (online contests); 2026-05-21 to 2026-05-30 (training camp)",
+      "location": "online (contests), usa (training camp)",
+      "prizes": "selection for international olympiad in informatics (ioi), national recognition, training camp.",
+      "rounds": "multiple online contests, then a training camp",
+      "fee": "free",
+      "link": "http://www.usaco.org/"
+    },
+    {
+      "id": "mathworks-m3-challenge-2026",
+      "type": "competition",
+      "title": "mathworks math modeling challenge (m3 challenge)",
+      "shortDesc": "an internet-based competition where teams use math and data to solve real-world problems within 14 hours.",
+      "fullDetails": "the m3 challenge is organized by the society for industrial and applied mathematics (siam) and sponsored by mathworks. teams of three to five high school students collaborate to solve an open-ended, real-world problem using mathematical modeling, typically within a 14-hour window during a designated challenge weekend. the 2026 challenge weekend is from february 27 to march 2. it awards over $100,000 in scholarship prizes, and finalists present their solutions in new york city.",
+      "category": "academic",
+      "interest": "mathematics, data science, problem-solving",
+      "minAge": 16,
+      "maxAge": 18,
+      "deadline": "2026-02-xx (registration)",
+      "eventDate": "2026-02-27 to 2026-03-02 (challenge weekend); 2026-04-27 (finalist event)",
+      "location": "online (challenge), new york city (finalist event)",
+      "prizes": "over $100,000 in scholarship prizes.",
+      "rounds": "one main challenge, then finalist presentations",
+      "fee": "free",
+      "link": "https://m3challenge.siam.org/"
+    },
+    {
+      "id": "ncss-stem-conference-2026",
+      "type": "conference",
+      "title": "ncss student leadership & research conference 2026",
+      "shortDesc": "a conference for secondary students to present stem research and engage in leadership and entrepreneurship sessions.",
+      "fullDetails": "the 2026 ncss student leadership & research conference focuses on student research, leadership development, and entrepreneurship in stem. students will present original research, participate in stem leadership sessions, attend entrepreneurship-focused programming, and engage in conversations with active researchers. the event includes visits to leading university research facilities. it aims to connect rigorous research to collaboration, communication, innovation, and real-world impact within stem.",
+      "category": "academic",
+      "interest": "stem, research, leadership, entrepreneurship",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2026-06-xx (registration, tbd)",
+      "eventDate": "2026-07-16 to 2026-07-18",
+      "location": "atlanta, georgia, usa (hosted at fulton science academy, tech north atlanta, georgia tech research institute)",
+      "prizes": "recognition, networking opportunities, exposure to university research",
+      "rounds": "n/a",
+      "fee": "specific cost (tbd)",
+      "link": "https://www.ncss-schools.org/2026-student-research-conference/"
     }
   ],
   "studyResources": [
@@ -3089,11 +3179,110 @@
       "title": "ib academy mathematics studies/hl study guides",
       "description": "free, comprehensive study guides for ib mathematics studies sl and ib mathematics high level, created by tutors and students. these guides cover syllabus topics with 'cheat sheets,' step-by-step approaches to exam questions, and calculator guides. includes topics like algebra, functions, geometry, trigonometry, differentiation, integration, probability, and statistics. aims for transparency and accessibility of academic material.",
       "link": "https://www.ib.academy/study-guides"
+    },
+    {
+      "id": "cambridge-igcse-cs-textbook-2023",
+      "syllabus": "cambridge",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "computer science for cambridge igcse™ & o level coursebook",
+      "description": "this coursebook by sarah lawrey and victoria ellis comprehensively covers the cambridge igcse and o level computer science syllabus (0478/0984) for examinations from 2023. it includes topics like hardware, software, data representation, programming concepts, and algorithmic design, with learning aids and exam-style questions.",
+      "link": "https://www.scribd.com/document/416460341/igcse-computer-science-coursebook"
+    },
+    {
+      "id": "cambridge-igcse-cs-textbook-internet-archive",
+      "syllabus": "cambridge",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "cambridge igcse computer studies coursebook",
+      "description": "a textbook by chris leadbetter, stewart wainwright, and alan stinchombe, designed to meet the requirements of the university of cambridge international examinations computer studies syllabus (0420). available for free download.",
+      "link": "https://archive.org/details/CambridgeIGCSEComputerStudiesCoursebook"
+    },
+    {
+      "id": "ib-math-aahl-past-papers-1999-m2023",
+      "syllabus": "ib",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "ib mathematics analysis & approaches higher level past papers (1999-may 2023)",
+      "description": "a comprehensive collection of past examination papers for ib mathematics analysis & approaches higher level, covering years from 1999 to may 2023. includes topical past papers for focused practice.",
+      "link": "https://drive.google.com/drive/folders/10vFXnWQ0iS_mLElwCS0t9bt1OUe3xjJP"
+    },
+    {
+      "id": "thinka-ai-english-revision-notes",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "lower secondary english revision notes & practice",
+      "description": "free english revision notes for lower secondary students. each chapter covers key topics with worked examples and practice prompts. focuses on fundamental english concepts.",
+      "link": "https://thinka.ai/study-resources/lower-secondary-english-revision-notes-practice/"
+    },
+    {
+      "id": "teacher-co-ke-english-notes-1-4",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "english notes form 1-4",
+      "description": "downloadable free english notes for secondary school forms 1-4, including grammar, oral literature, poetry, functional writing, and common mistakes. suitable for both students and teachers.",
+      "link": "https://teacher.co.ke/english-notes-form-1-4/"
+    },
+    {
+      "id": "gcse-english-revision-myedspace-2026",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "free gcse english exam revision notes and resources",
+      "description": "high-quality revision materials covering the full uk gcse english curriculum, including 19th-century texts, poetry anthologies, modern texts, shakespeare, unseen poetry, reading, and writing skills. organized into modules.",
+      "link": "https://www.myedspace.co.uk/blog/free-gcse-english-exam-revision-notes-and-resources"
+    },
+    {
+      "id": "ib-math-aa-hl-calculus-deep-dive-lanterna",
+      "syllabus": "ib",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "ib math aa hl calculus deep dive (2026)",
+      "description": "master the toughest ib math aa hl calculus topics, including maclaurin series, integration by parts, and differential equations. includes common errors and 5 advanced practice questions. tailored for the post-2021 syllabus.",
+      "link": "https://www.lanterna.com/ib-math-aa-hl-calculus-deep-dive/"
+    },
+    {
+      "id": "ib-math-aa-ai-gdc-guides-ibmaths",
+      "syllabus": "ib",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "free ib math aa/ai gdc guides (casio & ti nspire)",
+      "description": "free video tutorials designed to help students master the casio and ti nspire graphics display calculators (gdc), covering all essential functions for ib math courses, from graphing to solving equations.",
+      "link": "https://www.ibmaths.com/free-resources"
+    },
+    {
+      "id": "ib-math-aa-resources-thriving-scholars",
+      "syllabus": "ib",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "free ib math aa study notes, past papers, and questionbank",
+      "description": "access free study notes, comprehensive mock exams, topic quizzes, and a question bank for ib math aa (both hl and sl), with questions sorted by topic and difficulty, detailed mark schemes, and video solutions.",
+      "link": "https://www.thrivingscholars.com/free-ib-math-resources/"
+    },
+    {
+      "id": "cambridge-igcse-cs-past-papers-xtremepapers",
+      "syllabus": "cambridge",
+      "subject": "computer science",
+      "type": "specimen paper",
+      "title": "cambridge igcse computer science (0478) past papers",
+      "description": "a collection of free past papers and mark schemes for cambridge igcse computer science (0478), essential for exam preparation and understanding the curriculum.",
+      "link": "https://www.xtremepapers.com/papers/Cambridge%20IGCSE/Computer%20Science%20(0478)/"
+    },
+    {
+      "id": "ap-english-lit-composition-open-textbook-oer",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "textbook",
+      "title": "ap english literature and composition open textbook",
+      "description": "an open educational resource (oer) textbook designed to support students in ap english literature and composition, covering literary analysis, essay writing, and critical reading skills.",
+      "link": "https://www.oercommons.org/courseware/lesson/55364"
     }
   ],
   "dailyInspiration": {
-    "title": "the boy who outgrew limits: jacob barnett's journey from autism diagnosis to quantum physics",
-    "story": "born in 1998, jacob barnett was diagnosed with moderate to severe autism at age two, with doctors predicting he might never speak or read. he experienced a significant regression, losing speech and eye contact. defying these low expectations, his mother, kristine barnett, focused on nurturing his intense interests in math and science. by age three, jacob was solving complex astrophysics questions, speaking four languages, and mastering high school curricula in just over a year. he could add numbers, read license plates, and solve advanced mathematical problems, astounding everyone. at 10, he began college-level advanced calculus classes, and by 13, he was a published physicist, recognized for his high iq of 170. his curiosity led him to study at the prestigious perimeter institute, contributing to theoretical physics, particularly in quantum physics. jacob's journey challenges common perceptions of autism, showcasing extraordinary potential and the power of determination and resilience.",
-    "takeaway": "true genius blossoms when unique abilities are nurtured beyond societal expectations, proving that perceived limitations are often merely starting lines."
+    "title": "the prodigy's golden equation to mit",
+    "story": "atul s nadig, a 17-year-old student from bengaluru, achieved an extraordinary milestone by securing a coveted gold medal at the esteemed international mathematical olympiad (imo). this remarkable accomplishment, where he placed 12th overall, not only brought honor to his name but also made a significant mark in the history of mathematical excellence, especially as india's best performance in decades. his passion for mathematics ignited in 8th grade when he discovered olympiad mathematics, pushing him to explore beyond conventional school curricula and solve challenging problems. atul's exceptional skills and dedication shone brightly amongst participants from 118 countries. he further demonstrated his academic prowess by achieving a perfect score of 1600 on the sat and is set to continue his future studies in mathematics and computer science at the massachusetts institute of technology (mit) in the usa. his journey is a testament to the power of curiosity, perseverance, and a deep-seated love for learning.",
+    "takeaway": "passion, perseverance, and curiosity can transform a challenging subject into a pathway to global recognition and top-tier academic institutions."
   }
 }
