@@ -2051,6 +2051,24 @@
       "rounds": "n/a",
       "fee": "specific cost (tbd)",
       "link": "https://www.ncss-schools.org/2026-student-research-conference/"
+    },
+    {
+      "id": "hcgec-2026",
+      "type": "competition",
+      "title": "harvard crimson global essay competition 2026",
+      "shortDesc": "an online essay competition for high school students worldwide, offering cash prizes and educational opportunities.",
+      "fullDetails": "the harvard crimson global essay competition 2026 (hcgec) brings together ambitious high school students aged 13–18 from around the world who have a passion for or interest in writing. the competition emphasizes inclusivity by offering prompts across three distinct tracks: creative, argumentative (or persuasive), and journalistic. prizes include cash awards of up to $8,000 usd, internship opportunities with the crimson team, exclusive complimentary placement in the harvard crimson summer journalism course, and official endorsement of essays by the harvard crimson. the competition is hosted completely online, removing geographical barriers. early bird registration is from october 1, 2025, to december 15, 2025 ($15), and regular registration is from december 16, 2025, to february 10, 2026 ($20).",
+      "category": "academic",
+      "interest": "writing & humanities",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2026-02-10",
+      "eventDate": "2026-xx-xx",
+      "location": "online",
+      "prizes": "cash prizes (up to $8,000 usd), internships, summer journalism course placement, essay endorsement",
+      "rounds": "not specified",
+      "fee": "$15 - $20 (registration fee)",
+      "link": "https://almondpress.com/harvard-crimson-global-essay-competition-2026/"
     }
   ],
   "studyResources": [
@@ -3278,11 +3296,119 @@
       "title": "ap english literature and composition open textbook",
       "description": "an open educational resource (oer) textbook designed to support students in ap english literature and composition, covering literary analysis, essay writing, and critical reading skills.",
       "link": "https://www.oercommons.org/courseware/lesson/55364"
+    },
+    {
+      "id": "ib-cs-hl-notes",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "free ib dp computer science hl notes",
+      "description": "free complete computer science hl notes written by expert ib teachers, covering system fundamentals, computer organisation, networks, abstract data structures, and more. it includes topics like remote systems, data migration, cpu, network fundamentals, recursive thinking, 2d arrays, stacks, queues, linked lists, and trees.",
+      "link": "https://www.tutorchase.com/notes/ib/computer-science"
+    },
+    {
+      "id": "cambridge-lower-sec-math-papers",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge lower secondary mathematics checkpoint past papers - topical",
+      "description": "a compilation of past papers for the cambridge lower secondary mathematics checkpoint, organized by topic. includes various mathematical concepts such as angles, area, averages, and probability, with specific paper references for practice from 2018-2022.",
+      "link": "https://www.scribd.com/document/652011740/Cambridge-Lower-Secondary-Mathematics-Checkpoint-Past-Papers-Topical"
+    },
+    {
+      "id": "ap-english-lit-prompts",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "ap literature open prompts, 1970 to 2026",
+      "description": "a comprehensive list of all open response questions used on the ap english literature exams since its inception in 1970, available in pdf, powerpoint, and webpage formats. valuable for test prep and finding writing prompts.",
+      "link": "https://mseffie.com/ap-english-literature/ap-literature-open-prompts-1970-to-2026-as-pdf-powerpoint-and-webpage/"
+    },
+    {
+      "id": "national-secondary-maths-oak",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "curriculum portfolio",
+      "title": "free secondary maths lesson & curriculum resources | oak national academy",
+      "description": "thousands of free secondary maths resources, lessons, and curriculum units created by experienced teachers. covers year 7 to year 11 topics including place value, algebra, geometry, probability, trigonometry, and real-life applications of maths, aligned with the national curriculum.",
+      "link": "https://www.thenational.academy/secondary-resources/maths"
+    },
+    {
+      "id": "ap-english-lit-teacher-resources",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "free resources for ap english literature teachers",
+      "description": "a compiled list of quality ap english literature teacher websites providing lesson plans, prompts, passages, powerpoints, and study guides. resources cover key literature pieces and methods for analysis, including materials from miss effie, edhelper, and bespoke ela.",
+      "link": "https://collegereadiness.uworld.com/ap/english-literature/free-teacher-resources/"
+    },
+    {
+      "id": "cambridge-math-ls-specimen-2026",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge lower secondary mathematics checkpoint specimen paper 1",
+      "description": "official specimen paper for cambridge lower secondary mathematics checkpoint, useful for understanding exam format and question types.",
+      "link": "https://www.smarteduhub.com/cambridge-lower-secondary-checkpoint-past-papers"
+    },
+    {
+      "id": "ib-cs-hl-study-guides-2026",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "free ib computer science (hl) resources",
+      "description": "a comprehensive set of free study guides, flashcards, and resources for ib computer science (hl), covering system fundamentals, computer organization, networks, computational thinking, and abstract data structures. designed to help students achieve a score of 7.",
+      "link": "https://www.knowt.com/subjects/ib-computer-science-hl"
+    },
+    {
+      "id": "ap-english-lit-syllabus-2026",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "curriculum portfolio",
+      "title": "ap english literature and composition full-year syllabus",
+      "description": "a free, editable year-long syllabus for ap english literature and composition, featuring 10 units with literary works from diverse authors that frequently appear on the ap literature exam. includes lesson plans, prompts, passages, and powerpoints to guide teachers and students.",
+      "link": "https://www.teacherspayteachers.com/product/ap-literature-composition-full-year-syllabus-editable-ap-lit-course-bundle-3739763"
+    },
+    {
+      "id": "spm-math-notes-2026",
+      "syllabus": "spm",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "spm mathematics notes: form 1-5 guide",
+      "description": "comprehensive notes and formulas for spm mathematics, covering topics like solid geometry, circle theorems, polygons, algebraic expressions, statistics, factorisation, and linear equations. includes key formulas and properties for quick revision.",
+      "link": "https://www.scribd.com/document/355182962/spm-mathematics-notes-form-1-3-guide"
+    },
+    {
+      "id": "gaokao-english-practice-2026",
+      "syllabus": "gaokao",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "free gaokao english questions: practice & prep guide 2026 june",
+      "description": "free online practice questions and a practice test for the gaokao english exam, with instant scoring and answer explanations. designed to help students prepare for the 2026 june exam, covering grammar, vocabulary, and reading comprehension.",
+      "link": "https://www.practicetestgeeks.com/gaokao-english-questions"
+    },
+    {
+      "id": "cbse-cs-class12-textbook-2026",
+      "syllabus": "cbse",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "cbse computer science textbook - practical programming in python for class xii",
+      "description": "a free pdf textbook for cbse class xii computer science, focusing on fundamental concepts and practical programming skills in python. covers data structures, databases, networking, and security, with conceptual questions, solved practical assignments, and over 250 solved python and sql programs.",
+      "link": "https://www.researchgate.net/publication/336495147_CBSE_Computer_Science_Textbook_-_Practical_Programming_in_Python_for_Class_XII"
+    },
+    {
+      "id": "canadian-eng-hs-learning-2026",
+      "syllabus": "canadian",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "tvo learn: grade 9-12 online english high school learning materials",
+      "description": "free online learning materials for grade 9-12 english, developed by tvo ontario certified teachers, aligning with the ontario curriculum. designed to help students deepen understanding or explore new subjects, available via study hall.",
+      "link": "https://www.tvo.org/education/tvo-learn/english"
     }
   ],
   "dailyInspiration": {
-    "title": "the prodigy's golden equation to mit",
-    "story": "atul s nadig, a 17-year-old student from bengaluru, achieved an extraordinary milestone by securing a coveted gold medal at the esteemed international mathematical olympiad (imo). this remarkable accomplishment, where he placed 12th overall, not only brought honor to his name but also made a significant mark in the history of mathematical excellence, especially as india's best performance in decades. his passion for mathematics ignited in 8th grade when he discovered olympiad mathematics, pushing him to explore beyond conventional school curricula and solve challenging problems. atul's exceptional skills and dedication shone brightly amongst participants from 118 countries. he further demonstrated his academic prowess by achieving a perfect score of 1600 on the sat and is set to continue his future studies in mathematics and computer science at the massachusetts institute of technology (mit) in the usa. his journey is a testament to the power of curiosity, perseverance, and a deep-seated love for learning.",
-    "takeaway": "passion, perseverance, and curiosity can transform a challenging subject into a pathway to global recognition and top-tier academic institutions."
+    "title": "from homelessness to columbia: the inspiring journey of lamont newell",
+    "story": "lamont newell, a 17-year-old from los angeles, achieved an extraordinary feat by gaining acceptance into 65 colleges, including all eight ivy league institutions, ultimately choosing columbia university with a full scholarship. his remarkable accomplishment is made even more inspiring by his background: lamont experienced homelessness for much of his childhood, at times sleeping in his family’s car. despite these immense challenges, he excelled academically, graduating as valedictorian with a 4.4 gpa from verbum dei jesuit high school. lamont's determination was fueled by a promise he made to himself to fulfill his mother's unachieved college dreams. he learned to code at a local recreation center and now plans to major in industrial engineering at columbia. beyond his personal success, lamont harbors a profound desire to give back to his community; he dreams of building an institution at the very park where he learned to code, dedicated to teaching black students stem skills and computer programming, just as he did. his journey exemplifies resilience, ambition, and a powerful commitment to empowering others.",
+    "takeaway": "adversity is not a limit, but a launchpad for boundless ambition and a catalyst for profound impact on the world."
   }
 }
