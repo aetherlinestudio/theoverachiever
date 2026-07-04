@@ -2069,6 +2069,132 @@
       "rounds": "not specified",
       "fee": "$15 - $20 (registration fee)",
       "link": "https://almondpress.com/harvard-crimson-global-essay-competition-2026/"
+    },
+    {
+      "id": "int-youth-comp-2026",
+      "type": "competition",
+      "title": "2026 international youth competition",
+      "shortDesc": "an international competition inviting students to share ideas and perspectives on vital social challenges through visual art, essays, or open-category submissions.",
+      "fullDetails": "the competition's theme is 'why me?' and accepts entries from primary, middle, high school, and college students, either individually or in teams. judging is based on message, idea, originality, and delivery. all participants receive a 'distinguished achievement' certificate, with awards for top places in each category and division.",
+      "category": "creative & social impact",
+      "interest": "visual arts, writing, social issues",
+      "minAge": 6,
+      "maxAge": 22,
+      "deadline": "august 30, 2026",
+      "eventDate": "winners announced by the end of september 2026",
+      "location": "online submission",
+      "prizes": "1st, 2nd, 3rd place awards per category/division; 'distinguished achievement' certificate for all participants.",
+      "rounds": "single submission",
+      "fee": "no fee to enter",
+      "link": "2026internationalyouthcompetition.wordpress.com"
+    },
+    {
+      "id": "yimo-2026",
+      "type": "competition",
+      "title": "youth international math olympiad (yimo)",
+      "shortDesc": "a global online math competition designed for middle and high school students who enjoy clean problems and a serious challenge.",
+      "fullDetails": "the competition features 20 written problems, split into 10 multiple-choice and 10 aime-style integer answers, with an open scoring guide. the top 8 students in each division advance to a final round which includes computational and proof-style problems. it's built for students developing contest rhythm without needing prior olympiad experience.",
+      "category": "academic",
+      "interest": "mathematics",
+      "minAge": 11,
+      "maxAge": 18,
+      "deadline": "not applicable; contest windows are event dates.",
+      "eventDate": "august 29 and 30, 2026",
+      "location": "global online contest",
+      "prizes": "advancement to a final round; specific prizes not detailed in snippets.",
+      "rounds": "initial written rounds, followed by a final round for top students.",
+      "fee": "not specified.",
+      "link": "yimo.io"
+    },
+    {
+      "id": "yef-2026",
+      "type": "conference",
+      "title": "youth empowerment forum 2026",
+      "shortDesc": "a global forum in geneva for youth to build international networks, gain leadership experience, and enhance their career profiles.",
+      "fullDetails": "this four-day event is open to all nationalities and does not require ielts. participants can choose from fully funded, partially funded, or self-funded options. it provides opportunities to participate in various youth opportunities, forums, conferences, summits, workshops, and camps to foster global networking and leadership development.",
+      "category": "leadership & professional development",
+      "interest": "youth empowerment, networking, global issues",
+      "minAge": 16,
+      "maxAge": 25,
+      "deadline": "july 5, 2026",
+      "eventDate": "september 3-6, 2026",
+      "location": "geneva, switzerland",
+      "prizes": "not applicable; benefits include networking, leadership development, and career enhancement.",
+      "rounds": "n/a",
+      "fee": "fully funded / partially funded / self-funded options available.",
+      "link": "opportunitiescorners.com (original source link, not direct forum link)"
+    },
+    {
+      "id": "international-computer-science-competition-2026",
+      "type": "competition",
+      "title": "international computer science competition (icsc) 2026",
+      "shortDesc": "a global online computer science competition testing logical thinking, coding, and computer science concepts.",
+      "fullDetails": "the competition is conducted in multiple online rounds: qualification, pre-final, and final. it focuses on computer science, logical reasoning, algorithms, coding, and research-based problem solving. open to middle school, high school, and university students worldwide.",
+      "category": "academic",
+      "interest": "computer science, coding, algorithms, logical reasoning",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2026-07-05 (qualification round submission)",
+      "eventDate": "qualification round: 2026-07-05; pre-final exam window: 2026-08-14 to 2026-08-16; final exam: 2026-09-15",
+      "location": "online",
+      "prizes": "cash prizes (total usd 1,500), certificates, bronze, silver, and gold honours for finalists, national awards for top performers from each country.",
+      "rounds": "3",
+      "fee": "free",
+      "link": "https://www.opportunitydesk.org/2026/06/01/international-computer-science-competition-icsc-2026/"
+    },
+    {
+      "id": "cambridge-rethink-essay-competition-2026",
+      "type": "competition",
+      "title": "cambridge re:think essay competition 2026",
+      "shortDesc": "an international essay competition fostering critical thinking and exploration of diverse, thought-provoking topics.",
+      "fullDetails": "open to secondary-school students worldwide in junior (ages 11-13) and senior (ages 14-18) divisions. essays engage with subjects from historical issues to speculative future scenarios. prompts are contributed by distinguished professors from elite universities.",
+      "category": "academic",
+      "interest": "english, humanities, critical thinking, research",
+      "minAge": 11,
+      "maxAge": 18,
+      "deadline": "2026-05-10 (essay submission)",
+      "eventDate": "competition opens: 2026-01-15; results: 2026-05-26; award ceremony: 2026-07-31 (university of cambridge)",
+      "location": "online submission; award ceremony at university of cambridge",
+      "prizes": "award winners invited to cambridge for ceremony and dinner, honourable mentions, certificates.",
+      "rounds": "1",
+      "fee": "free",
+      "link": "https://www.cambridgereeducation.com/rethink-2026"
+    },
+    {
+      "id": "world-math-olympiad-2026",
+      "type": "competition",
+      "title": "world math olympiad (wmo) 2026",
+      "shortDesc": "an international online mathematics competition for students.",
+      "fullDetails": "the competition is held online for international private candidates and schools, focusing on mathematical problem-solving.",
+      "category": "academic",
+      "interest": "mathematics, problem-solving",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2026-03-30 (for private candidates)",
+      "eventDate": "2026-04-12 (online for private candidates, singapore time); 2026-04-01 to 2026-04-30 (for schools)",
+      "location": "online",
+      "prizes": "tbd (typically certificates, medals)",
+      "rounds": "1",
+      "fee": "tbd",
+      "link": "https://www.theworldcontests.com/world-math-olympiad/"
+    },
+    {
+      "id": "asia-science-mathematics-competition-2026",
+      "type": "competition",
+      "title": "asia science mathematics competition (asmc) 2026",
+      "shortDesc": "a prestigious international platform for outstanding students passionate about science & mathematics.",
+      "fullDetails": "designed to challenge students' skills, provide global experience, and encourage competition with peers from various countries. offers the opportunity to qualify for a global round.",
+      "category": "academic",
+      "interest": "science, mathematics",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "tbd",
+      "eventDate": "tbd",
+      "location": "tbd (implied international with national and global rounds)",
+      "prizes": "medals, certificates, special awards, qualification for the global round.",
+      "rounds": "multiple (implied national and global)",
+      "fee": "tbd",
+      "link": "https://internationalstudentscompetition.com/asia-science-mathematics-competition-2026/"
     }
   ],
   "studyResources": [
@@ -3404,11 +3530,398 @@
       "title": "tvo learn: grade 9-12 online english high school learning materials",
       "description": "free online learning materials for grade 9-12 english, developed by tvo ontario certified teachers, aligning with the ontario curriculum. designed to help students deepen understanding or explore new subjects, available via study hall.",
       "link": "https://www.tvo.org/education/tvo-learn/english"
+    },
+    {
+      "id": "cambridge-math-0580-pastpapers",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge igcse mathematics (0580) past papers and mark schemes (2025-2027 syllabus)",
+      "description": "free past papers and mark schemes for cambridge igcse mathematics (0580), covering core (papers 1 & 3) and extended (papers 2 & 4) tiers. includes specimen papers for the 2025 syllabus change, where papers 1 and 2 are non-calculator.",
+      "link": "https://mathsaurus.com/igcse-maths-past-papers"
+    },
+    {
+      "id": "cambridge-cs-0478-pastpapers",
+      "syllabus": "cambridge",
+      "subject": "computer science",
+      "type": "specimen paper",
+      "title": "cambridge igcse computer science (0478) past papers and resources",
+      "description": "access to cambridge igcse computer science (0478) past papers, marking schemes, syllabus, and other resources. includes yearly and topical past papers, available in pdf format.",
+      "link": "https://www.tutopiya.com/past-papers/igcse/computer-science-0478"
+    },
+    {
+      "id": "cambridge-english-pastpapers",
+      "syllabus": "cambridge",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "cambridge igcse english language (0500) and literature (0475) past papers",
+      "description": "free past papers and mark schemes for cambridge igcse english language and english literature, offering comprehensive practice for various exam components.",
+      "link": "https://www.tutopiya.com/past-papers/igcse/english-language-0500"
+    },
+    {
+      "id": "ib-dp-math-sample-papers",
+      "syllabus": "ib",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "ib diploma programme mathematics (aa & ai) sample exam papers",
+      "description": "examples of actual past examination papers and specimen papers for ib dp mathematics: analysis and approaches and mathematics: applications and interpretation. provided for information and exam preparation.",
+      "link": "https://www.ibo.org/programmes/diploma-programme/assessment-and-exams/dp-assessment/diploma-sample-exam-papers/"
+    },
+    {
+      "id": "ib-dp-cs-hl-pastpapers",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "specimen paper",
+      "title": "ib diploma programme computer science hl past papers",
+      "description": "past exam papers and mark schemes for ib diploma programme computer science higher level modules. useful for revision and understanding exam structure.",
+      "link": "https://computersciencerevision.com/ib-computer-science-papers/"
+    },
+    {
+      "id": "ib-dp-english-pastpapers",
+      "syllabus": "ib",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "ib diploma programme english a: literature and language and literature past papers",
+      "description": "sample exam papers and mark schemes for ib dp english a: literature and english a: language and literature (hl/sl). includes paper 1 and paper 2 with marking notes.",
+      "link": "https://www.ibo.org/programmes/diploma-programme/assessment-and-exams/dp-assessment/diploma-sample-exam-papers/"
+    },
+    {
+      "id": "ap-csa-textbook-resources",
+      "syllabus": "ap",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "free ap computer science a textbook & study resources (2025-2026 curriculum aligned)",
+      "description": "a comprehensive free online textbook covering all units of the 2025-2026 ap computer science a curriculum, including java, object-oriented programming, selection, iteration, class creation, and data collections. also offers daily practice questions, frq archives (2004-2025), and interactive study games.",
+      "link": "https://apcsaexamprep.com/ap-computer-science-a-textbook/"
+    },
+    {
+      "id": "code.org-hs-cs-curricula",
+      "syllabus": "ap",
+      "subject": "computer science",
+      "type": "curriculum portfolio",
+      "title": "code.org high school computer science curricula (discoveries, principles, a, ai)",
+      "description": "free, year-long curricula for computer science discoveries (grades 6-10), computer science principles (grades 9-12), and ap computer science a (grades 9-12). covers foundational concepts, software engineering, java, and ai foundations.",
+      "link": "https://code.org/curriculum/high-school"
+    },
+    {
+      "id": "khan-academy-ap-math-english",
+      "syllabus": "ap",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "khan academy ap calculus, algebra, statistics, and geometry resources",
+      "description": "official college board partner offering comprehensive ap courses with instructional videos, practice exercises, and interactive quizzes for various math subjects.",
+      "link": "https://www.khanacademy.org/resources/ap"
+    },
+    {
+      "id": "openstax-hs-math-textbooks",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "openstax free high school mathematics textbooks (algebra, geometry, calculus, statistics)",
+      "description": "a global nonprofit publisher of open educational resources, providing peer-reviewed, free online textbooks for high school level math courses like algebra and trigonometry, calculus, and statistics. includes accompanying instructor resources.",
+      "link": "https://openstax.org/k12/subjects/math"
+    },
+    {
+      "id": "french-bac-math-practice",
+      "syllabus": "french-bac",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "french baccalauréat mathematics specialty practice questions",
+      "description": "comprehensive math exercises and practice questions for the french baccalauréat, covering analysis, sequences, exponential and logarithm functions, integrals, probability, and space geometry. provides instant ai scoring and detailed explanations.",
+      "link": "https://www.openexamprep.com/french-baccalaureate-mathematics-speciality-practice-questions/"
+    },
+    {
+      "id": "german-abitur-math-practice",
+      "syllabus": "german-abitur",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "german abitur mathematics practice questions",
+      "description": "over 100 free practice questions for the german abitur mathematics exam, aligned to kmk/iqb themes: analysis, analytic geometry/linear algebra, and stochastics. includes instant access, no signup required, with detailed explanations.",
+      "link": "https://www.openexamprep.com/abitur-mathematics-practice-questions/"
+    },
+    {
+      "id": "spm-math-addmath-pastpapers",
+      "syllabus": "spm",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "spm mathematics and additional mathematics past year papers and solutions",
+      "description": "free download of spm past year papers and trial exam papers with answer schemes for mathematics and additional mathematics. helps students understand exam patterns and improve answering techniques.",
+      "link": "https://edukaji.com/spm-trial-paper/"
+    },
+    {
+      "id": "spm-english-pastpapers",
+      "syllabus": "spm",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "spm english past year papers and solutions",
+      "description": "free download of spm past year papers and trial exam papers with answer schemes for english. resources include practice questions and video explanations to aid preparation.",
+      "link": "https://edukaji.com/spm-trial-paper/"
+    },
+    {
+      "id": "canadian-dynamic-math-resources",
+      "syllabus": "canadian",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "dynamic math canadian curriculum aligned books and video lessons (grades 4-12)",
+      "description": "100% curriculum aligned math books and a growing library of over 700 math video lessons, specifically designed for each canadian province's curriculum. includes self-assessment tools and unit reviews for senior high courses.",
+      "link": "https://dynamicmath.ca/"
+    },
+    {
+      "id": "cdli-canadian-math-reviews",
+      "syllabus": "canadian",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "cdli senior high mathematics course reviews and online tutoring",
+      "description": "free online tutoring and senior high course reviews for intermediate and high school students in canada. an account is required to view the material, which includes instructional videos, self-assessments, and unit reviews for various math courses (e.g., math 1201, 2201, 3201).",
+      "link": "https://www.cdli.ca"
+    },
+    {
+      "id": "open-up-hs-math-curriculum",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "curriculum portfolio",
+      "title": "open up high school math curriculum (algebra 1, geometry, algebra 2)",
+      "description": "a complete three-year high school mathematics curriculum (algebra 1, geometry, algebra 2) built upon a comprehensive mathematics instruction framework. provides free access to complete lessons online and downloadable pdfs, including student, teacher, and family materials.",
+      "link": "https://openupresources.org/math-curriculum/high-school-math/"
+    },
+    {
+      "id": "illustrative-math-k12-oer",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "curriculum portfolio",
+      "title": "illustrative mathematics k-12 math curriculum (oer)",
+      "description": "a free, open educational resource (oer) curriculum designed to help students learn math by doing math. access complete lessons online and download printable pdfs at no cost. energizes math classrooms and equips students with critical skills.",
+      "link": "https://www.illustrativemathematics.org/k-12-math-curriculum/"
+    },
+    {
+      "id": "cmu-cs-academy-hs-curriculum",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "curriculum portfolio",
+      "title": "carnegie mellon cs academy high school computer science curriculum",
+      "description": "a free, online curriculum for high school students designed to help instructors teach programming skills using engaging graphics and animations. available for general use, it includes eight increasing difficulty units introducing coding concepts from simple loops to recursive functions.",
+      "link": "https://www.cs.cmu.edu/~csacademy/"
+    },
+    {
+      "id": "mit-open-learning-cs-resources",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "curriculum portfolio",
+      "title": "mit open learning pk-12 computer science education resources (app inventor, day of ai)",
+      "description": "free educational resources including mit app inventor for creating mobile apps and day of ai for open-source ai curricula and activities. aims to help young learners grow computer science skills and computational fluency.",
+      "link": "https://openlearning.mit.edu/pk-12-education/computer-science-education"
+    },
+    {
+      "id": "galileo-world-lit-textbooks",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "textbook",
+      "title": "galileo open learning materials: world literature open textbooks",
+      "description": "open access literature textbooks for world literature courses, including full texts of works, contextualizing introductions, historical images, author biographies, and instructional design features like reading and review questions. designed as semester-long online courses.",
+      "link": "https://www.galileo.usg.edu/oer/english-open-textbooks/"
+    },
+    {
+      "id": "novel-hs-ela-curriculum",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "curriculum portfolio",
+      "title": "novel high school ela (9-12) curriculum (common core aligned)",
+      "description": "a novel-based, research-grounded, knowledge-building reading and writing curriculum for grades 9-12. common core aligned and grounded in the science of reading, it features daily lesson plans, editable handouts, and a diverse array of formative and summative assessments.",
+      "link": "https://noveleducationpartners.com/high-school-ela/"
+    },
+    {
+      "id": "ck12-mathematics-materials",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "ck-12 mathematics resources",
+      "description": "a great source of material for every high school math topic, with options to edit content to suit individual needs. aligned with common core standards.",
+      "link": "https://www.ck12.org/"
+    },
+    {
+      "id": "siyavula-math-textbooks",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "siyavula free online mathematics textbooks",
+      "description": "excellent free online mathematics textbooks designed to fit the south african curriculum for grades 10 to 12.",
+      "link": "https://www.siyavula.com/"
+    },
+    {
+      "id": "nrich-math-resources",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "nrich curriculum-linked mathematics resources",
+      "description": "rich, engaging, and free mathematics resources from the university of cambridge, focusing on problem-solving for ages 3 to 18, with teacher support.",
+      "link": "https://nrich.maths.org/"
+    },
+    {
+      "id": "m3-challenge-past-problems",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "mathworks math modeling challenge past problems",
+      "description": "an archive of past m3 challenge problems to help students prepare, with questions in three parts and often providing data, including links to winning solutions.",
+      "link": "https://m3challenge.siam.org/resources/past-problems"
+    },
+    {
+      "id": "igcseexamguru-cambridge-math",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "igcse exam guru cambridge mathematics past papers",
+      "description": "a collection of free past papers for cambridge igcse mathematics.",
+      "link": "https://igcseexamguru.com/pastpapers/?dir=Mathematics%20%280580%29"
+    },
+    {
+      "id": "gceguide-cambridge-math",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "gce guide cambridge mathematics past papers",
+      "description": "a resource for downloading cambridge international o level, as & a level, and igcse past papers.",
+      "link": "https://papers.gceguide.com/"
+    },
+    {
+      "id": "ib-computer-science-past-papers",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "specimen paper",
+      "title": "ib computer science past papers and mark schemes",
+      "description": "official past papers and mark schemes for ib computer science standard and higher level courses, accessible through educational platforms.",
+      "link": "https://www.computersciencerevision.com/ib-computer-science-papers"
+    },
+    {
+      "id": "usaco-training-resources",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "usaco official training pages & usaco guide",
+      "description": "hundreds of hours of free online training resources and historical contest problems with solutions to improve programming and computational problem-solving skills, curated by former top competitors.",
+      "link": "https://train.usaco.org/"
+    },
+    {
+      "id": "usaco-guide-competitive-programming",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "usaco guide",
+      "description": "a free collection of curated, high-quality competitive programming resources with tutorials to guide students from usaco bronze to platinum and beyond.",
+      "link": "https://usaco.guide/"
+    },
+    {
+      "id": "codeorg-cs-curricula",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "curriculum portfolio",
+      "title": "code.org k-12 computer science curricula",
+      "description": "free, comprehensive k-12 computer science curricula including computer science principles, discoveries, and ap computer science a, covering programming, web development, apps, ai, and game design.",
+      "link": "https://code.org/"
+    },
+    {
+      "id": "khanacademy-cs-basics",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "online courses",
+      "title": "khan academy computer science basics",
+      "description": "comprehensive video lessons and exercises covering computer science fundamentals, algorithms, cryptography, and how computers work.",
+      "link": "https://www.khanacademy.org/computing/computer-science"
+    },
+    {
+      "id": "harvard-cs50-edx",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "online courses",
+      "title": "harvard cs50: introduction to computer science (via edx)",
+      "description": "a free, deep-dive introductory course in computer science from harvard university, available on edx.",
+      "link": "https://www.edx.org/course/cs50s-introduction-to-computer-science"
+    },
+    {
+      "id": "teachyourselfcs",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "online courses",
+      "title": "teach yourself computer science",
+      "description": "a fantastic free resource with nine topics and hundreds of hours of video lectures by experienced cs professionals, covering compilers, programming languages, and web development.",
+      "link": "https://teachyourselfcs.com/"
+    },
+    {
+      "id": "geeksforgeeks-cs-resources",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "geeksforgeeks computer science articles & tutorials",
+      "description": "high-quality articles, tutorials, and practice problems on coding, algorithms, and data structures.",
+      "link": "https://www.geeksforgeeks.org/"
+    },
+    {
+      "id": "quillorg-grammar",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "online exercises",
+      "title": "quill.org interactive grammar platform",
+      "description": "a free interactive platform providing diagnostics and engaging, adaptive exercises to improve grammar skills.",
+      "link": "https://www.quill.org/"
+    },
+    {
+      "id": "noredink-grammar",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "online exercises",
+      "title": "no red ink personalized grammar lessons",
+      "description": "tailors grammar lessons based on students' interests and skill levels, offering personalized and engaging practice.",
+      "link": "https://www.noredink.com/"
+    },
+    {
+      "id": "purdue-owl",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "purdue online writing lab (owl)",
+      "description": "an invaluable reference providing extensive resources on grammar rules, examples, and writing tips for academic essays and projects.",
+      "link": "https://owl.purdue.edu/owl/index.html"
+    },
+    {
+      "id": "grammar-monster",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "online lessons",
+      "title": "grammar monster",
+      "description": "hundreds of free english grammar lessons, tests, games, and word lists covering everything from basic vocabulary to advanced writing tips.",
+      "link": "https://www.grammar-monster.com/"
+    },
+    {
+      "id": "usingenglish-grammar-vocab",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "grammar reference",
+      "title": "usingenglish.com grammar, vocabulary & esl resources",
+      "description": "a comprehensive free english language site with grammar guides, vocabulary tools, interactive quizzes, and teacher resources.",
+      "link": "https://www.usingenglish.com/"
+    },
+    {
+      "id": "ef-english-resources",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "grammar guide",
+      "title": "ef global site english learning resources",
+      "description": "a collection of free english learning resources, including complete guides to english grammar, common idioms, and vocabulary lists.",
+      "link": "https://www.ef.com/wwen/resources/"
+    },
+    {
+      "id": "ap-english-lit-ced",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "curriculum portfolio",
+      "title": "ap english literature and composition course and exam description",
+      "description": "the official document outlining the course content, skills, and exam structure for the ap english literature and composition course, focusing on reading and critical analysis of imaginative literature.",
+      "link": "https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/course-details"
     }
   ],
   "dailyInspiration": {
-    "title": "from homelessness to columbia: the inspiring journey of lamont newell",
-    "story": "lamont newell, a 17-year-old from los angeles, achieved an extraordinary feat by gaining acceptance into 65 colleges, including all eight ivy league institutions, ultimately choosing columbia university with a full scholarship. his remarkable accomplishment is made even more inspiring by his background: lamont experienced homelessness for much of his childhood, at times sleeping in his family’s car. despite these immense challenges, he excelled academically, graduating as valedictorian with a 4.4 gpa from verbum dei jesuit high school. lamont's determination was fueled by a promise he made to himself to fulfill his mother's unachieved college dreams. he learned to code at a local recreation center and now plans to major in industrial engineering at columbia. beyond his personal success, lamont harbors a profound desire to give back to his community; he dreams of building an institution at the very park where he learned to code, dedicated to teaching black students stem skills and computer programming, just as he did. his journey exemplifies resilience, ambition, and a powerful commitment to empowering others.",
-    "takeaway": "adversity is not a limit, but a launchpad for boundless ambition and a catalyst for profound impact on the world."
+    "title": "the mit dropout who built a billion-dollar ai startup",
+    "story": "alexandr wang, fueled by a 'crazy ambition to take on the world and solve problems,' left high school a year early and subsequently dropped out of mit after just one year. at 19, he founded scale ai, a tech startup focused on automating tasks like image recognition and audio transcription using artificial intelligence. the company rapidly secured significant contracts, including government defense initiatives, leading to a $7.3 billion valuation and making wang a self-made billionaire by the age of 25. his vision centers on helping industries unlock the potential of their data and supercharge their businesses with ai.",
+    "takeaway": "his journey exemplifies how early ambition and a relentless pursuit of impact can redefine success beyond conventional academic paths."
   }
 }
