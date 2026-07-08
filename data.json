@@ -2411,6 +2411,150 @@
       "rounds": "abstract submission, presentation",
       "fee": "not explicitly stated",
       "link": "https://www.iyrc.org/"
+    },
+    {
+      "id": "international-stem-olympiad-2026",
+      "type": "competition",
+      "title": "international stem olympiad",
+      "shortDesc": "a global olympiad competition in science, technology, engineering, and mathematics.",
+      "fullDetails": "the international stem olympiad gathers students from numerous countries to compete in various stem disciplines. in july 2026, nigerian secondary students achieved gold medals in mathematics and science categories in rome, italy, bringing global recognition to their academic excellence. this competition offers a platform for students to showcase their talents and deepen their knowledge in key stem subjects.",
+      "category": "academic",
+      "interest": "mathematics, science, stem",
+      "minAge": 11,
+      "maxAge": 18,
+      "deadline": "past for 2026",
+      "eventDate": "2026-07-07",
+      "location": "rome, italy",
+      "prizes": "gold medals, global recognition",
+      "rounds": "multi-stage (national selection to international finals)",
+      "fee": "not specified (likely national team participation costs)",
+      "link": "https://bellanaija.com/2026/07/nigerias-three-young-stem-stars-win-gold-at-the-2026-international-stem-olympiad-in-rome/"
+    },
+    {
+      "id": "amc-10-12-2026",
+      "type": "competition",
+      "title": "american mathematics competitions (amc 10/amc 12)",
+      "shortDesc": "a national mathematics competition series that serves as a pathway to the international mathematical olympiad.",
+      "fullDetails": "the amc 10 and amc 12 are highly respected mathematics competitions for high school students in grades 10 and below, and 12 and below, respectively. these are the primary pathway for students in the united states to qualify for the american invitational mathematics examination (aime) and subsequently the usa mathematical olympiad (usamo), which leads to the international mathematical olympiad (imo). the competition involves solving multiple-choice problems under timed conditions.",
+      "category": "academic",
+      "interest": "mathematics",
+      "minAge": 14,
+      "maxAge": 18,
+      "deadline": "2026-10-28 (late registration)",
+      "eventDate": "2026-11-05 (amc 10a/12a), 2026-11-13 (amc 10b/12b)",
+      "location": "administered by schools (us and canada)",
+      "prizes": "certificates, qualification for aime and usamo, college admissions advantage",
+      "rounds": "single round (amc 10/12), but part of a larger multi-stage pipeline",
+      "fee": "$55-$115 (registration fee), $30 per 10 student licenses",
+      "link": "https://www.maa.org/math-competitions/amc-10-12"
+    },
+    {
+      "id": "iymc-2026",
+      "type": "competition",
+      "title": "international youth math challenge (iymc)",
+      "shortDesc": "a global online mathematics competition for school and university students to test their problem-solving skills.",
+      "fullDetails": "open to high school and university students worldwide. the exam takes place in three stages: qualification, pre-final, and final rounds. participants receive certificates, prizes, and academic recognition. the qualification round is free, but the pre-final round has a €11 fee.",
+      "category": "academic",
+      "interest": "mathematics, problem-solving",
+      "minAge": 13,
+      "maxAge": 20,
+      "deadline": "2025-11-30",
+      "eventDate": "2026-01-01_to_2026-02-10",
+      "location": "online",
+      "prizes": "certificates, medals (gold, silver, bronze), academic recognition",
+      "rounds": "3 stages (qualification, pre-final, final)",
+      "fee": "free (qualification), €11 (pre-final)",
+      "link": "https://www.iymc.info/"
+    },
+    {
+      "id": "school-enterprise-challenge-2026",
+      "type": "competition",
+      "title": "school enterprise challenge",
+      "shortDesc": "a free international entrepreneurship program where students create, launch, and manage real school-based businesses.",
+      "fullDetails": "equips students with practical business skills and bridges the gap between classroom learning and real-world experience. available in english and spanish, the program invites schools worldwide to participate.",
+      "category": "entrepreneurship, business",
+      "interest": "business skills, entrepreneurship, practical innovation",
+      "minAge": 11,
+      "maxAge": 18,
+      "deadline": "ongoing",
+      "eventDate": "ongoing",
+      "location": "online/school-based",
+      "prizes": "international recognition",
+      "rounds": "ongoing program",
+      "fee": "free",
+      "link": "https://www.schoolenterprisechallenge.org/"
+    },
+    {
+      "id": "nsb-2026",
+      "type": "competition",
+      "title": "national science bowl (nsb)",
+      "shortDesc": "a nationwide academic competition by the u.s. department of energy, testing students' knowledge in all areas of science and mathematics.",
+      "fullDetails": "teams compete in regional and state tournaments to qualify for the national finals, which involve a fast-paced question-and-answer format. winning regional teams receive an all-expenses-paid trip to the national finals in the washington, d.c. area. registration for 2026 regional competitions opens october 6, 2025.",
+      "category": "academic",
+      "interest": "science, mathematics",
+      "minAge": 14,
+      "maxAge": 18,
+      "deadline": "2025-10-06",
+      "eventDate": "2026-01-01_to_2026-05-04",
+      "location": "regional competitions nationwide; national finals in washington, d.c. area",
+      "prizes": "all-expenses-paid trip to national finals",
+      "rounds": "regional competitions, national finals",
+      "fee": "free",
+      "link": "https://science.osti.gov/wdts/nsb"
+    },
+    {
+      "id": "science-olympiad-2026",
+      "type": "competition",
+      "title": "science olympiad",
+      "shortDesc": "a leading team stem competition with events across various science disciplines.",
+      "fullDetails": "one of the nation's premier science competitions, with events spanning biology, earth and space science, chemistry, physics, and engineering. teams compete in regional and state tournaments to qualify for the national event, hosted by the university of southern california in 2026.",
+      "category": "academic",
+      "interest": "stem, science, engineering, various scientific disciplines",
+      "minAge": 11,
+      "maxAge": 18,
+      "deadline": "varies by state",
+      "eventDate": "2026-05-22_to_2026-05-23",
+      "location": "regional and state competitions nationwide; national tournament at usc, los angeles",
+      "prizes": "awards, trophies, cash scholarships, tuition awards",
+      "rounds": "regional, state, national tournaments",
+      "fee": "specific cost (school-based)",
+      "link": "https://www.soinc.org/"
+    },
+    {
+      "id": "math-of-opportunity-conf-2026",
+      "type": "conference",
+      "title": "the mathematics of opportunity 2026: meeting the moment",
+      "shortDesc": "an annual conference exploring transformative forces in math education and preparing students for college and career success.",
+      "fullDetails": "brings together educators, advocates, and students to discuss key issues and emerging trends in high school and postsecondary math education. it focuses on reimagining math education to engage students and prepare them for future success. this is a free, virtual event.",
+      "category": "academic, conference",
+      "interest": "mathematics education, college and career readiness",
+      "minAge": 14,
+      "maxAge": 22,
+      "deadline": "unspecified",
+      "eventDate": "2026-04-15_to_2026-04-16",
+      "location": "virtual",
+      "prizes": "n/a",
+      "rounds": "n/a",
+      "fee": "free",
+      "link": "https://justequations.org/events/mathematics-of-opportunity-2026/"
+    },
+    {
+      "id": "teaching-contemp-math-conf-2026",
+      "type": "conference",
+      "title": "teaching contemporary mathematics conference",
+      "shortDesc": "a conference for educators and students on advanced and engaging approaches to mathematics education.",
+      "fullDetails": "offers new perspectives, interesting activities, and stimulating lesson ideas focusing on mathematical concepts and courses for high school and college students. sessions are appropriate for courses from math i through ap statistics.",
+      "category": "academic, conference",
+      "interest": "mathematics education, contemporary mathematics",
+      "minAge": 14,
+      "maxAge": 22,
+      "deadline": "unspecified",
+      "eventDate": "2026-xx-xx",
+      "location": "north carolina school of science and mathematics",
+      "prizes": "n/a",
+      "rounds": "n/a",
+      "fee": "specific cost (discount for nc public high school teachers)",
+      "link": "https://www.ncssm.edu/professional-development/teaching-contemporary-mathematics-conference"
     }
   ],
   "studyResources": [
@@ -4277,11 +4421,290 @@
       "title": "khan academy - high-quality educational content",
       "description": "free, high-quality educational content with practice problems for various math and science subjects. excellent for learning core concepts and building foundational skills. while not written to a specific ib syllabus, it's highly useful for general concept mastery.",
       "link": "https://www.khanacademy.org/"
+    },
+    {
+      "id": "cambridge-igcse-maths-0580-pastpapers-2025",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge igcse mathematics (0580) past papers & marking schemes (2019-2025)",
+      "description": "free access to official past papers and marking schemes for cambridge igcse mathematics (0580). includes core and extended papers with details on syllabus changes from 2025 (non-calculator papers). ideal for exam preparation.",
+      "link": "https://www.tutopiya.com/cambridge-igcse-mathematics-0580-past-papers-marking-schemes/"
+    },
+    {
+      "id": "ib-cs-slhl-paul-baumgarten",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "paul baumgarten's cs notes - ib computer science",
+      "description": "known as the 'holy grail' for ib computer science students, these exhaustive and detailed notes cover the entire sl and hl curriculum, providing comprehensive explanations for all core and optional topics.",
+      "link": "https://www.hackyourcourse.com/ib-computer-science-notes"
+    },
+    {
+      "id": "national-ela-activities-hmh",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "curriculum portfolio",
+      "title": "free high school english language arts activities - hmh",
+      "description": "a collection of downloadable activities and lesson plans for high school english language arts. resources include materials for analyzing poems, podcasts, and arguments, and prompts to help students develop their writing styles. designed to support student learning and engagement.",
+      "link": "https://www.hmhco.com/blog/free-high-school-english-language-arts-activities"
+    },
+    {
+      "id": "ap-english-lang-comp-frqs",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "ap english language and composition exam free-response questions",
+      "description": "free-response questions from past ap english language & composition exams, along with scoring guidelines, sample responses, and scoring distributions. includes exams from the past three years.",
+      "link": "https://apcentral.collegeboard.org/courses/ap-english-language-and-composition/exam/past-exam-questions"
+    },
+    {
+      "id": "ib-comp-sci-hl-notes-tutorchase",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "free ib dp computer science hl notes",
+      "description": "complete computer science hl notes written by expert ib teachers, covering system fundamentals, computer organization, networks, abstract data structures, resource management, and control.",
+      "link": "https://www.tutorchase.com/resources/ib-dp-computer-science-hl-notes"
+    },
+    {
+      "id": "ib-comp-sci-revision-guide-scribd",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "ib computer science consolidated revision guide",
+      "description": "covers key concepts in systems planning, implementation, and design, cpu architecture, memory types, operating systems, application software, data representation, and network types. available as pdf.",
+      "link": "https://www.scribd.com/document/652010823/IB-Computer-Science-Consolidated-Revision-Guide"
+    },
+    {
+      "id": "ib-comp-sci-guide-2027-scribd",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "curriculum portfolio",
+      "title": "ib computer science guide 2027",
+      "description": "outlines the framework for teaching, assessing, and planning the subject for the international baccalaureate diploma programme, with the first assessment in 2027.",
+      "link": "https://www.scribd.com/document/683935272/IB-Computer-Science-Guide-2027"
+    },
+    {
+      "id": "ib-comp-sci-sl-resources-knowt",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "study guide",
+      "title": "free ib computer science (sl) resources for 2026",
+      "description": "in-depth ib computer science (sl) study guides, flashcards, and resources for exam units, covering system fundamentals, computer organization, networks, and computational thinking.",
+      "link": "https://www.knowt.com/ib/computer-science-sl-resources"
+    },
+    {
+      "id": "ib-comp-sci-hl-resources-knowt",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "study guide",
+      "title": "free ib computer science (hl) resources for 2026",
+      "description": "study guides and flashcards covering system fundamentals, computer organization, networks, computational thinking, abstract data structures, resource management, and control.",
+      "link": "https://www.knowt.com/ib/computer-science-hl-resources"
+    },
+    {
+      "id": "ib-comp-sci-hl-revision-guide-scribd-2",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "computer science hl revision guide",
+      "description": "comprehensive revision guide covering systems fundamentals, computer organization, networks, computational thinking & programming, abstract data structures, and databases.",
+      "link": "https://www.scribd.com/document/659103859/Computer-Science-HL-Revision-Guide"
+    },
+    {
+      "id": "simplified-senior-math-book-scribd",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "simplified senior mathematics book",
+      "description": "a mathematics textbook for high school students in grades 10 to 12, covering functions, coordinate geometry, algebra, and statistics with explanations, examples, and exercises.",
+      "link": "https://www.scribd.com/document/468846173/Simplified-Senior-Mathematics-Book"
+    },
+    {
+      "id": "cambridge-secondary-1-math-book-1",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "mathematics for cambridge secondary book 1",
+      "description": "follows the cambridge secondary 1 mathematics curriculum framework, written by an experienced teacher, including objectives, notes, worked examples, and exercises.",
+      "link": "https://fims.edu.pk/download/Mathematics%20for%20Cambridge%20Secondary%20Book%201.pdf"
+    },
+    {
+      "id": "cambridge-igcse-intl-math-0607-papers",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge igcse international mathematics (0607) past papers, examiner reports and specimen exams",
+      "description": "download past question papers, examiner reports, and specimen exams for cambridge igcse international mathematics (0607). layout and formatting changes for 2026 exams.",
+      "link": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-international-mathematics-0607/past-papers-examiner-reports-and-specimen-papers/"
+    },
+    {
+      "id": "cambridge-igcse-math-0580-papers",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge igcse mathematics 0580 past papers and resources",
+      "description": "latest past papers, syllabus, specimens, question papers, marking schemes, and other resources for cambridge igcse mathematics 0580.",
+      "link": "https://www.papacambridge.com/cie/igcse/mathematics-0580/"
+    },
+    {
+      "id": "cambridge-igcse-intl-math-0607-paper-2-pdfs",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "igcse international math past papers- paper 2 extended /supplement",
+      "description": "pdfs of past paper questions for cambridge igcse international mathematics (0607) paper 2.",
+      "link": "https://smartexamresources.com/cambridge-igcse-international-math-past-papers-pdf-paper-2/"
+    },
+    {
+      "id": "openstax-algebra-1",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "openstax algebra 1",
+      "description": "free, standards-aligned high school algebra 1 curriculum covering linear, exponential, and quadratic functions. always free for students and teachers.",
+      "link": "https://openstax.org/details/books/algebra-1"
+    },
+    {
+      "id": "openstax-statistics-high-school",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "openstax statistics for high school",
+      "description": "free, peer-reviewed statistics textbook for high school, available online or as downloadable pdf.",
+      "link": "https://openstax.org/details/books/statistics-high-school"
+    },
+    {
+      "id": "openstax-intro-to-comp-sci",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "openstax introduction to computer science",
+      "description": "free digital learning textbook covering core concepts such as algorithms, data structures, computer systems, and software development with real-world applications. includes interactive learning.",
+      "link": "https://openstax.org/details/books/introduction-computer-science"
+    },
+    {
+      "id": "codehs-intro-javascript",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "codehs introduction to javascript",
+      "description": "free digital textbook introducing programming in javascript, covering foundations of computer science and basic programming, with emphasis on logical thinking and problem-solving.",
+      "link": "https://codehs.com/course/7841/textbook"
+    },
+    {
+      "id": "codehs-ap-comp-sci-a",
+      "syllabus": "ap",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "codehs ap computer science a",
+      "description": "digital textbook following the college board's unit structure for ap csa exam, teaching object-oriented programming with focus on problem-solving and algorithm development.",
+      "link": "https://codehs.com/course/6065/textbook"
+    },
+    {
+      "id": "runestone-math-textbooks",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "runestone academy math textbooks",
+      "description": "free online textbooks for math, providing comprehensive and interactive resources with clear explanations, engaging examples, and interactive exercises.",
+      "link": "https://runestone.academy/runestone/books/index"
+    },
+    {
+      "id": "runestone-comp-sci-textbooks",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "runestone academy computer science textbooks",
+      "description": "free online textbooks for computer science, offering comprehensive and interactive resources with clear explanations, engaging examples, and interactive exercises.",
+      "link": "https://runestone.academy/runestone/books/index"
+    },
+    {
+      "id": "quill-grammar",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "quill grammar",
+      "description": "free interactive writing and grammar activities for middle and high school students, covering basic grammar skills like comma placement and parallel structure. over 250 activities.",
+      "link": "https://www.quill.org/quill-grammar"
+    },
+    {
+      "id": "quill-ap-english-practice",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "quill ap activities",
+      "description": "official free ap english writing practice activities to build reading comprehension, writing, and language skills.",
+      "link": "https://www.quill.org/ap-activities"
+    },
+    {
+      "id": "khan-academy-high-school-math",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "khan academy high school & college math",
+      "description": "free, world-class education for high school and college-level mathematics, covering arithmetic, algebra, geometry, trigonometry, statistics, and calculus through videos, articles, and exercises.",
+      "link": "https://www.khanacademy.org/math"
+    },
+    {
+      "id": "khan-academy-computer-science",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "khan academy computer science",
+      "description": "free lessons on computer science, including computer system, encoding, problem-solving, python, flow of control, functions, data structures, and societal impact. also covers ap computer science principles and advanced topics.",
+      "link": "https://www.khanacademy.org/computing/computer-science"
+    },
+    {
+      "id": "khan-academy-grammar-course",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "khan academy grammar course",
+      "description": "comprehensive video lessons and exercises covering grammar from punctuation to complex sentences, ideal for independent learners.",
+      "link": "https://www.khanacademy.org/humanities/grammar"
+    },
+    {
+      "id": "grammar-monster-lessons",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "grammar monster free english grammar lessons and tests",
+      "description": "hundreds of free english grammar lessons, tests, games, and word lists covering everything from basic vocabulary to tips for advanced writers.",
+      "link": "https://www.grammar-monster.com/"
+    },
+    {
+      "id": "national-literacy-trust-grammar-guide",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "curriculum portfolio",
+      "title": "grammar for writing for secondary (national literacy trust)",
+      "description": "resources for teachers on how to incorporate grammar teaching into writing across the secondary curriculum, explaining key terminology and concepts with examples.",
+      "link": "https://literacytrust.org.uk/resources/grammar-writing-secondary/"
+    },
+    {
+      "id": "project-gutenberg-modern-prose-poetry",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "textbook",
+      "title": "modern prose and poetry; for secondary schools",
+      "description": "a free collection of literary selections intended for high school students to stimulate interest in good literature and direct outside reading.",
+      "link": "https://www.gutenberg.org/ebooks/69236"
+    },
+    {
+      "id": "project-gutenberg-short-stories-high-schools",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "textbook",
+      "title": "short stories for high schools",
+      "description": "a free collection of short stories edited for high school use, guiding taste and appreciation in short story reading. includes works by recognized authors.",
+      "link": "https://www.gutenberg.org/ebooks/50543"
     }
   ],
   "dailyInspiration": {
-    "title": "the unschooled prodigy: malvika raj joshi's path to mit",
-    "story": "at just 17 years old, malvika raj joshi defied conventional educational norms to secure a coveted spot at the massachusetts institute of technology (mit). unlike her peers, malvika did not possess class 10 or 12 certificates, having been unschooled by her mother since class 7. her journey, however, was marked by exceptional talent in computer programming, culminating in multiple medals (two silver and a bronze) at the prestigious international olympiad of informatics (ioi). mit, recognizing the unparalleled merit demonstrated through her olympiad achievements, offered her a scholarship to pursue research in computer science. her story highlights a mother's conviction to break stereotypes and a daughter's self-belief, proving that extraordinary talent and dedication can outweigh traditional academic credentials, especially when faced with rigid institutional admission criteria in her home country like india's iits.",
-    "takeaway": "unconventional paths, fueled by passion and exceptional merit, can lead to the world's most prestigious institutions."
+    "title": "from misdiagnosis to mit: viraj dhanda's triumph",
+    "story": "viraj dhanda, a 19-year-old nonspeaking autistic student from brookline, defied expectations by gaining admission to the massachusetts institute of technology (mit) for the fall of 2026. for the first 14 years of his life, viraj was mistakenly thought to be intellectually disabled, a misdiagnosis that severely delayed his access to appropriate academic support. despite this, a breakthrough came when he learned to communicate using a tablet with a keyboard, allowing his intelligence and unique voice to emerge. his father, sumit dhanda, initially prepared him for rejection, but an email opening revealed virtual confetti and an acceptance letter to the mit class of 2029, proving all doubts wrong. viraj, who plans to study economics, writing, or become a disability advocate, hopes his journey offers hope to others, demonstrating that 'despite what the experts may have told you,' and 'nothing came easy for us, but we kept fighting our way, until others recognized my potential.' he scored a 35 out of a possible 36 on the math section of the act.",
+    "takeaway": "your voice and potential are limitless, regardless of the labels or challenges you face."
   }
 }
