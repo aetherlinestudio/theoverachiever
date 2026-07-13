@@ -2449,24 +2449,6 @@
       "link": "https://www.maa.org/math-competitions/amc-10-12"
     },
     {
-      "id": "iymc-2026",
-      "type": "competition",
-      "title": "international youth math challenge (iymc)",
-      "shortDesc": "a global online mathematics competition for school and university students to test their problem-solving skills.",
-      "fullDetails": "open to high school and university students worldwide. the exam takes place in three stages: qualification, pre-final, and final rounds. participants receive certificates, prizes, and academic recognition. the qualification round is free, but the pre-final round has a €11 fee.",
-      "category": "academic",
-      "interest": "mathematics, problem-solving",
-      "minAge": 13,
-      "maxAge": 20,
-      "deadline": "2025-11-30",
-      "eventDate": "2026-01-01_to_2026-02-10",
-      "location": "online",
-      "prizes": "certificates, medals (gold, silver, bronze), academic recognition",
-      "rounds": "3 stages (qualification, pre-final, final)",
-      "fee": "free (qualification), €11 (pre-final)",
-      "link": "https://www.iymc.info/"
-    },
-    {
       "id": "school-enterprise-challenge-2026",
       "type": "competition",
       "title": "school enterprise challenge",
@@ -2483,24 +2465,6 @@
       "rounds": "ongoing program",
       "fee": "free",
       "link": "https://www.schoolenterprisechallenge.org/"
-    },
-    {
-      "id": "nsb-2026",
-      "type": "competition",
-      "title": "national science bowl (nsb)",
-      "shortDesc": "a nationwide academic competition by the u.s. department of energy, testing students' knowledge in all areas of science and mathematics.",
-      "fullDetails": "teams compete in regional and state tournaments to qualify for the national finals, which involve a fast-paced question-and-answer format. winning regional teams receive an all-expenses-paid trip to the national finals in the washington, d.c. area. registration for 2026 regional competitions opens october 6, 2025.",
-      "category": "academic",
-      "interest": "science, mathematics",
-      "minAge": 14,
-      "maxAge": 18,
-      "deadline": "2025-10-06",
-      "eventDate": "2026-01-01_to_2026-05-04",
-      "location": "regional competitions nationwide; national finals in washington, d.c. area",
-      "prizes": "all-expenses-paid trip to national finals",
-      "rounds": "regional competitions, national finals",
-      "fee": "free",
-      "link": "https://science.osti.gov/wdts/nsb"
     },
     {
       "id": "science-olympiad-2026",
@@ -2555,6 +2519,96 @@
       "rounds": "n/a",
       "fee": "specific cost (discount for nc public high school teachers)",
       "link": "https://www.ncssm.edu/professional-development/teaching-contemporary-mathematics-conference"
+    },
+    {
+      "id": "international-changemakers-essay-2026",
+      "type": "competition",
+      "title": "international changemakers essay competition 2026",
+      "shortDesc": "an international essay competition inspiring participants to express perspectives, creativity, and critical thinking for positive social change.",
+      "fullDetails": "this competition aims to inspire participants to express their perspectives, creativity, and critical thinking through meaningful essays that contribute to positive social change. through this international initiative, participants are encouraged to raise awareness, inspire action, and become part of a generation that drives transformation for a better future.",
+      "category": "academic",
+      "interest": "writing, social impact, critical thinking",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2026-xx-xx",
+      "eventDate": "2026-xx-xx",
+      "location": "online",
+      "prizes": "not specified, typically recognition and awards",
+      "rounds": "one (essay submission)",
+      "fee": "not specified",
+      "link": "https://internationalstudentscompetition.org/competition/international-changemakers-essay-competition-2026/"
+    },
+    {
+      "id": "isyf-2026",
+      "type": "conference",
+      "title": "international science youth forum (isyf) 2026",
+      "shortDesc": "a global platform for secondary school students to share their passion for science, technology, and research.",
+      "fullDetails": "the 18th international science youth forum (isyf) will be held from january 5 to 9, 2026, at hwa chong institution, singapore. the theme for 2026 is 'curiosity unlocked: how questions drive discovery in the age of ai'. it offers inspiring lectures, research exchanges, hands-on experiments, thought-provoking discussions, and cultural activities. participants will engage with scientific discovery and build international friendships. the forum aims to nurture young scientists who value questions as much as answers.",
+      "category": "academic",
+      "interest": "stem & research",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2025-xx-xx",
+      "eventDate": "2026-01-05",
+      "location": "singapore",
+      "prizes": "certificates of participation",
+      "rounds": "n/a",
+      "fee": "specified on official website",
+      "link": "https://isyf.hci.sg/"
+    },
+    {
+      "id": "eucys-2026",
+      "type": "competition",
+      "title": "european union contest for young scientists (eucys) 2026",
+      "shortDesc": "a prestigious international science competition for young scientists aged 14 to 20.",
+      "fullDetails": "the 37th edition of eucys will be hosted by kiel university, germany, from september 22 to 27, 2026. it brings together winners of national science competitions from across europe to showcase their research. participants present innovative projects spanning all fields of science to a scientific jury. it serves as a launching pad for future research and innovation careers, promoting cooperation and intercultural dialogue. each participating country may nominate up to three winning projects.",
+      "category": "academic",
+      "interest": "stem & research",
+      "minAge": 14,
+      "maxAge": 20,
+      "deadline": "2026-xx-xx",
+      "eventDate": "2026-09-22",
+      "location": "kiel, germany",
+      "prizes": "awards and prestigious recognition",
+      "rounds": "multiple stages (national qualification, international final)",
+      "fee": "free (participation through national qualification)",
+      "link": "https://eucys2026.eu/"
+    },
+    {
+      "id": "liysf-2026",
+      "type": "forum",
+      "title": "london international youth science forum (liysf) 2026",
+      "shortDesc": "a two-week residential stem summer camp in london for young scientists aged 16-21.",
+      "fullDetails": "the 67th liysf will run from july 19 to august 1, 2026, held both online and in-person at imperial college london & the royal geographical society. it unites 500 students from around the world for intensive research, collaboration, and academic excellence. the program includes lectures from leading scientists (including nobel laureates), scientific visits to world-class laboratories and universities (oxford, cambridge), and an active social and cultural program. applications open in october 2025, with a deadline of may 31, 2026.",
+      "category": "academic",
+      "interest": "stem, research, cultural exchange",
+      "minAge": 16,
+      "maxAge": 21,
+      "deadline": "2026-05-31",
+      "eventDate": "2026-07-19",
+      "location": "london, uk (in-person and online options)",
+      "prizes": "certificates of attendance",
+      "rounds": "n/a",
+      "fee": "£325.00 gbp for virtual program; full price for in-person (scholarships available)",
+      "link": "https://www.liysf.org.uk/"
+    },
+    {
+      "id": "gimo-2026",
+      "type": "olympiad",
+      "title": "geniuscerebrum international mathematics olympiad (gimo) 2026",
+      "shortDesc": "an international online olympiad testing mathematics skills, speed, accuracy, and awareness.",
+      "fullDetails": "gimo is a single-round, fully online olympiad with video and audio proctoring. it features 60 questions in 60 minutes for levels 1-4, and 30 questions for level buds (under 5 years). students can take the exam over a 5-day window. it provides a free online preparation portal post-registration. prizes include medals, trophies, vouchers, and certificates for international and regional toppers. it assesses comparative performance among students from different countries.",
+      "category": "academic",
+      "interest": "mathematics",
+      "minAge": 5,
+      "maxAge": 18,
+      "deadline": "2026-xx-xx",
+      "eventDate": "2026-xx-xx",
+      "location": "online",
+      "prizes": "medals, trophies, vouchers, certificates",
+      "rounds": "one",
+      "fee": "specified on official website (registration is online)",
+      "link": "https://geniuscerebrum.com/"
     }
   ],
   "studyResources": [
@@ -4700,11 +4754,209 @@
       "title": "short stories for high schools",
       "description": "a free collection of short stories edited for high school use, guiding taste and appreciation in short story reading. includes works by recognized authors.",
       "link": "https://www.gutenberg.org/ebooks/50543"
+    },
+    {
+      "id": "ib-cs-revision-guide-scribd",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "ib computer science consolidated revision guide",
+      "description": "a comprehensive revision guide for ib computer science, covering key concepts in systems planning, implementation, and design, cpu architecture, memory, operating systems, application software, data representation, network types, and protocols.",
+      "link": "https://www.scribd.com/document/511391584/IB-Computer-Science-Revision-Guide"
+    },
+    {
+      "id": "ib-cs-notes-paul-baumgarten",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "paul baumgarten's computer science notes",
+      "description": "an extensive resource with notes and exercises on nearly all ib computer science topics, compiled by a long-time ib cs teacher.",
+      "link": "https://www.compstudies.org/ibcs/"
+    },
+    {
+      "id": "cambridge-secondary1-math-specimen-paper-2",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge secondary 1 checkpoint mathematics 1112/02 specimen paper 2",
+      "description": "a 16-page pdf specimen paper for cambridge secondary 1 checkpoint mathematics, paper 2, for examinations from 2014, including various mathematical problems.",
+      "link": "https://www.cambridgeinternational.org/images/82736-maths-specimen-paper-2.pdf"
+    },
+    {
+      "id": "cambridge-lower-secondary-maths-specimen-paper-1",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge lower secondary checkpoint maths - specimen paper 1",
+      "description": "a specimen paper for cambridge lower secondary checkpoint mathematics, paper 1, available with its mark scheme, to aid in revision and exam practice.",
+      "link": "https://www.smarteduhub.com/cambridge-lower-secondary-checkpoint-past-papers"
+    },
+    {
+      "id": "cambridge-igcse-mathematics-0580-past-papers",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "past paper",
+      "title": "cambridge igcse mathematics (0580) past papers",
+      "description": "past papers for cambridge igcse mathematics (0580), a fully examined course encouraging the development of mathematical knowledge as a key life skill.",
+      "link": "https://pastpapers.co/cambridge/igcse/mathematics-0580/"
+    },
+    {
+      "id": "gaokao-2025-math-exam-paper-scribd",
+      "syllabus": "gaokao",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "gaokao 2025 math exam paper (shanghai)",
+      "description": "outlines the instructions and structure for the 2025 national unified examination for enrollment in regular higher education institutions in shanghai, focusing on the mathematics section. topics covered include set theory, sequences, probability, and geometry.",
+      "link": "https://www.scribd.com/document/671607590/Gaokao-2025-Math-Exam-Paper"
+    },
+    {
+      "id": "gaokao-advanced-math-practice-paper-scribd",
+      "syllabus": "gaokao",
+      "subject": "mathematics",
+      "type": "practice paper",
+      "title": "gaokao advanced math practice paper",
+      "description": "an ultra-advanced practice paper with various question types covering calculus, linear algebra, differential equations, and series for the gaokao mathematics exam.",
+      "link": "https://www.scribd.com/document/511391584/Gaokao-Advanced-Math-Practice-Paper"
+    },
+    {
+      "id": "gaokao-math-questions-pdf-2026-july",
+      "syllabus": "gaokao",
+      "subject": "mathematics",
+      "type": "past paper",
+      "title": "gaokao math questions pdf: past papers and practice resources 2026 july",
+      "description": "a resource providing gaokao mathematics questions, pdf past papers, and practice resources for success in the national college entrance examination. papers from 2021 onward are most representative for reformed-curriculum provinces.",
+      "link": "https://www.practicetestgeeks.com/gaokao-math-questions-pdf-past-papers-2026-july/"
+    },
+    {
+      "id": "vce-english-language-program-guide-2026",
+      "syllabus": "vce-hsc",
+      "subject": "english",
+      "type": "curriculum portfolio",
+      "title": "2026 vce english language units 3/4 program guide",
+      "description": "a program guide providing information for vce english language units 3/4, including program details, and essential resources for preparation.",
+      "link": "https://exceleducation.com.au/free-vce-english-language-resources/"
+    },
+    {
+      "id": "vce-english-units-1-2-sample-questions-responses",
+      "syllabus": "vce-hsc",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "free vce english units 1 & 2: sample questions and responses",
+      "description": "a free resource with sample questions and high-scoring responses to boost writing skills for year 11 vce english, covering reading and exploring texts, crafting texts, and exploring argument.",
+      "link": "https://matrix.edu.au/vce-english-resources/free-vce-english-units-1-2-sample-questions-and-responses/"
+    },
+    {
+      "id": "vce-english-resources-atar-notes",
+      "syllabus": "vce-hsc",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "free vce english resources | atar notes",
+      "description": "a free library of notes, flashcards, videos, and articles to master english revision for vce, designed to boost grades and confidence.",
+      "link": "https://atarnotes.com/vce/english/resources/"
+    },
+    {
+      "id": "mit-ocw-single-variable-calc",
+      "syllabus": "ap",
+      "subject": "mathematics",
+      "type": "full course",
+      "title": "mit opencourseware single variable calculus (18.01sc)",
+      "description": "a complete self-study course for single variable calculus, including lectures, assignments, and exams with solutions. designed to support students studying ap calculus.",
+      "link": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/"
+    },
+    {
+      "id": "mit-ocw-multivariable-calc",
+      "syllabus": "ap",
+      "subject": "mathematics",
+      "type": "full course",
+      "title": "mit opencourseware multivariable calculus (18.02sc)",
+      "description": "a comprehensive self-study course in vector and multivariable calculus, with course reader, problem sets, and exams with solutions.",
+      "link": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/"
+    },
+    {
+      "id": "openstax-algebra1",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "openstax algebra 1",
+      "description": "free, standards-aligned high school algebra 1 curriculum covering linear, exponential, and quadratic functions. research-backed and designed for diverse learners.",
+      "link": "https://openstax.org/details/books/algebra-1"
+    },
+    {
+      "id": "ck12-math-flexbooks",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "ck-12 interactive math flexbooks 2.0 (algebra 1, geometry, algebra 2)",
+      "description": "free, online, customizable textbooks aligned with common core standards for middle and high school math, featuring interactives, videos, and adaptive practice.",
+      "link": "https://www.ck12.org/browse/mathematics/"
+    },
+    {
+      "id": "codehs-intro-cs-javascript",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "codehs introduction to computer science in javascript",
+      "description": "free digital computer science textbook for middle and high school, teaching basic programming concepts using javascript with an online ide.",
+      "link": "https://codehs.com/course/4279/textbook/1"
+    },
+    {
+      "id": "codehs-ap-cs-a",
+      "syllabus": "ap",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "codehs ap computer science a textbook",
+      "description": "free digital textbook for ap computer science a, focusing on object-oriented programming, problem-solving, and algorithm development in java.",
+      "link": "https://codehs.com/course/4281/textbook/1"
+    },
+    {
+      "id": "khan-academy-cs-theory",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "full course",
+      "title": "khan academy computer science theory",
+      "description": "explore advanced computer science topics like algorithms, cryptography, and information theory, ideal for learners with some programming background.",
+      "link": "https://www.khanacademy.org/computing/computer-science-theory"
+    },
+    {
+      "id": "british-council-secondary-plus",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "british council secondary plus english course resources",
+      "description": "online learning hub with interactive independent study materials to build english skills and confidence for teenagers (12-17 years), focusing on communication and exam readiness.",
+      "link": "https://www.britishcouncil.org/english/courses-children-teens/secondary-plus"
+    },
+    {
+      "id": "project-gutenberg-high-school-lit",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "textbook",
+      "title": "project gutenberg short stories for high schools",
+      "description": "a collection of classic short stories for high school students, compiled by rosa mary redding mikels, available as a free ebook.",
+      "link": "https://www.gutenberg.org/ebooks/50543"
+    },
+    {
+      "id": "teachers-arena-english-notes",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "free secondary school english revision notes (form 1-4)",
+      "description": "downloadable pdf notes for english language, covering grammar, oral literature, poetry, and functional writing, suitable for secondary school students.",
+      "link": "https://teachersarena.co.ke/free-secondary-school-revision-notes/"
+    },
+    {
+      "id": "mega-lecture-o-level-english",
+      "syllabus": "cambridge",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "o level english language notes 1123",
+      "description": "free downloadable notes covering grammar, vocabulary, and writing techniques to boost english language skills for o level exams.",
+      "link": "https://megalecture.com/o-level-english-language-notes-1123/"
     }
   ],
   "dailyInspiration": {
-    "title": "from misdiagnosis to mit: viraj dhanda's triumph",
-    "story": "viraj dhanda, a 19-year-old nonspeaking autistic student from brookline, defied expectations by gaining admission to the massachusetts institute of technology (mit) for the fall of 2026. for the first 14 years of his life, viraj was mistakenly thought to be intellectually disabled, a misdiagnosis that severely delayed his access to appropriate academic support. despite this, a breakthrough came when he learned to communicate using a tablet with a keyboard, allowing his intelligence and unique voice to emerge. his father, sumit dhanda, initially prepared him for rejection, but an email opening revealed virtual confetti and an acceptance letter to the mit class of 2029, proving all doubts wrong. viraj, who plans to study economics, writing, or become a disability advocate, hopes his journey offers hope to others, demonstrating that 'despite what the experts may have told you,' and 'nothing came easy for us, but we kept fighting our way, until others recognized my potential.' he scored a 35 out of a possible 36 on the math section of the act.",
-    "takeaway": "your voice and potential are limitless, regardless of the labels or challenges you face."
+    "title": "the prodigy who taught himself to code and started a company at 12, now at mit",
+    "story": "ishaan sharma, a self-taught programmer, began his journey into computer science at a remarkably young age. at just 12 years old, driven by an insatiable curiosity and a desire to solve real-world problems, he founded his first tech company. without formal training, ishaan delved into coding languages and developed innovative solutions, demonstrating an extraordinary aptitude for technology and entrepreneurship. his early venture garnered significant attention, showcasing his ability to translate complex ideas into practical applications. this ambition and talent caught the eye of prestigious institutions, leading to his acceptance into the massachusetts institute of technology (mit). his story is a testament to the power of self-learning, relentless dedication, and an entrepreneurial spirit, proving that age is merely a number when passion fuels purpose.",
+    "takeaway": "passion, self-education, and perseverance can unlock extraordinary achievements at any age."
   }
 }
