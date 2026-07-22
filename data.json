@@ -2539,24 +2539,6 @@
       "link": "https://internationalstudentscompetition.org/competition/international-changemakers-essay-competition-2026/"
     },
     {
-      "id": "isyf-2026",
-      "type": "conference",
-      "title": "international science youth forum (isyf) 2026",
-      "shortDesc": "a global platform for secondary school students to share their passion for science, technology, and research.",
-      "fullDetails": "the 18th international science youth forum (isyf) will be held from january 5 to 9, 2026, at hwa chong institution, singapore. the theme for 2026 is 'curiosity unlocked: how questions drive discovery in the age of ai'. it offers inspiring lectures, research exchanges, hands-on experiments, thought-provoking discussions, and cultural activities. participants will engage with scientific discovery and build international friendships. the forum aims to nurture young scientists who value questions as much as answers.",
-      "category": "academic",
-      "interest": "stem & research",
-      "minAge": 13,
-      "maxAge": 18,
-      "deadline": "2025-xx-xx",
-      "eventDate": "2026-01-05",
-      "location": "singapore",
-      "prizes": "certificates of participation",
-      "rounds": "n/a",
-      "fee": "specified on official website",
-      "link": "https://isyf.hci.sg/"
-    },
-    {
       "id": "eucys-2026",
       "type": "competition",
       "title": "european union contest for young scientists (eucys) 2026",
@@ -2609,6 +2591,132 @@
       "rounds": "one",
       "fee": "specified on official website (registration is online)",
       "link": "https://geniuscerebrum.com/"
+    },
+    {
+      "id": "sof-ieo-2026",
+      "type": "competition",
+      "title": "sof international english olympiad (ieo) 2026-27",
+      "shortdesc": "an olympiad fostering english language proficiency and general english knowledge among school students.",
+      "fulldetails": "the sof ieo is an objective-type test conducted at participating schools, designed to assess students' english language skills. it features two levels for students from classes 3 to 12. schools can select one of three available dates for the exam. registration is conducted through schools, with a deadline 30 days prior to the chosen exam date.",
+      "category": "academic",
+      "interest": "english language, grammar, vocabulary, reading",
+      "minage": 6,
+      "maxage": 18,
+      "deadline": "30 days before selected exam date",
+      "eventdate": "2026-09-30, 2026-10-27, or 2026-11-17",
+      "location": "participating schools",
+      "prizes": "medals, certificates, scholarships (for top performers).",
+      "rounds": "2 levels for classes 3-12.",
+      "fee": "inr 170 (india, bhutan, nepal) or usd 9 (international students) per olympiad.",
+      "link": "https://www.sofworld.org/"
+    },
+    {
+      "id": "sof-iso-2026",
+      "type": "competition",
+      "title": "sof international science olympiad (iso) 2026-27",
+      "shortdesc": "a science olympiad designed to assess conceptual understanding, analytical thinking, and problem-solving skills in science.",
+      "fulldetails": "the sof iso is an objective-type test conducted within school premises. it is open to students from classes 1 to 12 and includes two levels of examination for grades 3-12. schools choose one of the provided dates for the examination, and registration is handled by the schools, closing 30 days before the chosen date.",
+      "category": "academic",
+      "interest": "science, physics, chemistry, biology",
+      "minage": 6,
+      "maxage": 18,
+      "deadline": "30 days before selected exam date",
+      "eventdate": "2026-10-30, 2026-11-19, or 2026-12-03",
+      "location": "participating schools",
+      "prizes": "medals, certificates, scholarships (for top performers).",
+      "rounds": "2 levels for classes 3-12.",
+      "fee": "inr 170 (india, bhutan, nepal) or usd 9 (international students) per olympiad.",
+      "link": "https://www.sofworld.org/"
+    },
+    {
+      "id": "sof-icso-2026",
+      "type": "competition",
+      "title": "sof international computer science olympiad (icso) 2026-27",
+      "shortdesc": "an olympiad focused on popularising computer education and assessing computing skills among students.",
+      "fulldetails": "the sof icso is a single-level, objective-type examination conducted at schools. it is open to students from classes 1 to 10. schools register their students, with a deadline of 30 days before the chosen exam date. the competition aims to enhance students' knowledge and understanding of computer science concepts.",
+      "category": "academic",
+      "interest": "computer science, coding, logic",
+      "minage": 6,
+      "max-age": 16,
+      "deadline": "30 days before selected exam date",
+      "eventdate": "2026-09-24 or 2026-12-17",
+      "location": "participating schools",
+      "prizes": "medals, certificates, scholarships (for top performers).",
+      "rounds": "1 (single level exam).",
+      "fee": "inr 170 (india, bhutan, nepal) or usd 9 (international students) per olympiad.",
+      "link": "https://www.sofworld.org/"
+    },
+    {
+      "id": "sof-imo-2026",
+      "type": "competition",
+      "title": "sof international mathematics olympiad (imo) 2026-27",
+      "shortdesc": "a prestigious school-level math competition testing mathematical reasoning, logical thinking, and application skills.",
+      "fulldetails": "the sof imo is an objective-type test for students in classes 1 to 12. it assesses mathematical reasoning, logical thinking, and the ability to apply concepts. it is a two-level exam for classes 3-12. registration is school-based, and schools must submit entries at least 30 days before their chosen exam date.",
+      "category": "academic",
+      "interest": "mathematics, problem-solving, logical thinking",
+      "minage": 6,
+      "maxage": 18,
+      "deadline": "30 days before selected exam date",
+      "eventdate": "2026-10-23, 2026-11-26, or 2026-12-10",
+      "location": "participating schools",
+      "prizes": "cash scholarships, medals, and national/international recognition.",
+      "rounds": "2 levels for classes 3-12.",
+      "fee": "inr 125 (indian students) or usd 9 (international students) per olympiad.",
+      "link": "https://www.sofworld.org/"
+    },
+    {
+      "id": "hippo-the-contest-2026",
+      "type": "competition",
+      "title": "hippo the contest 2026",
+      "shortdesc": "a prestigious international english language competition promoting english proficiency, global unity, and cultural exchange.",
+      "fulldetails": "the 14th edition of hippo the contest is open to non-native english speakers aged 6 to 19, divided into 12 categories based on cefr standards. it consists of preliminary, national final, and world final rounds. the preliminary round includes reading comprehension and use of english multiple-choice tests. the national final round includes reading, writing, and essay tests. the world finals will be held in spoleto, italy.",
+      "category": "academic",
+      "interest": "english language, cefr, reading, writing, grammar",
+      "minage": 6,
+      "max-age": 19,
+      "deadline": "2026-04-24 (group registration, past); preliminary rounds vary by country.",
+      "eventdate": "2026-09-28 to 2026-10-01 (world finals).",
+      "location": "international (preliminary/national), spoleto, italy (world finals).",
+      "prizes": "not explicitly detailed in snippets (focus on experience, friendships, and developing skills), but global finalists attend in italy.",
+      "rounds": "3 stages (preliminary, national final, world final).",
+      "fee": "not explicitly stated (schools apply through country coordinator).",
+      "link": "https://www.cayacademy.com/hippo-english-without-borders-the-contest-2026"
+    },
+    {
+      "id": "oxford-said-climate-tech-2026",
+      "type": "competition",
+      "title": "oxford saïd global climate tech challenge 2026",
+      "shortDesc": "a global innovation challenge inviting high school students to tackle climate change with technology.",
+      "fullDetails": "the oxford saïd global climate tech challenge 2026 invites high school students and teachers worldwide to develop bold, practical, tech-driven solutions to the climate crisis. entry is completely free. shortlisted student teams and their teachers will receive an all-expenses-paid trip to oxford in october 2026. the winning student team will receive a full scholarship to a youth education summer school, and the winning teacher will earn a place on an oxford executive education programme. teams of 3-5 students aged 15-18 are required to submit a ten-page powerpoint presentation (as pdf) and a video up to three minutes. the challenge aims to foster problem-solving, teamwork, and ethical thinking.",
+      "category": "innovation",
+      "interest": "stem, environmental science, technology, computer science",
+      "minAge": 15,
+      "maxAge": 18,
+      "deadline": "2026-xx-xx",
+      "eventDate": "2026-10-xx",
+      "location": "online (submission), oxford, uk (finalist trip)",
+      "prizes": "full scholarship to youth education summer school, place on oxford executive education programme for teacher, all-expenses-paid trip to oxford.",
+      "rounds": "online submission, followed by presentation at innovation summit for finalists.",
+      "fee": "free",
+      "link": "https://www.sbs.ox.ac.uk/programmes/oxford-said-global-climate-tech-challenge-2026"
+    },
+    {
+      "id": "science-without-borders-2026",
+      "type": "competition",
+      "title": "science without borders® challenge 2026",
+      "shortDesc": "an international art competition for students inspired by microscopic marine life.",
+      "fullDetails": "the science without borders® challenge 2026 invites students aged 11–19 from around the world to create original art inspired by microscopic marine life. these tiny organisms are crucial for producing oxygen, supporting ocean food webs, and regulating earth's climate. entry to the competition is free, and scholarships of up to $500 are awarded to winning entries. the deadline for submission is march 2, 2026, at 11:59 pm et. free classroom resources are also available for teachers.",
+      "category": "art",
+      "interest": "environmental science, art, ocean literacy",
+      "minAge": 11,
+      "maxAge": 19,
+      "deadline": "2026-03-02",
+      "eventDate": "2026-xx-xx",
+      "location": "online",
+      "prizes": "scholarships up to $500.",
+      "rounds": "single round (art submission).",
+      "fee": "free",
+      "link": "https://lof.org/swbchallenge"
     }
   ],
   "studyResources": [
@@ -4952,11 +5060,155 @@
       "title": "o level english language notes 1123",
       "description": "free downloadable notes covering grammar, vocabulary, and writing techniques to boost english language skills for o level exams.",
       "link": "https://megalecture.com/o-level-english-language-notes-1123/"
+    },
+    {
+      "id": "mathplanet-high-school-math",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "mathplanet: study math for free",
+      "description": "free online high school math courses including pre-algebra, algebra 1, algebra 2, and geometry. includes explanations, examples, and practice problems.",
+      "link": "https://www.mathplanet.com/"
+    },
+    {
+      "id": "mathmedic-hs-math",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "curriculum portfolio",
+      "title": "math medic: free discovery-based high school math curriculum",
+      "description": "provides free, discovery-based math lessons for high school teachers, assessments, and classroom-ready resources. aims for deep understanding over rote memorization.",
+      "link": "https://mathmedic.com/"
+    },
+    {
+      "id": "desmos-math-tools",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "desmos: free online math tools and interactive lessons",
+      "description": "offers free online four-function, scientific, and graphing calculators, along with a wide variety of full interactive, game-like math lessons for high school students.",
+      "link": "https://www.desmos.com/"
+    },
+    {
+      "id": "collegeboard-ap-compsci-a",
+      "syllabus": "ap",
+      "subject": "computer science",
+      "type": "curriculum portfolio",
+      "title": "ap computer science a course and exam description",
+      "description": "official college board pdf outlining the ap computer science a curriculum, including learning objectives, unit guides, and exam information. essential for course preparation.",
+      "link": "https://apcentral.collegeboard.org/courses/ap-computer-science-a/course-exam-description"
+    },
+    {
+      "id": "collegeboard-ap-english-lit",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "curriculum portfolio",
+      "title": "ap english literature and composition course and exam description",
+      "description": "official college board pdf detailing the ap english literature and composition curriculum, including literary analysis, writing skills, and exam format.",
+      "link": "https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/course-exam-description"
+    },
+    {
+      "id": "collegeboard-ap-calculus-ab",
+      "syllabus": "ap",
+      "subject": "mathematics",
+      "type": "curriculum portfolio",
+      "title": "ap calculus ab and bc course and exam description",
+      "description": "official college board pdf outlining the ap calculus ab and bc curriculum, including units, topics, and exam structure. provides guidance for both students and teachers.",
+      "link": "https://apcentral.collegeboard.org/courses/ap-calculus-ab-and-bc/course-exam-description"
+    },
+    {
+      "id": "cambridge-math-0580-notes-znotes",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "igcse maths notes (znotes)",
+      "description": "condensed topic summaries for cambridge igcse mathematics (0580), ideal for a first pass before past papers.",
+      "link": "https://www.znotes.org"
+    },
+    {
+      "id": "cambridge-math-learner-guides",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "cambridge learner guides for igcse mathematics",
+      "description": "free pdfs explaining examiner expectations and providing guidance for cambridge igcse mathematics.",
+      "link": "https://www.cambridgeinternational.org"
+    },
+    {
+      "id": "cambridge-cs-0478-past-papers-papacambridge",
+      "syllabus": "cambridge",
+      "subject": "computer science",
+      "type": "specimen paper",
+      "title": "cambridge igcse computer science 0478 past papers",
+      "description": "latest past papers, syllabus, specimens, question papers, and marking schemes for cambridge igcse computer science 0478. available from 2002 up to the latest session in pdf format for free.",
+      "link": "https://www.papacambridge.com/cie/cambridge-igcse/computer-science-0478/"
+    },
+    {
+      "id": "ib-cs-sl-resources-knowt",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "study guide",
+      "title": "free ib computer science (sl) resources for 2026",
+      "description": "study guides, flashcards, and other resources for ib computer science (sl), including topics like system fundamentals, computer organization, and computational thinking.",
+      "link": "https://www.knowt.com/notes/ib/computer-science-sl"
+    },
+    {
+      "id": "ap-english-lit-frqs-num8ers",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "ap english literature & composition frqs | official past papers",
+      "description": "access free-response question papers, scoring guidelines, chief reader reports, and sample responses for ap english literature & composition from 2023-2025.",
+      "link": "https://www.num8ers.com/ap/english/literature/frqs"
+    },
+    {
+      "id": "ap-english-lit-past-exams-gradgpt",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "ap english literature past exams 2026",
+      "description": "ap english literature past exam practice papers, including how to use ap-style frqs and where to find released exam pdfs to train timing and structure.",
+      "link": "https://gradgpt.com/ap-english-literature-past-exams/"
+    },
+    {
+      "id": "ap-cs-principles-code.org",
+      "syllabus": "ap",
+      "subject": "computer science",
+      "type": "curriculum",
+      "title": "computer science principles (code.org)",
+      "description": "a free year-long curriculum introducing foundational concepts of computer science and exploring computing's impact on the world. can be taught as an introductory or ap course.",
+      "link": "https://code.org/curriculum/cs-principles"
+    },
+    {
+      "id": "national-math-medic-curriculum",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "curriculum",
+      "title": "math medic | free discovery-based high school math curriculum",
+      "description": "free, discovery-based math lessons for high school teachers, with daily lesson plans and in-class activities for algebra 1, geometry, algebra 2, precalculus, and statistics.",
+      "link": "https://mathmedic.com"
+    },
+    {
+      "id": "national-cs-mit-python-course",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "online course",
+      "title": "mit's introduction to computer science and programming using python",
+      "description": "an ideal starting point for high school students new to programming, teaching fundamental computer science concepts through python 3.5, computational thinking, and problem-solving.",
+      "link": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/"
+    },
+    {
+      "id": "national-english-bbc-learning",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "online platform",
+      "title": "bbc learning english",
+      "description": "provides free, high-quality resources suitable for secondary learners, focusing on practical english for speaking, listening, reading, and writing.",
+      "link": "https://www.bbc.co.uk/learningenglish"
     }
   ],
   "dailyInspiration": {
-    "title": "the prodigy who taught himself to code and started a company at 12, now at mit",
-    "story": "ishaan sharma, a self-taught programmer, began his journey into computer science at a remarkably young age. at just 12 years old, driven by an insatiable curiosity and a desire to solve real-world problems, he founded his first tech company. without formal training, ishaan delved into coding languages and developed innovative solutions, demonstrating an extraordinary aptitude for technology and entrepreneurship. his early venture garnered significant attention, showcasing his ability to translate complex ideas into practical applications. this ambition and talent caught the eye of prestigious institutions, leading to his acceptance into the massachusetts institute of technology (mit). his story is a testament to the power of self-learning, relentless dedication, and an entrepreneurial spirit, proving that age is merely a number when passion fuels purpose.",
-    "takeaway": "passion, self-education, and perseverance can unlock extraordinary achievements at any age."
+    "title": "the quantum leap: jacob barnett's journey from autism to astrophysics prodigy",
+    "story": "jacob barnett's story is a remarkable testament to the power of human potential and supportive parenting. diagnosed with moderate to severe autism at age two, doctors told his parents he might never talk, read, or perform basic daily tasks. however, his mother, kristine barnett, fostered his exceptional intellectual capabilities by nurturing his interests. jacob began auditing classes on condensed matter physics at indiana university-purdue university indianapolis at just 8 years old. by age 10, he had self-taught all high school math in two weeks. at 12, he published his first research paper in physical review a, and by 13, he started his master's degree in theoretical physics. at 15, he was accepted to the prestigious perimeter institute, specializing in loop quantum gravity and quantum foundations. his estimated iq of 170 is believed to be higher than albert einstein's, challenging societal narratives around autism and exemplifying how perceived limitations can be overcome and redefined through determination and a tailored learning environment.",
+    "takeaway": "true genius blossoms when unique strengths are nurtured, proving that perceived limitations are merely starting points for extraordinary achievements."
   }
 }
