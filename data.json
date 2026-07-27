@@ -2717,6 +2717,78 @@
       "rounds": "single round (art submission).",
       "fee": "free",
       "link": "https://lof.org/swbchallenge"
+    },
+    {
+      "id": "nmc-2026",
+      "type": "competition",
+      "title": "national mathematics competition (nmc) 2026",
+      "shortDesc": "an in-person national mathematics competition for students in grades 4-11, offering cash prizes.",
+      "fullDetails": "the 2026 national mathematics competition will be held in-person on saturday, april 18, 2026. it targets students from grades 4th to 11th. top-scoring participants will be invited to the hanwha math olympiad (hmo) in may 2026, which awards various scholarships. cash prizes totaling $1,000 are distributed among the top three performers in each grade category.",
+      "category": "academic",
+      "interest": "mathematics",
+      "minAge": 9,
+      "maxAge": 16,
+      "deadline": "2026-04-18 (assumed, registration details not specified but event is on this date)",
+      "eventDate": "2026-04-18",
+      "location": "on-site (details not fully specified, but implies regional/national test centers)",
+      "prizes": "cash prizes up to $1,000 for top three, invitation to hanwha math olympiad with scholarships.",
+      "rounds": "1 (on-site examination)",
+      "fee": "not specified, likely a registration fee",
+      "link": "https://www.kseany.org/archives/1429"
+    },
+    {
+      "id": "international-olympiad-informatics-2026",
+      "type": "competition",
+      "title": "international olympiad in informatics (ioi)",
+      "shortDesc": "the most prestigious computer science competition globally for secondary school and high school students.",
+      "fullDetails": "the 38th ioi will focus on algorithmic problem solving, data structures, speed, and efficiency. students qualify through national olympiads. it will be held in tashkent, uzbekistan. participants are challenged to solve complex computational problems.",
+      "category": "academic",
+      "interest": "computer science & programming",
+      "minAge": 14,
+      "maxAge": 18,
+      "deadline": "2026-08-08",
+      "eventDate": "2026-08-09",
+      "location": "tashkent, uzbekistan",
+      "prizes": "medals (gold, silver, bronze) and international recognition.",
+      "rounds": "national qualification rounds, leading to the international competition.",
+      "fee": "typically free for qualified national team members.",
+      "link": "https://ioi2026.uz/"
+    },
+    {
+      "id": "vex-robotics-world-championship-2026",
+      "type": "competition",
+      "title": "vex robotics world championship (vex v5 robotics competition)",
+      "shortDesc": "a global robotics competition where high school students design, build, and program industrial-sized robots to compete in a game.",
+      "fullDetails": "teams work with a kit of parts to create robots for an action-packed game. the competition fosters engineering, programming, and teamwork skills through a three-team alliance format. adult mentors guide the teams, who also develop a team identity and conduct fundraising.",
+      "category": "stem",
+      "interest": "robotics & engineering",
+      "minAge": 14,
+      "maxAge": 18,
+      "deadline": "2026-04-20",
+      "eventDate": "2026-04-21",
+      "location": "usa (exact city to be confirmed, often a major convention center)",
+      "prizes": "trophies, awards, and recognition for design, performance, and teamwork.",
+      "rounds": "multiple regional, state, and national qualification events leading to the world championship.",
+      "fee": "team registration fees, robot kit costs, and travel expenses are typically involved.",
+      "link": "https://www.roboticseducation.org/competition/#vex-robotics-competition"
+    },
+    {
+      "id": "zero-robotics-high-school-2026",
+      "type": "competition",
+      "title": "zero robotics high school program",
+      "shortDesc": "an international robotics programming competition where high school students program sphetes (spherical robots) on the international space station.",
+      "fullDetails": "teams write code to control robotic satellites in a game simulation. the program includes stages for game concept release, code development, checkpoint submissions, alliance formation, and virtual or in-person finals. the finals are streamed live from mit.",
+      "category": "stem",
+      "interest": "computer science & space robotics",
+      "minAge": 14,
+      "maxAge": 18,
+      "deadline": "2026-02-13",
+      "eventDate": "2026-01-12",
+      "location": "online (gameplay), mit (finals event, with viewing parties)",
+      "prizes": "not explicitly detailed, but includes prestige of competing and reaching finals at mit.",
+      "rounds": "multiple stages of code submission and competition, including checkpoint rounds and alliances.",
+      "fee": "not explicitly stated, but typically free for participating teams, with potential costs for travel to viewing parties/finals.",
+      "link": "https://zerorobotics.mit.edu/hs/current-game/"
     }
   ],
   "studyResources": [
@@ -5204,11 +5276,164 @@
       "title": "bbc learning english",
       "description": "provides free, high-quality resources suitable for secondary learners, focusing on practical english for speaking, listening, reading, and writing.",
       "link": "https://www.bbc.co.uk/learningenglish"
+    },
+    {
+      "id": "ib-compsci-notes-baumgarten",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "paul baumgarten's ib computer science notes",
+      "description": "exhaustive and detailed notes covering the entire ib computer science sl and hl curriculum. considered a 'holy grail' for ib computer science students.",
+      "link": "https://www.compscihub.net/ib-computer-science-wiki"
+    },
+    {
+      "id": "ap-lit-essay-template-litmore",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "ap english literature essay brainstorming sheet & template",
+      "description": "a printable template to guide ap english literature students in brainstorming and preparing high-scoring essays. includes sections for claims, complexity, ape paragraph structure, and line of reasoning.",
+      "link": "https://litandmore.org/free-resource-library/"
+    },
+    {
+      "id": "spm-math-trial-edukaji",
+      "syllabus": "spm",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "spm mathematics trial papers (with answer schemes) - edukaji",
+      "description": "downloadable past spm trial papers with answer schemes from various states of malaysia (since 2021). offers questions similar to the actual spm exam, aiding in preparation.",
+      "link": "https://www.edukaji.my/spm-trial-paper/"
+    },
+    {
+      "id": "cbse-english-revision-learncbse",
+      "syllabus": "cbse",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "cbse english revision notes & summary pdf (class 1-12)",
+      "description": "free downloadable pdfs of english revision notes and chapter summaries for cbse students from class 1 to 12. prepared by subject experts to strengthen concepts and assist in board exam preparation.",
+      "link": "https://www.learncbse.in/cbse-english-notes/"
+    },
+    {
+      "id": "vce-math-methods-vcerocks",
+      "syllabus": "vce-hsc",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "vce.rocks free vce resources (mathematics methods)",
+      "description": "a collection of free vce resources, including worked solutions and study guides for vce mathematics methods. aims to provide equal access to high-quality study materials for victorian students.",
+      "link": "https://freeforvce.com/vce-subjects/"
+    },
+    {
+      "id": "canadian-cs-principles-codeorg",
+      "syllabus": "canadian",
+      "subject": "computer science",
+      "type": "curriculum portfolio",
+      "title": "code.org computer science principles curriculum",
+      "description": "a free year-long curriculum that introduces students to foundational concepts of computer science, exploring how computing and technology impact the world. can be taught as an introductory class or an ap course, aligning with high school standards.",
+      "link": "https://code.org/cs-principles"
+    },
+    {
+      "id": "gaokao-math-english-practice",
+      "syllabus": "gaokao",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "gaokao practice test exam questions & solutions",
+      "description": "a guide to understanding gaokao exam questions with links to practice questions across major subjects including mathematics and english, reflecting question formats and difficulty levels of china's national college entrance examination.",
+      "link": "https://gaokao.ai/gaokao-practice-test"
+    },
+    {
+      "id": "openstax-math-hs-textbooks",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "openstax k12 mathematics textbooks",
+      "description": "a collection of free, peer-reviewed digital textbooks covering various high school mathematics topics including algebra and calculus, with accompanying instructor resources.",
+      "link": "https://openstax.org/k12/subjects/math"
+    },
+    {
+      "id": "knowt-ib-cs-sl-study-guides",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "study guide",
+      "title": "free ib computer science (sl) study guides & flashcards",
+      "description": "in-depth study guides and flashcards covering all ib computer science (sl) units, including system fundamentals, computer organization, networks, computational thinking, databases, and oop. also offers mock exams.",
+      "link": "https://knowt.com/hub/ib/computer-science-sl"
+    },
+    {
+      "id": "code-org-hs-cs-curricula",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "curriculum portfolio",
+      "title": "code.org computer science discoveries, principles, and a curricula",
+      "description": "free, year-long curricula for grades 6-12, introducing foundational computer science concepts, web/app development, java programming (ap cs a), and artificial intelligence. flexible for classroom use.",
+      "link": "https://code.org/curriculum/high-school"
+    },
+    {
+      "id": "khan-academy-cs-courses",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "khan academy computer science courses",
+      "description": "a free online library of computer science courses for students aged 12 and up, covering topics from internet basics and cryptography to programming theory, html, css, and javascript.",
+      "link": "https://www.khanacademy.org/computing/computer-science"
+    },
+    {
+      "id": "cbse-class-10-cs-notes-studiestoday",
+      "syllabus": "cbse",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "cbse class 10 computer science foundation of information technology notes",
+      "description": "free study notes, worksheets, assignments, and solved question papers for cbse class 10 computer science, covering topics like digital documentation, electronic spreadsheets, and rdbms, aligned with the updated syllabus.",
+      "link": "https://www.studiestoday.com/cbse/class-10/computer-science/"
+    },
+    {
+      "id": "gaokao-math-past-papers-2026",
+      "syllabus": "gaokao",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "free gaokao mathematics practice questions & past papers",
+      "description": "over 140 free practice questions and past papers for the china national college entrance examination (gaokao) mathematics section, available in pdf format, covering algebra, geometry, calculus, and more.",
+      "link": "https://practice-test-geeks.com/gaokao-math-questions-pdf/"
+    },
+    {
+      "id": "spm-english-1119-revision-guide",
+      "syllabus": "spm",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "english spm 1119 revision guide",
+      "description": "a free downloadable powerpoint/pdf document providing revision tips for spm english paper 1 and 2, focusing on directed writing formats, continuous writing techniques, and vocabulary for malaysian students.",
+      "link": "https://www.scribd.com/document/540502013/English-SPM-1119-Revision-Guide"
+    },
+    {
+      "id": "ap-english-lit-free-syllabus-2026",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "curriculum portfolio",
+      "title": "ap english literature and composition full-year syllabus (2025-2026)",
+      "description": "a free, editable year-long syllabus for ap english literature and composition, featuring 10 units on works of literary merit by diverse authors, updated for the 2025-2026 school year.",
+      "link": "https://www.teacherspayteachers.com/Product/AP-Literature-Composition-FULL-YEAR-Curriculum-EDITABLE-AP-Lit-Course-Bundle-5136868"
+    },
+    {
+      "id": "knowt-ap-english-lit-study-guides",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "study guide",
+      "title": "free ap english literature and composition resources",
+      "description": "in-depth study guides, flashcards, and practice frq questions for all ap english literature units, including character, setting, poetic structure, narrative, and thematic development, with personalized feedback.",
+      "link": "https://knowt.com/hub/ap/english-literature-and-composition"
+    },
+    {
+      "id": "open-textbook-library-maths-secondary",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "teaching mathematics at secondary level",
+      "description": "an open-access handbook for teachers to broaden and enrich students' mathematical education (ages 11-14, key stage 3), focusing on central principles and concepts in number, algebra, geometry, probability, and statistics.",
+      "link": "https://open.umn.edu/opentextbooks/textbooks/teaching-mathematics-at-secondary-level"
     }
   ],
   "dailyInspiration": {
-    "title": "the quantum leap: jacob barnett's journey from autism to astrophysics prodigy",
-    "story": "jacob barnett's story is a remarkable testament to the power of human potential and supportive parenting. diagnosed with moderate to severe autism at age two, doctors told his parents he might never talk, read, or perform basic daily tasks. however, his mother, kristine barnett, fostered his exceptional intellectual capabilities by nurturing his interests. jacob began auditing classes on condensed matter physics at indiana university-purdue university indianapolis at just 8 years old. by age 10, he had self-taught all high school math in two weeks. at 12, he published his first research paper in physical review a, and by 13, he started his master's degree in theoretical physics. at 15, he was accepted to the prestigious perimeter institute, specializing in loop quantum gravity and quantum foundations. his estimated iq of 170 is believed to be higher than albert einstein's, challenging societal narratives around autism and exemplifying how perceived limitations can be overcome and redefined through determination and a tailored learning environment.",
-    "takeaway": "true genius blossoms when unique strengths are nurtured, proving that perceived limitations are merely starting points for extraordinary achievements."
+    "title": "the kumaran brothers: india's youngest app developers",
+    "story": "shravan kumaran, born in 1999, and his younger brother sanjay kumaran, born in 2001, from chennai, india, embarked on an extraordinary entrepreneurial journey at the tender ages of 12 and 10 respectively. in 2011, they founded their mobile application development company, godimensions, initially as a hobby. they quickly gained recognition after releasing their first popular app, 'catch me cop,' a game that garnered over 2,000 downloads in its first month. by 2012, they were recognized as india's youngest ceos by the confederation of indian industry. these self-taught coders, proficient in languages like java and objective c, developed multiple apps for both apple and android platforms, accumulating over 70,000 downloads across 53 countries for their 12 applications, many of which aimed to solve social problems in india. their father, kumaran surendran, provided crucial financial and mentoring support, fostering an environment that allowed them to pursue their technological aspirations and even expand into creating a virtual reality device, govr, and working on projects like gomap for live traffic and pollution information. their dedication and innovative spirit earned them numerous awards and established them as inspiring role models for young entrepreneurs worldwide.",
+    "takeaway": "age is merely a number when ambition, curiosity, and supportive environments ignite a passion for innovation."
   }
 }
