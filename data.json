@@ -2789,6 +2789,78 @@
       "rounds": "multiple stages of code submission and competition, including checkpoint rounds and alliances.",
       "fee": "not explicitly stated, but typically free for participating teams, with potential costs for travel to viewing parties/finals.",
       "link": "https://zerorobotics.mit.edu/hs/current-game/"
+    },
+    {
+      "id": "lumiere-essay-2026",
+      "type": "competition",
+      "title": "lumiere scholars essay award",
+      "shortDesc": "an international essay competition for high school students.",
+      "fullDetails": "this award distributes over $11,000 in cash and scholarships. it is open to international students aged 14-18 and focuses on academic writing and critical analysis. it is generally free to enter.",
+      "category": "academic",
+      "interest": "academic writing, critical analysis",
+      "minAge": 14,
+      "maxAge": 18,
+      "deadline": "2026-04-26",
+      "eventDate": "2026-xx-xx",
+      "location": "online",
+      "prizes": "over $11,000 in cash and scholarships",
+      "rounds": "single submission",
+      "fee": "free",
+      "link": "https://www.lumiereeducation.com/scholars-program/essay-award/"
+    },
+    {
+      "id": "atlas-shrugged-essay-2026",
+      "type": "competition",
+      "title": "atlas shrugged – essay contest",
+      "shortDesc": "a global essay contest based on ayn rand's novel 'atlas shrugged'.",
+      "fullDetails": "the atlas shrugged novel essay contest is open to all students globally. participants choose a prompt and write an 800-1,600 word essay. the ayn rand institute holds two other contests covering rand's work with deadlines in 2026. it's an opportunity for students to showcase their writing and critical thinking skills on philosophical themes.",
+      "category": "academic",
+      "interest": "writing, literature, philosophy, critical thinking",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2026-01-31",
+      "eventDate": "2026-xx-xx",
+      "location": "online (global)",
+      "prizes": "not specified in snippets, but similar contests often offer cash prizes or scholarships.",
+      "rounds": "single essay submission",
+      "fee": "not specified, but many essay contests are free",
+      "link": "https://www.aynrand.org/students/essay-contests"
+    },
+    {
+      "id": "world-historian-essay-2026",
+      "type": "competition",
+      "title": "world historian student essay competition",
+      "shortDesc": "an international essay contest focused on world history.",
+      "fullDetails": "this international contest is open to students enrolled in grades k through 12. participants write an essay addressing one of two prompts related to world history. a $500 prize is awarded.",
+      "category": "academic",
+      "interest": "history, writing, critical analysis",
+      "minAge": 5,
+      "maxAge": 18,
+      "deadline": "2026-05-01",
+      "eventDate": "2026-xx-xx",
+      "location": "online (international)",
+      "prizes": "$500 prize",
+      "rounds": "single essay submission",
+      "fee": "not specified, but often free",
+      "link": "https://www.worldhistory.org/essay-contest/"
+    },
+    {
+      "id": "john-estey-writing-2026",
+      "type": "competition",
+      "title": "john estey student writing competition",
+      "shortDesc": "a writing competition inspired by the declaration of independence for u.s. students.",
+      "fullDetails": "this competition for u.s. students (grades 3-12) uses a quote from the declaration of independence as a prompt for fiction or nonfiction stories, poems, songs, or short monologues, under 1,000 words. high school winners receive $2,000. submission deadline is june 3, 2026.",
+      "category": "academic",
+      "interest": "writing, history, civics, creative expression",
+      "minAge": 8,
+      "maxAge": 18,
+      "deadline": "2026-06-03",
+      "eventDate": "2026-xx-xx",
+      "location": "online (u.s. based)",
+      "prizes": "$2,000 for high school winners",
+      "rounds": "single submission",
+      "fee": "not specified, implies free as intent to participate form is mentioned",
+      "link": "https://americanwritersmuseum.org/learn/student-writing-competition/"
     }
   ],
   "studyResources": [
@@ -5429,11 +5501,128 @@
       "title": "teaching mathematics at secondary level",
       "description": "an open-access handbook for teachers to broaden and enrich students' mathematical education (ages 11-14, key stage 3), focusing on central principles and concepts in number, algebra, geometry, probability, and statistics.",
       "link": "https://open.umn.edu/opentextbooks/textbooks/teaching-mathematics-at-secondary-level"
+    },
+    {
+      "id": "code-org-cs-a",
+      "syllabus": "ap",
+      "subject": "computer science",
+      "type": "curriculum",
+      "title": "code.org computer science a (java)",
+      "description": "a free curriculum introducing students to software engineering, object-oriented design, and the java programming language for ap computer science a (ap csa). suitable for grades 9-12.",
+      "link": "https://code.org/educate/csa"
+    },
+    {
+      "id": "ib-cs-revision-guide",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "ib computer science study and revision guide - standard level",
+      "description": "a comprehensive guide outlining key concepts and exam questions across ib computer science topics, including system fundamentals, computer organization, networks, and applications.",
+      "link": "https://www.scribd.com/document/422203022/ib-computer-science-study-and-revision-guide-standard-level-ib-simplify-2019"
+    },
+    {
+      "id": "ap-english-lit-frq-past-papers",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "ap english literature & composition free-response questions (frqs)",
+      "description": "official past free-response questions from ap english literature and composition exams (2023-2025 and earlier), including poetry analysis, prose fiction analysis, and literary argument essays. available with scoring guidelines and sample responses.",
+      "link": "https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/exam/past-exam-questions"
+    },
+    {
+      "id": "ib-cs-diploma-textbook",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "core computer science for the ib diploma program",
+      "description": "a free, downloadable textbook resource for the international baccalaureate diploma programme in computer science, covering the essential curriculum.",
+      "link": "https://archive.org/details/core-computer-science-for-the-ib-diploma-program"
+    },
+    {
+      "id": "cambridge-maths-igcse-past-papers",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge igcse mathematics 0580 past papers and mark schemes",
+      "description": "free past papers and mark schemes for cambridge igcse mathematics (0580), organized by year. includes resources for both core and extended candidates, with syllabus changes noted from june 2025.",
+      "link": "https://www.papacambridge.com/cie/igcse/mathematics-0580/past-papers/"
+    },
+    {
+      "id": "ib-computer-science-notes-hl-sl",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "free ib dp computer science study notes & practice",
+      "description": "comprehensive study notes and practice materials for ib diploma programme computer science (hl/sl). covers system fundamentals, computer organization, networks, computational thinking, abstract data structures, resource management, control, databases, modeling, web science, and object-oriented programming. also includes exam blueprints and ia requirement checklists.",
+      "link": "https://www.thinka.ai/ib-dp-computer-science"
+    },
+    {
+      "id": "ap-english-literature-curriculum-guide",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "curriculum portfolio",
+      "title": "free ap english literature and composition syllabus & resources",
+      "description": "a free, year-long syllabus for ap english literature and composition, updated for 2025-2026. features 10 units on works of literary merit by diverse authors, frequently appearing on the ap exam. also includes essay brainstorming sheets, templates, and general teacher resources for lessons, prompts, and passages.",
+      "link": "https://www.teacherspayteachers.com/product/ap-literature-composition-full-year-curriculum-editable-ap-lit-course-bundle-3929424"
+    },
+    {
+      "id": "spm-additional-mathematics-notes",
+      "syllabus": "spm",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "spm additional mathematics form 4 & 5 notes and formulas",
+      "description": "short notes and formulas for spm additional mathematics, covering topics like circular measure, differentiation, integration, permutations and combinations, probability distributions, trigonometric functions, linear programming, and kinematic linear motion.",
+      "link": "https://www.onlinetuition.com.my/spm-additional-mathematics-notes-and-videos"
+    },
+    {
+      "id": "cbse-computer-science-class-12-textbook",
+      "syllabus": "cbse",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "ncert class 12 computer science textbook (with python)",
+      "description": "free pdf download of the ncert textbook for cbse class xii computer science. covers fundamental concepts and problem-solving skills, including data structures, databases (sql), python programming, networking, and cyber ethics. aligned with the cbse syllabus, it includes diagrams, illustrations, engaging exercises, and solved practical assignments.",
+      "link": "https://ischolar.com/ncert-books-class-12-pdf-free-download-all-subjects/"
+    },
+    {
+      "id": "vce-hsc-mathematics-revision-notes",
+      "syllabus": "vce-hsc",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "free vce & hsc mathematics study notes and practice",
+      "description": "free study notes, practice questions, and exam tips for vce (victoria) and hsc (new south wales) mathematics, written by experienced tutors and aligned to the vcaa curriculum. includes resources for general maths, methods, and specialist mathematics, covering topics like algebra, calculus, geometry, and functions.",
+      "link": "https://www.atarnotes.com/notes/vce-general-maths/"
+    },
+    {
+      "id": "national-high-school-mathematics-textbooks",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "advanced high school mathematics & senior mathematics book",
+      "description": "a collection of free online textbooks for high school mathematics, covering advanced euclidean geometry, discrete mathematics, algebra, trigonometry, calculus, inequalities, series, differential equations, and statistics. designed for students seeking deeper knowledge and exam preparation.",
+      "link": "https://www.freebookcentre.net/maths-books-download/Advanced-High-School-Mathematics.html"
+    },
+    {
+      "id": "national-high-school-computer-science-curriculum",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "curriculum portfolio",
+      "title": "free high school computer science curriculum (code.org, carnegie mellon)",
+      "description": "open-access, free online computer science curricula for high school students. includes courses like computer science discoveries (grades 6-10), computer science principles (grades 9-12, can be ap), and computer science a (ap csa, java). also covers topics like cybersecurity, ai, web design, and game design, with engaging graphics and animations. suitable for foundational concepts and advanced programming skills.",
+      "link": "https://code.org/curriculum/high-school"
+    },
+    {
+      "id": "national-high-school-english-grammar",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "free online english grammar resources for high school students",
+      "description": "a curated selection of free online resources to help high school students master grammar. platforms like quill.org, no red ink, khan academy grammar course, and purdue owl offer interactive exercises, personalized lessons, comprehensive video lessons, and extensive guides on grammar rules to enhance precision in language.",
+      "link": "https://www.khanacademy.org/humanities/grammar"
     }
   ],
   "dailyInspiration": {
-    "title": "the kumaran brothers: india's youngest app developers",
-    "story": "shravan kumaran, born in 1999, and his younger brother sanjay kumaran, born in 2001, from chennai, india, embarked on an extraordinary entrepreneurial journey at the tender ages of 12 and 10 respectively. in 2011, they founded their mobile application development company, godimensions, initially as a hobby. they quickly gained recognition after releasing their first popular app, 'catch me cop,' a game that garnered over 2,000 downloads in its first month. by 2012, they were recognized as india's youngest ceos by the confederation of indian industry. these self-taught coders, proficient in languages like java and objective c, developed multiple apps for both apple and android platforms, accumulating over 70,000 downloads across 53 countries for their 12 applications, many of which aimed to solve social problems in india. their father, kumaran surendran, provided crucial financial and mentoring support, fostering an environment that allowed them to pursue their technological aspirations and even expand into creating a virtual reality device, govr, and working on projects like gomap for live traffic and pollution information. their dedication and innovative spirit earned them numerous awards and established them as inspiring role models for young entrepreneurs worldwide.",
-    "takeaway": "age is merely a number when ambition, curiosity, and supportive environments ignite a passion for innovation."
+    "title": "the self-taught ai prodigy: k. rojek's olympic gold",
+    "story": "krzysztof rojek, a high school student from wrocław, poland, achieved a remarkable feat by winning a gold medal at the second international olympiad in artificial intelligence (ioai) held in beijing in august 2025. competing against over 280 of the world's brightest young ai talents from more than 60 countries, rojek emerged victorious with a score of 542.05 points across six tasks. what makes his achievement particularly inspiring is that he is entirely self-taught in artificial intelligence, having started exploring ai purely out of curiosity just three years prior. he learned through trial and error, creating models and algorithms almost from scratch. his success at the ioai, a testament to his dedication and passion for informatics, has been hailed as one of poland's best results in olympic history.",
+    "takeaway": "passion, self-direction, and relentless effort can lead to olympic-level achievements in any field, regardless of formal training."
   }
 }
