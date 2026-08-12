@@ -3095,6 +3095,96 @@
       "rounds": "single online examination.",
       "fee": "$88 per student.",
       "link": "https://www.worldmatholympiad.com"
+    },
+    {
+      "id": "iymc-2026",
+      "type": "competition",
+      "title": "international youth math challenge (iymc) 2026",
+      "shortDesc": "an international online mathematics competition for high school and university students.",
+      "fullDetails": "the iymc encourages participants to explore mathematics beyond the standard curriculum through creative and challenging problem-solving. it consists of three rounds, tackling problems from mathematical puzzles to advanced proof-based questions. it is accessible online globally, requiring only a pen, paper, and internet access.",
+      "category": "academic",
+      "interest": "mathematics",
+      "minAge": 13,
+      "maxAge": 20,
+      "deadline": "2026-09-27",
+      "eventDate": "2026-xx-xx",
+      "location": "online",
+      "prizes": "cash prizes (up to 250 usd for 1st place senior), international awards (1st, 2nd, 3rd prizes, gold, silver, bronze honours), national awards, official certificates.",
+      "rounds": "3",
+      "fee": "specific cost (check official site)",
+      "link": "https://www.studentcompetitions.com/competitions/international-youth-math-challenge-2026/"
+    },
+    {
+      "id": "breakthrough-junior-challenge-2026-2027",
+      "type": "competition",
+      "title": "breakthrough junior challenge",
+      "shortDesc": "a global science video competition for students to explain big scientific theories in physics, mathematics, or life sciences.",
+      "fullDetails": "this international competition challenges students aged 13–18 to create an engaging, original short video (up to 2 minutes) making a complex scientific theory easy to understand using animation, demonstrations, storytelling, or other creative approaches. it offers a $250,000 college scholarship, a $50,000 prize for the winner's teacher, and a $100,000 science lab for their school. the 2026 competition opened on may 11, 2026, with a submission deadline of september 15, 2026. finalists are announced on december 10, 2026, and the winner in spring 2027.",
+      "category": "academic",
+      "interest": "science communication, physics, mathematics, life sciences",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2026-09-15",
+      "eventDate": "2026-05-11 to spring 2027",
+      "location": "online",
+      "prizes": "$250,000 scholarship, $50,000 for teacher, $100,000 lab",
+      "rounds": "individual submission",
+      "fee": "free",
+      "link": "https://breakthroughjuniorchallenge.org"
+    },
+    {
+      "id": "afa-cyberpatriot-2026-2027",
+      "type": "competition",
+      "title": "afa cyberpatriot",
+      "shortDesc": "the national youth cyber defense competition inspiring students toward careers in cybersecurity.",
+      "fullDetails": "afa cyberpatriot is open to students in grades 6–12. teams compete in a cyber defense challenge. for the 2026-2027 season, the team registration deadline is october 14, 2026, and the competitor registration deadline is october 21, 2026. competition rounds run from october 2026 to january 2027, with the national finals competition held from april 28–30, 2027.",
+      "category": "computer science",
+      "interest": "cybersecurity, network defense",
+      "minAge": 11,
+      "maxAge": 18,
+      "deadline": "2026-10-14",
+      "eventDate": "october 2026 - april 2027",
+      "location": "online (with national finals in-person)",
+      "prizes": "national recognition, scholarships (not specified in snippet)",
+      "rounds": "multiple online rounds, national finals",
+      "fee": "not specified",
+      "link": "https://www.uscyberpatriot.org/"
+    },
+    {
+      "id": "mlh-hackathons-ongoing",
+      "type": "competition",
+      "title": "major league hacking (mlh) hackathons",
+      "shortDesc": "an ongoing series of student hackathons, many open to high schoolers, focusing on software and hardware development.",
+      "fullDetails": "mlh supports and organizes numerous hackathons globally throughout the academic year. these events typically involve students working in teams to build creative software and hardware projects over a short, intense period, often featuring workshops, mentorship, and networking opportunities. many mlh-affiliated hackathons welcome high school students or have dedicated tracks for them. specific dates and locations vary by individual event, but the overall program is continuous, offering opportunities throughout 2026 and into 2027.",
+      "category": "computer science",
+      "interest": "coding, software development, hardware prototyping, innovation",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "ongoing/various",
+      "eventDate": "ongoing throughout 2026-2027",
+      "location": "various (online and physical globally)",
+      "prizes": "vary by event (e.g., tech gadgets, scholarships, swag)",
+      "rounds": "single event format",
+      "fee": "often free",
+      "link": "https://mlh.io/"
+    },
+    {
+      "id": "write-the-world-monthly-ongoing",
+      "type": "competition",
+      "title": "write the world monthly contests",
+      "shortDesc": "monthly online writing contests for young writers aged 13-18 on diverse genres and prompts.",
+      "fullDetails": "write the world (wtw) hosts monthly online writing contests, each based on a specific idea or genre (e.g., poetry, fantasy, sports journalism, fiction). these competitions are open to young writers aged 13-18. submissions are published online monthly, and writers are encouraged to submit early for feedback. the monthly prompts provide continuous opportunities to participate throughout the year, including late 2026 and into 2027.",
+      "category": "creative writing",
+      "interest": "poetry, fiction, journalism, essay writing",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "ongoing monthly",
+      "eventDate": "ongoing monthly",
+      "location": "online",
+      "prizes": "publication, feedback (specific cash prizes not detailed)",
+      "rounds": "monthly submissions",
+      "fee": "not specified",
+      "link": "https://www.writetheworld.com/"
     }
   ],
   "studyResources": [
@@ -6257,11 +6347,146 @@
       "title": "subjecttoclimate free ela lesson plans for grades 9-12",
       "description": "common core and state standards-aligned english language arts lessons that integrate climate education topics, offering various literacy activities with rubrics for assessment, including reading, poetry & music, vocabulary, and speaking.",
       "link": "https://www.subjecttoclimate.org/ela-lessons-9-12"
+    },
+    {
+      "id": "cambridge-cs-specimen-0478-0984",
+      "syllabus": "cambridge",
+      "subject": "computer science",
+      "type": "specimen paper",
+      "title": "cambridge igcse computer science (0478 & 0984) specimen papers",
+      "description": "official specimen papers and mark schemes for cambridge igcse computer science syllabuses 0478 and 0984 (9-1), including 2023 versions, essential for exam preparation.",
+      "link": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-computer-science-0478/past-papers/"
+    },
+    {
+      "id": "cambridge-cs-past-papers-2210",
+      "syllabus": "cambridge",
+      "subject": "computer science",
+      "type": "past paper",
+      "title": "cambridge o level computer science (2210) past papers",
+      "description": "a comprehensive collection of past papers, marking schemes, syllabuses, and resources for cambridge o level computer science 2210, dating from 2002 to the latest sessions.",
+      "link": "https://www.papacambridge.com/cie/o-levels/computer-science-2210/"
+    },
+    {
+      "id": "openstax-math-highschool",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "openstax high school mathematics textbooks",
+      "description": "free, high-quality, peer-reviewed k-12 textbooks for mathematics, aligned to ap, teks, and various state standards. available as web view, downloadable pdfs, and affordable print copies, with instructor resources.",
+      "link": "https://openstax.org/subjects/math"
+    },
+    {
+      "id": "openupresources-highschool-math",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "curriculum portfolio",
+      "title": "open up high school math curricula",
+      "description": "top-rated full course curricula for high school mathematics, including algebra, geometry, and advanced integrated math programs, offered free of charge on the web.",
+      "link": "https://openupresources.org/math-curriculum/"
+    },
+    {
+      "id": "ck12-math-science-ela",
+      "syllabus": "national",
+      "subject": "mathematics, english",
+      "type": "textbook, revision notes",
+      "title": "ck-12 open lessons for k-12 students",
+      "description": "open lessons covering elementary through high school science, social studies, and mathematics. includes conventional and interactive lessons, customizable content, and translations into multiple languages.",
+      "link": "https://www.ck12.org/"
+    },
+    {
+      "id": "saylor-academy-highschool",
+      "syllabus": "national",
+      "subject": "mathematics, computer science, english",
+      "type": "textbook, revision notes",
+      "title": "saylor academy free online courses (k-12 adaptable)",
+      "description": "nearly 100 full-length, college-level open online courses that can be tailored for high school math, science, and english language arts. includes video/written lessons and practice questions.",
+      "link": "https://www.saylor.org/courses/"
+    },
+    {
+      "id": "ap-csa-frq-archive",
+      "syllabus": "ap",
+      "subject": "computer science",
+      "type": "specimen paper",
+      "title": "ap computer science a free response questions (frqs) center",
+      "description": "a centralized repository of past college board frq questions for ap computer science a, available in multiple formats for practice. includes questions and scoring information from past exams, though recent revisions (2025-26) may affect full alignment with the current exam.",
+      "link": "https://apcentral.collegeboard.org/courses/ap-computer-science-a/exam"
+    },
+    {
+      "id": "cambridge-igcse-english-0500-pastpapers",
+      "syllabus": "cambridge",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "cambridge igcse english language (0500) past papers & marking schemes (2018-2025)",
+      "description": "free download of past papers and official marking schemes for cambridge igcse english language (0500) from 2018 to 2025, useful for timed practice and identifying areas for improvement. includes syllabus, specimens, and other resources.",
+      "link": "https://www.tutopiya.com/blog/cambridge-igcse-english-language-0500-past-papers-marking-schemes/"
+    },
+    {
+      "id": "codeorg-hs-cs-curriculum",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "curriculum portfolio",
+      "title": "code.org high school computer science curricula (discoveries, principles, a, ai, maker, game design)",
+      "description": "a range of free, flexible, year-long curricula for grades 6-12, including computer science discoveries, principles (can be ap course), computer science a (java for ap csa), artificial intelligence foundations, maker, and game design. introduces foundational concepts, software engineering, object-oriented design, and real-world applications.",
+      "link": "https://code.org/curriculum/high-school"
+    },
+    {
+      "id": "cbse-class12-maths-samplepapers-2026-27",
+      "syllabus": "cbse",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cbse class 12 maths sample paper 2026-27 with solutions",
+      "description": "officially released sample papers for class 12th mathematics by cbse, designed by subject experts for effective exam preparation for the 2026-27 academic year. includes multiple sets of model question papers with marking schemes and solutions to help students understand the exam pattern, improve time management, and assess strengths and weaknesses.",
+      "link": "https://www.selfstudys.com/blog/cbse-maths-sample-paper-class-12"
+    },
+    {
+      "id": "cambridge-a-level-maths-9709-pastpapers",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge international a level mathematics (9709) past papers & mark schemes",
+      "description": "a comprehensive collection of past papers and mark schemes for cambridge international a level mathematics (9709), covering pure mathematics 3 and statistics 2 from 2023 to 2025. essential for revision, exam practice, and understanding specific language and common question formats. available for download.",
+      "link": "https://www.tutopiya.com/blog/cie-a-level-maths-9709-past-papers-pure-mathematics-3-statistics-2/"
+    },
+    {
+      "id": "ib-cs-revision-reddit-2026",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "free ib dp computer science revision notes & exam blueprints (theme a & b)",
+      "description": "a compilation of organized, up-to-date revision materials formatted specifically for the ib dp computer science syllabus. includes notes for theme a (computer fundamentals, networks, system architectures, machine learning) and theme b (pseudocode rules, database modeling, oop, abstract data structures), along with exam and ia blueprints.",
+      "link": "https://www.reddit.com/r/IBO/comments/1ddn3r2/free_ib_dp_computer_science_revision_notes_exam/"
+    },
+    {
+      "id": "german-abitur-math-ai-prep",
+      "syllabus": "german-abitur",
+      "subject": "mathematics",
+      "type": "practice tests",
+      "title": "abitur preparation ai: free exam prep tool for mathematics",
+      "description": "an ai-powered tool that generates practice tests, summaries, and flashcards for german abitur mathematics from uploaded study materials. covers grundkurs and leistungskurs difficulty levels across all german bundeslaender exam formats, including analysis, linear algebra, and stochastics.",
+      "link": "https://studypdf.com/abitur-preparation-ai"
+    },
+    {
+      "id": "english-grammar-resources",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "free online english grammar lessons and resources",
+      "description": "a collection of online platforms offering free english grammar lessons, interactive exercises, diagnostics, and tests. includes resources like quill.org for adaptive practice, british council learnenglish for grammar explanations and exercises by cefr level, and grammar monster for lessons, tests, and common error lists.",
+      "link": "https://www.quill.org/"
+    },
+    {
+      "id": "ap-english-lit-curriculum",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "curriculum portfolio",
+      "title": "ap english literature and composition course and exam description (ced)",
+      "description": "the core document for the ap english literature and composition course, outlining content, skills, and recommended sequencing. it includes unit guides, course overview, and clarifications, focusing on literary analysis of various genres, periods, and cultures. it prepares students for the ap exam and college-level literary analysis.",
+      "link": "https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/course"
     }
   ],
   "dailyInspiration": {
-    "title": "the voice of brilliance: viraj dhanda's journey to mit",
-    "story": "viraj dhanda, a 19-year-old from brookline, massachusetts, lived for 14 years with the incorrect assumption that he was mentally disabled. this was due to nonspeaking autism and apraxia, a neurological disorder that prevented him from speaking or controlling his fingers. his single father, sumit dhanda, spent years trying to teach him basic academics with no apparent success. however, sumit's unwavering persistence led to a breakthrough: he discovered viraj could communicate using his right thumb on an ipad. once he had a means to express himself, viraj revealed a fully functional, indeed brilliant, mind. in less than three years, he rapidly progressed from basic math to calculus, demonstrating an incredible capacity for learning. his academic prowess culminated in an exceptional score of 35 out of 36 on the act and, ultimately, acceptance into the massachusetts institute of technology (mit), one of the world's most prestigious universities. viraj's admission to mit was not just a personal triumph but a powerful statement for the entire nonspeaking autistic community, inspiring belief in the hidden potential within others.",
-    "takeaway": "true intelligence often lies hidden, waiting for the right key to unlock its boundless potential."
+    "title": "the sponge saviour: lakshmi agrawal's fight for salmon and path to mit",
+    "story": "lakshmi agrawal, an 18-year-old student from bellevue, washington, demonstrated exceptional ingenuity and determination by winning the regeneron young scientist award and a $75,000 prize at the 2026 regeneron international science and engineering fair (isef). her groundbreaking project involved developing a low-cost, biodegradable sponge made from waste jute fibers. this innovative solution effectively filters a tire-derived chemical, 6ppd-quinone, which is a primary cause of mass die-offs of coho salmon in urban streams. her filters removed up to 80% of the pollutant in lab tests, captured heavy metals, and reduced production energy by 85% while cutting costs by approximately 98% compared to existing alternatives. agrawal's success at the world's largest pre-college science competition has paved her way to mit, where she plans to study chemistry and chemical engineering in the fall. her work stands as a testament to how young minds can tackle complex environmental challenges with simple yet effective solutions, proving that passion and scientific rigor can lead to both impactful discoveries and prestigious academic opportunities.",
+    "takeaway": "passion, perseverance, and innovative thinking can transform waste into world-changing solutions and open doors to the most prestigious institutions."
   }
 }
