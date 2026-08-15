@@ -3313,24 +3313,6 @@
       "link": "not explicitly provided by source."
     },
     {
-      "id": "nsb-2026",
-      "type": "competition",
-      "title": "national science bowl (nsb) 2026",
-      "shortDesc": "a national science competition for high school (and middle school) students in a fast-paced question-and-answer format.",
-      "fullDetails": "high school regional competition registration opens october 6, 2025. students compete in regional events, with a nationwide high school virtual regional science bowl scheduled for february 28, 2026. the competition uses a head-to-head format.",
-      "category": "academic, stem",
-      "interest": "science, mathematics, fast-paced question and answer",
-      "minAge": 14,
-      "maxAge": 18,
-      "deadline": "regional competition registration opens october 6, 2025.",
-      "eventDate": "nationwide high school virtual regional science bowl: february 28, 2026. regional events january-march.",
-      "location": "regional events across the u.s. and canada; virtual option available.",
-      "prizes": "recognition, scholarships for finalists (for a similar competition, cef you be the solution).",
-      "rounds": "regional events, possibly national finals.",
-      "fee": "not specified, often free.",
-      "link": "https://science.doe.gov/wdts/nsb"
-    },
-    {
       "id": "amo-2026",
       "type": "competition",
       "title": "american mathematics olympiad (amo) 2026",
@@ -3347,6 +3329,132 @@
       "rounds": "single exam format.",
       "fee": "not explicitly stated for 2026, but for 2022 it was rp 350,000 /student (private) or rp 250,000 /student (school-based with minimum 10 students).",
       "link": "https://www.olympiadindia.in"
+    },
+    {
+      "id": "hippo-english-olympiad-2026",
+      "type": "competition",
+      "title": "hippo english language olympiad 2026",
+      "shortDesc": "an international english language competition for non-native speakers, promoting proficiency and fostering global unity, with multiple rounds leading to world finals in italy.",
+      "fullDetails": "open to students aged 6-19 from around the world, the olympiad runs in three rounds: preliminary (online), semi-final (regional qualifier), and final (world finals in assisi, italy). it challenges students' english language knowledge and aims to improve cooperation between teachers. the competition focuses on various english skills. students who qualified for the 2025 hippo global finals may not re-enter the same difficulty level in the 2026 competition. the preliminary stage is held online on march 21, 2026.",
+      "category": "academic",
+      "interest": "english language, reading comprehension, vocabulary, grammar",
+      "minAge": 13,
+      "maxAge": 19,
+      "deadline": "preliminary stage: 2026-03-21",
+      "eventDate": "2026-03-21 (preliminary round), 2026-06-22 to 2026-06-25 (regional qualifier stage - example), 2026-10-12 to 2026-10-15 (world finals)",
+      "location": "online (preliminary), regional centers (semi-finals), assisi, italy (world finals)",
+      "prizes": "trophies, global recognition, international experience.",
+      "rounds": "3",
+      "fee": "not explicitly stated, typically through schools.",
+      "link": "https://www.hippo-olympiad.org/"
+    },
+    {
+      "id": "international-sustainability-competition",
+      "type": "competition",
+      "title": "international sustainability competition",
+      "shortDesc": "challenges high school students worldwide to develop original solutions to pressing environmental and sustainability challenges.",
+      "fullDetails": "this competition combines scientific research with practical innovation and social impact. students identify a sustainability challenge, such as climate, water, food systems, biodiversity, or clean energy, and develop an original research-based or innovation-based response. submissions typically include a written report and presentation, which are evaluated by international judges from academic and industry backgrounds.",
+      "category": "academic",
+      "interest": "environmental science, sustainability, innovation, research",
+      "minAge": 14,
+      "maxAge": 18,
+      "deadline": "not specified for 2026.",
+      "eventDate": "not specified for 2026.",
+      "location": "not specified, likely virtual or hybrid.",
+      "prizes": "not specified in snippets.",
+      "rounds": "implies project submission and evaluation.",
+      "fee": "not specified.",
+      "link": "not available in search results."
+    },
+    {
+      "id": "iac-european-championships-2026",
+      "type": "competition",
+      "title": "international academic competitions european championships 2026",
+      "shortDesc": "features the international history bowl, academic bowl, history bee, geography bee, science bee, and european championship exams across various academic subjects.",
+      "fullDetails": "the championships will be held in berlin at the nelson mandela school. it offers separate age divisions for varsity, junior varsity, middle school, and elementary students. european championship exams are offered in ten subjects, including biology, environmental science, european geography, map and flag, historical geography, military history, ancient history, recent history, and european history. the registration deadline is may 19, 2026.",
+      "category": "academic",
+      "interest": "history, geography, science, general academic knowledge, biology, environmental science",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2026-05-19",
+      "eventDate": "2026-05-29 to 2026-05-31",
+      "location": "berlin, nelson mandela school",
+      "prizes": "awards for separate age divisions, not specified monetarily in snippets.",
+      "rounds": "multiple events/bees/bowls within the championship.",
+      "fee": "costs are listed on their website, implying a fee.",
+      "link": "https://iacompetitions.com/"
+    },
+    {
+      "id": "iaio-2026",
+      "type": "competition",
+      "title": "international artificial intelligence olympiad (iaio)",
+      "shortDesc": "an international competition introducing students to artificial intelligence, machine learning, programming, and data science through innovative challenges.",
+      "fullDetails": "the international artificial intelligence olympiad (iaio) provides a platform for secondary school students to engage with cutting-edge topics in artificial intelligence, machine learning, programming, and data science. the competition focuses on innovative challenges designed to develop and test students' skills in these emerging fields. specific dates and application details for 2026 are typically announced through official channels.",
+      "category": "academic",
+      "interest": "computer science & ai",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2026-xx-xx",
+      "eventDate": "2026-xx-xx",
+      "location": "international (location varies)",
+      "prizes": "medals, certificates",
+      "rounds": "multiple stages",
+      "fee": "varies",
+      "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHndySaW_1fGXdrZ7ela_imxwejUDL4bMxRl1gckJUnc8IJn8oYjiLaSvtWXxkmcRqm4Qv7VxsuBQc-15ptcBhc3Ifx4dltGKU6edj6g7Xnb4LOSf_SxH6t1qMI3WO-2Y4z-kO3J16L-O8NxNFZTz_VCD9cuzGWwTlHCIaJlxULjQUV7z1ErUTBRtCcNb-7YUCGCG4ECOxQaWtI33tKE062ZX_zkWwhZqCY"
+    },
+    {
+      "id": "isc-2026",
+      "type": "competition",
+      "title": "international sustainability competition",
+      "shortDesc": "a virtual competition for high school students to develop original solutions to pressing environmental and sustainability challenges.",
+      "fullDetails": "the international sustainability competition challenges high school students worldwide to identify a sustainability issue (e.g., climate, water, food systems) and develop an original research-based or innovation-based solution. participants submit a written report and presentation for evaluation by international judges. the competition is entirely virtual, promoting accessibility for students globally.",
+      "category": "academic",
+      "interest": "environment & sustainability",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2026-xx-xx",
+      "eventDate": "2026-xx-xx",
+      "location": "online",
+      "prizes": "certificates, recognition",
+      "rounds": "single submission, judging round",
+      "fee": "free",
+      "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8I2ZKf224kPUMRjkmfxfPLuSNJI6dkQPpLuPh8OYaWRKWfbfP7nNNXAnFMV-Y7gwh-iqCtNI1n6AnYPBh-wYn8pTl7NXjiLBKvdeIyRGSDf9qXB4IYt_s8MZOnH9M_sHLwBZmZoyuReHD4BXUnuyGi-kPWkbSCER4NcZL3YLI"
+    },
+    {
+      "id": "gis-2026",
+      "type": "competition",
+      "title": "genes in space",
+      "shortDesc": "students in grades 7-12 propose genetics or molecular biology experiments designed to run on the international space station.",
+      "fullDetails": "genes in space invites students in grades 7-12 to propose genetics or molecular biology experiments that could be conducted aboard the international space station. finalists receive mentoring, and the winning experiment may actually be performed in space. submissions for 2026 were open from january 5 through april 10, with winners announced in july. no prior space research experience is required.",
+      "category": "academic",
+      "interest": "biology & space science",
+      "minAge": 12,
+      "maxAge": 18,
+      "deadline": "2026-04-10 (submissions closed)",
+      "eventDate": "july 2026 (winners announced)",
+      "location": "online submission, experiment conducted on iss",
+      "prizes": "opportunity for experiment in space, mentorship",
+      "rounds": "proposal submission, finalist selection, winner announcement",
+      "fee": "free",
+      "link": "https://www.genesinspace.org/"
+    },
+    {
+      "id": "gwc-challenge-2026",
+      "type": "competition",
+      "title": "girls who code challenge",
+      "shortDesc": "encourages students to use coding and technology to solve real-world problems impacting their communities, with a 2026 theme of ai + cybersecurity.",
+      "fullDetails": "the girls who code challenge empowers students to design creative, socially meaningful tech solutions. participants can work individually or in teams, building programming, problem-solving, and collaboration skills. the theme for 2026 is ai + cybersecurity. the submission deadline for 2026 was february 11.",
+      "category": "academic",
+      "interest": "computer science, ai, cybersecurity",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2026-02-11 (submissions closed)",
+      "eventDate": "2026-02-11",
+      "location": "online",
+      "prizes": "recognition, skill development",
+      "rounds": "single submission round",
+      "fee": "free",
+      "link": "https://girlswhocode.com/programs/virtual-programs/challenge"
     }
   ],
   "studyResources": [
@@ -6779,11 +6887,182 @@
       "title": "gaokao mathematics past papers (various years)",
       "description": "a collection of past examination papers for gaokao mathematics, providing essential practice and insight into the exam structure for students preparing for china's national college entrance examination.",
       "link": "https://www.gaokao.com/gkzt/gksd/sx/"
+    },
+    {
+      "id": "cambridge-mathematics-0580-past-papers",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge igcse mathematics (0580) past papers & mark schemes",
+      "description": "official past papers and mark schemes for cambridge igcse mathematics (0580), including specimen papers for the 2025 syllabus onwards. core and extended tiers are covered, with details on calculator and non-calculator papers.",
+      "link": "https://www.papascambridge.com/cie/igcse/mathematics-0580/past-papers/ and https://mathsaurus.com/cambridge-igcse-mathematics-0580-past-papers/"
+    },
+    {
+      "id": "ib-math-aa-specimen-2021",
+      "syllabus": "ib",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "ib math analysis and approaches (aa) specimen papers 2021",
+      "description": "specimen papers 1, 2, and 3 for ib mathematics: analysis and approaches at higher level and standard level, for first examinations in 2021. includes multiple-choice and free-response questions covering trigonometry, probability, proofs, logarithmic functions, and differentiation.",
+      "link": "https://www.ibo.org/programmes/diploma-programme/assessment-and-exams/sample-exam-papers/ (official ib website, look under mathematics)"
+    },
+    {
+      "id": "openstax-high-school-math-textbooks",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "openstax free mathematics textbooks for high school",
+      "description": "a collection of open-access textbooks covering subjects like algebra and trigonometry, calculus (volumes 1-3), multivariable calculus, college algebra, elementary algebra, intermediate algebra, fundamentals of matrix algebra, and introductory statistics. suitable for high school and college level.",
+      "link": "https://openstax.org/subjects/math"
+    },
+    {
+      "id": "teaching-mathematics-secondary-level-textbook",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "teaching mathematics at secondary level",
+      "description": "an open-access handbook for teachers and students, particularly for ages 11-14 (key stage 3), focusing on central principles and concepts in number, algebra, geometry, measure, handling data, and problem solving. available in pdf, ebook, and online formats.",
+      "link": "https://www.openbookpublishers.com/books/10.11647/obp.0210.pdf"
+    },
+    {
+      "id": "ap-computer-science-a-practice-exams",
+      "syllabus": "ap",
+      "subject": "computer science",
+      "type": "specimen paper",
+      "title": "ap computer science a practice tests and free-response questions",
+      "description": "free digital practice exams for ap computer science a, modeled on the college board bluebook exam, offering multiple-choice questions with ai scoring and detailed explanations. also includes free-response questions from past exams with scoring guidelines from college board. focuses on java programming and object-oriented design.",
+      "link": "https://www.bluebook.app/practice/ap-computer-science-a and https://apcentral.collegeboard.org/courses/ap-computer-science-a/exam/past-exam-questions"
+    },
+    {
+      "id": "freecodecamp-computer-science-courses",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "freecodecamp interactive coding lessons & certifications",
+      "description": "a nonprofit platform offering thousands of hours of free interactive coding lessons, projects, and certifications. covers web development, data science, machine learning, and more, with opportunities to build a portfolio.",
+      "link": "https://www.freecodecamp.org/"
+    },
+    {
+      "id": "code.org-secondary-cs-curriculum",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "curriculum portfolio",
+      "title": "code.org computer science fundamentals & principles courses",
+      "description": "offers free computer science courses, curriculum, unplugged activities, and projects for students and educators. includes cs discoveries (grades 6-10) and cs principles (grades 9-12), covering problem-solving, programming, physical computing, and user-centered design. also provides self-paced modules and labs for web development (html, css, javascript), music creation, python, and game/app development.",
+      "link": "https://code.org/educate/curriculum/high-school"
+    },
+    {
+      "id": "ib-computer-science-hl-sl-notes",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "free ib computer science hl/sl study guides and notes",
+      "description": "high-quality study notes and resources covering key topics for ib computer science at both higher level (hl) and standard level (sl), including system fundamentals, computer organization, networks, computational thinking, and abstract data structures. suitable for the new syllabus.",
+      "link": "https://www.tutorchase.com/resources/ib/ibdp-computer-science-hl/study-notes (for hl) and https://www.ibresources.org/ib-computer-science-sl-study-notes (for sl)"
+    },
+    {
+      "id": "cambridge-igcse-english-0500-revision",
+      "syllabus": "cambridge",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "cambridge igcse english (first language) 0500 revision notes & past papers",
+      "description": "free revision notes, model answers, ai-marked practice, and past papers specifically for the 2026 cambridge igcse english (first language) 0500 exam cohort.",
+      "link": "https://www.tutopiya.com/blog/cambridge-igcse-english-0500-revision-notes-past-papers/"
+    },
+    {
+      "id": "cambridge-a-level-english-9093-resources",
+      "syllabus": "cambridge",
+      "subject": "english",
+      "type": "curriculum portfolio",
+      "title": "cambridge international as & a level english language (9093) complete resources",
+      "description": "a comprehensive collection of resources supporting the full syllabus for examination from 2021, including latest past papers, syllabus, specimen papers, marking schemes, notes, and practice tests. covers reading comprehension, descriptive writing, commentary writing, extended writing, and language analysis.",
+      "link": "https://englishlearningaid.com/english-a-as-level-9093-complete-resources/"
+    },
+    {
+      "id": "ib-english-a-b-specimen-papers",
+      "syllabus": "ib",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "ib english a: literature and english b specimen papers",
+      "description": "examples of actual past examination papers and a selection of specimen papers for ib english a: literature (paper 1 and marking notes, paper 2) and english b (hl/sl specimen paper 2 audio). provided for information and exam preparation.",
+      "link": "https://www.ibo.org/programmes/diploma-programme/assessment-and-exams/sample-exam-papers/ (official ib website, look under english)"
+    },
+    {
+      "id": "project-gutenberg-literature",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "textbook",
+      "title": "project gutenberg free ebooks of classic literature",
+      "description": "a vast collection of free ebooks that are in the public domain, including numerous classic novels and works of literature, which can be used for reading and studying.",
+      "link": "https://www.gutenberg.org/"
+    },
+    {
+      "id": "owl-purdue-writing-resources",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "online writing lab (owl) at purdue university",
+      "description": "a comprehensive resource offering guidelines for various citation styles (mla, apa) and support for grammar, mechanics, and general writing skills, valuable for academic essay writing.",
+      "link": "https://owl.purdue.edu/owl/index.html"
+    },
+    {
+      "id": "ib-cs-sl-studyguides",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "study guide",
+      "title": "free ib computer science (sl) resources for 2026 - study guides, flashcards, & more",
+      "description": "in-depth study guides, flashcards, and resources for all units of ib computer science (sl), covering system fundamentals, computer organization, networks, computational thinking, and programming.",
+      "link": "https://www.knowt.io/notes/IB%20Computer%20Science%20(SL)"
+    },
+    {
+      "id": "ap-englishlit-resources",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "free resources for ap english literature teachers & students",
+      "description": "a collection of free resources for ap english literature, including lesson plans, prompts, passages, powerpoints, study guides, and access to official college board materials (course and exam description, free-response questions from past years).",
+      "link": "https://www.uworld.com/cr/ap/english-literature-teacher-resources.aspx"
+    },
+    {
+      "id": "cbse-math-10-samplepapers-2026-27",
+      "syllabus": "cbse",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cbse class 10 maths sample paper 2026-27 with solutions",
+      "description": "free pdf download of official cbse class 10 mathematics sample papers for the 2026-27 academic session, including basic and standard maths, with detailed solutions and marking schemes.",
+      "link": "https://www.vedantu.com/sample-paper/cbse-class-10-maths-sample-paper-2026-27"
+    },
+    {
+      "id": "gaokao-math-practice-2026",
+      "syllabus": "gaokao",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "gaokao mathematics questions pdf: practice mock test paper 2026",
+      "description": "downloadable pdf with challenging gaokao mathematics problems covering algebra, geometry, calculus, and more, designed to aid preparation for the national college entrance examination.",
+      "link": "https://testmocks.com/gaokao-mathematics-questions-pdf-practice-mock-test-paper/"
+    },
+    {
+      "id": "spm-math-pastpapers",
+      "syllabus": "spm",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "spm mathematics past year papers and answers guide",
+      "description": "guide to accessing spm mathematics past year papers and trial exams from official sources and educational platforms, with solutions to improve problem-solving skills and exam familiarity.",
+      "link": "https://www.superprof.com.my/blog/spm-maths-past-year-papers/"
+    },
+    {
+      "id": "vce-maths-pastpapers",
+      "syllabus": "vce-hsc",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "vce general mathematics past papers & marking guidelines",
+      "description": "free download of official vce general mathematics past papers and marking guidelines from the victorian curriculum and assessment authority (vcaa) to practice and improve exam technique.",
+      "link": "https://simplestudy.com.au/vce-general-mathematics-past-papers"
     }
   ],
   "dailyInspiration": {
-    "title": "the prodigy's code: from high school to google in a flash",
-    "story": "eric engle, a self-taught programming prodigy, began coding at just 9 years old. by the time he was in high school, he had already developed a complex operating system from scratch. rather than following the traditional path of a college degree, engle demonstrated his exceptional skills directly to google. at 17, and still technically a high school student, he was offered an internship at google, which quickly evolved into a full-time position. his story is a testament to the power of self-driven learning and passion. he wasn't limited by age or formal education; his talent and dedication paved his way to one of the world's leading tech companies, inspiring countless aspiring young programmers.",
-    "takeaway": "passion, self-education, and demonstrable talent can open doors far beyond traditional academic routes."
+    "title": "the double gold medalist of the 2026 olympiads: nguyen huu tuan",
+    "story": "nguyen huu tuan, a 12th-grade student from vietnam's high school for gifted students in natural sciences, achieved an extraordinary feat in august 2026 by winning two international gold medals within a single week. he first secured a gold medal at the international olympiad in artificial intelligence (ioai) 2026 in kazakhstan, and then went on to win another gold medal at the international olympiad in informatics (ioi) 2026 in uzbekistan. his remarkable performance positioned vietnam among the top 8 countries in the medal tally for these highly demanding academic competitions, showcasing exceptional talent in computer science and artificial intelligence.",
+    "takeaway": "true ambition, combined with unwavering dedication, can lead to world-class achievements and inspire a generation."
   }
 }
