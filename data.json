@@ -3455,6 +3455,78 @@
       "rounds": "single submission round",
       "fee": "free",
       "link": "https://girlswhocode.com/programs/virtual-programs/challenge"
+    },
+    {
+      "id": "neurips-high-school-projects-2026",
+      "type": "competition",
+      "title": "neurips high school projects track 2026",
+      "shortDesc": "an international ai research conference with a dedicated track for high school student projects.",
+      "fullDetails": "neurips is one of the most prestigious ai research conferences in the world. it ran a dedicated high school projects track in 2024, receiving over 330 submissions globally. finalists presented virtually, and top projects were invited to an award ceremony. every submission must represent independent student work. students interested in ai research should monitor the neurips website each fall, as calls for submissions typically open in late summer. the 2026 conference will be held in sydney, australia.",
+      "category": "academic",
+      "interest": "computer science, artificial intelligence",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "late summer 2026 (expected)",
+      "eventDate": "2026-12-06 to 2026-12-12",
+      "location": "sydney, australia (finalists presentation may be virtual)",
+      "prizes": "award ceremony invitation, recognition",
+      "rounds": "n/a",
+      "fee": "n/a",
+      "link": "https://neurips.cc/"
+    },
+    {
+      "id": "technovation-girls-2026-2027",
+      "type": "competition",
+      "title": "technovation girls competition 2026-2027",
+      "shortDesc": "an international competition where girls aged 8-18 learn to code and build mobile apps to solve real-world problems.",
+      "fullDetails": "technovation girls is an international competition focused on computer science, coding, and entrepreneurship. teams of up to five girls develop mobile apps to address community issues. registration typically opens in august, with final submissions due in april.",
+      "category": "academic",
+      "interest": "computer science, coding, entrepreneurship",
+      "minAge": 8,
+      "maxAge": 18,
+      "deadline": "2026-03-18 (registration), 2026-04-20 (submission)",
+      "eventDate": "2026-10-xx (world summit)",
+      "location": "international (virtual and potential in-person summit)",
+      "prizes": "n/a (focus on skill development, mentorship)",
+      "rounds": "multiple (registration, submission, semifinals, finals, world summit)",
+      "fee": "n/a",
+      "link": "https://technovationchallenge.org/competition"
+    },
+    {
+      "id": "gsc-2026",
+      "type": "competition",
+      "title": "ieee computer society 2026 global student challenge",
+      "shortDesc": "a global platform for students to create innovative solutions to real-world programming and data analytic problems.",
+      "fullDetails": "the ieee computer society 2026 global student challenge (gsc) invites students from around the globe to form teams of two and work on challenge problems based on real-world use cases and/or datasets. the competition has two phases: a virtual challenge phase and an in-person presentation for the top five teams. registration opens on may 27, 2026, and closes on june 28, 2026. finalists are announced on august 24, 2026, with the in-person phase ii held in los angeles, ca, from december 7-11, 2026. it aims to energize students and young professionals by involving them in large-scale technical challenges.",
+      "category": "academic",
+      "interest": "computer science, programming, data analytics",
+      "minAge": 13,
+      "maxAge": 25,
+      "deadline": "2026-06-28",
+      "eventDate": "2026-07-13 to 2026-08-09 (virtual phase i); 2026-12-07 to 2026-12-11 (in-person phase ii)",
+      "location": "online (phase i), los angeles, ca, usa (phase ii)",
+      "prizes": "recognition, career exposure, mentorship",
+      "rounds": "2",
+      "fee": "not specified (implies free, but confirm on site)",
+      "link": "https://www.computer.org/conferences/gsc"
+    },
+    {
+      "id": "write-the-world-2026",
+      "type": "competition",
+      "title": "write the world monthly competitions",
+      "shortDesc": "free monthly writing competitions for teen writers (ages 13-19) in various genres.",
+      "fullDetails": "write the world offers free monthly competitions for teen writers, providing opportunities to explore genres from poetry and flash fiction to environmental writing and journalism. young writers are encouraged to join a vibrant global community, share their work, and receive peer and expert feedback. competitions for 2026 include poetry & spoken word (april), screenwriting (march), op-ed (february), and fairytales & myths (january). guest judges include internationally recognized writers and editors.",
+      "category": "creative",
+      "interest": "english, creative writing, poetry, prose, screenwriting",
+      "minAge": 13,
+      "maxAge": 19,
+      "deadline": "monthly (e.g., april 2026 for poetry)",
+      "eventDate": "ongoing monthly throughout 2026",
+      "location": "online",
+      "prizes": "cash prizes, publication, expert feedback",
+      "rounds": "single submission per competition",
+      "fee": "free",
+      "link": "https://writetheworld.com/competitions"
     }
   ],
   "studyResources": [
@@ -7058,11 +7130,137 @@
       "title": "vce general mathematics past papers & marking guidelines",
       "description": "free download of official vce general mathematics past papers and marking guidelines from the victorian curriculum and assessment authority (vcaa) to practice and improve exam technique.",
       "link": "https://simplestudy.com.au/vce-general-mathematics-past-papers"
+    },
+    {
+      "id": "cambridge-math-gcse-ks3-resources",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "free ks3 & gcse maths resources by third space learning",
+      "description": "hundreds of free resources including gcse maths papers (edexcel, aqa, ocr), worksheets, diagnostic questions, revision mats, and end-of-term tests, designed to address learning gaps and boost progress.",
+      "link": "https://thirdspacelearning.com/secondary-resources/gcse-maths-past-papers/"
+    },
+    {
+      "id": "codehs-intro-javascript-textbook",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "introduction to javascript (codehs)",
+      "description": "a free digital textbook providing an introduction to programming in javascript, covering foundations of computer science and basic programming, with an emphasis on logical thinking and problem-solving skills. includes interactive programming examples.",
+      "link": "https://codehs.com/course/4207"
+    },
+    {
+      "id": "oer-commons-cs-textbook-cpp",
+      "syllabus": "ap",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "open source textbook for ap computer science principles (c++)",
+      "description": "a free and open-source textbook for a first course in computer science, such as the college board's advanced placement course ap computer science principles (csp). it covers all topics on the csp exam with a breadth-first approach, emphasizing foundational principles of hardware and software. no prior programming experience required.",
+      "link": "http://cs.rowan.edu/~bergmann/books/"
+    },
+    {
+      "id": "openstax-intro-cs-textbook",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "introduction to computer science (openstax)",
+      "description": "a free digital learning textbook covering core concepts like algorithms, data structures, computer systems, and software development, with real-world applications. it includes interactive activities, coding exercises, and insights into emerging technology trends.",
+      "link": "https://openstax.org/details/books/introduction-to-computer-science"
+    },
+    {
+      "id": "nrich-cambridge-maths-resources",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "nrich: curriculum-linked mathematics resources",
+      "description": "free, open-access curriculum-linked mathematics resources from the university of cambridge, focusing on problem-solving to help students aged 3-18 become more curious, resourceful, and confident learners. includes rich tasks for various age groups.",
+      "link": "https://nrich.maths.org/secondary"
+    },
+    {
+      "id": "ela-commonlit-resources",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "textbook",
+      "title": "commonlit: free literature and assessment for ela",
+      "description": "offers a wide variety of free literature across more than 25 genres, from historical documents to science fiction and poems. teachers can assign literature and track student progress with multiple-choice and written response assessments.",
+      "link": "https://www.commonlit.org/"
+    },
+    {
+      "id": "ela-readworks-resources",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "textbook",
+      "title": "readworks: extensive library of articles and support",
+      "description": "provides k-12 teachers with free access to an extensive library of articles, supplemented with reading comprehension questions, vocabulary lessons, formative assessments, and teacher guidance.",
+      "link": "https://www.readworks.org/"
+    },
+    {
+      "id": "ib-computer-science-past-papers-ibdocs",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "specimen paper",
+      "title": "ibdocs repository: ib computer science past papers",
+      "description": "a comprehensive collection of past exam papers, question banks, mark schemes, and textbooks for ib computer science, accessible through various mirrors.",
+      "link": "https://ibdocs.net/"
+    },
+    {
+      "id": "ib-math-notes-christos-nikolaidis",
+      "syllabus": "ib",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "christos nikolaidis's notes for ib mathematics (hl & sl)",
+      "description": "a highly regarded collection of notes for ib diploma programme mathematics, suitable for both higher level (hl) and standard level (sl) students.",
+      "link": "https://christosnikolaidis.com/maths-sl/"
+    },
+    {
+      "id": "cambridge-igcse-maths-past-papers",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge igcse maths past papers (igcseexamguru)",
+      "description": "free access to cambridge igcse mathematics past papers, covering various qualifications and subject syllabi.",
+      "link": "https://igcseexamguru.com/pastpapers/?dir=Mathematics%20%280580%29"
+    },
+    {
+      "id": "cambridge-math-0580-past-papers",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge igcse mathematics (0580) past papers and mark schemes",
+      "description": "access free cambridge igcse mathematics (0580) past papers and marking schemes up to 2025, including specimen papers for the 2025 syllabus. resources cover core and extended tiers, with specific papers (paper 1, 2, 3, 4) and variants. useful for practicing under exam conditions and identifying areas for improvement.",
+      "link": "https://www.tutopiya.com/cambridge-igcse-mathematics-0580-past-papers-marking-schemes-2019-2025-free-download/"
+    },
+    {
+      "id": "ap-english-lit-practice-tests",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "ap english literature and composition practice tests",
+      "description": "free full-length practice tests, concept quizzes, and focused drills for ap english literature and composition. includes sample multiple-choice questions and free-response questions from the official course and exam description, covering poetry and prose analysis, and literary argument essays. designed to sharpen analytical reading and writing skills.",
+      "link": "https://www.varsitytutors.com/ap_english_literature_and_composition-practice-tests"
+    },
+    {
+      "id": "french-bac-math-curriculum-overview",
+      "syllabus": "french-bac",
+      "subject": "mathematics",
+      "type": "curriculum portfolio",
+      "title": "french baccalaureate math curriculum: comprehensive overview",
+      "description": "a comprehensive overview of the french baccalaureate math curriculum, detailing a four-year integrated program covering algebra, geometry, trigonometry, probabilities, and calculus. includes key topics for 'spécialité mathématiques' and 'mathématiques expertes' courses, providing a college-level foundation with core concepts in python 3 coding.",
+      "link": "https://www.isbos.org/uploaded/french-bac-math-curriculum-comprehensive-overview.pdf"
+    },
+    {
+      "id": "spm-math-past-papers",
+      "syllabus": "spm",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "spm mathematics past year papers and solutions",
+      "description": "free access to spm mathematics past year papers and solutions. resources include practice questions on topics like vectors and an analysis of frequently appearing topics on spm mathematics paper 2 exams from 2020-2022. aids in exam preparation, sharpening answering skills, and building confidence.",
+      "link": "https://www.edubijak.com/spm-past-year-papers"
     }
   ],
   "dailyInspiration": {
-    "title": "the double gold medalist of the 2026 olympiads: nguyen huu tuan",
-    "story": "nguyen huu tuan, a 12th-grade student from vietnam's high school for gifted students in natural sciences, achieved an extraordinary feat in august 2026 by winning two international gold medals within a single week. he first secured a gold medal at the international olympiad in artificial intelligence (ioai) 2026 in kazakhstan, and then went on to win another gold medal at the international olympiad in informatics (ioi) 2026 in uzbekistan. his remarkable performance positioned vietnam among the top 8 countries in the medal tally for these highly demanding academic competitions, showcasing exceptional talent in computer science and artificial intelligence.",
-    "takeaway": "true ambition, combined with unwavering dedication, can lead to world-class achievements and inspire a generation."
+    "title": "the teen ceo who built a $30m ai startup before finishing high school",
+    "story": "zach yadegari’s story is a testament to precocious ambition and relentless execution. at just 7 years old, while most kids were learning multiplication, zach was teaching himself to code, driven by sheer curiosity rather than grand entrepreneurial dreams. this early start meant that by his teenage years, he had accumulated more real-world development experience than many computer science graduates. his first significant venture, 'totally science', was founded at 16, and he successfully sold it for a six-figure sum before he could legally vote, gaining invaluable credibility and experience. rather than resting on his laurels, zach then assembled a lean team of 17 across continents to build 'cal ai', an artificial intelligence startup. by the age of 18, while his peers focused on college applications, cal ai had already achieved 5 million downloads and was generating $1.4 million in monthly revenue, with a projected annual revenue of a staggering $30 million. zach's journey exemplifies how starting early, staying curious, and executing relentlessly can lead to extraordinary achievements at a young age.",
+    "takeaway": "passion, early initiative, and persistent execution can transform youthful curiosity into world-changing innovation and remarkable success."
   }
 }
