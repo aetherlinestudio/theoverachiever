@@ -3671,6 +3671,60 @@
       "rounds": "one online exam",
       "fee": "not explicitly free",
       "link": "https://www.cemc.uwaterloo.ca/contests/computing.html"
+    },
+    {
+      "id": "hmmt-2026",
+      "type": "competition",
+      "title": "harvard-mit mathematics tournament (hmmt)",
+      "shortDesc": "a prestigious math competition for advanced high school students, hosted by harvard and mit.",
+      "fullDetails": "it offers both individual and team-based events, focusing on challenging and advanced mathematical problems. considered a high-level math competition for advanced learners. it is known for testing creativity and collaboration. there are two events annually, one hosted by harvard in november and one by mit in february. it is recognized by stem-focused colleges as a valuable credential.",
+      "category": "academic",
+      "interest": "mathematics, problem-solving, teamwork",
+      "minAge": 14,
+      "maxAge": 18,
+      "deadline": "fall 2026 (harvard event), early 2027 (mit event)",
+      "eventDate": "november 2026 (harvard) & february 2027 (mit)",
+      "location": "harvard university, cambridge, ma, usa (in-person) & mit, cambridge, ma, usa (in-person)",
+      "prizes": "recognition from top universities.",
+      "rounds": "single event with individual and team components",
+      "fee": "not explicitly stated as free, but typically reasonable or free for main event after qualification",
+      "link": "https://www.hmmt.org/"
+    },
+    {
+      "id": "blue-ocean-entrepreneur-competition-2026",
+      "type": "competition",
+      "title": "blue ocean student entrepreneur competition",
+      "shortDesc": "an entrepreneurship competition for high school and college students worldwide.",
+      "fullDetails": "the blue ocean student entrepreneur competition challenges high school and college students from around the world to develop and present innovative entrepreneurial ideas. participants can compete individually or in teams, with no specific academic background restrictions. the competition aims to foster entrepreneurial thinking and innovation among young people.",
+      "category": "entrepreneurship",
+      "interest": "business, innovation",
+      "minAge": 13,
+      "maxAge": 22,
+      "deadline": "2026-02-22",
+      "eventDate": "2026-05-13",
+      "location": "online",
+      "prizes": "recognition, mentorship",
+      "rounds": "multiple stages (submission, top 100 announcement, winners announcement)",
+      "fee": "free",
+      "link": "https://blueoceancompetition.org/"
+    },
+    {
+      "id": "s-t-yau-science-award-na-2026",
+      "type": "competition",
+      "title": "s.-t. yau high school science award (north america)",
+      "shortDesc": "recognizes outstanding original research by high school students in stem and economics.",
+      "fullDetails": "the s.-t. yau high school science award (north america) invites high-school students to submit original research in mathematics, physics, biology, chemistry, computer science, and economic modelling. finalists have the opportunity to present their work to distinguished scientists from leading global institutions. the competition involves online registration and submission, material review, regional evaluations, and a global final with an awards ceremony held at tsinghua university in china.",
+      "category": "academic",
+      "interest": "stem, economics modelling",
+      "minAge": 14,
+      "maxAge": 18,
+      "deadline": "2026-09-15",
+      "eventDate": "2026-12-05",
+      "location": "north america (regional), tsinghua university, china (global final)",
+      "prizes": "awards, recognition, opportunity to present research",
+      "rounds": "multiple stages (registration, review, regional, global final)",
+      "fee": "free",
+      "link": "https://www.yauaward-na.org/"
     }
   ],
   "studyResources": [
@@ -7553,11 +7607,119 @@
       "title": "python for everybody: exploring data using python 3",
       "description": "a free textbook for learning python programming, suitable for high school students interested in computer science and data exploration.",
       "link": "https://www.py4e.com/book"
+    },
+    {
+      "id": "openstax-math-textbooks-hs",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "openstax mathematics textbooks (high school level)",
+      "description": "provides free, open-access pdf versions of textbooks for various high school level math courses, including algebra, trigonometry, calculus, and statistics. enhanced with research-based learning tools and technology partners.",
+      "link": "https://openstax.org/"
+    },
+    {
+      "id": "ck12-math-resources-hs",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "ck-12 mathematics materials",
+      "description": "a comprehensive source of material for every high school math topic, with options to edit content to suit specific needs. it includes textbooks, exercises, and other learning tools.",
+      "link": "https://www.ck12.org/mathematics/"
+    },
+    {
+      "id": "ib-math-aa-thriving-scholars-2025",
+      "syllabus": "ib",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "ib mathematics: analysis and approaches (aa) complete guide by rajat sir",
+      "description": "free study notes, past papers, and resources for ib math aa (hl and sl) for the 2025 syllabus. covers number & algebra, functions, geometry & trigonometry, statistics & probability, and calculus. includes topic quizzes, comprehensive mock exams, and a revision ladder.",
+      "link": "https://thrivingscholars.com/blog/free-ib-math-aa-resources-complete-guide-rajat-sir"
+    },
+    {
+      "id": "python-for-everybody",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "python for everybody: exploring data using python 3",
+      "description": "a free and widely used textbook for learning python programming, specifically focusing on data exploration. ideal for beginners in computer science and programming.",
+      "link": "https://www.py4e.com/book"
+    },
+    {
+      "id": "eloquent-javascript",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "eloquent javascript: a modern introduction to programming",
+      "description": "a free and comprehensive guide to javascript programming, covering language basics, browser programming, and node.js. suitable for students seeking to learn web development.",
+      "link": "https://eloquentjavascript.net/"
+    },
+    {
+      "id": "free-english-classical-novels",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "textbook",
+      "title": "classic english literature collection (project gutenberg)",
+      "description": "a vast collection of free classical novels in english, including works like 'adventures of huckleberry finn,' 'jane eyre,' 'great expectations,' and '1984.' accessible online for reading and study, excellent for english literature and language arts curricula.",
+      "link": "https://www.gutenberg.org/"
+    },
+    {
+      "id": "ib-cs-hl-tutorchase-notes",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "free ib dp computer science hl notes (tutorchase)",
+      "description": "comprehensive ib dp computer science hl notes covering system fundamentals, computer organisation, networks, computational thinking, abstract data structures, resource management, and control. includes topics like recursive thinking, two-dimensional arrays, stacks, queues, and linked lists.",
+      "link": "https://www.tutorchase.com/resources/ib-dp-computer-science-hl-notes"
+    },
+    {
+      "id": "freecodecamp-coding-lessons",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "interactive lessons",
+      "title": "freecodecamp interactive coding lessons & certifications",
+      "description": "a non-profit platform providing thousands of hours of free, interactive coding lessons, projects, and certifications in web development, data science, machine learning, and more, suitable for teens and high schoolers.",
+      "link": "https://www.freecodecamp.org/"
+    },
+    {
+      "id": "w3schools-web-dev-tutorials",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "tutorials",
+      "title": "w3schools web development tutorials and guides",
+      "description": "a staple resource for learning web development, offering simple tutorials and guides on html, css, javascript, and sql. students can try out code directly in the browser and complete quick quizzes to reinforce learning.",
+      "link": "https://www.w3schools.com/"
+    },
+    {
+      "id": "codehs-free-courses",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "codehs free computer science curriculum & coding tools",
+      "description": "codehs free includes over 100 computer science courses for high school and middle school, featuring a browser-based code editor and real classroom tools. covers javascript, python, html, java, and ap computer science courses.",
+      "link": "https://codehs.com/free"
+    },
+    {
+      "id": "ib-cs-hl-markscheme",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "specimen paper",
+      "title": "ibo official specimen & sample papers + markschemes (via markscheme)",
+      "description": "the only fully-official free past/specimen papers and markschemes for ib computer science hl, offering gold-standard, format-accurate resources for exam preparation.",
+      "link": "https://www.markscheme.com/ib/computer-science-hl"
+    },
+    {
+      "id": "ibresources-community-hub",
+      "syllabus": "ib",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "ibresources.cc community hub for notes & past papers",
+      "description": "a comprehensive community hub indexing free ib notes, predicted-paper archives, score calculators, and grade-boundary tools across various ib subjects, including mathematics.",
+      "link": "https://ibresources.cc/"
     }
   ],
   "dailyInspiration": {
-    "title": "the prodigy and the code: tanishq abraham's extraordinary journey",
-    "story": "tanishq abraham, a child prodigy, defied conventional educational timelines from a very young age. by the age of 11, he had already graduated from high school. at just 12, he simultaneously earned three associate's degrees from american river college. his intellectual prowess didn't stop there; at 15, he was accepted into uc davis and later transferred to uc davis medical school, aiming to become a doctor and researcher. beyond academics, tanishq also expressed a keen interest in computer science, hinting at a desire to work at companies like google. his achievements demonstrate an exceptional ability to accelerate learning and pursue multiple complex fields simultaneously, inspiring many with his relentless ambition and intellectual curiosity. his journey highlights that age is truly just a number when it comes to pursuing knowledge and making significant academic strides.",
-    "takeaway": "age is merely a number when fueled by insatiable curiosity and relentless ambition to learn and achieve."
+    "title": "the 15-year-old mit prodigy, ahaan rungta",
+    "story": "ahaan rungta, born in calcutta, india, and raised in fort lauderdale, florida, embarked on an extraordinary educational journey at an exceptionally young age. at just five years old, while most children were entering kindergarten, ahaan was introduced to mit's opencourseware by his mother. he immersed himself in the free online materials, essentially acquiring his entire elementary and secondary education through mit's courses. by the time he was 13, his ambition to attend mit solidified during a campus visit, where he felt his life and aspirations 'moved to another level'. his family even relocated to be closer to the institution. in 2015, at the remarkable age of 15, ahaan rungta was accepted into the mit class of 2019, demonstrating an unparalleled dedication to self-study and a profound passion for learning that transcended traditional schooling.",
+    "takeaway": "passion, perseverance, and leveraging open-access knowledge can pave an extraordinary path to achieving ambitious academic dreams."
   }
 }
