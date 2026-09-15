@@ -3725,6 +3725,60 @@
       "rounds": "multiple stages (registration, review, regional, global final)",
       "fee": "free",
       "link": "https://www.yauaward-na.org/"
+    },
+    {
+      "id": "oxford-said-climate-tech-challenge-2026",
+      "type": "competition",
+      "title": "oxford saïd global climate tech challenge 2026",
+      "shortDesc": "a global challenge for high school students to develop technology-based solutions to tackle the climate crisis.",
+      "fullDetails": "presented by saïd business school, university of oxford, this competition invites teams of 3-5 students aged 15-18 (individual entries not accepted) to develop bold, practical, tech-driven ideas addressing climate change. areas of focus include air pollution, extreme weather, food security, biodiversity, and water scarcity. shortlisted teams receive an all-expenses-paid trip to oxford for the global finals in october 2026. participants gain real-world purpose, sharpen problem-solving and teamwork skills, and build a portfolio recognized by oxford saïd.",
+      "category": "stem, innovation",
+      "interest": "climate technology, environmental science, entrepreneurship, engineering",
+      "minAge": 15,
+      "maxAge": 18,
+      "deadline": "2026-09-xx (finalist announcement is in september).",
+      "eventDate": "2026-10-xx (global finals in october).",
+      "location": "online (submissions), oxford, uk (finals)",
+      "prizes": "full scholarship to a youth education summer school for winning student team, place on an oxford executive education programme for winning teacher.",
+      "rounds": "submission, shortlisting, global finals",
+      "fee": "free.",
+      "link": "https://www.sbs.ox.ac.uk/programmes/oxford-said-global-climate-tech-challenge-2026"
+    },
+    {
+      "id": "icso-2026",
+      "type": "competition",
+      "title": "sof international computer science olympiad (icso) 2026-27",
+      "shortDesc": "an annual academic competition organized by the science olympiad foundation (sof) for students in classes 1-10, assessing computer science fundamentals and information technology.",
+      "fullDetails": "the sof international computer science olympiad (icso) is an annual exam for students of classes 1-10, conducted by the science olympiad foundation in offline mode. it evaluates students' understanding of computer science, information technology, logical reasoning, and computer awareness. the exam is 60 minutes, objective-type (multiple choice), and administered at registered schools across 72 countries. registration is exclusively through schools, with administrators registering with sof at least 30 days before the chosen exam date. exam dates for 2026-27 are september 24, 2026, and december 17, 2026. prizes include cash awards for top international rank holders, medals, certificates, and teacher appreciation awards. the registration fee is ₹170 for students in india, bhutan, and nepal.",
+      "category": "academic",
+      "interest": "computer science & it",
+      "minAge": 6,
+      "maxAge": 16,
+      "deadline": "2026-08-25",
+      "eventDate": "2026-09-24",
+      "location": "participating schools worldwide (offline)",
+      "prizes": "cash awards (top 3 international ranks), medals, certificates, teacher awards (over ₹24 crore total annually across all sof olympiads).",
+      "rounds": "one level examination for sof icso.",
+      "fee": "₹170 (for india, bhutan, nepal, other regions tbd).",
+      "link": "https://www.sofworld.org/"
+    },
+    {
+      "id": "oxford-climate-tech-2026",
+      "type": "challenge",
+      "title": "oxford saïd global climate tech challenge 2026",
+      "shortDesc": "a free global challenge for high school students and teachers to develop technology-driven solutions for the climate crisis.",
+      "fullDetails": "this challenge invites high school students and teachers worldwide to use technology to tackle the climate crisis with bold, practical solutions. it is completely free to enter. shortlisted student teams and teachers receive an all-expenses-paid trip to oxford in october. top prizes include a full scholarship to a youth education summer school for the winning student team and a place on an oxford executive education programme for the winning teacher. the competition emphasizes real-world purpose, skill development in problem-solving and teamwork, and a platform for impact. last year's competition drew over 1,600 entries from 75 countries.",
+      "category": "innovation",
+      "interest": "environment & technology",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "tbd (past competitions suggest a deadline in the first half of the year for october event).",
+      "eventDate": "2026-10-xx",
+      "location": "online for initial stages, oxford, uk for finalists.",
+      "prizes": "full scholarship to youth education summer school for winning student team, oxford executive education programme for winning teacher.",
+      "rounds": "multiple stages (initial submission, shortlisting, final presentation).",
+      "fee": "free",
+      "link": "https://www.sbs.ox.ac.uk/programmes/oxford-said-global-climate-tech-challenge-2026"
     }
   ],
   "studyResources": [
@@ -7715,11 +7769,119 @@
       "title": "ibresources.cc community hub for notes & past papers",
       "description": "a comprehensive community hub indexing free ib notes, predicted-paper archives, score calculators, and grade-boundary tools across various ib subjects, including mathematics.",
       "link": "https://ibresources.cc/"
+    },
+    {
+      "id": "ib-cs-notes-thinka",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "free ib dp computer science study notes & practice | thinka",
+      "description": "free study notes for ib diploma programme (dp) computer science (sl & hl), breaking down key concepts with examples and practice prompts for core syllabus content and options like databases, web science, and oop.",
+      "link": "https://www.thinka.ai/learn/ib-computer-science-notes"
+    },
+    {
+      "id": "ib-cs-notes-reddit",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "free ib dp computer science revision notes & exam blueprints (theme a & theme b)",
+      "description": "a complete set of organized, up-to-date revision materials formatted around the ib dp computer science syllabus, covering computer fundamentals, networks, system architectures, machine learning basics, pseudocode rules, database modeling, oop & constructor chaining, abstract data structures, and exam blueprints.",
+      "link": "https://www.reddit.com/r/ibo/comments/1dfp90x/free_ib_dp_computer_science_revision_notes_exam/"
+    },
+    {
+      "id": "spm-math-past-papers-superprof",
+      "syllabus": "spm",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "2026 guide to spm mathematics past year papers and answers - superprof",
+      "description": "access to a comprehensive collection of spm mathematics past year questions and answers from 2014-2019, along with trial questions and step-by-step tutorials to improve problem-solving skills and exam familiarity.",
+      "link": "https://www.superprof.com.my/blog/spm-maths-examination-papers/"
+    },
+    {
+      "id": "spm-math-forecast-scribd",
+      "syllabus": "spm",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "spm mathematics forecast paper",
+      "description": "a sample mathematics spm forecast paper in pdf format, consisting of two sections with questions testing various math skills such as graphing inequalities, solving simultaneous equations, geometry, and trigonometry.",
+      "link": "https://www.scribd.com/document/329550734/Mathematics-SPM-Forecast-Paper"
+    },
+    {
+      "id": "cambridge-math-notes-igcse",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "cambridge igcse: mathematics 0580/21 model answers",
+      "description": "model answers for cambridge igcse mathematics paper 0580/21, useful for understanding expected solutions and problem-solving techniques for the cambridge curriculum.",
+      "link": "https://www.scribd.com/document/656121408/Cambridge-IGCSE-MATHEMATICS-0580-21"
+    },
+    {
+      "id": "ap-english-lit-guide",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "ap english literature and composition course and exam description",
+      "description": "the official college board document outlining the curriculum framework, exam format, and scoring guidelines for ap english literature and composition, essential for understanding the course content and expectations.",
+      "link": "https://apcentral.collegeboard.org/media/pdf/ap-english-literature-and-composition-course-and-exam-description.pdf"
+    },
+    {
+      "id": "ap-csa-textbook-2026",
+      "syllabus": "ap",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "free ap computer science a textbook (2025-2026 curriculum)",
+      "description": "a complete free online textbook covering java and preparation for the ap computer science a exam, aligned with the 2025-2026 college board curriculum. it offers clear explanations, code examples, and practice opportunities across units like using objects, selection and iteration, class creation, and data collections.",
+      "link": "https://www.apcsexamprep.com/free-ap-computer-science-a-textbook"
+    },
+    {
+      "id": "cambridge-igcse-math-pastpapers",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge igcse mathematics (0580) past papers & marking schemes",
+      "description": "free access to cambridge igcse mathematics (0580) past papers and official marking schemes from 2019-2025, including specimen papers for 2025. covers both core and extended tiers, with syllabus changes from 2025 introducing non-calculator papers.",
+      "link": "https://www.tutopiya.com/cambridge-igcse-mathematics-0580-past-papers-marking-schemes/"
+    },
+    {
+      "id": "cbse-class10-math-sample-2027",
+      "syllabus": "cbse",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cbse class 10 maths basic sample paper 2026-27 with solutions",
+      "description": "download free pdfs of official cbse class 10 math basic sample question papers 2026-27 with solutions and marking schemes for board exams 2027. these cover algebra, geometry, trigonometry, and statistics, helping students understand exam patterns and improve problem-solving.",
+      "link": "https://www.educart.com/cbse-class-10-maths-basic-sample-paper-2026-27-with-solutions/"
+    },
+    {
+      "id": "highschool-math-revision-notes",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "free mathematics revision notes for high school students (thinka)",
+      "description": "free revision notes for senior high school mathematics, covering key topics with worked examples and practice prompts for math i, math ii, and math iii, including equations, complex numbers, trigonometry, differentiation, and integration.",
+      "link": "https://www.thinka.ai/learn/free-mathematics-revision-notes-for-high-school-students"
+    },
+    {
+      "id": "highschool-ela-activities",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "free high school english language arts activities (hmh)",
+      "description": "downloadable activities and lesson plans for grades 9-12 english language arts, supporting students in writing styles, reading comprehension, poem analysis, and argumentative writing. includes videos and worksheets.",
+      "link": "https://www.hmhco.com/blog/free-high-school-english-language-arts-activities"
+    },
+    {
+      "id": "ap-csa-resources-knowt-2026",
+      "syllabus": "ap",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "free ap computer science a resources for 2026 (knowt)",
+      "description": "free in-depth ap computer science a study guides, flashcards, and resources for all units on the exam. includes personalized free response practice with instant feedback and notes made by students.",
+      "link": "https://knowt.com/notes/ap/computer-science-a"
     }
   ],
   "dailyInspiration": {
-    "title": "the 15-year-old mit prodigy, ahaan rungta",
-    "story": "ahaan rungta, born in calcutta, india, and raised in fort lauderdale, florida, embarked on an extraordinary educational journey at an exceptionally young age. at just five years old, while most children were entering kindergarten, ahaan was introduced to mit's opencourseware by his mother. he immersed himself in the free online materials, essentially acquiring his entire elementary and secondary education through mit's courses. by the time he was 13, his ambition to attend mit solidified during a campus visit, where he felt his life and aspirations 'moved to another level'. his family even relocated to be closer to the institution. in 2015, at the remarkable age of 15, ahaan rungta was accepted into the mit class of 2019, demonstrating an unparalleled dedication to self-study and a profound passion for learning that transcended traditional schooling.",
-    "takeaway": "passion, perseverance, and leveraging open-access knowledge can pave an extraordinary path to achieving ambitious academic dreams."
+    "title": "the unsilenced brilliance: viraj dhanda's journey to mit",
+    "story": "viraj dhanda, a nonverbal autistic student from brookline, massachusetts, was accepted into mit at 19, defying years of being underestimated. diagnosed with autism at two, adults initially believed he had low intellectual ability, and he didn't learn basic communication until age 10 when a babysitter suggested an augmentative and alternative communication (aac) device. using a lenovo tablet with his right thumb, viraj communicates, producing eight to ten words per minute. his father, sumit, persistently supported him, helping to unlock his son's brilliance. viraj vividly recalls the frustration of being unable to communicate and being labeled. he excelled in subjects like mathematics, scoring 35 out of 36 on the math section of the act. viraj plans to use his mit degree to become an economist, writer, and disability rights advocate, hoping to change perceptions. his acceptance letter, a moment of profound joy for him and his family, proved that with belief and support, 'nothing came easy for us,' viraj said, 'but we kept fighting our way, until others recognized my potential.'",
+    "takeaway": "never underestimate the potential within, for brilliance can manifest in the most unexpected ways when met with unwavering support and belief."
   }
 }
