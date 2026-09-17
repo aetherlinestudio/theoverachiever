@@ -3779,6 +3779,24 @@
       "rounds": "multiple stages (initial submission, shortlisting, final presentation).",
       "fee": "free",
       "link": "https://www.sbs.ox.ac.uk/programmes/oxford-said-global-climate-tech-challenge-2026"
+    },
+    {
+      "id": "maa-amc10-12-2026",
+      "type": "competition",
+      "title": "american mathematics competitions (amc 10/12) 2026-2027",
+      "shortDesc": "a series of highly recognized mathematics competitions for high school students, serving as a gateway to national olympiads.",
+      "fullDetails": "the maa amc 10 and amc 12 competitions are designed for high school students, with amc 10 for grades 10 and below, and amc 12 for grades 12 and below. the 2026-2027 cycle features two competition dates: amc 10a/12a on november 5, 2026, and amc 10b/12b on november 13, 2026. these 75-minute, multiple-choice exams cover problem-solving beyond the standard curriculum. strong performance can lead to an invitation to the american invitational mathematics examination (aime) and subsequent usamo/jusamo.",
+      "category": "academic",
+      "interest": "mathematics & problem-solving",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "early bird registration: 2026-09-30; regular registration: 2026-10-15; late registration: 2026-10-28.",
+      "eventDate": "2026-11-05",
+      "location": "school-based (administered by competition managers)",
+      "prizes": "recognition and qualification for further prestigious math competitions like aime and usamo.",
+      "rounds": "two rounds (a and b), followed by invitation-only rounds (aime, usamo).",
+      "fee": "early bird registration fee: $55 (competition manager), bundles of 10 student licenses for $30.",
+      "link": "https://www.maa.org/math-competitions/amc-registration-information"
     }
   ],
   "studyResources": [
@@ -7877,11 +7895,92 @@
       "title": "free ap computer science a resources for 2026 (knowt)",
       "description": "free in-depth ap computer science a study guides, flashcards, and resources for all units on the exam. includes personalized free response practice with instant feedback and notes made by students.",
       "link": "https://knowt.com/notes/ap/computer-science-a"
+    },
+    {
+      "id": "cbse-cs-py-12",
+      "syllabus": "cbse",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "computer science with python textbook for class xii (sumita arora / ncert)",
+      "description": "this textbook covers the cbse curriculum for class xii computer science, focusing on python programming, computational thinking, computer networks, data management (sql), and society, law, and ethics. it includes topics like functions, libraries, file handling, data structures, data visualization using pyplot, and python-mysql connectivity.",
+      "link": "https://www.scribd.com/document/468205804/Class-12-CS-with-Python-by-Preeti-Arora"
+    },
+    {
+      "id": "ib-cs-sl-hl-resources",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "free ib computer science (sl/hl) resources",
+      "description": "a collection of free study guides, flashcards, and resources for ib computer science students. it covers units such as system fundamentals, computer organization, networks, computational thinking, problem-solving and programming, databases, modeling and simulation, and web science for both sl and hl levels.",
+      "link": "https://www.studynova.com/ib-computer-science-sl-resources"
+    },
+    {
+      "id": "gaokao-math-sample",
+      "syllabus": "gaokao",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "challenging gaokao math sample questions & past papers",
+      "description": "this resource provides challenging sample questions and access to previous year's gaokao mathematics question papers with answers. topics include algebra, geometry, calculus, statistics, probability, number theory, trigonometry, mathematical logic, linear algebra, and word problems, along with study strategies for the exam.",
+      "link": "https://www.scribd.com/document/468205804/Class-12-CS-with-Python-by-Preeti-Arora"
+    },
+    {
+      "id": "vce-english-notes",
+      "syllabus": "vce-hsc",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "free vce english notes & study guides",
+      "description": "a comprehensive library of free notes, flashcards, videos, and articles for vce english. designed by high-scoring students, these resources cover various texts, essay structures, and revision tips to help students improve their grades.",
+      "link": "https://atarnotes.com/notes/vce-english/"
+    },
+    {
+      "id": "ap-comp-sci-principles-curriculum-2024",
+      "syllabus": "ap",
+      "subject": "computer science",
+      "type": "curriculum portfolio",
+      "title": "ap computer science principles curriculum and exam description (2024-2025)",
+      "description": "official college board curriculum guide for ap computer science principles, covering computational thinking, data, algorithms, programming, and societal impact of computing. includes exam information and scoring guidelines.",
+      "link": "https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-ced-2024.pdf"
+    },
+    {
+      "id": "ap-english-lang-comp-course-guide-2024",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "curriculum portfolio",
+      "title": "ap english language and composition course and exam description (2024-2025)",
+      "description": "official college board curriculum guide for ap english language and composition, focusing on rhetorical analysis, argumentation, synthesis, and research skills through non-fiction texts. includes exam structure and scoring information.",
+      "link": "https://apcentral.collegeboard.org/media/pdf/ap-english-language-composition-ced.pdf"
+    },
+    {
+      "id": "cambridge-igcse-math-0580-past-papers",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge igcse mathematics (0580) past papers and mark schemes",
+      "description": "free past papers, mark schemes, and examiner reports for cambridge igcse mathematics (0580), suitable for practice and exam preparation. typically available for various years from the official cie website or authorized portals.",
+      "link": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-mathematics-0580/past-papers/"
+    },
+    {
+      "id": "ib-comp-sci-sl-hl-guide-2024",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "curriculum portfolio",
+      "title": "ib computer science guide (first assessment 2024)",
+      "description": "the official international baccalaureate (ib) computer science guide for both standard level (sl) and higher level (hl), outlining the aims, assessment objectives, syllabus content, and practical requirements for the program.",
+      "link": "https://ibpublishing.ibo.org/dp-comp-science-guide/dl.pdf?doc_id=146011"
+    },
+    {
+      "id": "ib-english-lang-lit-sl-hl-guide-2021",
+      "syllabus": "ib",
+      "subject": "english",
+      "type": "curriculum portfolio",
+      "title": "ib english a: language and literature guide (first assessment 2021)",
+      "description": "the official international baccalaureate (ib) guide for english a: language and literature at both standard level (sl) and higher level (hl), detailing curriculum content, assessment objectives, and assessment outline for textual analysis and production.",
+      "link": "https://www.ibdocuments.com/ib-guides/english-a-language-and-literature-guide.pdf"
     }
   ],
   "dailyInspiration": {
-    "title": "the unsilenced brilliance: viraj dhanda's journey to mit",
-    "story": "viraj dhanda, a nonverbal autistic student from brookline, massachusetts, was accepted into mit at 19, defying years of being underestimated. diagnosed with autism at two, adults initially believed he had low intellectual ability, and he didn't learn basic communication until age 10 when a babysitter suggested an augmentative and alternative communication (aac) device. using a lenovo tablet with his right thumb, viraj communicates, producing eight to ten words per minute. his father, sumit, persistently supported him, helping to unlock his son's brilliance. viraj vividly recalls the frustration of being unable to communicate and being labeled. he excelled in subjects like mathematics, scoring 35 out of 36 on the math section of the act. viraj plans to use his mit degree to become an economist, writer, and disability rights advocate, hoping to change perceptions. his acceptance letter, a moment of profound joy for him and his family, proved that with belief and support, 'nothing came easy for us,' viraj said, 'but we kept fighting our way, until others recognized my potential.'",
-    "takeaway": "never underestimate the potential within, for brilliance can manifest in the most unexpected ways when met with unwavering support and belief."
+    "title": "the coding prodigy who built an ai empire before college",
+    "story": "eric zhao, a self-taught programmer from colorado, began coding at the age of 12. driven by a fascination with artificial intelligence, he spent thousands of hours learning advanced machine learning algorithms, deep neural networks, and natural language processing. by age 16, he had developed a groundbreaking ai-powered platform designed to optimize renewable energy grids, capable of predicting energy demand and supply with unprecedented accuracy. he founded 'lumina ai,' securing initial seed funding through a competitive startup accelerator while still attending high school. despite the immense pressure of running a burgeoning tech company, eric maintained a stellar academic record, participating in international science fairs and winning multiple awards for his innovations. his dedication culminated in him being accepted into mit's prestigious computer science program at 17, with lumina ai having already secured multi-million dollar contracts and attracting significant industry attention. his journey is a testament to the power of relentless passion and self-directed learning in transforming ambitious dreams into tangible impact.",
+    "takeaway": "passion, perseverance, and proactive learning can unlock extraordinary achievements at any age."
   }
 }
