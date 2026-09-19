@@ -7,7 +7,7 @@ const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 async function discoverOpportunities() {
     console.log("AI is surfing the web for opportunities, elite syllabus material, and inspiring chronicles...");
 
-const prompt = `
+    const prompt = `
         Perform live Google Searches to achieve three explicit goals:
         1. Find active 2026 international/regional competitions, challenges, or conferences for secondary school students.
         2. Find high-quality, free, or open-access academic study resources, official specimen past papers, or curriculum portfolios for secondary school students worldwide. Focus heavily on subjects like Mathematics, Computer Science, and English.
@@ -120,7 +120,7 @@ const prompt = `
             });
         }
 
-// 2. Process & Merge Study Resources (The Global Syllabus Warehouse)
+        // 2. Process & Merge Study Resources (The Global Syllabus Warehouse)
         let updatedStudyResources = [];
         let seenResourceIds = new Set();
 
@@ -132,34 +132,6 @@ const prompt = `
                     seenResourceIds.add(res.id);
                 }
             });
-        }
-
-        // 🌟 AUTOMATED VARIANT RECOVERY MATCH ENGINE
-        // This hunts down 'studyResources', 'study_resources', OR 'studyresources' dynamically
-        let rawStudyArray = null;
-        if (newScrapedPayload.studyResources) rawStudyArray = newScrapedPayload.studyResources;
-        else if (newScrapedPayload.study_resources) rawStudyArray = newScrapedPayload.study_resources;
-        else if (newScrapedPayload.studyresources) rawStudyArray = newScrapedPayload.studyresources;
-
-        // Influx new syllabus treasures safely
-        if (rawStudyArray && Array.isArray(rawStudyArray)) {
-            rawStudyArray.forEach(newRes => {
-                if (!newRes) return;
-                
-                // Fallback generator if the AI skipped making a unique item ID string
-                const resourceId = newRes.id || `res-${newRes.syllabus}-${newRes.subject}-${Math.random().toString(36).substr(2, 5)}`;
-                
-                if (!seenResourceIds.has(resourceId)) {
-                    newRes.id = resourceId; // Assign uniform structural key
-                    updatedStudyResources.push(newRes);
-                    seenResourceIds.add(resourceId);
-                    console.log(`Caching new syllabus resource: [${newRes.syllabus}] - ${newRes.title}`);
-                } else {
-                    console.log(`Syllabus resource duplicate blocked for: ${newRes.title}`);
-                }
-            });
-        } else {
-            console.log("Warning: The AI payload did not contain a readable study resources array on this pass.");
         }
 
         // 🌟 AUTOMATED VARIANT RECOVERY MATCH ENGINE
