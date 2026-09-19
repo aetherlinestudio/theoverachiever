@@ -89,22 +89,28 @@ async function discoverOpportunities() {
             }
         }
 
-        // 1. Process & Merge Competitions
+// 1. Process & Merge Competitions (With Exact Date Self-Cleaning)
         let updatedCompetitions = [];
         let seenCompIds = new Set();
-        const currentYear = new Date().getFullYear();
+        const today = new Date(); // Today's date object
 
         if (existingDatabase.competitions && Array.isArray(existingDatabase.competitions)) {
             existingDatabase.competitions.forEach(comp => {
-                let deadline = String(comp.deadline);
-                let containsPastYear = false;
-                for (let year = 2020; year < currentYear; year++) {
-                    if (deadline.includes(String(year))) containsPastYear = true;
+                let isExpired = false;
+
+                if (comp.deadline) {
+                    const deadlineDate = new Date(comp.deadline);
+                    // Check if deadline is a valid date string and if it has passed today
+                    if (!isNaN(deadlineDate.getTime()) && deadlineDate < today) {
+                        isExpired = true;
+                    }
                 }
-                if (containsPastYear) {
-                    console.log(`Self-cleaning loop: removing expired registry: ${comp.title}`);
-                    return; 
+
+                if (isExpired) {
+                    console.log(`Self-cleaning loop: removing expired competition: ${comp.title} (Deadline: ${comp.deadline})`);
+                    return; // Skip adding to updated list
                 }
+
                 updatedCompetitions.push(comp);
                 seenCompIds.add(comp.id);
             });
@@ -112,7 +118,15 @@ async function discoverOpportunities() {
 
         if (newScrapedPayload.competitions && Array.isArray(newScrapedPayload.competitions)) {
             newScrapedPayload.competitions.forEach(newComp => {
-                if (!seenCompIds.has(newComp.id)) {
+                let isExpired = false;
+                if (newComp.deadline) {
+                    const deadlineDate = new Date(newComp.deadline);
+                    if (!isNaN(deadlineDate.getTime()) && deadlineDate < today) {
+                        isExpired = true;
+                    }
+                }
+
+                if (!isExpired && !seenCompIds.has(newComp.id)) {
                     updatedCompetitions.push(newComp);
                     seenCompIds.add(newComp.id);
                     console.log(`Adding unique new discovery: ${newComp.title}`);
