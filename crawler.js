@@ -162,6 +162,34 @@ const prompt = `
             console.log("Warning: The AI payload did not contain a readable study resources array on this pass.");
         }
 
+        // 🌟 AUTOMATED VARIANT RECOVERY MATCH ENGINE
+        // This hunts down 'studyResources', 'study_resources', OR 'studyresources' dynamically
+        let rawStudyArray = null;
+        if (newScrapedPayload.studyResources) rawStudyArray = newScrapedPayload.studyResources;
+        else if (newScrapedPayload.study_resources) rawStudyArray = newScrapedPayload.study_resources;
+        else if (newScrapedPayload.studyresources) rawStudyArray = newScrapedPayload.studyresources;
+
+        // Influx new syllabus treasures safely
+        if (rawStudyArray && Array.isArray(rawStudyArray)) {
+            rawStudyArray.forEach(newRes => {
+                if (!newRes) return;
+                
+                // Fallback generator if the AI skipped making a unique item ID string
+                const resourceId = newRes.id || `res-${newRes.syllabus}-${newRes.subject}-${Math.random().toString(36).substr(2, 5)}`;
+                
+                if (!seenResourceIds.has(resourceId)) {
+                    newRes.id = resourceId; // Assign uniform structural key
+                    updatedStudyResources.push(newRes);
+                    seenResourceIds.add(resourceId);
+                    console.log(`Caching new syllabus resource: [${newRes.syllabus}] - ${newRes.title}`);
+                } else {
+                    console.log(`Syllabus resource duplicate blocked for: ${newRes.title}`);
+                }
+            });
+        } else {
+            console.log("Warning: The AI payload did not contain a readable study resources array on this pass.");
+        }
+
         // 3. Assemble final combined structural array
         const finalPayload = {
             competitions: updatedCompetitions,
