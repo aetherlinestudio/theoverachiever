@@ -498,6 +498,27 @@
     </footer>
 
 <script>
+
+    // safe loading screen fade fallback
+function dismissLoader() {
+    const loader = document.getElementById('loading-screen');
+    if (loader) {
+        loader.style.transition = 'opacity 0.6s ease';
+        loader.style.opacity = '0';
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 600);
+    }
+}
+
+// run when page loads
+window.addEventListener('load', () => {
+    setTimeout(dismissLoader, 500);
+});
+
+// absolute safety fallback (forces hide after 3 seconds max)
+setTimeout(dismissLoader, 3000);
+    
         // 1. GLOBAL STATE DECLARATIONS (Initialized safely at the absolute top)
         let portalData = [];
         let studyResources = []; 
