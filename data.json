@@ -2303,6 +2303,24 @@
       "rounds": "two rounds (a and b), followed by invitation-only rounds (aime, usamo).",
       "fee": "early bird registration fee: $55 (competition manager), bundles of 10 student licenses for $30.",
       "link": "https://www.maa.org/math-competitions/amc-registration-information"
+    },
+    {
+      "id": "iyrc-summer-2026",
+      "type": "conference",
+      "title": "international young researchers' conference (iyrc) summer 2026",
+      "shortDesc": "a globally recognized platform for high school researchers across various disciplines.",
+      "fullDetails": "the iyrc is an accessible and globally recognized platform for high school researchers across stem, humanities, social science, and interdisciplinary research. for iyrc summer 2026, students submit a 750 to 1,500 word abstract covering objective, methods, findings, and implications. accepted papers are published in the iyrc journal with a doi, providing a citable academic credential. both in-person and virtual participation are available.",
+      "category": "academic",
+      "interest": "multidisciplinary research",
+      "minAge": 14,
+      "maxAge": 18,
+      "deadline": "check official website for 2026 submission deadlines (typically in late summer/fall for future events).",
+      "eventDate": "summer 2026 (exact dates not specified, typically a few days)",
+      "location": "online and physical (past conferences at columbia, stanford, university of tokyo).",
+      "prizes": "publication in the iyrc journal, potential scholarships/mentorship for top projects.",
+      "rounds": "submission and presentation.",
+      "fee": "details not specified, check official website.",
+      "link": "https://www.the-iyrc.org/iyrc-summer-2026.html"
     }
   ],
   "studyResources": [
@@ -6545,11 +6563,65 @@
       "title": "code.org computer science principles curriculum",
       "description": "a free, year-long curriculum introducing foundational concepts of computer science and exploring technology's impact. suitable for grades 9-12.",
       "link": "https://code.org/curriculum/csp"
+    },
+    {
+      "id": "cambridge-igcse-cs-0478-papers",
+      "syllabus": "cambridge",
+      "subject": "computer science",
+      "type": "specimen paper",
+      "title": "cambridge igcse computer science (0478) past papers & specimen papers",
+      "description": "free access to official past papers, mark schemes, and specimen papers for cambridge igcse computer science syllabus 0478. covers theoretical knowledge and practical programming skills, including algorithms, pseudocode, and flowcharts.",
+      "link": "https://www.xtrapapers.com/papers/cambridge-igcse/computer-science-0478/"
+    },
+    {
+      "id": "ib-math-aa-resources",
+      "syllabus": "ib",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "ib math aa (analysis and approaches) free study notes & past papers",
+      "description": "comprehensive collection of free study notes, revision guides, and past papers for ib mathematics analysis and approaches (hl & sl). includes resources for conceptual understanding, practice, and exam strategies.",
+      "link": "https://thrivingscholars.com/free-study-resources/ib-math-aa-2025/"
+    },
+    {
+      "id": "cbse-class10-it-book",
+      "syllabus": "cbse",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "cbse class 10 information technology (code 402) textbook pdf",
+      "description": "the official ncert updated textbook for cbse class 10 information technology (code 402), covering digital documentation, electronic spreadsheets, database management systems, and cyber-ethics. available for free download.",
+      "link": "https://cbse.edusoftplayground.com/information-technology-class-10-book-pdf-cbse-skill-education/"
+    },
+    {
+      "id": "galileo-world-lit",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "textbook",
+      "title": "galileo open anthology of early world literature in english translation",
+      "description": "a collection of free and open primary texts in digital formats for the study of early world literature in english translation. includes multiple english translations for comparison and study, along with open secondary and supplemental resources.",
+      "link": "https://oer.galileo.usg.edu/english-textbooks/30/"
+    },
+    {
+      "id": "cambridge-math-sec1-specimen-papers",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge secondary 1 checkpoint mathematics exam specimen papers",
+      "description": "free pdf specimen papers for the cambridge secondary 1 checkpoint mathematics exam, covering topics like measurements, algebra, geometry, and data interpretation. includes instructions for candidates and notes on calculator usage.",
+      "link": "https://www.scribd.com/document/248552179/Cambridge-Secondary-1-Math-Specimen-Paper"
+    },
+    {
+      "id": "ap-english-lit-free-resources-knowt",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "free ap english literature and composition resources (knowt)",
+      "description": "a collection of free study guides, flashcards, practice questions (multiple-choice and free-response), unit tests, full-length practice exams, and cheatsheets for ap english literature and composition. covers all nine course units for close reading and analytical writing.",
+      "link": "https://www.knowt.com/ap-english-literature-and-composition-resources/"
     }
   ],
   "dailyInspiration": {
-    "title": "the teen founder: zach yadegari's ai nutrition empire",
-    "story": "zach yadegari, an ambitious young entrepreneur, began his journey into the tech world at an early age. at just 7, he discovered his passion for coding at a summer camp, a spark that ignited a remarkable trajectory. by 16, yadegari had already successfully sold his first video gaming app for nearly $100,000. instead of pocketing the profits, he shrewdly invested them into his next big venture: cal ai. as a high school student, he co-founded cal ai, an ai-powered nutrition app. this startup quickly scaled, reportedly generating around $30 million annually. yadegari's story exemplifies how youthful ambition, combined with an early exposure to technology and a keen entrepreneurial spirit, can lead to monumental success even before reaching adulthood. his decision to reinvest his initial earnings into a new, innovative project showcases a mature understanding of business growth and a relentless pursuit of impact within the tech landscape.",
-    "takeaway": "age is no barrier to innovation and impact when ambition and a strategic mindset drive your endeavors."
+    "title": "the prodigy who built a $30m ai startup before finishing high school",
+    "story": "zach yadegari's entrepreneurial journey began at age 7 when he started coding out of curiosity. by 16, he founded 'totally science,' his first serious venture, which he successfully sold for a six-figure sum, gaining invaluable experience and credibility. rather than taking the conventional path, zach, at 18, then assembled a lean team across multiple continents to build 'cal ai,' an artificial intelligence startup. cal ai quickly achieved over 5 million downloads and was generating an impressive $1.4 million in monthly revenue, with a projected annual revenue of $30 million, all before he even completed high school. his story exemplifies how early passion, persistent building, and a drive to innovate can lead to extraordinary success.",
+    "takeaway": "curiosity, relentless building, and early exits can lead to monumental success before even formal education is complete."
   }
 }
