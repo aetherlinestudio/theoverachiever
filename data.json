@@ -2017,24 +2017,6 @@
       "link": "not explicitly provided by source."
     },
     {
-      "id": "youngarts-writing-2026",
-      "type": "competition",
-      "title": "youngarts writing competition",
-      "shortDesc": "identifies and supports accomplished young artists in visual, literary, and performing arts, offering awards and development opportunities.",
-      "fullDetails": "offers an annual national competition in categories like creative nonfiction, novel, play or script, poetry, short story, and spoken word. student winners may receive awards of up to $10,000 and participate in artistic development. open to us citizens/permanent residents in grades 10-12 or ages 15-18.",
-      "category": "arts, humanities",
-      "interest": "creative writing (various genres), artistic development",
-      "minAge": 15,
-      "maxAge": 18,
-      "deadline": "october 2026 (tbd).",
-      "eventDate": "submission and evaluation process.",
-      "location": "online submission, national recognition.",
-      "prizes": "up to $10,000 and national recognition.",
-      "rounds": "submission and evaluation.",
-      "fee": "$35 (waivers available).",
-      "link": "not explicitly provided by source."
-    },
-    {
       "id": "iaio-2026",
       "type": "competition",
       "title": "international artificial intelligence olympiad (iaio)",
@@ -2321,6 +2303,114 @@
       "rounds": "submission and presentation.",
       "fee": "details not specified, check official website.",
       "link": "https://www.the-iyrc.org/iyrc-summer-2026.html"
+    },
+    {
+      "id": "sof-icso-2026-27",
+      "type": "competition",
+      "title": "sof international computer science olympiad (icso) 2026-27",
+      "shortDesc": "an annual academic competition for students in grades 1-10 on computer science fundamentals and information technology.",
+      "fullDetails": "the international computer science olympiad (icso) is an annual academic competition organized by the science olympiad foundation (sof), assessing students in grades 1–10 on computer science fundamentals and information technology. the exam is 60 minutes, objective-type (multiple choice), and administered offline at registered schools across 72 countries. the curriculum is aligned with cbse, icse, and different state boards. there is no negative marking.",
+      "category": "academic",
+      "interest": "computer science",
+      "minAge": 6,
+      "maxAge": 16,
+      "deadline": "2026-11-17 (schools must register 30 days prior to chosen exam date)",
+      "eventDate": "2026-09-24 (date 1) or 2026-12-17 (date 2)",
+      "location": "offline (at registered schools)",
+      "prizes": "international, zonal, and school topper awards, cash awards for top three international rank holders, medals, certificates, teacher appreciation awards.",
+      "rounds": "1 (single level)",
+      "fee": "not specified (school-based registration)",
+      "link": "https://sofworld.org"
+    },
+    {
+      "id": "ifco-2026-27",
+      "type": "competition",
+      "title": "international foundation computer & cyber olympiad (ifco) 2026-27",
+      "shortDesc": "an online olympiad covering fundamental concepts in information technology, programming, and digital systems for classes 1-12.",
+      "fullDetails": "the ifco provides a structured understanding of fundamental concepts in information technology, programming, hardware, software, networking, and digital systems. it introduces students to coding and algorithmic thinking and strengthens computational thinking. the online exam is 60 minutes, with multiple-choice questions for classes 1 to 12. parental supervision is permitted.",
+      "category": "academic",
+      "interest": "computer science, logic & coding",
+      "minAge": 6,
+      "maxAge": 18,
+      "deadline": "not explicitly stated (ongoing for 2026-27 academic year)",
+      "eventDate": "not explicitly stated (timings: 5:00 pm – 8:00 pm ist)",
+      "location": "online",
+      "prizes": "certificates, national rankings, and prestigious awards.",
+      "rounds": "1 (online exam)",
+      "fee": "not specified",
+      "link": "https://www.iof.in"
+    },
+    {
+      "id": "global-stem-quest-2026",
+      "type": "competition",
+      "title": "global stem quest 2026",
+      "shortDesc": "a 45-day global stem, academic, and innovation challenge for school students with individual and team rounds.",
+      "fullDetails": "global stem quest 2026 is a 45-day global stem, academic, and innovation challenge for school students in grades 1–12. it features weekly tasks where students research, solve, create, and submit work. the program includes an individual round (21 days of independent exploration) and a school team round (21 days of collaborative stem challenges).",
+      "category": "academic",
+      "interest": "stem, logic & coding",
+      "minAge": 6,
+      "maxAge": 18,
+      "deadline": "not explicitly stated (starts first week of october 2026)",
+      "eventDate": "2026-10-xx to 2026-11-xx (45-day journey starting first week of october)",
+      "location": "online (global)",
+      "prizes": "verified participation records, international recognition, certificates & honors.",
+      "rounds": "2 main rounds (individual and school team), 3 stages overall",
+      "fee": "not specified",
+      "link": "https://smartclassconnect.com/global-stem-quest-2026"
+    },
+    {
+      "id": "first-global-challenge-2026",
+      "type": "competition",
+      "title": "first global challenge 2026",
+      "shortDesc": "an olympics-style international robotics competition uniting students from 190+ countries to solve global challenges through stem.",
+      "fullDetails": "the first global challenge is an olympics-style international robotics competition held annually in a different country. teams from over 190 countries build and program a robot to compete in a game themed around pressing global challenges, such as wildfire prevention and recovery for 2026. the aim is to inspire youth to pursue stem fields.",
+      "category": "academic",
+      "interest": "stem, robotics, engineering",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "not explicitly stated (team formation and preparation earlier than event)",
+      "eventDate": "2026-10-07 to 2026-10-10",
+      "location": "incheon, republic of korea",
+      "prizes": "global recognition and inspiration.",
+      "rounds": "competition involves building and programming robots to complete tasks",
+      "fee": "not specified (potential team costs for materials and travel)",
+      "link": "https://first.global"
+    },
+    {
+      "id": "conrad-challenge-2026-2027",
+      "type": "competition",
+      "title": "conrad challenge",
+      "shortDesc": "a global innovation competition where teams develop solutions to real-world problems.",
+      "fullDetails": "the conrad challenge invites teams of high school students (ages 13-18) to design scalable solutions using stem and entrepreneurship across categories like aerospace, energy, health, and cybersecurity. it emphasizes iterative development, business planning, and applied innovation, culminating in an innovation summit.",
+      "category": "academic",
+      "interest": "stem & entrepreneurship",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2026-08-xx (for 2026-2027 round opening)",
+      "eventDate": "2027-04-xx (innovation summit for 2026-2027 round)",
+      "location": "virtual, with innovation summit often in houston, usa",
+      "prizes": "mentorship, ip support, international travel for finalists",
+      "rounds": "brainstorming, feedback, innovation brief, pitch video, summit",
+      "fee": "free",
+      "link": "https://www.conradchallenge.org/"
+    },
+    {
+      "id": "churchill-investment-competition-2026",
+      "type": "competition",
+      "title": "the churchill investment competition (cic) 2026",
+      "shortDesc": "a global stock-pitch competition for secondary school students.",
+      "fullDetails": "the churchill investment competition invites secondary school students worldwide, in teams of up to four, to participate in a global stock-pitch competition organized by the student leadership of the churchill fund.",
+      "category": "academic",
+      "interest": "finance & investment",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2026-11-04",
+      "eventDate": "tbd",
+      "location": "global (online)",
+      "prizes": "not explicitly stated",
+      "rounds": "stock-pitch submission",
+      "fee": "not explicitly stated",
+      "link": "https://www.studentcompetitions.com/competitions/the-churchill-investment-competition-cic-2026-2244"
     }
   ],
   "studyResources": [
@@ -6617,11 +6707,218 @@
       "title": "free ap english literature and composition resources (knowt)",
       "description": "a collection of free study guides, flashcards, practice questions (multiple-choice and free-response), unit tests, full-length practice exams, and cheatsheets for ap english literature and composition. covers all nine course units for close reading and analytical writing.",
       "link": "https://www.knowt.com/ap-english-literature-and-composition-resources/"
+    },
+    {
+      "id": "cambridge-math-as-a-level-9709-papers",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge as & a level mathematics (9709) past papers",
+      "description": "free download of cambridge international as & a level mathematics (9709) past papers, mark schemes, and examiner reports for 2022–2026. includes papers 1–3 for pure mathematics.",
+      "link": "https://www.pastpapers.academy/cambridge-as-a-level-mathematics-past-papers-9709/"
+    },
+    {
+      "id": "ib-cs-sl-hl-2026-study-guides",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "ib computer science sl/hl 2026 study guides",
+      "description": "free ib computer science sl/hl revision notes and practice questions. exam-aligned study guides covering system fundamentals, computer organisation, networks, algorithms, and pseudocode.",
+      "link": "https://www.apibstudyguides.com/ib-computer-science-sl-hl-2026-study-guides"
+    },
+    {
+      "id": "ap-cs-a-frq-solutions",
+      "syllabus": "ap",
+      "subject": "computer science",
+      "type": "specimen paper",
+      "title": "ap computer science a free response questions and solutions",
+      "description": "download free-response questions from past ap computer science a exams (2019-2026), along with scoring guidelines, sample responses, and review slides.",
+      "link": "https://www.javatutoronline.com/ap-computer-science-free-response-questions-solutions/"
+    },
+    {
+      "id": "cambridge-igcse-english-0500-practice-paper",
+      "syllabus": "cambridge",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "cambridge igcse first language english (0500) – 2027 practice paper 1 (free sample)",
+      "description": "this resource contains a full paper 1 practice examination for the cambridge igcse first language english (0500) 2027 syllabus. designed to reflect the style, structure, and question types of the updated specification.",
+      "link": "https://www.tes.com/teaching-resource/cambridge-igcse-first-language-english-0500-2027-practice-paper-1-free-sample-12948529"
+    },
+    {
+      "id": "ap-english-lit-free-resources",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "free ap english literature and composition resources",
+      "description": "a collection of free study guides, flashcards, cheat sheets, and dump sheets to help prepare for the ap english literature and composition exam, covering core lenses, literary devices, and reading strategies.",
+      "link": "https://www.achievable.me/blog/ap-english-literature-resources/"
+    },
+    {
+      "id": "gaokao-math-practice-papers",
+      "syllabus": "gaokao",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "gaokao mathematics question papers pdf",
+      "description": "download and practice previous year gaokao mathematics question papers with answers to ace the national college entrance examination (ncee). includes various topics like algebra, geometry, calculus, and probability.",
+      "link": "https://examstocks.com/gaokao-exam-question-papers-pdf-ncee-previous-year-solved-test-papers/"
+    },
+    {
+      "id": "openstax-high-school-math-cs",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "openstax high school mathematics and computer science textbooks",
+      "description": "free, high-quality, peer-reviewed textbooks and curriculum resources for various high school math and computer science subjects, including algebra, calculus, and python programming.",
+      "link": "https://openstax.org/k12"
+    },
+    {
+      "id": "spm-mathematics-past-papers",
+      "syllabus": "spm",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "spm mathematics past year papers and forecast papers",
+      "description": "access to actual spm question papers for years 2011 to 2025 for mathematics, as well as sample forecast papers, with various platforms offering past year questions and suggested answers.",
+      "link": "https://edukaji.com/spm-trial-papers-2026/"
+    },
+    {
+      "id": "cambridge-mathematics-secondary-1-book-1",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "essential mathematics for senior secondary school book 1",
+      "description": "follows the cambridge secondary 1 mathematics curriculum framework, covering number, algebra, geometry, measure, handling data, and problem-solving, with notes, worked examples, and exercises.",
+      "link": "https://www.scribd.com/document/425501865/Essential-Mathematics-For-Senior-Secondary-School-Book-1-pdf"
+    },
+    {
+      "id": "national-mathematics-secondary-grade-12",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "secondary school mathematics: grade twelve",
+      "description": "a textbook for grade twelve secondary school mathematics.",
+      "link": "https://archive.org/details/secondaryschoolm0000bees"
+    },
+    {
+      "id": "national-mathematics-secondary-4-textbook",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "secondary mathematics 4 student textbook",
+      "description": "a student textbook for secondary mathematics, covering topics like complex numbers, measurement, trigonometry, inequalities, and vectors.",
+      "link": "https://ncdc.go.ug/resources/downloads/secondary-mathematics-4-student-textbook-pdf/"
+    },
+    {
+      "id": "advanced-high-school-mathematics-pdf",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "advanced high school mathematics",
+      "description": "this free ebook covers advanced euclidean geometry, discrete mathematics, inequalities, abstract algebra, series, differential equations, and inferential statistics.",
+      "link": "https://www.freebookcentre.net/mathematics-books-download/Advanced-High-School-Mathematics.html"
+    },
+    {
+      "id": "cbse-computer-science-class-12-notes-vedantu",
+      "syllabus": "cbse",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "cbse class 12 computer science revision notes (2026–27)",
+      "description": "clear, chapter-wise revision notes for cbse class 12 computer science, covering python programming, sql, data structures, networking, databases, computational thinking, exception handling, and file handling.",
+      "link": "https://www.vedantu.com/cbse/class-12-computer-science-notes"
+    },
+    {
+      "id": "cbse-computer-science-class-12-notes-cbseskill",
+      "syllabus": "cbse",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "computer science class 12 notes, mcqs, and questions & answers",
+      "description": "free notes, multiple-choice questions (mcqs), and questions & answers for cbse class 12 computer science, based on ncert textbooks. covers python revision, functions, exception handling, file handling, data structures, computer networks, and database management.",
+      "link": "https://cbse-skill-education.com/computer-science-class-12/"
+    },
+    {
+      "id": "cbse-computer-science-resources-kwickprep",
+      "syllabus": "cbse",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "free cbse computer science resources & tools",
+      "description": "free tools and study resources for cbse class 12 computer science & informatics practices, including weightage guides, sample papers, and important questions. offers quick tests with mcqs for python, sql, networks, computer systems, and ethics.",
+      "link": "https://kwickprep.com/cbse-computer-science-resources/"
+    },
+    {
+      "id": "national-high-school-computer-science-notes",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "high school computer science notes",
+      "description": "an overview of computer science for high school students, covering definition and types of computers, basic hardware components, software types, and an introduction to the internet, networking, and programming concepts.",
+      "link": "https://www.scribd.com/document/633465719/High-School-Computer-Science-Notes"
+    },
+    {
+      "id": "ap-computer-science-a-textbook-codehs",
+      "syllabus": "ap",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "ap computer science a digital textbook",
+      "description": "a free digital textbook following the college board's unit structure to prepare students for the ap csa exam, teaching object-oriented programming with a focus on problem-solving and algorithm development.",
+      "link": "https://codehs.com/course/apcs_a/overview"
+    },
+    {
+      "id": "cambridge-igcse-computer-science-notes",
+      "syllabus": "cambridge",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "igcse computer science notes",
+      "description": "comprehensive, free igcse computer science theory notes provided by studysync, a website created by students.",
+      "link": "https://www.studysync.in/"
+    },
+    {
+      "id": "national-english-grammar-monster",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "lessons and tests",
+      "title": "grammar monster",
+      "description": "hundreds of free english grammar lessons and tests, including a glossary of grammatical terms and a full list of common grammar errors.",
+      "link": "https://www.grammar-monster.com/"
+    },
+    {
+      "id": "national-english-khan-academy-grammar",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "course",
+      "title": "khan academy grammar course",
+      "description": "comprehensive video lessons and exercises covering everything from punctuation to complex sentences, ideal for independent learners.",
+      "link": "https://www.khanacademy.org/humanities/grammar"
+    },
+    {
+      "id": "national-english-purdue-owl",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "reference",
+      "title": "purdue online writing lab (owl)",
+      "description": "an invaluable reference providing extensive resources on grammar rules, examples, and writing tips for students working on essays or projects.",
+      "link": "https://owl.purdue.edu/owl/purdue_owl.html"
+    },
+    {
+      "id": "national-english-quill-org",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "interactive platform",
+      "title": "quill.org",
+      "description": "a free interactive platform that pinpoints specific areas for grammar improvement with engaging, adaptive exercises.",
+      "link": "https://www.quill.org/"
+    },
+    {
+      "id": "national-english-k12reader-grammar",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "worksheets",
+      "title": "k12 reader grammar worksheets",
+      "description": "hundreds of free, printable grammar worksheets for kindergarten through high school, covering parts of speech, mechanics, parts of sentences, word usage, punctuation, and sentence structure.",
+      "link": "https://www.k12reader.com/grammar-worksheets/"
     }
   ],
   "dailyInspiration": {
-    "title": "the prodigy who built a $30m ai startup before finishing high school",
-    "story": "zach yadegari's entrepreneurial journey began at age 7 when he started coding out of curiosity. by 16, he founded 'totally science,' his first serious venture, which he successfully sold for a six-figure sum, gaining invaluable experience and credibility. rather than taking the conventional path, zach, at 18, then assembled a lean team across multiple continents to build 'cal ai,' an artificial intelligence startup. cal ai quickly achieved over 5 million downloads and was generating an impressive $1.4 million in monthly revenue, with a projected annual revenue of $30 million, all before he even completed high school. his story exemplifies how early passion, persistent building, and a drive to innovate can lead to extraordinary success.",
-    "takeaway": "curiosity, relentless building, and early exits can lead to monumental success before even formal education is complete."
+    "title": "teen boy secures historic 5th international math olympiad gold with perfect score",
+    "story": "eighteen-year-old alex chui from the united kingdom etched his name into history at the 2026 international mathematical olympiad (imo) in shanghai, china. representing the uk, the tonbridge school senior captured his fifth gold medal, making him only the second contestant ever to achieve this feat. what truly set chui apart was his consistency and record-breaking performance: he is the first and only competitor to win seven medals across seven imos. at the 2026 event, chui not only won gold but achieved absolute perfection, earning a maximum score of 42 out of 42 points, a distinction shared by only six other students out of 666 contestants. his journey began in 2020 with a silver medal for hong kong, followed by his first gold in 2021. since switching to represent the uk in 2022, he added three more golds and another silver. chui credits his success to an environment where teachers regularly explored advanced topics with his class, building his confidence and preparing him for the elite competition.",
+    "takeaway": "sustained dedication and a passion for learning, fostered by supportive mentorship, can lead to unprecedented and perfect achievements on the global stage."
   }
 }
