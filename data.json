@@ -793,24 +793,6 @@
       "link": "https://writetheworld.com/competitions"
     },
     {
-      "id": "bennington-young-writers-awards-2026",
-      "type": "competition",
-      "title": "bennington college young writers awards 2026",
-      "shortDesc": "an annual competition promoting excellence in writing for high school students in poetry, fiction, and nonfiction.",
-      "fullDetails": "hosted by bennington college, this competition recognizes outstanding writing achievement by high school students globally. categories include poetry (a group of three poems), fiction (a short story or one-act play of 1,500 words or fewer), and nonfiction (a personal or academic essay of 1,500 words or fewer). the competition generally runs from september to november each year.",
-      "category": "academic",
-      "interest": "writing & literature",
-      "minAge": 14,
-      "maxAge": 18,
-      "deadline": "2026-11-01",
-      "eventDate": "2027-xx-xx",
-      "location": "online",
-      "prizes": "recognition of outstanding writing achievement.",
-      "rounds": "single submission per category.",
-      "fee": "free",
-      "link": "https://www.bennington.edu/events/young-writers-awards"
-    },
-    {
       "id": "game-dev-world-championship-2026",
       "type": "competition",
       "title": "game development world championship (student game jam) 2026",
@@ -2647,24 +2629,6 @@
       "link": "https://www.theerindaleacademy.com/global-youth-challenge"
     },
     {
-      "id": "cac-2026",
-      "type": "competition",
-      "title": "congressional app challenge (cac)",
-      "shortDesc": "a coding competition for middle and high school students in their congressional districts.",
-      "fullDetails": "students submit an app they built to this competition. district winners are recognized in washington, d.c., which can be a valuable addition to college applications. the challenge aims to foster interest in computer science and stem fields among young students.",
-      "category": "academic",
-      "interest": "computer science, coding",
-      "minAge": 11,
-      "maxAge": 18,
-      "deadline": "october/november 2026",
-      "eventDate": "awards and recognition typically after the submission deadline",
-      "location": "online submission, district winners recognized in washington d.c.",
-      "prizes": "recognition in washington d.c.",
-      "rounds": "single submission and judging",
-      "fee": "free",
-      "link": "https://www.congressionalappchallenge.us/"
-    },
-    {
       "id": "caribou-math-2026",
       "type": "competition",
       "title": "caribou mathematics competition",
@@ -2681,24 +2645,6 @@
       "rounds": "six rounds annually",
       "fee": "not explicitly specified (implied accessible)",
       "link": "https://cariboutests.com/"
-    },
-    {
-      "id": "birdspiracy-ai-2026",
-      "type": "competition",
-      "title": "birdspiracy ai competition",
-      "shortDesc": "a free national ai competition for students in classes 9–12 where participants identify a real problem in their community.",
-      "fullDetails": "the birdspiracy ai competition challenges students to identify a real problem in their community and develop an artificial intelligence-based solution. it is open to students in classes 9-12 and provides an opportunity to apply ai concepts to practical issues.",
-      "category": "academic",
-      "interest": "artificial intelligence, computer science",
-      "minAge": 14,
-      "maxAge": 18,
-      "deadline": "november 1, 2026 (extended)",
-      "eventDate": "not specified",
-      "location": "national (implied online for submissions)",
-      "prizes": "not specified",
-      "rounds": "not specified",
-      "fee": "free",
-      "link": "https://studentcompetitions.com/competitions/birdspiracy-ai-competition-2026-deadline-extended-to-1-november-2026"
     },
     {
       "id": "wic-2026",
@@ -2771,6 +2717,42 @@
       "rounds": "design and proposal submission",
       "fee": "free",
       "link": "https://www.nasa.gov/stem/dream-with-us/"
+    },
+    {
+      "id": "dakar-2026-yog",
+      "type": "competition",
+      "title": "dakar 2026 youth olympic games",
+      "shortDesc": "an international sports, education, and cultural festival for teenagers aged 15-17.",
+      "fullDetails": "the 4th edition of the summer youth olympic games (yog) will be held in dakar, senegal, marking the first time an olympic sports event takes place on african soil. it combines high-level sporting competition with education, friendship, and cultural exchange. approximately 2,700 athletes aged 15-17 are expected to participate across 25 competitive sports and 10 additional engagement sports. the event aims to inspire youth, drive transformation in senegal, and promote african culture. it will also feature the first youth refugee olympic team. the event takes place across three main locations: dakar, diamniadio, and saly.",
+      "category": "sports & culture",
+      "interest": "multidisciplinary",
+      "minAge": 15,
+      "maxAge": 17,
+      "deadline": "not specified, typically involves national selection processes",
+      "eventDate": "2026-10-31 to 2026-11-13",
+      "location": "dakar, diamniadio, and saly, senegal",
+      "prizes": "olympic medals, international recognition, cultural exchange opportunities",
+      "rounds": "multiple stages, including qualification through national olympic committees",
+      "fee": "not specified, typically covers athlete participation through national bodies",
+      "link": "https://www.olympics.com/en/olympic-games/dakar-2026"
+    },
+    {
+      "id": "mit-think-2026",
+      "type": "competition",
+      "title": "mit think scholars program",
+      "shortDesc": "a prestigious research and innovation competition challenging high school students to develop a technology project with mentorship from mit students.",
+      "fullDetails": "the program offers one-on-one guidance from mit students, a budget for materials, and an invitation to present your project at mit. the application process is rigorous, requiring a detailed project proposal and research plan. applications open in october 2026 and close in january 2027.",
+      "category": "academic",
+      "interest": "technology & innovation",
+      "minAge": 14,
+      "maxAge": 18,
+      "deadline": "2027-01-xx",
+      "eventDate": "2027-xx-xx",
+      "location": "online (application/mentorship), cambridge, ma, usa (for presentation)",
+      "prizes": "fully-funded trip to mit, research grants.",
+      "rounds": "multiple (application, project development, presentation).",
+      "fee": "free",
+      "link": "https://think.mit.edu/"
     }
   ],
   "studyResources": [
@@ -7616,11 +7598,110 @@
       "title": "codehs free computer science curriculum & coding tools",
       "description": "offers over 100 free computer science courses for high school and middle school, including introduction to python programming, web design (html), and ap computer science principles. features a browser-based code editor, automatic code submission, and classroom management tools, making it a comprehensive and free resource for teaching and learning coding.",
       "link": "https://codehs.com/info/free"
+    },
+    {
+      "id": "cambridge-maths-secondary1-complete",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "complete mathematics for cambridge secondary 1",
+      "description": "textbooks covering the cambridge secondary 1 mathematics curriculum framework for stages 7, 8, and 9. includes explanations, worked examples, and practice exercises in areas like number, algebra, geometry, measure, and data handling. problem-solving is integrated throughout.",
+      "link": "https://www.scribd.com/document/511397852/Complete-Mathematics-for-Secondary-1-pdf"
+    },
+    {
+      "id": "ap-englishlit-frq-archive",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "ap english literature and composition free-response questions (1999-2024)",
+      "description": "a comprehensive archive of official released free-response questions from past ap english literature and composition exams. essential for practicing essay writing for poetry analysis, prose analysis, and literary argument.",
+      "link": "https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/exam/past-exam-questions"
+    },
+    {
+      "id": "national-cs-code.org",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "curriculum",
+      "title": "code.org high school computer science curricula",
+      "description": "free year-long curricula for computer science discoveries (grades 6-10), computer science principles (grades 9-12), and ap computer science a (java). introduces foundational concepts, web development, app building, algorithms, and programming. also includes ai and maker curricula.",
+      "link": "https://code.org/curriculum/high-school"
+    },
+    {
+      "id": "national-math-openstax",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "openstax high school mathematics textbooks",
+      "description": "free, peer-reviewed, and openly licensed textbooks for high school mathematics. available as pdf downloads, covering various subjects at high school level. provides teacher resources upon account verification.",
+      "link": "https://openstax.org/subjects/math"
+    },
+    {
+      "id": "national-english-commonlit",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "curriculum",
+      "title": "commonlit 360 ela curriculum (grades 6-12)",
+      "description": "a complete ela program with thousands of high-quality, accessible texts, full-length book pairings, and complete units for grades 6-12. aligned to state standards, it offers print and digital lessons for reading, writing, and language development. free for teachers.",
+      "link": "https://www.commonlit.org/en/ela-curriculum"
+    },
+    {
+      "id": "cambridge-igcse-past-papers-all-2026",
+      "syllabus": "cambridge",
+      "subject": "mathematics, computer science, or english",
+      "type": "specimen paper",
+      "title": "cambridge igcse past papers and mark schemes (0580, 0478, 0500)",
+      "description": "free access to cambridge igcse past papers, mark schemes, and examiner reports for various subjects including mathematics, computer science (0478), and english language (0500) up to may/june 2026 sessions.",
+      "link": "https://papersdaddy.com/cambridge-igcse-past-papers/"
+    },
+    {
+      "id": "ib-math-aa-hl-study-guide-2025",
+      "syllabus": "ib",
+      "subject": "mathematics",
+      "type": "study guide",
+      "title": "ib math aa hl free study guide",
+      "description": "a 124-page pdf covering algebra, functions, geometry, trigonometry, and calculus for ib math analysis and approaches hl (year 1). includes study notes, past papers, and resources to help students excel.",
+      "link": "https://simplestudies.com/ib-math-aa-hl-study-guide"
+    },
+    {
+      "id": "ib-math-revision-notes-exams",
+      "syllabus": "ib",
+      "subject": "mathematics",
+      "type": "revision notes, or practice exams",
+      "title": "ib maths revision: free aa & ai, sl & hl notes and questions",
+      "description": "free, no sign-up notes, worked examples on every topic, 20 practice exams, and formula booklets for all four ib diploma maths courses (aa and ai, sl and hl). includes 3,800+ exam-style questions with mark schemes.",
+      "link": "https://ibmathsrevision.com/"
+    },
+    {
+      "id": "ap-csp-curriculum-practice",
+      "syllabus": "ap",
+      "subject": "computer science",
+      "type": "curriculum, or practice exams",
+      "title": "ap computer science principles free course & practice",
+      "description": "a free ap computer science principles course with 64 lessons, 5 mock exams, 300+ mcqs, and create task practice. aligned to the 2025-26 ced. includes clear video lessons, study guides, and visuals.",
+      "link": "https://csplusplus.org/ap-csp/"
+    },
+    {
+      "id": "hs-ela-free-resources",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "lesson plans, or activities",
+      "title": "free high school english language arts resources",
+      "description": "collection of free printable high school english activities, lesson plans, grammar challenges, figurative language activities, and writing prompts to supplement ela curriculum and meet educational standards.",
+      "link": "https://www.prestiplans.com/blog/free-ela-resources-middle-high-school-teachers"
+    },
+    {
+      "id": "openstax-calculus-volume-1",
+      "syllabus": "ap",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "calculus volume 1 - openstax",
+      "description": "free, peer-reviewed, openly licensed textbook for introductory college and advanced placement® courses. covers integration, applications of integration, exponential and logarithmic functions. suitable for high school students aiming for advanced levels.",
+      "link": "https://openstax.org/books/calculus-volume-1"
     }
   ],
   "dailyInspiration": {
-    "title": "the silent prodigy: viraj dhanda, mit's first non-speaking autistic student",
-    "story": "viraj dhanda, diagnosed with autism at age two, spent his first 14 years mistakenly believed to be intellectually disabled. his father, sumit dhanda, recounted the long struggle of misdiagnosis. this profound misunderstanding persisted until viraj learned to communicate using text-to-speech assistive technology. this breakthrough not only revealed that he was not intellectually disabled, but in fact, exceptionally gifted. at 19, viraj achieved a momentous accomplishment: acceptance to the massachusetts institute of technology (mit), making him the university's first-ever non-speaking student with autism. the emotional moment of his acceptance, captured in a video shared by his father, highlighted the journey of overcoming immense challenges. viraj plans to take a gap year before commencing his studies at mit, and he openly invites his future classmates to connect, stating, 'i am just as normal as you, except i can't speak. if you are patient, we can hang together.' his story stands as a powerful testament to the triumph of human potential and the transformative power of a voice, once found.",
-    "takeaway": "perseverance, aided by assistive technology and unwavering support, can shatter misperceptions and unlock extraordinary potential, proving that every voice, once heard, can achieve the impossible."
+    "title": "the 16-year-old mit-bound scholar: amitoj lobana's journey",
+    "story": "at just 16, amitoj lobana from fontana, california, achieved the extraordinary feat of being accepted into mit with a full scholarship. having skipped two grades, he started high school at 12. his parents, who emigrated from india in the late '90s for a better life, instilled in him the value of hard work. lobana credits his success to their dedication and guidance, and despite his academic prowess, he remained well-rounded, playing on the tennis team, running cross country, and volunteering. he secured his full ride through questbridge, a program supporting high-achievers from low-income backgrounds, and aims to study computer science or aerospace engineering at mit, driven by a desire to better the world.",
+    "takeaway": "perseverance fueled by familial sacrifice and an intrinsic drive for impact creates pathways to unparalleled academic achievement."
   }
 }
