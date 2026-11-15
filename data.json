@@ -2791,24 +2791,6 @@
       "link": "monitor rose-hulman institute of technology website for details"
     },
     {
-      "id": "research-question-prize-2026",
-      "type": "competition",
-      "title": "research question prize 2026",
-      "shortDesc": "a free online competition for secondary school students, organized by aldevere, focusing on research questions.",
-      "fullDetails": "details on the specific nature of the research question and submission requirements are to be found on the organizer's platform. it targets students interested in developing their critical thinking and research formulation skills.",
-      "category": "academic",
-      "interest": "research, critical thinking",
-      "minAge": 14,
-      "maxAge": 18,
-      "deadline": "november 15, 2026",
-      "eventDate": "by deadline",
-      "location": "online",
-      "prizes": "not listed",
-      "rounds": "one submission round",
-      "fee": "free",
-      "link": "not directly provided (listed on succeed.org.uk)"
-    },
-    {
       "id": "international-chemistry-olympiad-2026",
       "type": "competition",
       "title": "international chemistry olympiad (icho) 2026",
@@ -2969,6 +2951,78 @@
       "rounds": "essay submission and evaluation.",
       "fee": "free.",
       "link": "https://horizonacademic.org"
+    },
+    {
+      "id": "intl-stem-olympiad-2026",
+      "type": "competition",
+      "title": "international stem olympiad",
+      "shortDesc": "an online international competition for students from grades 1 to 12, focusing on stem education principles.",
+      "fullDetails": "the international stem olympiad is an online international competition platform where students from grades 1 to 12 participate, with questions designed in line with the philosophy of stem education. it aims to provide students passionate about stem with an opportunity to explore stem-related topics, compete, and earn awards globally. the olympiad also offers interactive training portals as learning resources. qualification rounds for mathematics, science, technology, and engineering are held online, with options on november 21, 2026, and january 30, 2027. the final round is scheduled for february 13, 2027 (online), with a stem grand final held onsite in lisbon, portugal, from june 24-30, 2027.",
+      "category": "academic",
+      "interest": "stem (mathematics, science, technology, engineering)",
+      "minAge": 12,
+      "maxAge": 18,
+      "deadline": "2026-11-21",
+      "eventDate": "2026-11-21 (qualification round 1st option), 2027-01-30 (qualification round 2nd option), 2027-02-13 (final round), 2027-06-24 to 2027-06-30 (grand final)",
+      "location": "online (qualification/final rounds), lisbon, portugal (grand final)",
+      "prizes": "awards on a global stage",
+      "rounds": "qualification round, final round, bob round, stem grand final",
+      "fee": "not specified; refer to official website",
+      "link": "https://stemolympiad.org/"
+    },
+    {
+      "id": "ioi-2026-uzbekistan",
+      "type": "competition",
+      "title": "international olympiad in informatics (ioi) 2026",
+      "shortDesc": "the most prestigious computer science competition for secondary school students globally, focusing on algorithmic problem-solving.",
+      "fullDetails": "the 38th international olympiad in informatics (ioi 2026) will be held in tashkent, uzbekistan from august 9-16, 2026. it is one of five international science olympiads held annually, bringing together exceptional high school students from various countries to sharpen their informatics skills in problem analysis, algorithm design, data structures, programming, and testing. participants compete individually over two five-hour contest days, solving three algorithmic problems each day. countries register as delegations, with students selected through national olympiad systems.",
+      "category": "academic",
+      "interest": "computer science & coding",
+      "minAge": 13,
+      "maxAge": 19,
+      "deadline": "to be announced (national selection earlier)",
+      "eventDate": "2026-08-09 to 2026-08-16",
+      "location": "tashkent, uzbekistan",
+      "prizes": "medals (gold, silver, bronze), certificates, international recognition",
+      "rounds": "two contest days, national selection rounds",
+      "fee": "varies (national teams/delegations pay fees; individual students typically qualify through free national contests)",
+      "link": "https://ioi2026.uz/"
+    },
+    {
+      "id": "ep-international-english-championship-2026",
+      "type": "competition",
+      "title": "education perfect international english championship 2026",
+      "shortDesc": "an online competition for students to engage, revise, and learn english language content.",
+      "fullDetails": "this is a fun, online celebration of language learning, offering students an opportunity to enhance their english skills through various activities on the education perfect platform. the competition is suitable for all ages, from grade 2/year 3 to grade 12/year 13. students earn points for correctly answered questions across speaking, listening, reading, and writing activities. prizes include amazon/giftpay vouchers for top-scoring students.",
+      "category": "academic",
+      "interest": "english language & literature",
+      "minAge": 7,
+      "maxAge": 18,
+      "deadline": "to be announced (event date typically in the fall)",
+      "eventDate": "to be announced (check official site for 2026 dates)",
+      "location": "online",
+      "prizes": "$500 nzd, $350 nzd, $250 nzd, $50 nzd amazon/giftpay vouchers for top placers",
+      "rounds": "single online competition",
+      "fee": "free (requires school participation with education perfect platform)",
+      "link": "https://www.educationperfect.com/en-au/worldseries/english/"
+    },
+    {
+      "id": "blue-ocean-competition-2026-2027",
+      "type": "competition",
+      "title": "blue ocean entrepreneurship competition",
+      "shortDesc": "a free, online business pitch competition for high school students worldwide to develop and present innovative ideas.",
+      "fullDetails": "the blue ocean entrepreneurship competition is open to high school students globally. it is a free, online competition where students identify a market opportunity and develop a business idea to address it. pitches for the 2026-2027 season are due by february 21, 2027. this competition encourages creative problem-solving and entrepreneurial thinking, with opportunities to gain real-world business experience. it is suitable for individuals or teams.",
+      "category": "entrepreneurship",
+      "interest": "business & innovation",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2027-02-21",
+      "eventDate": "ongoing with 2027 deadline",
+      "location": "online",
+      "prizes": "varies, often includes cash prizes and mentorship",
+      "rounds": "multiple rounds, culminating in a final pitch",
+      "fee": "free",
+      "link": "https://blueoceancompetition.org/"
     }
   ],
   "studyResources": [
@@ -8174,11 +8228,65 @@
       "title": "openscied computer science integrated units",
       "description": "phenomenon-based units integrating computer science with core science learning. students use computational tools (e.g., micro:bits, sensors) to measure, visualize, analyze data, build models, and design technology solutions for real-world problems, aligning with ngss standards for middle and high school.",
       "link": "https://www.openscied.org/computer-science-integration"
+    },
+    {
+      "id": "ib-cs-revision-notes-mock-papers",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "free ib computer science revision for the 2025/2027 syllabus, sl and hl",
+      "description": "comprehensive free ib computer science revision materials for both standard level (sl) and higher level (hl), covering topic guides, cheat sheets, practice questions with mark schemes, flashcards, and full mock papers. designed by a computer science teacher.",
+      "link": "https://www.shuttlelearning.com/ib-computer-science-revision/"
+    },
+    {
+      "id": "ela-high-school-worksheets",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "worksheet",
+      "title": "free printable high school english / language arts worksheets and activities",
+      "description": "a collection of free, high-quality printable english language arts resources for middle and high school teachers and students. includes worksheets for vocabulary, grammar, reading, writing, literature analysis, and poetry activities.",
+      "link": "https://www.brightsprout.com/worksheets/high-school-english-language-arts"
+    },
+    {
+      "id": "ap-english-lit-frqs",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "ap english literature and composition free-response questions",
+      "description": "official free-response questions (frqs) from past ap english literature and composition exams, along with scoring guidelines and sample responses, available from the college board.",
+      "link": "https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/exam/past-exam-questions"
+    },
+    {
+      "id": "ib-computer-science-sl-notes",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "ib computer science sl revision notes (2027 syllabus)",
+      "description": "free revision notes for ib computer science sl (2027 syllabus), covering computer fundamentals, networks, databases, machine learning, computational thinking, and programming. includes explanations, examples, and practice questions.",
+      "link": "https://aimnova.com/ib-computer-science-sl-notes"
+    },
+    {
+      "id": "cambridge-a-level-maths-9709-notes",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "free cambridge a level maths notes (9709): topic-by-topic",
+      "description": "comprehensive, free revision notes for cambridge international a level mathematics (9709) covering pure mathematics, mechanics, and probability & statistics, with quizzes.",
+      "link": "https://www.tutopiya.com/blog/free-cambridge-a-level-maths-notes-9709/"
+    },
+    {
+      "id": "oxford-great-writers-inspire",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "curriculum",
+      "title": "oxford great writers inspire",
+      "description": "a collection of freely available literary resources from the university of oxford, including lectures, ebooks, and contextual essays for students and lifelong learners, covering various writers and themes.",
+      "link": "https://www.english.ox.ac.uk/great-writers-inspire"
     }
   ],
   "dailyInspiration": {
-    "title": "nonverbal autistic teen defies odds to get into mit",
-    "story": "viraj dhanda, a nonverbal autistic teenager from brookline, massachusetts, was accepted into mit despite being diagnosed as low-functioning and not learning basic communication until age 10. through augmentative and alternative communication (aac), his devoted father, sumit, discovered his son's intellectual brilliance. viraj shared through his device the profound frustration of his early inability to communicate and his deep gratitude for his father's relentless advocacy. he hopes to leverage his mit education to become an economist, writer, and disability rights advocate, aiming to challenge perceptions and provide hope to other families facing similar journeys.",
-    "takeaway": "resilience, unwavering determination, and innovative support can empower individuals to overcome profound challenges and achieve remarkable academic success."
+    "title": "the 16-year-old mit scholar: amitoj lobana's journey of academic excellence",
+    "story": "at just 16 years old, amitoj lobana, a high school senior from fontana, california, achieved the remarkable feat of being accepted into the prestigious massachusetts institute of technology (mit) with a full scholarship. amitoj, who skipped two grades, started high school at the age of 12. his parents, who emigrated from india in the 1990s, instilled in him a strong work ethic and a humble approach to success. despite his family's modest income—his father works as a gas station cashier and his mother is a stay-at-home parent—amitoj's dedication to academics never wavered. he credits programs like questbridge, which connects high-achieving students from low-income backgrounds with leading institutions, for making his dream of attending mit a reality. beyond his academic prowess, amitoj is also a well-rounded individual, participating in the tennis team, cross country, and volunteering with the key club. he plans to study computer science or aerospace engineering at mit, driven by a desire to contribute to the betterment of the world. his story is a powerful testament to perseverance, the importance of family values, and the transformative power of education for those who dare to dream big and work tirelessly.",
+    "takeaway": "passion, perseverance, and purpose can pave the path to even the most ambitious dreams, regardless of starting circumstances."
   }
 }
