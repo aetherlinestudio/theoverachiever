@@ -2125,24 +2125,6 @@
       "link": "https://www.the-iyrc.org/iyrc-summer-2026.html"
     },
     {
-      "id": "sof-icso-2026-27",
-      "type": "competition",
-      "title": "sof international computer science olympiad (icso) 2026-27",
-      "shortDesc": "an annual academic competition for students in grades 1-10 on computer science fundamentals and information technology.",
-      "fullDetails": "the international computer science olympiad (icso) is an annual academic competition organized by the science olympiad foundation (sof), assessing students in grades 1–10 on computer science fundamentals and information technology. the exam is 60 minutes, objective-type (multiple choice), and administered offline at registered schools across 72 countries. the curriculum is aligned with cbse, icse, and different state boards. there is no negative marking.",
-      "category": "academic",
-      "interest": "computer science",
-      "minAge": 6,
-      "maxAge": 16,
-      "deadline": "2026-11-17 (schools must register 30 days prior to chosen exam date)",
-      "eventDate": "2026-09-24 (date 1) or 2026-12-17 (date 2)",
-      "location": "offline (at registered schools)",
-      "prizes": "international, zonal, and school topper awards, cash awards for top three international rank holders, medals, certificates, teacher appreciation awards.",
-      "rounds": "1 (single level)",
-      "fee": "not specified (school-based registration)",
-      "link": "https://sofworld.org"
-    },
-    {
       "id": "ifco-2026-27",
       "type": "competition",
       "title": "international foundation computer & cyber olympiad (ifco) 2026-27",
@@ -2575,42 +2557,6 @@
       "link": "https://studentcompetitions.com/competitions/world-investment-competition-2026"
     },
     {
-      "id": "xylem-global-innovation-2026",
-      "type": "challenge",
-      "title": "xylem global student innovation challenge 2026",
-      "shortDesc": "an eight-week online challenge for students to develop solutions addressing critical global water challenges.",
-      "fullDetails": "the xylem global student innovation challenge 2026 brings together students ages 13-25 from around the world to develop innovative solutions addressing critical global water challenges. participants will apply science, technology, entrepreneurship, creativity, and problem-solving to help build a more water-secure world. the challenge features three problem statements: water quantity, water quality, and water access. participants will compete for $20,000 usd in prizes, with $10,000 dedicated to the high school track and $10,000 to the university track. it involves mentorship and expert workshops.",
-      "category": "stem",
-      "interest": "environmental solutions, technology, entrepreneurship",
-      "minAge": 13,
-      "maxAge": 25,
-      "deadline": "2026-11-20",
-      "eventDate": "2026-09-28 to 2026-11-20",
-      "location": "online",
-      "prizes": "$20,000 usd total prizes ($10,000 for high school track, $10,000 for university track)",
-      "rounds": "eight weeks",
-      "fee": "free",
-      "link": "https://hackathon.com/online/xylem-global-student-innovation-challenge-2026"
-    },
-    {
-      "id": "international-stem-olympiad-2026",
-      "type": "competition",
-      "title": "international stem olympiad 2026",
-      "shortDesc": "an online international competition for grades 1-12 students passionate about stem education.",
-      "fullDetails": "the international stem olympiad is an online international competition where students from grades 1 to 12 participate, with questions designed according to stem education principles. it aims to provide a platform for students to explore stem-related topics and experience competing and earning awards on a global stage. interactive training portals are offered as learning resources, focusing on critical 21st-century skills like problem-solving, systematic thinking, and coding. the qualification round has two online options in november 2026 and january 2027, followed by an online final round in february 2027 and an onsite stem grand final in lisbon, portugal, in june 2027.",
-      "category": "academic",
-      "interest": "mathematics, science, technology, engineering",
-      "minAge": 6,
-      "maxAge": 18,
-      "deadline": "2026-11-21",
-      "eventDate": "2026-11-21 (qualification round 1) to 2027-06-30 (grand final)",
-      "location": "online (qualification & final rounds), lisbon, portugal (grand final)",
-      "prizes": "awards on a global stage",
-      "rounds": "qualification, final, grand final",
-      "fee": "not specified, implied accessible",
-      "link": "https://stemolympiad.com/"
-    },
-    {
       "id": "nasa-dream-with-us-2026-2027",
       "type": "challenge",
       "title": "nasa dream with us: high school engineering challenge 2026-2027",
@@ -2953,24 +2899,6 @@
       "link": "https://horizonacademic.org"
     },
     {
-      "id": "intl-stem-olympiad-2026",
-      "type": "competition",
-      "title": "international stem olympiad",
-      "shortDesc": "an online international competition for students from grades 1 to 12, focusing on stem education principles.",
-      "fullDetails": "the international stem olympiad is an online international competition platform where students from grades 1 to 12 participate, with questions designed in line with the philosophy of stem education. it aims to provide students passionate about stem with an opportunity to explore stem-related topics, compete, and earn awards globally. the olympiad also offers interactive training portals as learning resources. qualification rounds for mathematics, science, technology, and engineering are held online, with options on november 21, 2026, and january 30, 2027. the final round is scheduled for february 13, 2027 (online), with a stem grand final held onsite in lisbon, portugal, from june 24-30, 2027.",
-      "category": "academic",
-      "interest": "stem (mathematics, science, technology, engineering)",
-      "minAge": 12,
-      "maxAge": 18,
-      "deadline": "2026-11-21",
-      "eventDate": "2026-11-21 (qualification round 1st option), 2027-01-30 (qualification round 2nd option), 2027-02-13 (final round), 2027-06-24 to 2027-06-30 (grand final)",
-      "location": "online (qualification/final rounds), lisbon, portugal (grand final)",
-      "prizes": "awards on a global stage",
-      "rounds": "qualification round, final round, bob round, stem grand final",
-      "fee": "not specified; refer to official website",
-      "link": "https://stemolympiad.org/"
-    },
-    {
       "id": "ioi-2026-uzbekistan",
       "type": "competition",
       "title": "international olympiad in informatics (ioi) 2026",
@@ -3023,6 +2951,114 @@
       "rounds": "multiple rounds, culminating in a final pitch",
       "fee": "free",
       "link": "https://blueoceancompetition.org/"
+    },
+    {
+      "id": "nfte-wsi-2026",
+      "type": "competition",
+      "title": "nfte world series of innovation",
+      "shortDesc": "a free online challenge for young people worldwide focused on un sustainable development goals, offering cash prizes.",
+      "fullDetails": "the network for teaching entrepreneurship (nfte) runs the world series of innovation, an annual, free online challenge. students aged 13 to 24 (high school students typically fit here) enter the impact league and choose one sponsored challenge linked to the un sustainable development goals. challenges for 2026–27 cover areas like health and well-being, money skills, a food-truck business idea, and responsible use of ai. students can enter individually or as a team, and submissions are accepted in several languages. cash prizes range from us$300 to us$1,500, with winners announced in spring 2027.",
+      "category": "academic",
+      "interest": "entrepreneurship & innovation",
+      "minAge": 13,
+      "maxAge": 24,
+      "deadline": "2026-12-13",
+      "eventDate": "2027-xx-xx",
+      "location": "online",
+      "prizes": "cash prizes (us$300 to us$1,500)",
+      "rounds": "multiple stages (submission, judging, winner announcement)",
+      "fee": "free",
+      "link": "https://www.nfte.com/programs/world-series-of-innovation/"
+    },
+    {
+      "id": "codementum-icc-2026",
+      "type": "competition",
+      "title": "codementum international coding competition",
+      "shortDesc": "an online coding competition for primary, secondary, and high school students to raise awareness for coding education.",
+      "fullDetails": "the codementum international coding competition is held online for students of all grade levels (primary, middle, and high school). it runs from december 1-15, 2026, with a duration of 120 minutes per student. challenges are tailored for each level and cover basic coding knowledge, repeat loops, variables, and arrays. schools can register teachers for free, who then create classes and upload students. awards are given separately for each category, with the top three classes in each category receiving recognition.",
+      "category": "academic",
+      "interest": "coding & computer science",
+      "minAge": 11,
+      "maxAge": 18,
+      "deadline": "2026-12-15",
+      "eventDate": "2026-12-01 to 2026-12-15",
+      "location": "online",
+      "prizes": "awards for top three classes",
+      "rounds": "1 (120-minute online exam)",
+      "fee": "free for students (teacher registration)",
+      "link": "https://codementum.com/international-coding-competition-2026/"
+    },
+    {
+      "id": "lumiere-scholars-essay-2026",
+      "type": "competition",
+      "title": "lumiere scholars essay award",
+      "shortDesc": "a highly selective, research-based academic writing competition for high school students worldwide.",
+      "fullDetails": "the lumiere scholars essay award is a competitive, research-based writing competition for high school students globally. it is free to enter and requires students to develop and defend an original argument on complex, interdisciplinary topics, choosing from prompts spanning areas such as economics, ai, ethics, and physics. submissions are evaluated through a double-blind review process by an academic panel including professors from institutions like oxford, cambridge, and cornell. top participants receive cash prizes and scholarships exceeding $11,000. submissions for the 2026-27 cycle open on september 14, with a deadline of december 20.",
+      "category": "academic",
+      "interest": "academic writing & research",
+      "minAge": 14,
+      "maxAge": 18,
+      "deadline": "2026-12-20",
+      "eventDate": "2027-01-10 (winners announced)",
+      "location": "virtual",
+      "prizes": "cash prizes and scholarships (over $11,000)",
+      "rounds": "1 (essay submission)",
+      "fee": "free",
+      "link": "https://www.lumiereeducation.com/lumiere-scholars-essay-award"
+    },
+    {
+      "id": "lumiere-essay-2026",
+      "type": "competition",
+      "title": "lumiere scholars essay award 2026",
+      "shortDesc": "a competitive, research-based writing competition for high school students worldwide.",
+      "fullDetails": "the lumiere scholars essay award is a virtual research-based writing competition where students develop and defend an original argument on complex, interdisciplinary topics. prompts span areas such as economics, ai, ethics, and physics. submissions are evaluated through a double-blind review by an academic panel including professors from oxford, cambridge, and cornell. it emphasizes intellectual rigor, independent thinking, and well-supported theses. top participants receive cash prizes and scholarships exceeding $11,000.",
+      "category": "academic",
+      "interest": "academic writing, interdisciplinary research",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2026-12-20 (submission)",
+      "eventDate": "2026-09-14 (submissions open)",
+      "location": "virtual",
+      "prizes": "cash prizes and scholarships (exceeding $11,000 total)",
+      "rounds": "submission and review process",
+      "fee": "free",
+      "link": "https://www.lumiereeducation.com/competitions/lumiere-scholars-essay-award/"
+    },
+    {
+      "id": "icso-2026",
+      "type": "competition",
+      "title": "international computer science olympiad (icso) 2026-2027",
+      "shortDesc": "an international olympiad for school students focused on computer science.",
+      "fullDetails": "the international computer science olympiad (icso) is held annually for school students, testing their knowledge and skills in computer science. schools can choose one of the provided dates for conducting the exam.",
+      "category": "academic",
+      "interest": "computer science",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "varies by school registration; forms dispatched to schools.",
+      "eventDate": "2026-09-24 or 2026-12-17",
+      "location": "participating schools (online exam)",
+      "prizes": "medals, certificates",
+      "rounds": "single exam date per school",
+      "fee": "not specified",
+      "link": "https://www.sofworld.org/icso"
+    },
+    {
+      "id": "nyc-stem-competition-2026",
+      "type": "competition",
+      "title": "nyc stem conference interschool competition 2026",
+      "shortDesc": "a global interschool stem competition for grades 8-12, part of the nyc stem conference.",
+      "fullDetails": "the nyc stem conference on december 5, 2026, includes a global interschool stem competition for students in grades 8-12. students can participate online or in-person, sharing their research, review papers, posters, or projects. there's also a virtual hackathon component where students can build and showcase technology solutions in education, edtech, career planning, or stem.",
+      "category": "academic & innovation",
+      "interest": "stem, research, entrepreneurship, coding, ai",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "not explicitly stated, but submissions prior to event date",
+      "eventDate": "2026-12-05",
+      "location": "online and in-person (mmcoe for in-person)",
+      "prizes": "recognition, potential publication in entech magazine special issue",
+      "rounds": "submission and presentation",
+      "fee": "free to register",
+      "link": "https://newyouthconference.com/"
     }
   ],
   "studyResources": [
@@ -8282,11 +8318,173 @@
       "title": "oxford great writers inspire",
       "description": "a collection of freely available literary resources from the university of oxford, including lectures, ebooks, and contextual essays for students and lifelong learners, covering various writers and themes.",
       "link": "https://www.english.ox.ac.uk/great-writers-inspire"
+    },
+    {
+      "id": "cbse-cs-notes-2026",
+      "syllabus": "cbse",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "cbse class 12 computer science (code 085) notes, syllabus, mcqs & pyqs 2026-27",
+      "description": "free cbse class 12 computer science study material for the 2026-27 academic year, including chapter-wise notes, oneshots, mcqs, pyqs, dpps, and practical files. covers python, sql/mysql, and networking concepts.",
+      "link": "https://www.singhclasses.org/cbse-class-12-computer-science-notes-syllabus-mcqs-pyqs-2026-27"
+    },
+    {
+      "id": "github-cbse-cs",
+      "syllabus": "cbse",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "github: study materials for computer science (python + mysql) for cbse class 11 and 12",
+      "description": "open-access study materials including web and jupyter notebooks for python basics, strings, stacks, queues, mysql connectivity, and pdfs for networking and a mysql cheat sheet. aligned with cbse syllabus.",
+      "link": "https://github.com/bearlike/cbse-computer-science"
+    },
+    {
+      "id": "pauls-online-math-notes",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "paul's online math notes (calculus, algebra, diff eq)",
+      "description": "comprehensive written tutorials and notes for various mathematics courses, including algebra, trigonometry, calculus i, ii, iii, and differential equations, serving as an excellent free study resource.",
+      "link": "https://tutorial.math.lamar.edu/"
+    },
+    {
+      "id": "ib-cs-sl-hl-aimnova-2027",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "free ib computer science sl/hl revision notes (2027 syllabus)",
+      "description": "comprehensive revision notes for ib computer science sl and hl (2027 syllabus). covers computer fundamentals, networks, databases, machine learning, computational thinking, programming, algorithm efficiency, and object-oriented programming. includes explanations, worked examples, flashcards, and practice questions.",
+      "link": "https://aimnova.com/ib-computer-science-sl-notes"
+    },
+    {
+      "id": "ib-cs-hl-tutorchase",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "free complete ib dp computer science hl notes",
+      "description": "free complete computer science hl notes written by expert ib teachers, covering system fundamentals, computer organisation, networks, abstract data structures (hl), resource management (hl), and control (hl). trusted by students and schools globally.",
+      "link": "https://www.tutorchase.com/resources/ib-dp-computer-science-hl-notes"
+    },
+    {
+      "id": "openstax-hs-math",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "openstax free high school math textbooks",
+      "description": "free, high-quality, peer-reviewed pdf textbooks for various high school mathematics subjects, including algebra and calculus, designed to be customizable and include interactive elements.",
+      "link": "https://openstax.org/subjects/math"
+    },
+    {
+      "id": "siyavula-math-science",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "siyavula free online mathematics and science textbooks (grades 10-12)",
+      "description": "excellent free online mathematics and science textbooks developed for south african curriculum (grades 10-12), but potentially useful internationally for high school students.",
+      "link": "https://www.siyavula.com/"
+    },
+    {
+      "id": "open-up-hs-math",
+      "syllabus": "national",
+      "subject": "mathematics",
+      "type": "curriculum portfolio",
+      "title": "open up high school math: comprehensive problem-based curriculum",
+      "description": "a complete three-year high school mathematics curriculum (math i, ii, iii) with engaging, problem-based lessons. includes teacher and family materials, and a spanish version. built upon the comprehensive mathematics instruction framework to meet college and career ready standards.",
+      "link": "https://www.openupresources.org/math-curriculum/high-school-math/"
+    },
+    {
+      "id": "codeorg-ai-foundations",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "curriculum portfolio",
+      "title": "code.org artificial intelligence foundations",
+      "description": "a free, flexible high school curriculum where students learn how ai works and build web apps using ai as a creative partner.",
+      "link": "https://code.org/ai"
+    },
+    {
+      "id": "stem-learning-secondary-computing",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "stem learning secondary computing resources",
+      "description": "a set of free resources for secondary school students covering history of computing, networks, using python, using scratch, and understanding bitmap images. includes lessons with learning activities, teacher presentations, and answer books.",
+      "link": "https://www.stem.org.uk/secondary-computing-resources"
+    },
+    {
+      "id": "khan-academy-cs-basics",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "khan academy computer science basics",
+      "description": "free courses and learning materials on algorithms, cryptography, information theory, public networks, and how computers work. suitable for students interested in structuring their knowledge of computer science fundamentals.",
+      "link": "https://www.khanacademy.org/computing/computer-science"
+    },
+    {
+      "id": "ap-english-lang-verityprep",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "ap english language and composition exam prep & study resources",
+      "description": "free practice questions, past exams (first 10 questions of every past exam free), and a score calculator for ap english language and composition. questions organized by topic with answers and solutions.",
+      "link": "https://www.verityprep.com/ap/english-language-and-composition"
+    },
+    {
+      "id": "ap-english-lang-fiveable",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "study guide",
+      "title": "ap english language study guide & review (fiveable)",
+      "description": "study guides for all 9 units of ap english language, with practice questions and frq practice for synthesis, rhetorical analysis, and argument essays. covers rhetoric, evidence, claims, commentary, and timed nonfiction writing.",
+      "link": "https://www.fiveable.me/ap-lang/"
+    },
+    {
+      "id": "ib-eng-langlit-taughtly",
+      "syllabus": "ib",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "free ib english a teaching resources (language and literature)",
+      "description": "download free powerpoints, worksheets, and quizzes for ib english a language and literature, including resources for paper 1 and paper 2. covers annotation and analysis skills, planning, and structuring responses.",
+      "link": "https://www.taughtly.com/ib-english-a-teaching-resources"
+    },
+    {
+      "id": "ib-eng-lit-revisiondojo",
+      "syllabus": "ib",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "best ib english a literature resources (revisiondojo)",
+      "description": "revisiondojo's ib english a literature hub organizes support around main assessments, with notes on literary techniques, forms, planning methods, and assessment strategies. includes paper 2 ground rules, individual oral exemplars, and an hl essay exemplar.",
+      "link": "https://revisiondojo.com/ib-english-a-literature-resources/"
+    },
+    {
+      "id": "cambridge-igcse-eng-lang-papajam",
+      "syllabus": "cambridge",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "cambridge (cie) igcse english language past papers (1123)",
+      "description": "free access to cambridge (cie) igcse english language 1123 past papers, including question papers and mark schemes organized by year, from 2002 to the latest session (2026 feb/march, may/june updates mentioned).",
+      "link": "https://papacambridge.com/cie/o-levels/english-language-1123/"
+    },
+    {
+      "id": "grammar-monster-grammar",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "grammar monster: free english grammar lessons and tests",
+      "description": "hundreds of free english grammar lessons and tests, a glossary of grammatical terms, common grammar errors, and punctuation lessons. includes interactive games, videos, and printable word lists.",
+      "link": "https://www.grammar-monster.com/"
+    },
+    {
+      "id": "englishgrammar-org-course",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "curriculum portfolio",
+      "title": "englishgrammar.org free english grammar exercises, course and guide (2027)",
+      "description": "free english exercises, a free course, and a 2027 guide to improve grammar. includes 11 modules and 124 short lessons from sentence foundations to advanced editing, practice exercises with explanations, and vocabulary lists.",
+      "link": "https://www.englishgrammar.org/"
     }
   ],
   "dailyInspiration": {
-    "title": "the 16-year-old mit scholar: amitoj lobana's journey of academic excellence",
-    "story": "at just 16 years old, amitoj lobana, a high school senior from fontana, california, achieved the remarkable feat of being accepted into the prestigious massachusetts institute of technology (mit) with a full scholarship. amitoj, who skipped two grades, started high school at the age of 12. his parents, who emigrated from india in the 1990s, instilled in him a strong work ethic and a humble approach to success. despite his family's modest income—his father works as a gas station cashier and his mother is a stay-at-home parent—amitoj's dedication to academics never wavered. he credits programs like questbridge, which connects high-achieving students from low-income backgrounds with leading institutions, for making his dream of attending mit a reality. beyond his academic prowess, amitoj is also a well-rounded individual, participating in the tennis team, cross country, and volunteering with the key club. he plans to study computer science or aerospace engineering at mit, driven by a desire to contribute to the betterment of the world. his story is a powerful testament to perseverance, the importance of family values, and the transformative power of education for those who dare to dream big and work tirelessly.",
-    "takeaway": "passion, perseverance, and purpose can pave the path to even the most ambitious dreams, regardless of starting circumstances."
+    "title": "alex chui: the mathematical prodigy who made imo history",
+    "story": "in 2026, eighteen-year-old alex chui etched his name into the history books of the international mathematical olympiad (imo), the world's most prestigious high school mathematics championship. representing the united kingdom at the 67th imo in shanghai, china, chui secured his fifth gold medal with a perfect score of 42 out of 42 points. this remarkable feat made him only the second contestant in the competition's history to achieve five gold medals, and the first and only competitor ever to win seven medals in total at the imo, having also won silver medals. his journey began in 2020 with a silver for hong kong, followed by his first gold in 2021, and three more golds since representing the u.k. from 2022. chui was one of only seven students, out of 666 contestants, to achieve a perfect score that year. his consistent elite performance and unprecedented medal count highlight his extraordinary talent and dedication. following his high school career, alex chui is set to join cambridge university, continuing his pursuit of mathematical excellence.",
+    "takeaway": "dedication to a passion can lead to unparalleled achievements and a place in history."
   }
 }
