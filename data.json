@@ -2359,24 +2359,6 @@
       "link": "https://simcc.org/competitions/ijio/"
     },
     {
-      "id": "best-in-english-competition-2026",
-      "type": "competition",
-      "title": "best in english competition",
-      "shortDesc": "a unique online english language competition for secondary school students aged 14-20 worldwide.",
-      "fullDetails": "this competition helps schools benchmark english skills internationally and motivates students to improve. it has been recognized by the slovak ministry of education. the top student winner receives a 2-week trip to canada.",
-      "category": "academic",
-      "interest": "english language, writing, reading, listening",
-      "minAge": 14,
-      "maxAge": 20,
-      "deadline": "approx. november 25, 2026 (based on '58 days until contest' from sept 28, 2026).",
-      "eventDate": "contest around late november 2026.",
-      "location": "online/worldwide",
-      "prizes": "2-week trip to canada for the best student.",
-      "rounds": "online competition format.",
-      "fee": "not explicitly stated (implied free for students, but schools typically register).",
-      "link": "https://bestinenglish.org/"
-    },
-    {
       "id": "international-informatics-olympiad-teams-2026",
       "type": "competition",
       "title": "international informatics olympiad in teams (iiot)",
@@ -3059,6 +3041,78 @@
       "rounds": "submission and presentation",
       "fee": "free to register",
       "link": "https://newyouthconference.com/"
+    },
+    {
+      "id": "nfte-world-series-of-innovation-2026",
+      "type": "competition",
+      "title": "nfte world series of innovation",
+      "shortDesc": "a free online challenge for young people worldwide to develop solutions linked to un sustainable development goals.",
+      "fullDetails": "the network for teaching entrepreneurship (nfte) runs this free online challenge for individuals or teams aged 13 to 24. participants choose one sponsored challenge related to the un sustainable development goals, covering areas like health, money skills, food businesses, and responsible ai. submissions are accepted in multiple languages. cash prizes range from us$300 to us$1,500, with winners announced in spring 2027. the deadline for 2026-27 submissions is december 13, 2026.",
+      "category": "academic",
+      "interest": "entrepreneurship & social impact",
+      "minAge": 13,
+      "maxAge": 24,
+      "deadline": "2026-12-13",
+      "eventDate": "2027-xx-xx",
+      "location": "online",
+      "prizes": "cash prizes (us$300-us$1,500)",
+      "rounds": "1",
+      "fee": "free",
+      "link": "https://nfte.com/programs/world-series-of-innovation/"
+    },
+    {
+      "id": "mit-think-scholars-program-2026",
+      "type": "competition",
+      "title": "mit think scholars program",
+      "shortDesc": "a prestigious research and innovation competition challenging high school students to develop a technology project with mentorship from mit students.",
+      "fullDetails": "the mit think scholars program is a highly selective research and innovation competition for high school students. participants develop a technology project, receiving one-on-one mentorship from mit students and a budget for materials. the program culminates in an invitation to present the project at mit. the application process is rigorous, requiring a detailed project proposal and research plan.",
+      "category": "academic",
+      "interest": "technology & innovation",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2027-01-01",
+      "eventDate": "2027-xx-xx",
+      "location": "online and mit, usa",
+      "prizes": "fully-funded trip to mit, research grants.",
+      "rounds": "multiple (application, proposal, mentorship, presentation)",
+      "fee": "free",
+      "link": "https://think.mit.edu/"
+    },
+    {
+      "id": "john-locke-global-essay-prize-2026",
+      "type": "competition",
+      "title": "john locke institute global essay prize",
+      "shortDesc": "an international essay competition encouraging independent thought and critical analysis across various humanities and social science subjects.",
+      "fullDetails": "the john locke institute global essay prize is a renowned international writing contest open to students aged 18 and under. it draws submissions from over 150 countries, covering subjects such as philosophy, politics, economics, history, psychology, theology, and law. the competition emphasizes independent thought, reasoning, critical analysis, and persuasive writing style. entries are judged by leading experts from oxford and princeton. winners may receive scholarships ranging from $1,000 to $10,000 and an invitation to an academic conference and awards ceremony in london.",
+      "category": "academic",
+      "interest": "essay writing & humanities",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "2026-06-xx",
+      "eventDate": "2026-09-xx",
+      "location": "online (ceremony in london, uk)",
+      "prizes": "$1,000-$10,000 scholarships, publication, invitation to academic conference.",
+      "rounds": "1",
+      "fee": "free (late entries may be paid)",
+      "link": "https://www.johnlockeinstitute.com/essay-competition"
+    },
+    {
+      "id": "nyc-stem-conference-2026",
+      "type": "conference",
+      "title": "nyc stem conference 2026",
+      "shortDesc": "a global, online conference for students, researchers, and educators to explore, present, and connect in stem fields, including an interschool competition and virtual hackathon.",
+      "fullDetails": "the nyc stem conference on december 5, 2026, is an opportunity for school, undergraduate, and postgraduate students, as well as early-career and independent researchers and educators, to engage with the latest in stem. the conference offers opportunities to explore emerging developments, present research or innovative ideas, and network with like-minded individuals. it includes a global interschool stem competition for grades 8-12 and a virtual hackathon where participants can build and showcase technology solutions in education, edtech, career planning, or stem. selected submissions may also be considered for publication in the entech magazine special issue.",
+      "category": "academic",
+      "interest": "stem, research, innovation, entrepreneurship",
+      "minAge": 13,
+      "maxAge": 22,
+      "deadline": "2026-12-05",
+      "eventDate": "2026-12-05",
+      "location": "global (online) & in-person (mmcoe)",
+      "prizes": "recognition, potential for publication, networking opportunities",
+      "rounds": "n/a",
+      "fee": "free to register",
+      "link": "https://www.newyouthconference.com/2026-student-research-conference"
     }
   ],
   "studyResources": [
@@ -8480,11 +8534,137 @@
       "title": "englishgrammar.org free english grammar exercises, course and guide (2027)",
       "description": "free english exercises, a free course, and a 2027 guide to improve grammar. includes 11 modules and 124 short lessons from sentence foundations to advanced editing, practice exercises with explanations, and vocabulary lists.",
       "link": "https://www.englishgrammar.org/"
+    },
+    {
+      "id": "cambridge-cs-9618-revision-notes",
+      "syllabus": "cambridge",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "cambridge international as/a level computer science (9618) revision notes",
+      "description": "free, comprehensive revision notes covering all twenty syllabus topics (information representation, hardware, algorithms, programming, ai, etc.) for exams in 2026-2029. includes notes organized by specification, official past papers with mark schemes, and ai-marked practice questions.",
+      "link": "https://www.tutopiya.com/cambridge-international-as-a-level-computer-science-9618-revision-notes-past-papers-practice/"
+    },
+    {
+      "id": "ib-math-aa-hl-revision-notes",
+      "syllabus": "ib",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "ib maths: analysis and approaches hl revision notes",
+      "description": "free, detailed revision notes for every topic and subtopic on the ib maths analysis and approaches higher level specification. covers scientific notation, sequences, financial applications, exponents, logarithms, binomial theorem, complex numbers, limits, derivatives, integration, and kinematics.",
+      "link": "https://www.exaim.com/ib/maths-aa-hl/revision-notes"
+    },
+    {
+      "id": "ap-calc-ab-practice-questions",
+      "syllabus": "ap",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "free ap calculus ab practice questions with full solutions",
+      "description": "a collection of free ap calculus ab practice questions with detailed solutions, covering limits, derivatives, integrals, accumulation, area, volume, and calculator setup. includes multiple-choice problems and explanations to prepare for quizzes and the ap exam.",
+      "link": "https://studyglitch.com/ap-calculus-ab-practice-questions/"
+    },
+    {
+      "id": "cambridge-cs-9618-study-guide",
+      "syllabus": "cambridge",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "free a level computer science 9618 study guide",
+      "description": "a complete, free online study guide for cambridge international as & a level computer science 9618. covers all 20 syllabus sections and 44 sub-sections for exams in 2027, 2028, and 2029, also applicable for 2026 exams. includes information representation, hardware, system software, ethics, databases, programming, and artificial intelligence.",
+      "link": "https://www.edviacollege.com/resources/a-level-computer-science-9618-study-guide"
+    },
+    {
+      "id": "ib-math-ai-hl-cheatsheets",
+      "syllabus": "ib",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "ib math ai hl cheatsheets — every topic, free",
+      "description": "hand-built revision cheatsheets for ib mathematics: applications & interpretation higher level. each printable page condenses a topic with formulas, gdc steps, common traps, worked examples, and exam-attack plans. covers sequences, matrices, graph theory, regression, and differential equations.",
+      "link": "https://ibtuition.sg/ib-math-ai-hl-cheatsheets-every-topic-free"
+    },
+    {
+      "id": "ap-calc-ab-practice-exam-pdf",
+      "syllabus": "ap",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "free ap calculus ab practice exam pdf — with answer key",
+      "description": "a free, printable ap calculus ab practice exam that mirrors the actual test format, including multiple-choice and free-response questions on limits, derivatives, and integrals. includes a complete mark scheme with worked solutions.",
+      "link": "https://examtex.com/ap-calculus-ab-practice-exam-pdf/"
+    },
+    {
+      "id": "cambridge-igcse-maths-past-papers-0580",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge igcse mathematics (0580) past papers & marking schemes (2019-2026)",
+      "description": "a comprehensive collection of past exam papers and official marking schemes for cambridge igcse mathematics (0580) from 2019 to 2026, including core and extended papers.",
+      "link": "https://www.tutopiya.com/past-papers/cambridge-igcse/mathematics-0580/past-papers/"
+    },
+    {
+      "id": "ib-computer-science-sl-hl-past-papers",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "specimen paper",
+      "title": "ib computer science past papers (2006-2026)",
+      "description": "free download of ib computer science past papers, covering 524 papers across 41 sessions from 2006-2026 for both standard level (sl) and higher level (hl). includes official and donated papers, useful for understanding exam formats and improving computational thinking.",
+      "link": "https://papersdaddy.com/past-papers/ib-computer-science-past-papers-2026/"
+    },
+    {
+      "id": "cbse-class-10-computer-notes-2026-27",
+      "syllabus": "cbse",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "class 10 computer notes, new syllabus (2026-27), full book",
+      "description": "downloadable pdf notes for cbse class 10 computer science, covering the new 2026-27 syllabus. includes solved long, short, mcq's, and exercise questions, focusing on operating systems, python programming, data science, and ai.",
+      "link": "https://freeilm.com/class-10-computer-notes-new-syllabus/"
+    },
+    {
+      "id": "ib-english-lang-lit-study-guide",
+      "syllabus": "ib",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "the best ib english study guide and notes for sl/hl",
+      "description": "a comprehensive study guide for ib english a students (literature sl/hl, language and literature sl/hl), compiling free materials for commentaries, essays, poetry interpretation, and book notes for popular works.",
+      "link": "https://blog.prepscholar.com/ib-english-a-language-and-literature-study-guide"
+    },
+    {
+      "id": "gaokao-mathematics-sample-questions",
+      "syllabus": "gaokao",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "challenging gaokao math sample questions",
+      "description": "a document providing 10 challenging sample questions covering various topics in gaokao mathematics, including algebra, geometry, calculus, statistics, probability, number theory, and trigonometry.",
+      "link": "https://www.scribd.com/document/652078693/Top-10-Challenging-Gaokao-Mathematics-Sample-Questions"
+    },
+    {
+      "id": "canadian-cemc-math-resources",
+      "syllabus": "canadian",
+      "subject": "mathematics",
+      "type": "revision notes",
+      "title": "free math learning resources for canadian students (grades 5-12)",
+      "description": "curated free math learning resources for canadian students in grades 5-12, including past papers, video lessons, problem sets, and study guides for cemc and comc competitions, aligned with the ontario curriculum.",
+      "link": "https://skillfinity.ca/free-math-learning-resources-for-canadian-students/"
+    },
+    {
+      "id": "french-bac-mathematics-past-papers",
+      "syllabus": "french-bac",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "bac french past papers, mathematics stream (2009-2026)",
+      "description": "36 official tunisian bac french papers for the mathematics stream from 2009 to 2026, including main and resit sessions with answer keys, useful for practicing baccalauréat mathematics specialty topics.",
+      "link": "https://www.reviserbac.tn/fr/maths-bac-tunisia-papers.html"
+    },
+    {
+      "id": "openstax-python-programming-textbook",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "introduction to python programming (openstax)",
+      "description": "a free, peer-reviewed, openly licensed digital textbook from openstax, designed for anyone interested in learning foundational python programming concepts, suitable for high school and college-level learners across various fields.",
+      "link": "https://www.openstax.org/details/books/introduction-python-programming"
     }
   ],
   "dailyInspiration": {
-    "title": "alex chui: the mathematical prodigy who made imo history",
-    "story": "in 2026, eighteen-year-old alex chui etched his name into the history books of the international mathematical olympiad (imo), the world's most prestigious high school mathematics championship. representing the united kingdom at the 67th imo in shanghai, china, chui secured his fifth gold medal with a perfect score of 42 out of 42 points. this remarkable feat made him only the second contestant in the competition's history to achieve five gold medals, and the first and only competitor ever to win seven medals in total at the imo, having also won silver medals. his journey began in 2020 with a silver for hong kong, followed by his first gold in 2021, and three more golds since representing the u.k. from 2022. chui was one of only seven students, out of 666 contestants, to achieve a perfect score that year. his consistent elite performance and unprecedented medal count highlight his extraordinary talent and dedication. following his high school career, alex chui is set to join cambridge university, continuing his pursuit of mathematical excellence.",
-    "takeaway": "dedication to a passion can lead to unparalleled achievements and a place in history."
+    "title": "the 13-year-old math olympiad bronze medalist who changed his nation's story",
+    "story": "in july 2025, arlan sayat, a 13-year-old boy from kyrgyzstan, achieved what no one from his country had ever done: he won a bronze medal at the international mathematical olympiad (imo) in australia. kyrgyzstan had never secured a single medal in the imo's history, despite nearly two decades of participation. arlan, the youngest member of his country's delegation, had been solving university-level math problems since age nine. he trained rigorously in unheated classrooms in bishkek, often beating older students at national olympiads by age 11. his coaches even debated if he was too young for the intensely competitive imo, typically dominated by 17-19 year olds. during the competition, arlan spent 40 silent minutes on a particularly brutal problem before writing continuously. his bronze medal, with 21 points, was a historic moment for his nation, prompting calls from the president and widespread celebration. when asked about his future, arlan expressed a desire to return home, rest for a week, and then train the younger kids in his math circle, believing it was important to teach them that the perceived 'ceiling' for their country's mathematical achievements was never truly there.",
+    "takeaway": "the greatest legends begin not with applause, but with the quiet resolve to pass on the torch, proving that perceived limits are simply waiting to be overcome."
   }
 }
