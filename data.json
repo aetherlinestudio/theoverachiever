@@ -3113,6 +3113,132 @@
       "rounds": "n/a",
       "fee": "free to register",
       "link": "https://www.newyouthconference.com/2026-student-research-conference"
+    },
+    {
+      "id": "wsc-2026",
+      "type": "competition",
+      "title": "world scholar's cup 2026",
+      "shortDesc": "an international academic competition bringing students aged 8-18 to explore interdisciplinary topics through collaborative debate, writing, and quiz events.",
+      "fullDetails": "the world scholar's cup is a global academic competition designed to make learning fun and social, emphasizing teamwork, creativity, and cross-disciplinary thinking. it covers six subject categories: science & technology, history & social studies, literature & language, mathematics, art & music, and a special area, all unified by an annual theme (e.g., 'are we there yet?' for 2026). teams of three compete in four events: team debate, collaborative writing, scholar's challenge (multiple-choice test), and scholar's bowl (multimedia quiz). it has a multi-tier format with regional rounds (various locations throughout the year, e.g., hyderabad, india on september 26-27, 2026), global rounds (june, july, august), and a tournament of champions at yale university (november 12-18, 2026).",
+      "category": "academic",
+      "interest": "interdisciplinary, debate, writing, general knowledge",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "regional deadlines vary (e.g., september 10, 2026 for hyderabad regional)",
+      "eventDate": "regional rounds: throughout 2026; global rounds: june-august 2026; tournament of champions: 2026-11-12 to 2026-11-18",
+      "location": "various regional and global locations, tournament of champions at yale university, usa",
+      "prizes": "medals, certificates",
+      "rounds": "regional, global, tournament of champions",
+      "fee": "varies by regional round (e.g., rs. 4,300 per student for hyderabad regional)",
+      "link": "https://www.scholarscup.org"
+    },
+    {
+      "id": "gsls-2026",
+      "type": "conference",
+      "title": "global student leadership summit 2026",
+      "shortDesc": "a premier student leadership conference for developing practical leadership skills and global competencies.",
+      "fullDetails": "the 2026 global student leadership summit was held in-person in atlanta, georgia, from november 4-6, 2026. it convened student leaders for an immersive experience focused on leadership growth, cross-cultural collaboration, and career readiness. participants engaged in leadership sessions, critical dialogue, networking, and connected with professionals. early bird rates closed september 10, 2026. it aimed to strengthen leadership skills and develop global competencies like self-awareness, communication, and team building.",
+      "category": "leadership",
+      "interest": "leadership & personal development",
+      "minAge": 15,
+      "maxAge": 20,
+      "deadline": "early bird: 2026-09-10; regular: 2026-10-08; late: 2026-11-04",
+      "eventDate": "2026-11-04 to 2026-11-06",
+      "location": "atlanta, georgia, usa",
+      "prizes": "n/a (professional development)",
+      "rounds": "single event",
+      "fee": "impact partners: $499 (early), $599 (regular); general rates likely higher",
+      "link": "https://globalimpact.daglobalaccess.net/"
+    },
+    {
+      "id": "regeneron-isef",
+      "type": "competition",
+      "title": "regeneron international science and engineering fair",
+      "shortDesc": "the world's largest pre-college science competition, where finalists from regional and state fairs showcase original research.",
+      "fullDetails": "regeneron isef is open to students in grades 9 to 12. it accepts team projects and is entered through affiliated regional and state science fairs. it brings together finalists from over 75 countries and regions. the competition rewards months of experimental work. the final event meets in los angeles (for may 2027, implied for 2026/2027 cycle).",
+      "category": "academic",
+      "interest": "science research, engineering",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "varies by affiliated regional/state fair",
+      "eventDate": "may 2027 (implied for 2026/2027 cycle in los angeles)",
+      "location": "varies by regional fair, finals in different host cities (e.g., los angeles for 2027)",
+      "prizes": "scholarships, recognition, up to $75,000 for top individual winners (implied, similar to sts but often less direct top prize, more varied awards)",
+      "rounds": "regional fair, state fair (optional), international fair",
+      "fee": "unknown",
+      "link": "https://www.societyforscience.org/isef/"
+    },
+    {
+      "id": "iac-virtual-2026",
+      "type": "competition",
+      "title": "international academic competitions virtual challenge 2025-2026 (geography, history, science bee)",
+      "shortDesc": "a virtual academic challenge for students in geography, history, and science, running from january to february 2026.",
+      "fullDetails": "epic charter schools invited students to participate in the 2025 international academic competition, held virtually from january 1 to february 2, 2026. this event, under the international academic competitions (iac) banner, includes the national geography bee, national history bee, and national science bee. it aims to expand critical thinking, problem-solving skills, and knowledge in these subjects, allowing students to compete globally and connect with peers. detailed faqs and resources are available on the official iac website. registration for this specific instance would have been prior to january 2026.",
+      "category": "academic",
+      "interest": "history, geography, science",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "passed (prior to 2026-01-01)",
+      "eventDate": "2026-01-01 to 2026-02-02 (virtual competition window)",
+      "location": "virtual",
+      "prizes": "recognition, confidence building",
+      "rounds": "virtual challenge",
+      "fee": "unknown (registration via school)",
+      "link": "https://www.iacompetitions.com/"
+    },
+    {
+      "id": "sof-international-mathematics-olympiad-2026",
+      "type": "competition",
+      "title": "sof international mathematics olympiad (imo) level-1 2026-27",
+      "shortDesc": "a prestigious mathematics competition for school students to test knowledge and logical reasoning.",
+      "fullDetails": "the sof international mathematics olympiad (imo) level-1 is an annual competition that assesses students' understanding of mathematical applications and logical reasoning. it features multiple-choice questions and problem-solving tasks. for the 2026-27 academic year, level-1 exam dates include december 10, 2026. winners receive international, zonal, and school topper awards, including cash prizes and medals for top international rank holders. the competition is open to students from classes 1 to 12.",
+      "category": "academic",
+      "interest": "mathematics, logical reasoning",
+      "minAge": 6,
+      "maxAge": 18,
+      "deadline": "2026-12-10",
+      "eventDate": "2026-12-10",
+      "location": "national (school-based)",
+      "prizes": "cash awards, medals, certificates",
+      "rounds": "level-1 and subsequent levels",
+      "fee": "specific cost (unspecified in results)",
+      "link": "https://sofworld.org/imo"
+    },
+    {
+      "id": "international-computer-science-competition-icsc-2026",
+      "type": "competition",
+      "title": "international computer science competition (icsc) 2026",
+      "shortDesc": "a global educational competition challenging students in conceptual reasoning, computational thinking, and programming.",
+      "fullDetails": "the international computer science competition (icsc) 2026 is open for applications and is designed for middle school, high school, and university students. participants engage in a mixture of conceptual and programming problems across three increasingly challenging rounds. students interested in mathematics, logical reasoning, coding, and technology are encouraged to participate. awards include international and national recognition, with prizes worth over usd 1,500, and all participants receive a certificate. the qualification round is held in 2026, with solutions accepted in python, java, c, or c++.",
+      "category": "academic",
+      "interest": "computer science, algorithms, programming, computational thinking",
+      "minAge": 10,
+      "maxAge": 22,
+      "deadline": "ongoing (qualification round 2026)",
+      "eventDate": "2026-xx-xx",
+      "location": "online",
+      "prizes": "awards over usd 1,500, certificates, global recognition",
+      "rounds": "three (qualification, regional, final)",
+      "fee": "unspecified (implied registration)",
+      "link": "https://icscom.org/"
+    },
+    {
+      "id": "international-young-researchers-conference-iyrc-winter-2026",
+      "type": "conference",
+      "title": "international young researchers' conference (iyrc) winter 2026",
+      "shortDesc": "an interdisciplinary conference offering high school students a platform to publish and present original research.",
+      "fullDetails": "the 14th international young researchers' conference (iyrc) winter 2026 provides high school students with the opportunity to publish their original research and present it to an international audience. the conference features both an in-person day on december 19, 2026, at the university of california, los angeles (ucla) in the usa, and a virtual day on january 23, 2027 (est time zone), for remote attendees. participants can submit abstracts (750-1500 words) for peer review and selection. it has previously attracted young researchers from 25 countries and accepted over 800 research works.",
+      "category": "academic",
+      "interest": "interdisciplinary research, science, technology, engineering, mathematics",
+      "minAge": 13,
+      "maxAge": 18,
+      "deadline": "upcoming (for abstract submission, check official site)",
+      "eventDate": "2026-12-19 & 2027-01-23",
+      "location": "ucla, usa (in-person) & online (virtual)",
+      "prizes": "opportunity to publish research, international audience, networking",
+      "rounds": "abstract submission & presentation",
+      "fee": "unspecified",
+      "link": "https://iyrc.org/"
     }
   ],
   "studyResources": [
@@ -8660,11 +8786,173 @@
       "title": "introduction to python programming (openstax)",
       "description": "a free, peer-reviewed, openly licensed digital textbook from openstax, designed for anyone interested in learning foundational python programming concepts, suitable for high school and college-level learners across various fields.",
       "link": "https://www.openstax.org/details/books/introduction-python-programming"
+    },
+    {
+      "id": "cambridge-math-past-papers",
+      "syllabus": "cambridge",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cambridge igcse mathematics extended (0607 / 0580) past papers",
+      "description": "access free cambridge igcse mathematics past papers and mark schemes for all sessions up to may/june 2026. covers topics for extended mathematics.",
+      "link": "https://www.igcse.freekcse.com/cambridge-igcse-past-papers-2026/"
+    },
+    {
+      "id": "cambridge-cs-past-papers",
+      "syllabus": "cambridge",
+      "subject": "computer science",
+      "type": "specimen paper",
+      "title": "cambridge igcse computer science (0478) past papers",
+      "description": "download free cambridge igcse computer science past papers and mark schemes. includes various papers for the subject code 0478.",
+      "link": "https://www.tutopiya.com/free-igcse-past-papers/"
+    },
+    {
+      "id": "cambridge-english-past-papers",
+      "syllabus": "cambridge",
+      "subject": "english",
+      "type": "specimen paper",
+      "title": "cambridge igcse english - first language (0500) past papers",
+      "description": "download past papers, examiner reports, and specimen exams for cambridge igcse english - first language (0500). note that 2026 papers may have layout changes for accessibility.",
+      "link": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-first-language-0500/past-papers-examiner-reports-and-specimen-papers/"
+    },
+    {
+      "id": "ap-english-lit-essay-resources",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "ap english literature essay brainstorming sheet & template (lit & more)",
+      "description": "printable template sheet to guide ap english lit students in brainstorming and preparing essays, including definitions for claim, complexity, ape paragraph (assert, prove, explain), and line of reasoning. also offers a list of all play and novel titles suggested on past exams.",
+      "link": "https://www.litandmore.net/free-resource-library"
+    },
+    {
+      "id": "cbse-math-class10-2026-27",
+      "syllabus": "cbse",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cbse class 10 maths sample paper 2026-27 with solutions (basic & standard)",
+      "description": "free downloadable pdfs of cbse class 10 maths sample papers for 2026-27, available in both basic and standard versions, with detailed solutions and marking schemes. covers all important chapters and question types, including mcqs, vsa, sa, la, and case study-based questions.",
+      "link": "https://www.selfstudys.com/cbse-class-10-maths-sample-paper-2026-27-with-solution-basic-standard-pdf-free-download"
+    },
+    {
+      "id": "national-cs-curriculum-pdf",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "curriculum portfolio",
+      "title": "high school computer science curriculum (scribd)",
+      "description": "a structured high school computer science curriculum over four grades. grade 9 covers basic programming with scratch, grade 10 web development and python intro, and grades 11-12 advanced programming, data structures, databases, and sql, culminating in a capstone project. prepares students for careers in computer science.",
+      "link": "https://www.scribd.com/document/75681643/High-School-Computer-Science-Curriculum"
+    },
+    {
+      "id": "national-english-grammar-worksheets",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "high school grammar & esl worksheets: free printable pdfs with answers (a0–c2)",
+      "description": "over 25,000 free printable pdf english grammar and vocabulary worksheets with answer keys for high school language arts and esl students, covering levels a0 to c2. topics include mixed conditionals, present simple, past perfect, relative clauses, and more. designed for teenagers with clear, grown-up content.",
+      "link": "https://www.eslprintables.com/grammar_worksheets/high_school/"
+    },
+    {
+      "id": "harvard-cs50x-highschool",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "harvard's cs50x: introduction to computer science",
+      "description": "a free online course from harvard, suitable for beginners aged 12 and up, with two-thirds of students having no prior computer science experience. covers scratch, c, python, sql, web basics, and ai through lectures and problem sets. work for 2026 must be submitted by december 31, 2026, to earn a free certificate.",
+      "link": "https://cs50.harvard.edu/x/2026/"
+    },
+    {
+      "id": "mit-cs-python-6.100l",
+      "syllabus": "national",
+      "subject": "computer science",
+      "type": "textbook",
+      "title": "mit's introduction to cs and programming using python (6.100l)",
+      "description": "a free online course from mit, designed for students with little to no programming experience who like math. includes lecture videos, problem sets, and short 'finger exercises' from mit's fall 2022 class.",
+      "link": "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/"
+    },
+    {
+      "id": "spm-math-trial-papers-2026",
+      "syllabus": "spm",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "spm mathematics trial papers 2026",
+      "description": "free downloadable spm mathematics trial papers for 2026 by subject, year, and state. includes real school trial papers, answer schemes, and video walkthroughs by experienced teachers. covers topics such as geometry, algebra, probability, and statistics.",
+      "link": "https://www.edukaji.com/spm-trial-papers-2026"
+    },
+    {
+      "id": "gaokao-english-study-guide",
+      "syllabus": "gaokao",
+      "subject": "english",
+      "type": "study guide",
+      "title": "free gaokao english study guide 2026: exam prep (openexamprep)",
+      "description": "free study guides, practice questions (231+), flashcards, and related exam resources for gaokao english. covers syllabus analysis, core vocabulary, contextual syntax, reading strategies, writing workshops, and full-length timed simulations. also includes an ai tutor to explain mistakes.",
+      "link": "https://openexamprep.com/gaokao-english-study-guide/"
+    },
+    {
+      "id": "online-english-courses-highschool",
+      "syllabus": "national",
+      "subject": "english",
+      "type": "textbook",
+      "title": "15 online free english courses for high school students (immerse education)",
+      "description": "a list of free online english courses available to high school students, covering grammar, punctuation, academic writing, rhetoric, and professional communication. most are free to audit on platforms like coursera, edx, and futurelearn, with certificates available for a fee. examples include lund university's 'writing in english at university' and uc irvine's 'grammar and punctuation'.",
+      "link": "https://www.immerse.education/articles/free-online-english-courses-for-high-school-students"
+    },
+    {
+      "id": "ib-cs-shuttle-learning-2025-syllabus",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "free ib computer science revision for the 2025 syllabus",
+      "description": "comprehensive revision resources including topic guides, cheat sheets, practice questions with mark schemes (java and python), 888 flashcards, and full mock papers. written by a computer science teacher.",
+      "link": "https://shuttle.education/ib-computer-science-revision/"
+    },
+    {
+      "id": "ap-english-lit-slate-course",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "curriculum portfolio",
+      "title": "ap english literature and composition course",
+      "description": "a free, college-level online course with 20 lessons across 5 units, focusing on close reading, poetry, prose fiction, drama, literary argument, and ap exam readiness for grades 11-12.",
+      "link": "https://www.slate.com/courses/ap-english-literature"
+    },
+    {
+      "id": "canadian-math-cemc-past-papers",
+      "syllabus": "canadian",
+      "subject": "mathematics",
+      "type": "specimen paper",
+      "title": "cemc past contest papers",
+      "description": "official cemc prep resources from the university of waterloo, including every past contest paper with full solutions for gauss, pascal, cayley, fermat, galois, euclid, and cjmc competitions, going back decades for grades 7-12.",
+      "link": "https://www.cemc.uwaterloo.ca/contests/past_contests.html"
+    },
+    {
+      "id": "ib-cs-aimnova-2027-syllabus",
+      "syllabus": "ib",
+      "subject": "computer science",
+      "type": "revision notes",
+      "title": "free ib computer science sl revision notes for 2027 syllabus",
+      "description": "offers free study notes for the 2027 ib computer science sl syllabus, first assessed in may 2027. includes clear explanations, worked examples, spaced-repetition flashcards, and ib-style practice questions with ai feedback, covering all 7 units (themes a and b).",
+      "link": "https://aimnova.com/ib-computer-science-sl-notes"
+    },
+    {
+      "id": "ap-english-lit-albert-study-guides",
+      "syllabus": "ap",
+      "subject": "english",
+      "type": "revision notes",
+      "title": "ap english literature study guides (albert blog)",
+      "description": "over 70 free ap® english literature study guides, organized by unit and written to the current college board framework, providing comprehensive support for students.",
+      "link": "https://www.albert.io/blog/ap-english-literature-resources/"
+    },
+    {
+      "id": "canadian-math-jensenmath-ontario",
+      "syllabus": "canadian",
+      "subject": "mathematics",
+      "type": "textbook",
+      "title": "jensenmath free ontario high school math resources",
+      "description": "provides free lessons, worksheets, solutions, and video tutorials for all ontario high school and elementary math courses, following the ontario curriculum for courses like mth1w, mpm2d, mcr3u, mcv4u, mhf4u, and mdm4u.",
+      "link": "https://www.jensenmath.ca/"
     }
   ],
   "dailyInspiration": {
-    "title": "the 13-year-old math olympiad bronze medalist who changed his nation's story",
-    "story": "in july 2025, arlan sayat, a 13-year-old boy from kyrgyzstan, achieved what no one from his country had ever done: he won a bronze medal at the international mathematical olympiad (imo) in australia. kyrgyzstan had never secured a single medal in the imo's history, despite nearly two decades of participation. arlan, the youngest member of his country's delegation, had been solving university-level math problems since age nine. he trained rigorously in unheated classrooms in bishkek, often beating older students at national olympiads by age 11. his coaches even debated if he was too young for the intensely competitive imo, typically dominated by 17-19 year olds. during the competition, arlan spent 40 silent minutes on a particularly brutal problem before writing continuously. his bronze medal, with 21 points, was a historic moment for his nation, prompting calls from the president and widespread celebration. when asked about his future, arlan expressed a desire to return home, rest for a week, and then train the younger kids in his math circle, believing it was important to teach them that the perceived 'ceiling' for their country's mathematical achievements was never truly there.",
-    "takeaway": "the greatest legends begin not with applause, but with the quiet resolve to pass on the torch, proving that perceived limits are simply waiting to be overcome."
+    "title": "the first-generation ivy league trailblazer: olivia connie-perkins' journey to brown university",
+    "story": "in december 2025, 17-year-old olivia connie-perkins made history as the first student from success academy high school of the liberal arts in brooklyn, n.y., to be accepted into an ivy league university, brown university. this achievement held profound significance for olivia and her family, as she is a first-generation college student. her admission was the culmination of years of unwavering dedication and rigorous academic pursuit, including completing nearly a dozen advanced placement classes and participating in college-preparation programs. beyond her academic excellence, olivia also showcased her creativity by founding a student-led club called 'yarn yard,' where she explored her passion for crocheting. her acceptance, captured in a viral video, sparked jubilant cheers from her classmates, underscoring the collective pride in her milestone. olivia expressed that pushing herself academically was always important, and this acceptance felt like the culmination of all that hard work. she was particularly drawn to brown university's open curriculum and beautiful campus, eagerly anticipating her next chapter.",
+    "takeaway": "ambition, hard work, and embracing diverse passions can unlock groundbreaking opportunities and inspire a generation."
   }
 }
